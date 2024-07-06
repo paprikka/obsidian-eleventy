@@ -7,6 +7,9 @@ dependencies:
   '@11ty/eleventy-img':
     specifier: ^4.0.2
     version: 4.0.2
+  '@sindresorhus/slugify':
+    specifier: ^2.2.1
+    version: 2.2.1
   cheerio:
     specifier: 1.0.0-rc.12
     version: 1.0.0-rc.12

@@ -1,6 +1,7 @@
 ---
 title: Notes
 layout: base.njk
+permalink: /notes/foo
 ---
 
 <!DOCTYPE html>
@@ -15,8 +16,11 @@ layout: base.njk
     <ul>
         {% for item in collections.publishedNotes %}
             <li>
-                <a href="{{ item.url }}">{{ item.data.title }}</a>
-                <p>{{ item.data.description }}</p>
+              <a href="{{ item.url }}">
+                  {{ item.data.title }} 
+                  <small>[{{item.url}}]</small>
+              </a>
+              <p>{{ item.data.description }}</p>
             </li>
         {% endfor %}
     </ul>

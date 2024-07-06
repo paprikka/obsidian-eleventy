@@ -30,6 +30,13 @@ export default function (eleventyConfig) {
   //   },
   // });
 
+  eleventyConfig.addFilter("notesUrl", (path) => {
+    console.log("asda ", path);
+    const result = path.replace("/sol", "foo");
+    console.log({ result });
+    return result;
+  });
+  eleventyConfig.addFilter("json", (obj) => console.log(obj));
   return {
     dir: {
       input: "src",
