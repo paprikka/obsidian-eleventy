@@ -1,0 +1,29 @@
+{
+  "name": "untested-11ty",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "import-notes": "rm -rf src/sol && mkdir src/sol && obsidian-export  ../backup-sol src/sol --only-tags publish",
+    "dev": "rm -rf _site && NODE_OPTIONS=--inspect eleventy --serve",
+    "dev:debug": "rm -rf _site && NODE_OPTIONS=--inspect-brk eleventy --serve",
+    "format": "prettier --write .",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "3.0.0-alpha.14",
+    "@11ty/eleventy-img": "^4.0.2",
+    "cheerio": "1.0.0-rc.12",
+    "directory-tree": "^3.5.1",
+    "markdown-it": "^14.1.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.2",
+    "vitest": "^1.6.0"
+  }
+}

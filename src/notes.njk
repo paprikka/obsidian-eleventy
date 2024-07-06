@@ -1,0 +1,10 @@
+---
+layout: base.njk
+pagination:
+  data: collections.publishedNotes
+  size: 1
+  alias: note
+permalink: "notes/{{ note.filePathStem | replace('/src/input-articles', '') }}/index.html"
+---
+<h1>Note: {{ note.data.title }}</h1>
+<div>{{ note.templateContent | safe }}</div>

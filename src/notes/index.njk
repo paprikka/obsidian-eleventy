@@ -1,0 +1,24 @@
+---
+title: Notes
+layout: base.njk
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h1>All Notes</h1>
+    <ul>
+        {% for item in collections.publishedNotes %}
+            <li>
+                <a href="{{ item.url }}">{{ item.data.title }}</a>
+                <p>{{ item.data.description }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
