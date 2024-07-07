@@ -2,8 +2,6 @@
 
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import { mdEmbed } from "./build/md-embed.js";
-// import embedYoutube from "eleventy-plugin-youtube-embed";
-// wikilinks + wiki image links
 
 function isBlockedUrl(url, blockedDomains) {
   try {
@@ -16,14 +14,6 @@ function isBlockedUrl(url, blockedDomains) {
     return false;
   }
 }
-
-// Example usage
-const blockedDomains = new Set([
-  "www.youtube.com",
-  "youtube.com",
-  "youtu.be",
-  "twitter.com",
-]);
 
 export default function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
@@ -40,7 +30,7 @@ export default function (eleventyConfig) {
   eleventyConfig.amendLibrary("md", (mdLib) => {
     mdLib.use(mdEmbed);
   });
-  // eleventyConfig.addPlugin(embedYoutube);
+
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     extensions: "html",
     formats: ["auto"],
@@ -49,8 +39,6 @@ export default function (eleventyConfig) {
       decoding: "async",
     },
   });
-
-  // eleventyConfig.ignores.add("src/sol/**/*");
 
   return {
     dir: {

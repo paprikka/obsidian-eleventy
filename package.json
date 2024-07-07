@@ -21,6 +21,7 @@
     "@sindresorhus/slugify": "^2.2.1",
     "cheerio": "1.0.0-rc.12",
     "directory-tree": "^3.5.1",
+    "gray-matter": "^4.0.3",
     "markdown-it": "^14.1.0"
   },
   "devDependencies": {
