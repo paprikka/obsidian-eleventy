@@ -1,0 +1,22 @@
+---
+layout: base.njk
+---
+
+<style>
+.back-btn {
+position: sticky;
+top: 1rem;
+left: 1rem;
+background: var(--pico-primary-inverse);
+padding: .25em;
+border: 2px solid var(--pico-primary);
+}
+</style>
+<main>
+  <h1>title: {{title}}</h1>
+  <a href='/notes' class='back-btn'>← back</a>
+  <article>
+    {{ content | safe }}
+  </article>
+</main>
+

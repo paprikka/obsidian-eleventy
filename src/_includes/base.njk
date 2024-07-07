@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
-    <link rel="stylesheet" href="//writ.cmcenroe.me/1.0.4/writ.min.css">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+/>
+    <style>
+      main { 
+
+      max-width: 40rem;
+      margin:0 auto;
+
+    }
+
+    </style>
 </head>
 <body>
-    <main>
-      <h1>title: {{title}}</h1>
-      <article>
-        {{ content | safe }}
-      </article>
-    </main>
+    {{ content | safe }}
 </body>
 </html>
 
