@@ -1,11 +1,14 @@
 ---
 layout: base.njk
-pagination:
-  data: collections.publishedNotes
-  size: 1
-  alias: note
-permalink: "{{ 'notes/' + note.filePathStem | slugify }}"
+title: Notes
 ---
-<h1>Note: {{ note.data.title }}</h1>
-<div>{{ note.templateContent | safe }}</div>
+<main>
+
+<h1>Notes</h1>
+<ul>
+{% for note in collections.notes %}
+  <li><a href="{{ note.url }}">{{ note.data.title }}</a></li>
+{% endfor %}
+</ul>
+</main>
 

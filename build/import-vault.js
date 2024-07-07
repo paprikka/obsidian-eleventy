@@ -9,6 +9,7 @@ import grayMatter from "gray-matter";
 
 const sourceBase = path.join(process.cwd(), "vault");
 const destinationBase = path.join(process.cwd(), "src/notes");
+const relatedAssets = [];
 
 const resourceIndex = getResourceIndex(sourceBase);
 const markdownFiles = Object.keys(resourceIndex).reduce((result, key) => {
@@ -20,6 +21,35 @@ const markdownFiles = Object.keys(resourceIndex).reduce((result, key) => {
 export async function checkIfPublishable(fileContent) {
   return grayMatter(fileContent).data.publish === true;
 }
+
+function isRemoteUrl(url) {
+  try {
+    const urlObj = new URL(url);
+    return urlObj.protocol === "http:" || urlObj.protocol === "https:";
+  } catch (_) {
+    return false;
+  }
+}
+
+function isBlockedUrl(url, blockedDomains) {
+  try {
+    const urlObj = new URL(url);
+    const hostname = urlObj.hostname;
+    return Array.from(blockedDomains).some((domain) =>
+      hostname.includes(domain),
+    );
+  } catch (_) {
+    return false;
+  }
+}
+
+// Example usage
+const blockedDomains = new Set([
+  "www.youtube.com",
+  "youtube.com",
+  "youtu.be",
+  "twitter.com",
+]);
 
 const processSingleFile = async (absolutePath) => {
   const fileContent = await fs.readFile(absolutePath, "utf8");
@@ -40,8 +70,34 @@ const processSingleFile = async (absolutePath) => {
     return `[${title}](<../${url}>)`;
   };
 
+  const getEmbedMarkup = (_, src, alt) => {
+    // '<img src="https://placehold.co/600x400/png" alt="$2" />',
+    if (isBlockedUrl(src, blockedDomains)) return `<pre> BLOCKED </pre>`;
+    if (isRemoteUrl(src))
+      return `<img src="../${src}" alt="${alt}" eleventy:ignore>`;
+    if (!/\.(jpe?g|png|gif|bmp|svg|webp)$/i.test(src))
+      return `<iframe src=${src} lazy>`;
+
+    const resolvedLink = resolveLink(absolutePath, src, resourceIndex);
+
+    if (!resolvedLink) return `<div style='background: red' >${src}</div>`;
+
+    relatedAssets.push({
+      absolutePath: path.resolve(absolutePath, "../" + resolvedLink),
+    });
+
+    return `![${alt}](${resolvedLink})`;
+  };
+
   // Handle link transformations
   const content = fileContent
+    .replace(
+      /!\[\[([^\]|]+)\|([^\]]+)\]\]/g,
+      getEmbedMarkup,
+      // '<img src="https://placehold.co/600x400/png" alt="$2" />',
+    )
+    .replace(/!\[\[([^\]]+)\]\]/g, getEmbedMarkup)
+
     .replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, (_, p1, p2) => {
       return getAnchorMarkup(p1, p2);
     })
@@ -52,7 +108,7 @@ const processSingleFile = async (absolutePath) => {
   return { absolutePath, content };
 };
 
-async function copyEntries(entries, sourceBase, destinationBase) {
+async function exportEntries(entries, sourceBase, destinationBase) {
   const copyFilePromises = entries.map(async ({ absolutePath, content }) => {
     const relativePath = path.relative(sourceBase, absolutePath);
     const destinationPath = path.join(destinationBase, relativePath);
@@ -60,6 +116,29 @@ async function copyEntries(entries, sourceBase, destinationBase) {
 
     await fs.mkdir(destinationDir, { recursive: true });
     await fs.writeFile(destinationPath, content);
+  });
+
+  await Promise.all(copyFilePromises);
+}
+
+let hasRun = false;
+async function copyAssets(assets, sourceBase, destinationBase) {
+  const copyFilePromises = assets.map(async ({ absolutePath }) => {
+    const relativePath = path.relative(sourceBase, absolutePath);
+    const destinationPath = path.join(destinationBase, relativePath);
+    const destinationDir = path.dirname(destinationPath);
+
+    try {
+      await fs.mkdir(destinationDir, { recursive: true });
+      await fs.copyFile(absolutePath, destinationPath);
+    } catch (error) {
+      if (!hasRun) {
+        hasRun = true;
+        console.log(absolutePath);
+      }
+
+      // console.table({ absolutePath, destinationPath });
+    }
   });
 
   await Promise.all(copyFilePromises);
@@ -74,4 +153,5 @@ console.log(
   filesToPublish.map((_) => _.absolutePath),
 );
 
-await copyEntries(filesToPublish, sourceBase, destinationBase);
+await copyAssets(relatedAssets, sourceBase, destinationBase);
+await exportEntries(filesToPublish, sourceBase, destinationBase);
