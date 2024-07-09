@@ -9,7 +9,7 @@
     "import-notes": "rm -rf src/sol && mkdir src/sol && obsidian-export  ../backup-sol src/sol --only-tags publish",
     "dev": "rm -rf _site && NODE_OPTIONS=--inspect eleventy --serve",
     "dev:debug": "rm -rf _site && NODE_OPTIONS=--inspect-brk eleventy --serve",
-    "vault:watch": "npx nodemon build/import-vault.js",
+    "vault:watch": "NODE_OPTIONS=--inspect npx nodemon build/import-vault.js",
     "format": "prettier --write .",
     "test": "vitest"
   },

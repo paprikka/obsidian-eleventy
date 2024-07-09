@@ -1,0 +1,13 @@
+---
+layout: base.njk
+---
+<main>
+
+<h1>Notes</h1>
+<ul>
+{% for note in collections.notes %}
+  <li><a href="{{ note.url }}">{{ note.data.title }}</a></li>
+{% endfor %}
+</ul>
+</main>
+
