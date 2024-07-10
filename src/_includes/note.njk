@@ -7,8 +7,10 @@ pageClass: page--note
   <a href="/">← back</a>
 </nav>
 
-<header>
+<header class="page-note__header">
   <h1>{{title}}</h1>
 </header>
 
 <article>{{ content | safe }}</article>
+
+{% include "widget-subscribe.njk" %}
