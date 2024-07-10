@@ -6,7 +6,7 @@ publish: true
 
 ![a bunch of dogs of all shapes and sizes surrouding a confused bear, there's an elf riding a fox](dog-mode.png)
 
-**Dog mode happens** when after a long and successful week (in your opinion at least), instead of feeling tired, you end up overstimulated, unfocused, hyper.
+Dog mode happens when after a long and successful week (in your opinion at least), instead of feeling tired, you end up overstimulated, unfocused, hyper.
 
 Common symptoms include: idea diarrhoea, euphoria, a muffled cover or the Doom 3 OST projected from your kundalini chakra towards your head, making it impossible to sit on your ass.
 

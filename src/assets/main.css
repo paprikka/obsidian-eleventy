@@ -1,0 +1,180 @@
+:root {
+  /* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+  --s--2: clamp(0.7813rem, 0.7747rem + 0.0326vi, 0.8rem);
+  --s--1: clamp(0.9375rem, 0.9158rem + 0.1087vi, 1rem);
+  --s-0: clamp(1.125rem, 1.0815rem + 0.2174vi, 1.25rem);
+  --s-1: clamp(1.35rem, 1.2761rem + 0.3696vi, 1.5625rem);
+  --s-2: clamp(1.62rem, 1.5041rem + 0.5793vi, 1.9531rem);
+  --s-3: clamp(1.944rem, 1.771rem + 0.8651vi, 2.4414rem);
+  --s-4: clamp(2.3328rem, 2.0827rem + 1.2504vi, 3.0518rem);
+  --s-5: clamp(2.7994rem, 2.4462rem + 1.7658vi, 3.8147rem);
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+
+  font-size: var(--s-0);
+
+  --color-bg: #fff;
+  /* --color-butter: #fef4c3; */
+  --color-butter: #f4d184;
+  --color-text: #222;
+  --color-link: rgb(238, 47, 40);
+
+  --article-width: calc(30 * var(--s-0));
+  --page-margin: var(--s-1);
+}
+
+::selection {
+  background-color: var(--color-butter);
+  color: var(--color-text);
+}
+
+body {
+  padding: var(--page-margin);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.4;
+}
+
+/* @media all and (min-width: 420px) { */
+/*   body { */
+/*     background-image: url(/butter.webp); */
+/*     background-size: 10rem; */
+/*     background-repeat: no-repeat; */
+/*     background-position: bottom left; */
+/*     background-attachment: fixed; */
+/*   } */
+/* } */
+/**/
+/* @media all and (min-width: 768px) { */
+/*   body { */
+/*     background-size: 14rem; */
+/*   } */
+/* } */
+
+main {
+  margin: 0 auto;
+  max-width: var(--article-width);
+}
+
+footer {
+  margin: 0 auto;
+  max-width: var(--article-width);
+  font-size: var(--s--1);
+  text-align: center;
+  border-top: #222 solid 2px;
+  position: sticky;
+  bottom: 0;
+  padding: 1em;
+  background-color: var(--color-bg);
+}
+
+h1 {
+  font-size: var(--step-3);
+  font-weight: 800;
+  line-height: 1;
+  margin: 0 0 1rem;
+}
+
+h2 {
+  font-size: var(--step-2);
+  text-align: center;
+}
+
+/* .hero { */
+/*   margin: 3rem 0; */
+/* } */
+/**/
+/* .hero p { */
+/*   margin: 0 0 2em; */
+/*   font-size: var(--s-1); */
+/* } */
+/**/
+/* .hero img { */
+/*   max-width: 100%; */
+/*   height: auto; */
+/* } */
+
+/* @media all and (min-width: 420px) { */
+/*   .hero { */
+/*     text-align: center; */
+/*   } */
+/**/
+/*   .hero { */
+/*     margin-inline: -2rem; */
+/*   } */
+/* } */
+
+a {
+  color: var(--color-link);
+}
+
+/* video { */
+/*   aspect-ratio: 4/3; */
+/*   max-width: 100%; */
+/*   border-radius: 0.3rem; */
+/*   border: 1px solid var(--color-text); */
+/* } */
+
+/* section:last-of-type::after { */
+/*   content: ""; */
+/*   display: block; */
+/*   background-image: url(/butter.webp); */
+/*   background-size: 100%; */
+/*   background-repeat: no-repeat; */
+/*   background-position: center; */
+/*   width: 100%; */
+/*   aspect-ratio: 1004/1200; */
+/* } */
+/**/
+/* @media all and (min-width: 420px) { */
+/*   section:last-of-type::after { */
+/*     display: none; */
+/*   } */
+/*   section:last-of-type { */
+/*     margin-bottom: 3rem; */
+/*   } */
+/* } */
+
+mark {
+  background-color: transparent;
+  position: relative;
+}
+
+mark::before {
+  content: "";
+  height: 0.5em;
+  width: 100%;
+  position: absolute;
+  display: block;
+  background-color: var(--color-butter);
+  left: -0.1em;
+  right: -0.1em;
+  bottom: 0.1em;
+  z-index: -1;
+}
+
+.page--note {
+  header {
+  }
+  nav {
+    position: sticky;
+    top: var(--step-0);
+  }
+}
