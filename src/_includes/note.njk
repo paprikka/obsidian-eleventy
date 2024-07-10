@@ -1,7 +1,14 @@
 ---
 layout: base.njk
+pageClass: page--note
 ---
 
-<h1>title: {{title}}</h1>
-<a href="/notes" class="back-btn">← back</a>
+<nav class="page-note__nav">
+  <a href="/">← back</a>
+</nav>
+
+<header>
+  <h1>{{title}}</h1>
+</header>
+
 <article>{{ content | safe }}</article>

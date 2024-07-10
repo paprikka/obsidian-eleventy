@@ -1,20 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ title }}</title>
-    <link rel="stylesheet" href="/assets/main.css">
-</head>
-<body>
-    <main>
-      {{ content | safe }}
-    </main>
+    <link rel="stylesheet" href="/assets/main.css" />
+  </head>
+  <body {% if pageClass %}class="{{ pageClass }}" {% endif %}>
+    <main>{{ content | safe }}</main>
 
     <footer>
-      Made by 🐐 and <a href="https://sonnet.io">Rafal Pastuszak</a>. 
-      Come and <a href="https://sonnet.io/posts/hi">say hi</a>
+      Made by 🐐 and <a href="https://sonnet.io">Rafal Pastuszak</a>. Come and
+      <a href="https://sonnet.io/posts/hi">say hi</a>
     </footer>
-</body>
+  </body>
 </html>
-

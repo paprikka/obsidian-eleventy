@@ -1,13 +1,26 @@
 ---
 layout: base.njk
 ---
+
 <main>
+  <section class="intro">
+    <p>
+      Hi there, I'm <a href="https://sonnet.io">Rafał Pastuszak</a>. I'm using
+      this space to publish my #til/lab notes.
+    </p>
 
-<h1>Notes</h1>
-<ul>
-{% for note in collections.notes %}
-  <li><a href="{{ note.url }}">{{ note.data.title }}</a></li>
-{% endfor %}
-</ul>
+    <p>Let's call this thing Untested.</p>
+
+    <blockquote>
+      <em>untested</em> like <em>undead</em>, so not
+      <em><strong>not</strong>-tested</em>, but in a limbo causing constant fear
+      and anxiety, boooo!
+    </blockquote>
+  </section>
+  <h2>Notes</h2>
+  <ul>
+    {% for note in collections.notes %}
+    <li><a href="{{ note.url }}">{{ note.data.title }}</a></li>
+    {% endfor %}
+  </ul>
 </main>
-

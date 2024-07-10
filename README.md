@@ -14,6 +14,7 @@ Things will move and change a lot, but if you have any questions or tips - let m
 - [ ] OG metadata
 - [ ] backlinks
 - [ ] handle GIF playback
+- [ ] redirects
 - [ ] handle animated images
 - [ ] render completeness levels (e.g. fleeting, draft, article)
 - [ ] footnotes
