@@ -1,13 +1,19 @@
-:root {
-  --s--2: clamp(0.651rem, 0.6138rem + 0.1862vi, 0.8rem);
-  --s--1: clamp(0.7813rem, 0.7266rem + 0.2734vi, 1rem);
-  --s-0: clamp(0.9375rem, 0.8594rem + 0.3906vi, 1.25rem);
-  --s-1: clamp(1.125rem, 1.0156rem + 0.5469vi, 1.5625rem);
-  --s-2: clamp(1.35rem, 1.1992rem + 0.7539vi, 1.9531rem);
-  --s-3: clamp(1.62rem, 1.4146rem + 1.0268vi, 2.4414rem);
-  --s-4: clamp(1.944rem, 1.6671rem + 1.3847vi, 3.0518rem);
-  --s-5: clamp(2.3328rem, 1.9623rem + 1.8524vi, 3.8147rem);
+/* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1600,20,1.25,6,3,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
+:root {
+  --s--3: clamp(0.64rem, 0.6538rem + -0.0138vi, 0.651rem);
+  --s--2: clamp(0.7813rem, 0.7766rem + 0.0234vi, 0.8rem);
+  --s--1: clamp(0.9375rem, 0.9219rem + 0.0781vi, 1rem);
+  --s-0: clamp(1.125rem, 1.0938rem + 0.1563vi, 1.25rem);
+  --s-1: clamp(1.35rem, 1.2969rem + 0.2656vi, 1.5625rem);
+  --s-2: clamp(1.62rem, 1.5367rem + 0.4164vi, 1.9531rem);
+  --s-3: clamp(1.944rem, 1.8196rem + 0.6218vi, 2.4414rem);
+  --s-4: clamp(2.3328rem, 2.1531rem + 0.8987vi, 3.0518rem);
+  --s-5: clamp(2.7994rem, 2.5455rem + 1.2692vi, 3.8147rem);
+  --s-6: clamp(3.3592rem, 3.0069rem + 1.7614vi, 4.7684rem);
+}
+
+:root {
   --color-bg: #fff;
   --color-butter: #fef4c3;
   --color-text: #222;
@@ -195,25 +201,46 @@ mark::before {
   margin-block-start: calc(var(--s-0) * 5);
 }
 
-.page-note__nav {
+.page-note__nav a {
   position: fixed;
-  top: var(--s-0);
-  left: var(--s-0);
+  font-size: var(--s--3);
+  font-weight: 500;
+  top: var(--s--3);
+  left: var(--s--3);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  border: 2px solid;
+  text-decoration: none;
+  padding: 0.2em 0.75em;
+  box-shadow: 4px 4px 0 0 var(--color-text);
 
-  background: var(--color-bg);
-  outline: 0.5em var(--color-bg) solid;
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--color-butter);
+    }
+  }
+
+  &:active {
+    translate: 2px 2px;
+    box-shadow: 2px 2px 0 0 var(--color-text);
+  }
 }
 
 .page-notes {
 }
 
 .page-notes__intro {
+  margin-block-start: var(--s-4);
   font-size: var(--s-0);
   line-height: var(--leading-loose);
 
   blockquote {
     font-size: var(--s--1);
     line-height: var(--leading-base);
+  }
+
+  p:first-of-type {
+    font-weight: 500;
   }
 }
 
@@ -225,6 +252,7 @@ mark::before {
     padding-inline-start: 0;
     display: flex;
     flex-direction: column-reverse;
+    line-height: var(--leading-loose);
   }
 
   & li {
@@ -249,7 +277,10 @@ mark::before {
 }
 
 .widget-subscribe {
-  padding: 0.5em;
+  padding: 0.75em;
+  margin-inline: -0.75em;
   border-radius: 0.5em;
   background: var(--color-butter);
+  line-height: var(--leading-base);
+  font-size: var(--s--1);
 }

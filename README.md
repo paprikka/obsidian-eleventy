@@ -26,6 +26,6 @@ Things will move and change a lot, but if you have any questions or tips - let m
 - [ ] handle external links
 - [ ] handle in-post embeds
 - [ ] port content from untested
-- [ ]
+- [ ] add note dates
 - [ ]
 - [ ]
