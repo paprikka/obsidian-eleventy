@@ -71,20 +71,30 @@ const processSingleFile = async (absolutePath) => {
   };
 
   const getEmbedMarkup = (_, src, alt) => {
-    // '<img src="https://placehold.co/600x400/png" alt="$2" />',
+    // blocked
     if (isBlockedUrl(src, blockedDomains)) return `<pre> BLOCKED </pre>`;
+    // remote image
     if (isRemoteUrl(src))
       return `<img src="../${src}" alt="${alt}" eleventy:ignore>`;
-    if (!/\.(jpe?g|png|gif|bmp|svg|webp)$/i.test(src))
-      return `<iframe src=${src} lazy>`;
+
+    // default embed
+    const nonImageRegexp = /\.(jpe?g|png|gif|bmp|svg|webp)$/i;
+    const hasExtension = !!src.split(".").length;
+    if (!nonImageRegexp.test(src) && hasExtension)
+      return `<iframe src="${src}" class="embed embed--iframe-default" lazy />`;
 
     const resolvedLink = resolveLink(absolutePath, src, resourceIndex);
 
     if (!resolvedLink) return `<div style='background: red' >${src}</div>`;
 
-    relatedAssets.push({
-      absolutePath: path.resolve(absolutePath, "../" + resolvedLink),
-    });
+    const targetAbsolutePath = path.resolve(absolutePath, "../" + resolvedLink);
+
+    // note embed
+    if (!nonImageRegexp.test(src) && !hasExtension) {
+      const note = require("fs").readFileSync(targetAbsolutePath, "utf8");
+      return `<div class="embed"> ${note}</div>`;
+    }
+    relatedAssets.push({ absolutePath: targetAbsolutePath });
 
     return `![${alt}](${resolvedLink})`;
   };

@@ -6,9 +6,12 @@ Things will move and change a lot, but if you have any questions or tips - let m
 
 ### TODO
 
-- [ ] handle non YT embeds
+- [ ] note embeds
+- [ ] broken links / dead links UX
+- [ ] broken embeds
 - [ ] render dead links
 - [ ] handle aliases
+- [ ] handle non YT embeds
 - [ ] render covers
 - [ ] theme - make usable
 - [ ] OG metadata

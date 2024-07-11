@@ -284,3 +284,13 @@ mark::before {
   line-height: var(--leading-base);
   font-size: var(--s--1);
 }
+
+/* Embeds */
+.embed {
+  width: 100%;
+  height: auto;
+  border: 2px solid var(--color-text);
+}
+
+.embed--iframe-default {
+}
