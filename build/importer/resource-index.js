@@ -34,6 +34,9 @@ function createFileIndex(fileTree) {
 
 export const getResourceIndex = (root) => {
   const fullTree = directoryTree(root);
+  if (!fullTree) {
+    console.log(`Directory ${root} does not exist`);
+  }
   return createFileIndex(fullTree);
 };
 

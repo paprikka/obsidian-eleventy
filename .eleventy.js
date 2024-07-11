@@ -1,7 +1,7 @@
 // TODO: ignore twitter images
 
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
-import { mdEmbed } from "./build/md-embed.js";
+import { mdEmbed } from "./build/plugins/md-embed.js";
 
 function isBlockedUrl(url, blockedDomains) {
   try {

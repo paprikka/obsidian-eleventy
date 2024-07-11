@@ -1,6 +1,4 @@
 import { test, expect, describe } from "vitest";
-const rootPath = path.join(process.cwd(), "./build/test/fixtures");
-import path from "path";
 import {
   getResourceIndex,
   resolveLink,
@@ -9,7 +7,7 @@ import {
 } from "./resource-index";
 
 // TODO: remove
-const root = "/Users/raf/Developer/untested-11ty/build/test/fixtures/";
+const root = `${process.cwd()}/build/importer/test/fixtures/`;
 const folderTree = {
   "not-unique.md": [
     root + "folder/subfolder/not-unique.md",
@@ -22,7 +20,7 @@ const folderTree = {
 };
 
 test("should return the raw file tree", () => {
-  expect(getResourceIndex(rootPath)).toEqual(folderTree);
+  expect(getResourceIndex(root)).toEqual(folderTree);
 });
 
 describe("resolveLink", () => {
