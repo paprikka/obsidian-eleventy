@@ -3,7 +3,7 @@ cover: https://res.cloudinary.com/dlve3inen/image/upload/v1715090711/Screenshot_
 publish: true
 ---
 
-<iframe src=Rosie's Poem lazy>
+%%EMBED /Users/raf/Developer/untested-11ty/vault/Rosie's Poem.md END_EMBED%%
 
 
 One of the unexpected discoveries from playing with [Fig](<../Fig>) was how much fun I had designing, messing with (and breaking!) brushes. I thought I'd share how they work, how they *don't work* and why I will keep many of the bugs collected during my escapade in pixel land. 

@@ -6,14 +6,15 @@ Things will move and change a lot, but if you have any questions or tips - let m
 
 ### TODO
 
-- [ ] note embeds
-- [ ] broken links / dead links UX
-- [ ] broken embeds
+- [ ] broken links / dead links UX (check if publishable first, then create an index)
 - [ ] render dead links
+- [ ] note embeds
+- [ ] broken embeds
 - [ ] handle aliases
 - [ ] handle non YT embeds
 - [ ] render covers
 - [ ] theme - make usable
+- [ ] "I'm curious" - unpublished link CTA
 - [ ] OG metadata
 - [ ] backlinks
 - [ ] handle GIF playback
