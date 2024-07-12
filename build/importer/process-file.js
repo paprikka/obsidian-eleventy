@@ -96,6 +96,7 @@ export const processSingleFile = async (
   const embedSimple = /!\[\[([^\]]+)\]\]/g;
   const anchorAlt = /\[\[([^\]|]+)\|([^\]]+)\]\]/g;
   const anchorSimple = /\[\[([^\]]+)\]\]/g;
+  const linkMarker = /\^([a-zA-Z0-9]{6})/g;
   // Handle link transformations
   const content = fileContent
     .replace(embedAlt, getEmbedMarkup)
@@ -105,7 +106,12 @@ export const processSingleFile = async (
     })
     .replace(anchorSimple, (_, p1) => {
       return getAnchorMarkup(p1, p1);
-    });
+    })
+    .replace(
+      linkMarker,
+      (match) => `<span id="${match}" class="link-marker">${match}</span>`,
+    );
+
   return { absolutePath, content };
 };
 

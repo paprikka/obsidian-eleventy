@@ -4,8 +4,23 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 export function ObsidianImportPlugin(eleventyConfig) {
+  // TODO: this should be done in markdown, move
   eleventyConfig.addTransform(
-    "processEmbeds",
+    "processRegularEmbeds",
+    async function (content, outputPath) {
+      // Only process HTML files
+      if (!outputPath || !outputPath.endsWith(".html")) {
+        return content;
+      }
+
+      const $ = cheerio.load(content);
+
+      $("video").wrap($('<p class="embed embed--video"/>'));
+      return $.html();
+    },
+  );
+  eleventyConfig.addTransform(
+    "processNoteEmbeds",
     async function (content, outputPath) {
       // Only process HTML files
       if (!outputPath || !outputPath.endsWith(".html")) {
