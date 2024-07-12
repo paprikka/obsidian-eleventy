@@ -19,6 +19,7 @@ export function ObsidianImportPlugin(eleventyConfig) {
       return $.html();
     },
   );
+
   eleventyConfig.addTransform(
     "processNoteEmbeds",
     async function (content, outputPath) {
@@ -37,7 +38,9 @@ export function ObsidianImportPlugin(eleventyConfig) {
       try {
         await Promise.all(
           sonnetEmbeds.map(async (index, element) => {
-            const relativeFilePath = $(element).text().trim();
+            const $embed = $(element);
+            const targetId = $embed.attr("data-target");
+            const relativeFilePath = $embed.text().trim();
             const relativeFilePathNormalised = relativeFilePath
               .split(".")
               .slice(0, -1)
@@ -59,18 +62,24 @@ export function ObsidianImportPlugin(eleventyConfig) {
 
             try {
               const fileContent = await fs.readFile(absoluteFilePath, "utf8");
-              const $embedContent = cheerio.load(fileContent)("article").html();
-              if (outputPath.includes("Fig")) {
-                console.log(
-                  `Replacing ${relativeFilePath} with ${$embedContent}`,
-                );
+              const $fileDOM = cheerio.load(fileContent);
+              if (targetId) {
+                const fragment = $fileDOM(targetId).parent();
+
+                if (fragment) {
+                  $embed.replaceWith($fileDOM(fragment).html());
+                } else {
+                  $embed.replaceWith("Missing fragment");
+                }
+              } else {
+                $embed.replaceWith($fileDOM("article").html());
               }
-              $(element).replaceWith($embedContent);
+              $embed.wrap("<blockquote>");
             } catch (err) {
               console.error(
                 `Error reading file [${absoluteFilePath}]:\nMessage: ${err.message}`,
               );
-              $(element).replaceWith(
+              $embed.replaceWith(
                 `<!-- Error loading ${absoluteFilePath}: ${err.message} -->`,
               );
             }

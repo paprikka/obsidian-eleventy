@@ -84,7 +84,9 @@ export const processSingleFile = async (
 
     // note embed
     if (!nonImageRegexp.test(src) && !hasExtension) {
-      return `<sonnet-embed>${resolvedLink}</sonnet-embed>`;
+      const id = src.split("#")[1]?.trim();
+      const targetAttr = id ? `data-target="#${id}"` : "";
+      return `<sonnet-embed ${targetAttr}>${resolvedLink}</sonnet-embed>`;
     }
 
     relatedAssets.push({ absolutePath: targetAbsolutePath });
@@ -96,7 +98,7 @@ export const processSingleFile = async (
   const embedSimple = /!\[\[([^\]]+)\]\]/g;
   const anchorAlt = /\[\[([^\]|]+)\|([^\]]+)\]\]/g;
   const anchorSimple = /\[\[([^\]]+)\]\]/g;
-  const linkMarker = /\^([a-zA-Z0-9]{6})/g;
+  const linkMarker = /(?<!#)\^([a-zA-Z0-9]{6})/g;
   // Handle link transformations
   const content = fileContent
     .replace(embedAlt, getEmbedMarkup)

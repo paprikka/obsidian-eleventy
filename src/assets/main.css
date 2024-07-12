@@ -289,8 +289,26 @@ mark::before {
 .embed {
   width: 100%;
   height: auto;
-  border: 2px solid var(--color-text);
+
+  & > * {
+    vertical-align: bottom;
+    border: 2px solid var(--color-text);
+    box-shadow: 4px 4px 0 0 var(--color-text);
+  }
 }
 
 .embed--iframe-default {
+}
+
+.embed--video {
+  & video {
+    max-width: 100%;
+    width: 100%
+    height: auto;
+  }
+}
+.link-marker {
+  font-size: 0.5em;
+  position: relative;
+  top: -0.5em;
 }
