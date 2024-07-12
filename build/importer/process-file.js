@@ -84,7 +84,7 @@ export const processSingleFile = async (
 
     // note embed
     if (!nonImageRegexp.test(src) && !hasExtension) {
-      return `%%EMBED ${targetAbsolutePath} END_EMBED%%`;
+      return `<sonnet-embed>${resolvedLink}"</sonnet-embed>`;
     }
 
     relatedAssets.push({ absolutePath: targetAbsolutePath });
@@ -108,3 +108,21 @@ export const processSingleFile = async (
     });
   return { absolutePath, content };
 };
+
+// const embedRegex = /___EMBED___"([^"]+)"___END_EMBED___/g;
+// export const resourceHasEmbeds = (resource) =>
+//   embedRegex.test(resource.content);
+//
+// export const processEmbed = async (resource, filesByAbsolutePath) => {
+//   const updatedContent = resource.content.replace(
+//     embedRegex,
+//     (_match, embedAbsolutePath) => {
+//       return (
+//         filesByAbsolutePath[embedAbsolutePath.trim()] ||
+//         `Missing: ${embedAbsolutePath}`
+//       );
+//     },
+//   );
+//
+//   return { ...resource, content: updatedContent };
+// };
