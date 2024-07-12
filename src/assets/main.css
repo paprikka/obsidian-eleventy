@@ -212,7 +212,7 @@ mark::before {
       position: absolute;
       font-size: .75em;
       opacity: .5;
-      top: -0.25em;
+      bottom:0;
     }
   }
 }
