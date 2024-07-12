@@ -84,7 +84,7 @@ export const processSingleFile = async (
 
     // note embed
     if (!nonImageRegexp.test(src) && !hasExtension) {
-      return `<sonnet-embed>${resolvedLink}"</sonnet-embed>`;
+      return `<sonnet-embed>${resolvedLink}</sonnet-embed>`;
     }
 
     relatedAssets.push({ absolutePath: targetAbsolutePath });

@@ -2,13 +2,10 @@
 
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import { mdEmbed } from "./build/plugins/md-embed.js";
-import path from "path";
-import fs from "fs";
 import { fileURLToPath } from "url";
 import { EleventyRenderPlugin } from "@11ty/eleventy";
-
+import { ObsidianImportPlugin } from "./build/plugins/obsidian.js";
 const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 export default function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
@@ -26,12 +23,13 @@ export default function (eleventyConfig) {
     mdLib.use(mdEmbed);
   });
 
-  eleventyConfig.addPlugin(EleventyRenderPlugin);
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     extensions: "html",
     formats: ["auto"],
     defaultAttributes: { loading: "lazy", decoding: "async" },
   });
+
+  eleventyConfig.addPlugin(ObsidianImportPlugin);
 
   eleventyConfig.addPassthroughCopy("src/assets");
 

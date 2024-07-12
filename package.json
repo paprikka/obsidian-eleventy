@@ -8,7 +8,7 @@
     "build": "eleventy",
     "import-notes": "rm -rf src/sol && mkdir src/sol && obsidian-export  ../backup-sol src/sol --only-tags publish",
     "dev": "rm -rf _site && eleventy --serve",
-    "dev:debug": "rm -rf _site && NODE_OPTIONS=--inspect-brk eleventy --serve",
+    "dev:debug": "rm -rf _site && NODE_OPTIONS=--inspect eleventy --serve",
     "vault:build": "node build/importer/run.js",
     "vault:watch": "npx nodemon --inspect --watch build --watch 'vault/**/*.*' build/importer/run.js",
     "vault:debug": "node --inspect-brk build/importer/run.js",

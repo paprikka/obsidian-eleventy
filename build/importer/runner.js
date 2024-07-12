@@ -1,10 +1,6 @@
 import { promises as fs } from "fs";
 import path from "path";
-import {
-  processSingleFile,
-  resourceHasEmbeds,
-  processEmbed,
-} from "./process-file.js";
+import { processSingleFile } from "./process-file.js";
 import { getResourceIndex } from "./resource-index.js";
 
 export const run = async () => {
