@@ -90,8 +90,17 @@ export const processSingleFile = async (
     }
 
     relatedAssets.push({ absolutePath: targetAbsolutePath });
-
-    return `![${alt}](${resolvedLink})`;
+    const escapedLink = resolvedLink
+      .split("/")
+      .map((segment, i, all) => {
+        if (i === all.length - 1) return encodeURIComponent(segment);
+        return segment;
+      })
+      .join("/");
+    // TODO: drop encodeURIComponent once eleventyimg supports images with spaces
+    // check the obsidian plugin for the corresponding fix
+    return `![${alt}](${escapedLink})`;
+    // return `![${alt}](${resolvedLink})`;
   };
 
   const embedAlt = /!\[\[([^\]|]+)\|([^\]]+)\]\]/g;
@@ -116,21 +125,3 @@ export const processSingleFile = async (
 
   return { absolutePath, content };
 };
-
-// const embedRegex = /___EMBED___"([^"]+)"___END_EMBED___/g;
-// export const resourceHasEmbeds = (resource) =>
-//   embedRegex.test(resource.content);
-//
-// export const processEmbed = async (resource, filesByAbsolutePath) => {
-//   const updatedContent = resource.content.replace(
-//     embedRegex,
-//     (_match, embedAbsolutePath) => {
-//       return (
-//         filesByAbsolutePath[embedAbsolutePath.trim()] ||
-//         `Missing: ${embedAbsolutePath}`
-//       );
-//     },
-//   );
-//
-//   return { ...resource, content: updatedContent };
-// };

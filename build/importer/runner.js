@@ -35,9 +35,21 @@ export const run = async () => {
       const destinationPath = path.join(destinationBase, relativePath);
       const destinationDir = path.dirname(destinationPath);
 
+      // TODO: drop when eleventy-image-transform supports spaces in local paths
+      const destinationPathEscaped = path.join(
+        path.dirname(destinationPath),
+        encodeURIComponent(path.basename(destinationPath)),
+      );
+      if (destinationPathEscaped !== destinationPath) {
+        console.log({
+          destinationPath,
+          destinationPathEscaped,
+        });
+      }
       try {
         await fs.mkdir(destinationDir, { recursive: true });
-        await fs.copyFile(absolutePath, destinationPath);
+        // await fs.copyFile(absolutePath, destinationPath);
+        await fs.copyFile(absolutePath, destinationPathEscaped);
       } catch (error) {
         if (!hasRun) {
           hasRun = true;
