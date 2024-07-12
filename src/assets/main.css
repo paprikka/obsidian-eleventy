@@ -80,6 +80,7 @@ main {
   max-width: var(--article-width);
 }
 
+
 footer {
   margin: 0 auto;
   max-width: var(--article-width);
@@ -141,6 +142,7 @@ a {
       text-decoration: none;
     }
   }
+
 }
 
 img {
@@ -199,6 +201,20 @@ mark::before {
 
 .page-note__header {
   margin-block-start: calc(var(--s-0) * 5);
+}
+
+.page-note__article {
+  & a[href^="http"]{
+    position: relative;
+    padding-inline-end: 0.6em;
+    &::after{
+      content: "⤴";
+      position: absolute;
+      font-size: .75em;
+      opacity: .5;
+      top: -0.25em;
+    }
+  }
 }
 
 .page-note__nav a {

@@ -20,6 +20,19 @@ export function ObsidianImportPlugin(eleventyConfig) {
     },
   );
 
+  eleventyConfig.addTransform("updateExternalLinks", (content, outputPath) => {
+    // Only process HTML files
+    if (!outputPath || !outputPath.endsWith(".html")) {
+      return content;
+    }
+    const $ = cheerio.load(content);
+
+    $('a[href^="http"]')
+      .attr("target", "_blank")
+      .attr("rel", "noopener noreferrer");
+    return $.root().html();
+  });
+
   eleventyConfig.addTransform(
     "processNoteEmbeds",
     async function (content, outputPath) {
