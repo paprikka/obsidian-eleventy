@@ -2,10 +2,7 @@
 
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import { mdEmbed } from "./build/plugins/md-embed.js";
-import { fileURLToPath } from "url";
-import { EleventyRenderPlugin } from "@11ty/eleventy";
 import { ObsidianImportPlugin } from "./build/plugins/obsidian.js";
-const __filename = fileURLToPath(import.meta.url);
 
 export default function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
