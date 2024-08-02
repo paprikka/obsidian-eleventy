@@ -19,7 +19,7 @@
   --color-text: #222;
   --color-link: hsl(2deg 85% 54%);
   --color-link-broken: hsl(2deg 35% 54%);
-
+  --color-loading-placeholder: hsl(0 0 0 /.2);
   --article-width: calc(30 * var(--s-0));
   --page-margin: var(--s-1);
 
@@ -154,6 +154,15 @@ img {
   background-position: center;
   font-style: italic;
   shape-margin: 1em;
+
+  &[loading='lazy']{
+      transition: .7s opacity;
+      &:not(.img--is-loaded) {
+          opacity: .3;
+          background-color: var(--color-loading-placeholder);
+      }
+  }
+
 }
 /* video { */
 /*   aspect-ratio: 4/3; */

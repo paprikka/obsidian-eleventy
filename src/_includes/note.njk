@@ -14,3 +14,20 @@ pageClass: page--note
 <article class="page-note__article">{{ content | safe }}</article>
 
 {% include "widget-subscribe.njk" %}
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const images = document.querySelectorAll("article img[loading='lazy']");
+
+    images.forEach(img => {
+        if (img.complete) {
+            img.classList.add("image--is-loaded");
+        } else {
+            img.addEventListener("load", () => {
+                img.classList.add("img--is-loaded");
+            });
+        }
+    });
+});
+</script>
