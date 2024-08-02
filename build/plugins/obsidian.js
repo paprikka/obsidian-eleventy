@@ -30,6 +30,11 @@ export function ObsidianImportPlugin(eleventyConfig) {
     $('a[href^="http"]')
       .attr("target", "_blank")
       .attr("rel", "noopener noreferrer");
+
+    $('article :is(a[href^="/"], a[href^="./"], a[href^="../"])').addClass(
+      "link link--broken",
+    );
+
     return $.root().html();
   });
 

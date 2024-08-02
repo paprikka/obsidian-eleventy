@@ -17,7 +17,8 @@
   --color-bg: #fff;
   --color-butter: #fef4c3;
   --color-text: #222;
-  --color-link: rgb(238, 47, 40);
+  --color-link: hsl(2deg 85% 54%);
+  --color-link-broken: hsl(2deg 35% 54%);
 
   --article-width: calc(30 * var(--s-0));
   --page-margin: var(--s-1);
@@ -323,8 +324,18 @@ mark::before {
     height: auto;
   }
 }
+
 .link-marker {
   font-size: 0.5em;
   position: relative;
   top: -0.5em;
+}
+
+.link.link--broken {
+    opacity: .6;
+    cursor: not-allowed;
+    color: var(--color-link-broken);
+    &::after{
+        content: '🏴‍☠️';
+    }
 }

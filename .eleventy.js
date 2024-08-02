@@ -9,6 +9,7 @@ export default function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.setQuietMode(true);
 
+  // TODO: drop from here and colocate with the content
   eleventyConfig.addCollection("notes", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/notes/**/*.md").map((item) => {
       item.data.title = item.data?.title || item.fileSlug;
@@ -17,7 +18,7 @@ export default function (eleventyConfig) {
     });
   });
 
-  const mdLib = markdownIt({ linkify: true, breaks: true });
+  const mdLib = markdownIt({ linkify: true, breaks: true, html: true });
   mdLib.use(mdEmbed);
   eleventyConfig.setLibrary("md", mdLib);
 

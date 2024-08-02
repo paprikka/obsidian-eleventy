@@ -28,7 +28,6 @@ function isBlockedUrl(url, blockedDomains) {
   }
 }
 
-// Example usage
 const blockedDomains = new Set([
   "www.youtube.com",
   "youtube.com",
