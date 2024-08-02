@@ -6,10 +6,10 @@ Things will move and change a lot, but if you have any questions or tips - let m
 
 ### TODO
 
-- [ ] broken links / dead links UX (check if publishable first, then create an index)
-- [ ] render dead links
+- [x] broken links / dead links UX (check if publishable first, then create an index)
+- [x] render dead links
 - [ ] make it plomk, like potato.horse or lines.potato.horse
-- [ ] note embeds
+- [x] note embeds
 - [ ] broken embeds
 - [ ] handle aliases
 - [ ] handle non YT embeds
