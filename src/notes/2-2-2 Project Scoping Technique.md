@@ -11,7 +11,7 @@ _My **earlier** work titled: "A Quick Study of the Canine Form"_
 
 > It reminds me of the [3-3-3 Rule for Rescue Dogs](<../3-3-3 Rule for Rescue Dogs>), but imagine that you're replacing dogs with... idea puppies!
 
-Edit: Jordi published a [talk](https://vimeo.com/865555649) about his approach on Vimeo. I haven't watched it yet, so please consider the note below a weird cousin of his idea (probably very similar).
+Edit: Jordi!!! published a [talk](https://vimeo.com/865555649) about his approach on Vimeo. I haven't watched it yet, so please consider the note below a weird cousin of his idea (probably very similar).
 
 ## 2-2-2 101
 
@@ -47,4 +47,3 @@ Related: _Code [Spikes](<../Spikes>)_.
 3. Don't do it. Pick a different idea to work on.
 
 Related: [Instead or writing a comment, write a post and link it](<../Instead or writing a comment, write a post and link it>)
-

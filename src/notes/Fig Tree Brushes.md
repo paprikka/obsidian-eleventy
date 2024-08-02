@@ -6,7 +6,7 @@ publish: true
 <sonnet-embed >Rosie's Poem.md</sonnet-embed>
 
 
-One of the unexpected discoveries from playing with [Fig](<../Fig>) was how much fun I had designing, messing with (and breaking!) brushes. I thought I'd share how they work, how they *don't work* and why I will keep many of the bugs collected during my escapade in pixel land. 
+One of the unexpected discoveries from playing with [Fig](<../Fig>) was how much fun I had designing, messing with (and breaking!) brushes. I thought I'd share how they work, how they *don't work* and why I will keep many of the bugs collected during my escapade in pixel land.
 
 ![200](little-cinema.webp)
 
@@ -30,7 +30,7 @@ Regular brushes are just rectangles with occasional holes, Edam cheese style (or
 
 Draw the shape of your brush on a tiny 9x9 grid based editor. That's all!
 
-![1275](Pasted%20image%2020240507132857.png)
+![1274](Pasted%20image%2020240507132857.png)
 *No, **I** didn't mix x and y coords, you're sideways! (and [Jonathan is a school](https://youtu.be/jK60Jpe0ito?t=52).)*
 
 The original reason I added that little editor was to have a simple debugging/prototyping tool. What I particularly like about it:
@@ -38,7 +38,7 @@ The original reason I added that little editor was to have a simple debugging/pr
 - it's surprisingly quick and easy to use
 - doodling a quick brush then immediately using it feels a bit like mixing colours in a physical palette
 
-I suspect this might not be as interesting to others as it has been to me. I still remember the feeling of excitement when I tried the brush editor in Paint Shop Pro. 
+I suspect this might not be as interesting to others as it has been to me. I still remember the feeling of excitement when I tried the brush editor in Paint Shop Pro.
 
 The UX was fun to handle as well, partially because it's more complex than it seems on the surface. Some things to consider:
 
@@ -74,7 +74,7 @@ Let's break this down:
 - `i` is the number of the current iteration, increased each frame
 - `x` and `y` are the grid coords
 
-![3413](Pasted%20image%2020240507124018.png)
+![3411](Pasted%20image%2020240507124018.png)
 
 We run `ixy` for each pixel of the brush grid, for each iteration. Every time the function returns `true` we draw a pixel, otherwise we leave it empty.
 
@@ -84,7 +84,7 @@ Since `i` can be used as a poor man's replacement for *time*, we can use `ixy` t
 
 <video playsinline autoplay loop muted src='https://res.cloudinary.com/dlve3inen/video/upload/v1715083360/fig-code-brush-tutorial-animation_okbkip.mov'/>
 
-We can create looped/cyclical animations by using trigonometry, e.g. `Math.sin`. 
+We can create looped/cyclical animations by using trigonometry, e.g. `Math.sin`.
 
 <video playsinline autoplay loop muted src='https://res.cloudinary.com/dlve3inen/video/upload/v1715083726/fig-oscillation_sjxpoq.mov'/>
 
@@ -106,7 +106,7 @@ tixy.land caps the number of code characters at 32. We don't have this limitatio
 // can be used as:
 
 const ixy = (i, x, y) => (
-	() => { 
+	() => {
 		// use i, x, y here
 		let someComputedPropertyUsingXandY = ...
 		return someOtherComputedProperty
@@ -116,7 +116,7 @@ const ixy = (i, x, y) => (
 
 2\. can be offloaded to Claude!
 
-I'm using some basic prompt vibing™ tricks here: chain of thought prompting, providing examples. 
+I'm using some basic prompt vibing™ tricks here: chain of thought prompting, providing examples.
 
 > None of this song and dance is **really** needed, as providing two examples seemed to be enough to give me useful results: [thread on Xitter](https://twitter.com/rafalpast/status/1771604982598435149/photo/1).
 
@@ -143,12 +143,12 @@ Now: implement the body of this function that will render a circle (9x9):
 
 Result:
 
-![5966](Pasted%20image%2020240507132505.png)
+![5961](Pasted%20image%2020240507132505.png)
 
 
 ## The woods are lovely dark and deep, so these are the bugs I'd like to keep:
 
-![6085](Pasted%20image%2020240507145004.png)
+![6080](Pasted%20image%2020240507145004.png)
 
 Procreate is a wonderful piece of software. The faster, messier my brush strokes are, the better they look (thanks for their stabilisation and motion filtering algos). Every line is smooth, dynamic, drawn by a (hand-held) hand. This is useful and valuable as it allows more people to express themselves in ways that were previously impossible or very difficult. I used Procreate and MS Paint as a reference when looking for UX patterns.
 
