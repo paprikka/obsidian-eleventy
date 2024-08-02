@@ -3,6 +3,7 @@
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import { mdEmbed } from "./build/plugins/md-embed.js";
 import { ObsidianImportPlugin } from "./build/plugins/obsidian.js";
+import markdownIt from "markdown-it";
 
 export default function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
@@ -16,9 +17,9 @@ export default function (eleventyConfig) {
     });
   });
 
-  eleventyConfig.amendLibrary("md", (mdLib) => {
-    mdLib.use(mdEmbed);
-  });
+  const mdLib = markdownIt({ linkify: true, breaks: true });
+  mdLib.use(mdEmbed);
+  eleventyConfig.setLibrary("md", mdLib);
 
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     extensions: "html",

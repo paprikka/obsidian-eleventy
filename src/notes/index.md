@@ -130,3 +130,4 @@ Hi there, I'm [Rafał Pastuszak](https://sonnet.io). I'm using this space to pub
 109. [cp .env.example > .env (Adventures of the Bun-man)](<../Adventures of the Bun-man>)
 110. [Just Some Innocent Gradient Fun](<../Just Some Innocent Gradient Fun>)
 111. [Weekly Notes #18: 111!](<../TIL/weekly/60>)
+112. [112](<../112>)
