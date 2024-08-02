@@ -8,6 +8,8 @@ Things will move and change a lot, but if you have any questions or tips - let m
 
 - [x] broken links / dead links UX (check if publishable first, then create an index)
 - [x] render dead links
+- [ ] handle .mp4 files treated like markdown
+- [ ] ignore shortcodes inside code blocks
 - [ ] handle local videos (or migrate the existing ones)
 - [ ] make it plomk, like potato.horse or lines.potato.horse
 - [x] note embeds

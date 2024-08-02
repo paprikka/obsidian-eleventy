@@ -17,6 +17,7 @@
   --color-bg: #fff;
   --color-butter: #fef4c3;
   --color-text: #222;
+  --color-negative: red;
   --color-link: hsl(2deg 85% 54%);
   --color-link-broken: hsl(2deg 35% 54%);
   --color-loading-placeholder: hsl(0 0 0 /.2);
@@ -347,4 +348,11 @@ mark::before {
     &::after{
         content: '🏴‍☠️';
     }
+}
+
+
+.debug-alert{
+    color: var(--color-negative);
+    font-size: var(--s-2);
+    border: 1px solid var(--color-negative);
 }

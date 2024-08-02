@@ -69,7 +69,7 @@ Note that I'm using a `random` function which seeded with the socket `client.id`
 I'm using the random seed to control the sizes, colours, animation delays of stars, min- and max-opacity... As far as prototyping goes, this is a pretty comfortable setup.
 
 I started with all stars drawn purely in CSS:
-
+{% raw %}
 ```jsx
 <div
 	style:--x={x}
@@ -89,14 +89,15 @@ I started with all stars drawn purely in CSS:
 	</div>
 </div>
 ```
+{% endraw %}
 
 The stars looked good and the performance on desktop was decent even at 100s of users, but my phone became unresponsive as soon as the page loaded. The reason was that every star generated 3 separate layers. This is a lot for a mobile GPU to handle (and would turn your battery into a frying pan). 
 
-![4076](Pasted%20image%2020231023205802.png)
+![4098](Pasted%20image%2020231023205802.png)
 
 A good compromise between my own laziness and decent performance was creating a texture with three layers but still animating it in CSS:
 
-![4252](Pasted%20image%2020231023211204.png)
+![4274](Pasted%20image%2020231023211204.png)
 I can still control most of my animations using seeded CSS vars. Sweet!
 
 

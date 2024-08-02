@@ -16,6 +16,9 @@ export const mdEmbed = function (md) {
       }
     }
 
+    if (src.includes("twitter.com")) {
+      return ` <a class="debug-alert" href="${src}">Embedded tweet (work in progress!)  </a>`;
+    }
     return self.renderToken(tokens, idx, options);
   };
 };
