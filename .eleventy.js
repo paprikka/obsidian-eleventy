@@ -27,7 +27,7 @@ export default function (eleventyConfig) {
     extensions: "html",
     formats: ["auto"],
     defaultAttributes: { loading: "lazy", decoding: "async" },
-    // sharpOptions: { animated: true },
+    sharpOptions: { animated: true },
     cacheOptions: {
       formatUrlForDisplay: (url) => url,
       fetchOptions: {
