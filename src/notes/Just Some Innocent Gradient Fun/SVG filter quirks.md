@@ -2,7 +2,7 @@
 publish: true
 ---
 ### SVG can't he hidden using `display:none` on Firefox:
-<sonnet-embed >../innocent-gradients-svg-firefox.avif</sonnet-embed>
+![79](../innocent-gradients-svg-firefox.webp)
 
 To fix, make it visually hidden without changing the display mode.
 

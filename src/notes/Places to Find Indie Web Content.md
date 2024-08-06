@@ -6,7 +6,7 @@ This time instead of sending a newsletter about the Indie Web, I thought I'd sha
 
 Happy Holidays! 
 
-![image](https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F581AQCa0uK3RkT6ZKIPWJb%2F40ee9af874c8a067f997e26c0457317b%2FF84A2B9E-F8BE-435F-81F0-33EA5D313A31.png&w=3840&q=75)
+<img src="https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F581AQCa0uK3RkT6ZKIPWJb%2F40ee9af874c8a067f997e26c0457317b%2FF84A2B9E-F8BE-435F-81F0-33EA5D313A31.png&w=3840&q=75" alt="">
 
 Disclaimer and probably the worst possible start of a post like this:
 
@@ -65,7 +65,7 @@ Disclaimer and probably the worst possible start of a post like this:
 ## Other
 
 I often check the domain names associated with the email addresses of people who message me with feedback or contact me via [Say Hi](https://sonnet.io/posts/hi). 
-![3175](untested-visitor-sites-mail-client.webp)
+![3184](untested-visitor-sites-mail-client.webp)
 
 ### Niche and tech-specific sites or forums, e.g.:
 

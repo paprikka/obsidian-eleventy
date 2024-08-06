@@ -1,8 +1,8 @@
 ---
-cover: 'https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F2CzjlSvJU5f2bi7i4CLdQA%2F99f9e46ce4b1f2bfaeadc60623011a9a%2Fbanana-boys.webp&w=3840&q=75'
+cover: 'https://images.ctfassets.net/hyylafu4fjks/2CzjlSvJU5f2bi7i4CLdQA/99f9e46ce4b1f2bfaeadc60623011a9a/banana-boys.webp'
 publish: true
 ---
-![213](banana-boys.webp)
+![146](banana-boys.webp)
 
 There's an important aspect of communication which to some people (especially the so-called free speech absolutists) is very hard to grasp: communication *is* action. 
 

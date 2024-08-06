@@ -1,8 +1,8 @@
 ---
-cover: 'https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F2qnCWmraBKC14LdL0QVZPY%2F3a95e76adede3eedf5db81383703a267%2FUntitled_Artwork_13.png&w=3840&q=75'
+cover: 'https://images.ctfassets.net/hyylafu4fjks/2qnCWmraBKC14LdL0QVZPY/3a95e76adede3eedf5db81383703a267/Untitled_Artwork_13.png'
 publish: true
 ---
-![220](tribe-precarious.webp)
+![153](tribe-precarious.webp)
 
 The world is big enough.
 

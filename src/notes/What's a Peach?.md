@@ -1,6 +1,6 @@
 ---
 description: Sometimes a seemingly small change can cascade into a completely different reality.
-cover: 'https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F7wd1FoLKsddppjxycuWB0A%2F1f7a8503e2036bd372b5b83b44be6264%2F226023183_2831673570419431_5892104880406410119_n_17925609661710057.jpg&w=3840&q=75'
+cover: 'https://images.ctfassets.net/hyylafu4fjks/7wd1FoLKsddppjxycuWB0A/1f7a8503e2036bd372b5b83b44be6264/226023183_2831673570419431_5892104880406410119_n_17925609661710057.jpg'
 publish: true
 ---
 Sometimes a seemingly small change can cascade into a completely different reality. 

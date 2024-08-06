@@ -1,10 +1,10 @@
 ---
-cover: 'https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F7aZSe6sRvK4MJXkXRbRjVU%2F9fcecb1c157e85ac43bdf1b2caed66a7%2FUntitled_Artwork_5.png&w=3840&q=75'
+cover: 'https://images.ctfassets.net/hyylafu4fjks/7aZSe6sRvK4MJXkXRbRjVU/9fcecb1c157e85ac43bdf1b2caed66a7/Untitled_Artwork_5.png'
 publish: true
 ---
 Remember, [This is not writing or productivity advice](<../This is not writing or productivity advice>). It's also not note taking advice ([Better note taking is not the problem, it's better thinking](<../Better note taking is not the problem, it's better thinking>)). 
 
-![379](moonworm.webp)
+![312](moonworm.webp)
 
 ## Short version
 

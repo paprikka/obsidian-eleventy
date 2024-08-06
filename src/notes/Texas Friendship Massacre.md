@@ -1,5 +1,5 @@
 ---
-cover: 'https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2FLSJeUNpE90cdBg9GNLOPk%2Fe993a38cc8f6c5c911d00caf84df6ed2%2F120003954_745722425986847_7425864836116266428_n_17873823592915126.jpg&w=3840&q=75'
+cover: 'https://images.ctfassets.net/hyylafu4fjks/LSJeUNpE90cdBg9GNLOPk/e993a38cc8f6c5c911d00caf84df6ed2/120003954_745722425986847_7425864836116266428_n_17873823592915126.jpg'
 publish: true
 ---
 I thought I'd share another piece of linguistic trivia, but this time shorter and stolen from the [HN comments](https://news.ycombinator.com/item?id=38451130) on [Portuguese Orange, Persian Portugal](<../Portuguese Orange, Persian Portugal>).
@@ -8,7 +8,7 @@ I thought I'd share another piece of linguistic trivia, but this time shorter an
 
 The Romanian word for *chainsaw* is a borrowing of a Russian (or, more broadly, Slavic) word for *friend*. Therefore:
 
-![606](texas-frienship-poster.webp)
+![539](texas-frienship-poster.webp)
 
 
 

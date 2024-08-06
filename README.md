@@ -6,11 +6,15 @@ Things will move and change a lot, but if you have any questions or tips - let m
 
 ### TODO
 
-- [x] broken links / dead links UX (check if publishable first, then create an index)
-- [x] render dead links
+- [ ] CF/Vercel images urls seem to be escaped and breaking import
+  - [ ] e.g. src/notes/Abusing and reviewing Obsidian Publish.md (`&` becomes `&amp;`)
+  - [ ] twitter img
 - [ ] handle .mp4 files treated like markdown
 - [ ] ignore shortcodes inside code blocks
 - [ ] handle local videos (or migrate the existing ones)
+- [ ] false positives for missing/dead links
+- [x] broken links / dead links UX (check if publishable first, then create an index)
+- [x] render dead links
 - [ ] make it plomk, like potato.horse or lines.potato.horse
 - [x] note embeds
 - [ ] broken embeds

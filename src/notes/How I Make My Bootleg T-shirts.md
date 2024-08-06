@@ -33,8 +33,9 @@ A good base image:
 - uses simple, ideally thick lines
 - doesn't aim for realism
 
-![image](https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F52nuzNPji0GiZGJctyWlvJ%2Fa4fc78761c8a894806f6f4350faf39a0%2FC18D3C61-F740-441B-A25A-13B9FDF305BC.png&w=2048&q=75)
+<img src="https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F52nuzNPji0GiZGJctyWlvJ%2Fa4fc78761c8a894806f6f4350faf39a0%2FC18D3C61-F740-441B-A25A-13B9FDF305BC.png&w=2048&q=75" alt=""/>
 *A good base image*
+
 ## 2\. Prepare the working space
 
 You'll need a flat space, large enough to fit the t-shirt and your tools. I'm lucky to have  a decent drawing desk in my study, but I often use an ironing board for this instead. The plus of an ironing board is that it makes it easier to stretch the fabric a little bit while drawing.
@@ -59,15 +60,15 @@ Acrylic markers are a pain to wash off and the last thing you want to deal with 
 
 Use safety pins or heavy rectangular objects like this overpriced mortar and pestle I'm expecting to fall on my head and separate my soul from my body one day:
 
-![3022](tee-tutorial-setup-mortar.webp)
+![3033](tee-tutorial-setup-mortar.webp)
 
 ## 6\. Trace the initial sketch
 
-![3092](tee-tutorial-trace-dots-zoom.webp)
+![3103](tee-tutorial-trace-dots-zoom.webp)
 Trace the sketch, by gently *pulling* the pencil. The softer the pencil, the better. You can also leave dotted marks with a fine point marker if it's of the same colour as the lines you'll draw in the next step. I'm using a Sakura Pigma brush pen like [this one](https://kawaiipenshop.com/products/sakura-pigma-brush-pen) (I didn't buy it from that site).
 
 ## 7\. Draw the thing
-![3510](tee-tutorial-longer.webp)
+![3521](tee-tutorial-longer.webp)
 Again, draw by gently pulling the Posca marker. Take your time, enjoy a nicely rolled leaf of Satan's lettuce and play some music. Here's a good playlist: [1](https://www.youtube.com/watch?v=tSv04ylc6To), [2](https://www.youtube.com/watch?v=q4xKvHANqjk&t=2816s&pp=ygUKa2hydWFuZ2Jpbg%3D%3D), [3](https://www.youtube.com/watch?v=d8eVBS7c_hU)
 
 ## 8\. Wash

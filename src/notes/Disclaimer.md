@@ -4,7 +4,7 @@ aliases:
   - Disclaimer!
 publish: true
 ---
-<sonnet-embed >whatever-fuckit-bird.avif</sonnet-embed>
+![146](whatever-fuckit-bird.avif)
 
 Dear [Rafałku](<../Rafałku>), if you have something to say, say it, don't dilute the information with long intros or disclaimers.
 

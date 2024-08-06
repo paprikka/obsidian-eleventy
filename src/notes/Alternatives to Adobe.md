@@ -1,8 +1,8 @@
 ---
-cover: 'https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F4lSAa64LX6sFKJdYj1pV1t%2Fb965abf8793d9bc3b4d9fc5ebaec34c2%2F175784178_509016940120211_3408298645667599302_n_17847913190546027.jpg&w=3840&q=75'
+cover: 'https://images.ctfassets.net/hyylafu4fjks/4lSAa64LX6sFKJdYj1pV1t/b965abf8793d9bc3b4d9fc5ebaec34c2/175784178_509016940120211_3408298645667599302_n_17847913190546027.jpg'
 publish: true
 ---
-![266](spider.webp)
+![199](spider.webp)
 
 I've been using Photoshop since AD 2000. Flash paid for the unhealthy amounts of ~~ramen~~ [obwarzanki](https://en.wikipedia.org/wiki/Obwarzanek_krakowski) I ingested during my high school and uni. Still, since I ditched all Adobe software last year, I haven't looked back for a second.
 

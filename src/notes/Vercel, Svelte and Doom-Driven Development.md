@@ -1,8 +1,8 @@
 ---
-cover: 'https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F5JqHpF9jsGmK2wmNHKQlIp%2F346383a29dc0cec6ef445e87d7079ccb%2FUntitled_Artwork_87.png&w=2048&q=75'
+cover: 'https://images.ctfassets.net/hyylafu4fjks/5JqHpF9jsGmK2wmNHKQlIp/346383a29dc0cec6ef445e87d7079ccb/Untitled_Artwork_87.png'
 publish: true
 ---
-![image](https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F5JqHpF9jsGmK2wmNHKQlIp%2F346383a29dc0cec6ef445e87d7079ccb%2FUntitled_Artwork_87.png&w=2048&q=75)
+<img src="https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F5JqHpF9jsGmK2wmNHKQlIp%2F346383a29dc0cec6ef445e87d7079ccb%2FUntitled_Artwork_87.png&w=2048&q=75" alt="">
 
 I like [SvelteKit](https://kit.svelte.dev/docs/adapters). It feels less magical than most other similar tools I've used in the past and it works really well with small-, and medium-sized projects. It feels pragmatic: it helps me avoid making the decisions I don't want to make (yet).
 
@@ -17,7 +17,7 @@ We have **4 authors**, each writing **at least one poem per day**. The site has 
 
 Now a month or so ago I started receiving these error messages from Vercel:
 
-![1526](When you might not want to use the svelte/Pasted%20image%2020231016185416.png)
+![1468](When you might not want to use the svelte/Pasted%20image%2020231016185416.png)
 
 I was confused as I already used the Vercel adapter and set my pages to static using the prerender option:
 

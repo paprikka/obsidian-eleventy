@@ -1,9 +1,9 @@
 ---
-cover: 'https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F7B4ufvjQjkSQphEZUcjg9y%2F832a4b4a041dc35d47344815982d844c%2FUntitled_Artwork.png&w=3840&q=75'
+cover: 'https://images.ctfassets.net/hyylafu4fjks/7B4ufvjQjkSQphEZUcjg9y/832a4b4a041dc35d47344815982d844c/Untitled_Artwork.png'
 publish: true
 ---
 
-![218](journey-game-cover.webp)
+![151](journey-game-cover.webp)
 
 The goal of Journey is to reach the Mountain. The Mountain rises above the horizon, far away, behind the dunes of a seemingly never-ending desert. The story is simple, far from unique: the protagonist travelling to axis mundi to find their beginning-end. I'd still rather not spoil it completely here, as it's told so beautifully.
 

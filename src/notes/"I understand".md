@@ -1,6 +1,6 @@
 ---
 description: Don't yell at a barking dog.
-cover: 'https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F311IXqF7sflIyXVCdpbkhM%2F440b375549b3c31c8656e5696ead5d09%2F0CD10530-8791-4168-A3F7-6F130C401128.png&w=1920&q=75'
+cover: 'https://images.ctfassets.net/hyylafu4fjks/311IXqF7sflIyXVCdpbkhM/440b375549b3c31c8656e5696ead5d09/0CD10530-8791-4168-A3F7-6F130C401128.png'
 publish: true
 ---
 

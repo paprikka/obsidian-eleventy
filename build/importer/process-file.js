@@ -66,10 +66,10 @@ export const processSingleFile = async (
       return `<img src="../${src}" alt="${alt}" eleventy:ignore>`;
 
     // default embed
-    const nonImageRegexp = /\.(jpe?g|png|gif|bmp|svg|webp)$/i;
+    const imageRegexp = /\.(jpe?g|png|gif|bmp|svg|webp|avif)$/i;
     const hasExtension = !!src.split(".").length > 1;
 
-    if (!nonImageRegexp.test(src) && hasExtension)
+    if (!imageRegexp.test(src) && hasExtension)
       return `<iframe src="${src}" class="embed embed--iframe-default" lazy />`;
 
     // We fall back to .md
@@ -82,7 +82,7 @@ export const processSingleFile = async (
     const targetAbsolutePath = path.resolve(absolutePath, "../" + resolvedLink);
 
     // note embed
-    if (!nonImageRegexp.test(src) && !hasExtension) {
+    if (!imageRegexp.test(src) && !hasExtension) {
       const id = src.split("#")[1]?.trim();
       const targetAttr = id ? `data-target="#${id}"` : "";
       return `<sonnet-embed ${targetAttr}>${resolvedLink}</sonnet-embed>`;

@@ -1,5 +1,5 @@
 ---
-cover: https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F5JqHpF9jsGmK2wmNHKQlIp%2F346383a29dc0cec6ef445e87d7079ccb%2FUntitled_Artwork_87.png&w=2048&q=75
+cover: 'https://images.ctfassets.net/hyylafu4fjks/5JqHpF9jsGmK2wmNHKQlIp/346383a29dc0cec6ef445e87d7079ccb/Untitled_Artwork_87.png'
 publish: true
 ---
 

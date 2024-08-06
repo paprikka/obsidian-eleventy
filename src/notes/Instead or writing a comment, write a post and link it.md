@@ -1,5 +1,5 @@
 ---
-cover: 'https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F7HMze97aqCoKHC3y63oUO%2Ffa98aa9a66603b089d93c9f4654ef0bb%2F119998056_1019019135204339_1665651882135124179_n_17893558189628564.jpg&w=3840&q=100'
+cover: 'https://images.ctfassets.net/hyylafu4fjks/7HMze97aqCoKHC3y63oUO/fa98aa9a66603b089d93c9f4654ef0bb/119998056_1019019135204339_1665651882135124179_n_17893558189628564.jpg'
 publish: true
 ---
 **Next time you want to leave a comment, write a post and link that to the thread. Self-publishing, even short-form content will make you wiser and calmer.**

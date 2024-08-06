@@ -1,5 +1,5 @@
 ---
-cover: 'https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F6TypbWiC1LHWdXcOfAeFj9%2Faa6b740eacc7de050e0980fe11cd6349%2F55BED3EA-FDFC-4F4E-9D01-89BAC767FCB7.jpg&w=3840&q=75'
+cover: 'https://images.ctfassets.net/hyylafu4fjks/6TypbWiC1LHWdXcOfAeFj9/aa6b740eacc7de050e0980fe11cd6349/55BED3EA-FDFC-4F4E-9D01-89BAC767FCB7.jpg'
 publish: true
 ---
 [Sit (together)](https://nothing-together.sonnet.io) was a successful experiment ([reasons why/perspective](<../Sit., (together) – why I'm happy with it>)) and I think I've learned enough from it to move to the second stage: building an app for remote meditation session facilitators.
@@ -28,15 +28,15 @@ We're at step 4. I've been fucking around and finding out for long enough to sta
 ## Sketches, TIL
 
 I have some initial sketches done in [Concepts](https://concepts.app/en/). We'll use them as a map to navigate the rest of this note:
-![1905](sit-together-concepts-0.webp)
+![1838](sit-together-concepts-0.webp)
 Full-size preview <span style="color: red">here</span>.
 
 The subject matter is fairly simple from a technical PoV. It's a remote controlled timer, with rooms defined by unique URLs, at least for now. So, this board is much cleaner than what I usually start with, e.g.:
 
-![2219](sit-together-concepts-0b.webp)
+![2152](sit-together-concepts-0b.webp)
 ### Problem statement:
 
-![2278](sit-together-concepts-1.webp)
+![2211](sit-together-concepts-1.webp)
 
 - Facilitate remote meditation sessions for people using Zoom/Meet/etc...
 - Gong/timer audio in all of the other solutions sucks!
@@ -44,7 +44,7 @@ The subject matter is fairly simple from a technical PoV. It's a remote controll
 
 ### Defined types of users:
 
-![2573](sit-together-concepts-3.webp)
+![2506](sit-together-concepts-3.webp)
 
 - Facilitator
 - Participant
@@ -53,20 +53,20 @@ I'm not using Personas here because I don't see any reason to yet.
 
 ### Use-cases
 
-![2720](sit-together-concepts-2.webp)
+![2653](sit-together-concepts-2.webp)
 
 These are very narrow on purpose. This will change.
 
 ### A map of user interactions:
 
-![2841](sit-together-concepts-4.webp)
+![2774](sit-together-concepts-4.webp)
 
 It's a quick draft of two user journeys for Facilitators and Participants. This borrows  from Experience Mapping and User Story Mapping as normally I'd turn these into:
 
 - domain entities (Session, User, SessionSettings)
 - UI screens and wireframes
 
-![3126](sit-together-concepts-5.webp)
+![3059](sit-together-concepts-5.webp)
 
 But for now I'm quite selective and I just sketch the parts that either don't seem obvious, or the parts I want to commit to memory and keep at the back of my mind when coding. 
 
@@ -84,10 +84,10 @@ The point of those steps is to let my brain simulate how this thing would work, 
 ## Wireframes
 
 Based on the diagrams above I sketched some preliminary wireframes. This helps me to better understand the information hierarchy, possible user interactions, UX bottlenecks, unplanned work:
-![4310](sit-together-concepts-6.webp)
+![4243](sit-together-concepts-6.webp)
 
-![4345](sit-together-concepts-7.webp)
-![4379](sit-together-concepts-8.webp)
+![4278](sit-together-concepts-7.webp)
+![4312](sit-together-concepts-8.webp)
 #### What I gained here (examples):
 
 - Likely piece of work: I'll need a few modal screens to confirm actions such as cancelling a session early (`window.confirm` will do for now)
@@ -98,12 +98,12 @@ Based on the diagrams above I sketched some preliminary wireframes. This helps m
 	- minimalistic: just a dot with a text label
 	- bold: a big red toast
 
-![4946](sit-together-concepts-5.webp)
+![4879](sit-together-concepts-5.webp)
 ## Session state sketch
 
 I also had a chance to play with some ways to represent the session state. I still like the current one with a little Galaxy:
 
-![5132](sit-together-concepts-9.webp)
+![5065](sit-together-concepts-9.webp)
 
 Next steps:
 

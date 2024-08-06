@@ -1,6 +1,6 @@
 ---
 description: 'and a brief, yet complicated history of carpentry in Galicia'
-cover: 'https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F5II9ZElSYHJMwwfqOstAUZ%2F7feb916809844a32fecf5ef75db4fa44%2F187645860_461996798431815_7608224688697832132_n_17998562548336246.jpg&w=2048&q=75'
+cover: 'https://images.ctfassets.net/hyylafu4fjks/5II9ZElSYHJMwwfqOstAUZ/7feb916809844a32fecf5ef75db4fa44/187645860_461996798431815_7608224688697832132_n_17998562548336246.jpg'
 publish: true
 ---
 ### Featured in today's episode:

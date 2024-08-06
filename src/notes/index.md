@@ -1,7 +1,7 @@
 ---
 cssclasses:
   - page--notes-index
-cover: https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F4FfcAF7uGPFlXyxKHto4s4%2Ffa05aed6a17bfc5d911fd928ed6efed7%2FUntitled_Artwork_21.png&w=3840&q=75
+cover: 'https://images.ctfassets.net/hyylafu4fjks/4FfcAF7uGPFlXyxKHto4s4/fa05aed6a17bfc5d911fd928ed6efed7/Untitled_Artwork_21.png'
 publish: true
 ---
 

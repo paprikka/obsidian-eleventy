@@ -1,6 +1,6 @@
 ---
 description: Always bet on clowns.
-cover: 'https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F2psj9golgUjjyvkBhNh01z%2Fb1d625286480e7bd2f2a78498b0e99a9%2F184773261_175395991146755_4828683660985860878_n_17870293085376490.jpg&w=3840&q=75'
+cover: 'https://images.ctfassets.net/hyylafu4fjks/2psj9golgUjjyvkBhNh01z/b1d625286480e7bd2f2a78498b0e99a9/184773261_175395991146755_4828683660985860878_n_17870293085376490.jpg'
 publish: true
 ---
 ![two ghosts in an abandoned house with a tree growing through its middle, the label says: You and I when we're old enough to stay past our bedtime, when we're old enough to haunt](drawing-old-enough-to-haunt.png)

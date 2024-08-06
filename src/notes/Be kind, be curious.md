@@ -1,8 +1,8 @@
 ---
-cover: 'https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F4JpaULvQaYzrvr3nRFumHU%2F7e81cb6af96c70edfb1c75fc8d14f86c%2FUntitled_Artwork_5.png&w=3840&q=75'
+cover: 'https://images.ctfassets.net/hyylafu4fjks/4JpaULvQaYzrvr3nRFumHU/7e81cb6af96c70edfb1c75fc8d14f86c/Untitled_Artwork_5.png'
 publish: true
 ---
-![219](home.webp)
+![152](home.webp)
 
 Some [ACT](<../ACT>) materials encourage people to imagine what they'd put on their gravestone. 
 

@@ -17,7 +17,7 @@ const getYTVideoUrlFromSrc = (src) => {
   }
 };
 
-export const mdEmbed = function (md) {
+export const mdEmbed = function (md, env) {
   md.renderer.rules.image = function (tokens, idx, options, env, self) {
     const token = tokens[idx];
     const srcIndex = token.attrIndex("src");

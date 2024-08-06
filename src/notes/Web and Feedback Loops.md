@@ -1,5 +1,5 @@
 ---
-cover: 'https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F11OL91GlC2r8ktnUNAuamW%2F6b0f5722b38622fe01978912deaed38a%2Fon.png&w=3840&q=75'
+cover: 'https://images.ctfassets.net/hyylafu4fjks/11OL91GlC2r8ktnUNAuamW/6b0f5722b38622fe01978912deaed38a/on.png'
 publish: true
 ---
 If you want to test an idea, and that idea does not require you to use a proprietary technology, always bet on the web.
@@ -10,7 +10,7 @@ We don't appreciate how beautifully, unbelievably easy it is to build and share 
 
 Now, compare this with an iOS app, where the time between you trying to deploy your work, and sharing a link to it on Twitter can take *days*. In 2023.
 
-![726](appstore-connect-waiting-for-review.png)
+![659](appstore-connect-waiting-for-review.png)
 
 I'm saying that as someone who has worked with mobile for more than a decade, as a dev, as a CTO of a mobile-first company and as a founder of a mobile-first business. So yes, naturally I have strong opinions here! And still, I really, really wish I were wrong. **Nothing beats the Web Platform when it comes to short feedback loops and ease of experimentation.** 
 

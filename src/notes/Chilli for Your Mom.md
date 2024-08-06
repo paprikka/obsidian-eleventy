@@ -15,7 +15,7 @@ This is a chilli recipe for my mom. It's quick to make, it shifts the flavour to
 
 Make it for someone you like.
 
-![image](https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F47j0Oi2aPkSjk8hRQY0UIF%2F59b00b58e01691288c230b4e90357b1b%2FUntitled_Artwork_71.PNG&w=1920&q=75)
+<img src="https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F47j0Oi2aPkSjk8hRQY0UIF%2F59b00b58e01691288c230b4e90357b1b%2FUntitled_Artwork_71.PNG&w=1920&q=75" alt="">
 
 ## Recipe 
 

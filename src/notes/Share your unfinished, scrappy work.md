@@ -1,8 +1,8 @@
 ---
-cover: 'https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F5k31qKHIgIyc4e58n7rgnc%2Fd44fa1feafea819ef03bfe228625aa98%2FUntitled_Artwork_13.png&w=3840&q=75'
+cover: 'https://images.ctfassets.net/hyylafu4fjks/5k31qKHIgIyc4e58n7rgnc/d44fa1feafea819ef03bfe228625aa98/Untitled_Artwork_13.png'
 publish: true
 ---
-![a bunch of creatures, floating in the air, messy](https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F5k31qKHIgIyc4e58n7rgnc%2Fd44fa1feafea819ef03bfe228625aa98%2FUntitled_Artwork_13.png&w=3840&q=75)
+<img src="https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F5k31qKHIgIyc4e58n7rgnc%2Fd44fa1feafea819ef03bfe228625aa98%2FUntitled_Artwork_13.png&w=3840&q=75" alt="a bunch of creatures, floating in the air, messy">
 
 I'm writing this post as a reminder to myself. 
 

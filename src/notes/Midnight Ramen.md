@@ -14,7 +14,7 @@ Achievement unlocked: Midnight paid for a bowl of a "posh" locally sourced ramen
 
 **Buy Midnight [here](https://apps.apple.com/gb/app/midnight-no-blue-light-reader/id6472076217).**
 
-![image](https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F5II9ZElSYHJMwwfqOstAUZ%2F7feb916809844a32fecf5ef75db4fa44%2F187645860_461996798431815_7608224688697832132_n_17998562548336246.jpg&w=2048&q=75)
+<img src="https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F5II9ZElSYHJMwwfqOstAUZ%2F7feb916809844a32fecf5ef75db4fa44%2F187645860_461996798431815_7608224688697832132_n_17998562548336246.jpg&w=2048&q=75" alt=""/>
 
 > Tonkotsu achieved 
 > Silky broth, AppStore dreams
@@ -26,7 +26,7 @@ Achievement unlocked: Midnight paid for a bowl of a "posh" locally sourced ramen
 
 I've set up [midnight.sonnet.io](https://midnight.sonnet.io) as a main entry point for anything marketing related. 
 
-![1500](midnight-website-screenshot-12-23.webp)
+![1510](midnight-website-screenshot-12-23.webp)
 
 I'm exercising a lot of impulse control when working on this: I have a few ideas on how to illustrate how Midnight works by making the page more interactive. But still, I don't think this is the most important thing to do at the moment.
 
@@ -73,4 +73,4 @@ Our bedroom has big wooden shutters, so it stays dark till 9-10 am or till whene
 - [ ] Update project links on sonnet.io/projects (people actually read those)
 - [ ] If time permits, publish some little experiments I built when working on Midnight ([Share Bite-sized chunks of your work](<../Share Bite-sized chunks of your work>)). For instance, I wanted to add a delicate *satin sheets shading* effect to the product page, so I spent this morning learning about generating perlin noise using WebGL, then moved on to playing with [Shader Park](https://shaderpark.com) ([Shader Park is Kinda Neat](<../Shader Park is Kinda Neat>)). Many of the people I try to learn from follow this approach and I think it might help me kill two birds with one stone: instead of playing with little experiments and avoiding working on marketing, I could use them to spread the message about the project.
 
-![4416](midnight-ph-1.webp)
+![4426](midnight-ph-1.webp)

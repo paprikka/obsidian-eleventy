@@ -18,7 +18,8 @@ export default function (eleventyConfig) {
     });
   });
 
-  const mdLib = markdownIt({ linkify: true, breaks: true, html: true });
+  const markdownOptions = { linkify: false, breaks: true, html: true };
+  const mdLib = markdownIt(markdownOptions);
   mdLib.use(mdEmbed);
   eleventyConfig.setLibrary("md", mdLib);
 
@@ -26,10 +27,20 @@ export default function (eleventyConfig) {
     extensions: "html",
     formats: ["auto"],
     defaultAttributes: { loading: "lazy", decoding: "async" },
+    // sharpOptions: { animated: true },
+    cacheOptions: {
+      formatUrlForDisplay: (url) => url,
+      fetchOptions: {
+        headers: {
+          // lol
+          "user-agent":
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36",
+        },
+      },
+    },
   });
 
   eleventyConfig.addPlugin(ObsidianImportPlugin);
-
   eleventyConfig.addPassthroughCopy("src/assets");
 
   return {

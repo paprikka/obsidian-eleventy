@@ -1,8 +1,8 @@
 ---
-cover: 'https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F4vimtaY2uT0B59jcwgLuZ8%2Fd56a853bf44955059e51fb8ba3c7d8eb%2F7F21C76A-24F5-40FC-B653-3F1E20CAE2CA.jpg&w=3840&q=75'
+cover: 'https://images.ctfassets.net/hyylafu4fjks/4vimtaY2uT0B59jcwgLuZ8/d56a853bf44955059e51fb8ba3c7d8eb/7F21C76A-24F5-40FC-B653-3F1E20CAE2CA.jpg'
 publish: true
 ---
-![237](midnight-ph-1.webp)
+![170](midnight-ph-1.webp)
 
 In a way [Midnight](https://midnight.sonnet.io) is much *less* than a browser or a focused reading app since most of my work involves *disabling* those browser features that are either unnecessary or likely to make your reading experience worse.
 
@@ -14,7 +14,7 @@ So, in the spirit of working with the garage door up, I thought I'd share some o
 
 This is more of a general rule, rather than a single technique. A regular browser has a series of optimisations that allow you to see the content (or interact with it) before the page has completely loaded. Here's a simplified sequence of events:
 
-![1269](midnight-browser-rendering-timeline.webp)
+![1202](midnight-browser-rendering-timeline.webp)
 
 This is useful when you're trying to read a news article and want to quickly gauge if it's interesting just 1 second after clicking on the link vs. having to wait the *minutes* required for all ads and tracking crap to load. The modern web would be almost useless without this approach. But, in our case, it creates the risk that Midnight could flash you with a partially styled white page before we're done with cleanup. 
 
@@ -22,7 +22,7 @@ This can get really annoying, especially when your eyes are already used to a da
 
 We can (mostly) guarantee that a *processed* page in Midnight will look almost as clean as one rendered in Pocket or Safari's Reader Mode, and not spam the users with all the rude colours above the 625–750nm spectrum. To do this, I hide the page during any transitional stages and define a custom `done` state fired  after all of the cleanup scripts have been successfully executed.
 
-![2223](midnight-browser-rendering-timeline-customised.webp)
+![2156](midnight-browser-rendering-timeline-customised.webp)
 
 The page lifecycle in Midnight:
 
@@ -146,7 +146,7 @@ Use fluid typography with a mobile friendly scale:
 
 I'm using a Minor Third (@1.2) scale here, as I'm only targeting phone screens. This means that the largest header will be only 3x the size of the body text. On larger screens you might want to go as large as Perfect Fifth (@1.5), with the largest header being as much as 10x the size of the body text.
 
-![6380](type-scales-midnigh.webp)
+![6313](type-scales-midnigh.webp)
 
 FYI [utopia](https://utopia.fyi) has a fluid font scale calculator I use almost daily.
 
@@ -154,7 +154,7 @@ FYI [utopia](https://utopia.fyi) has a fluid font scale calculator I use almost 
 
 Images and Videos are a bit trickier to style. We'll need to change their existing colour palette into shades of red, which can be done by adding a red overlay with multiply blend mode in front of them:
 
-![6731](midnight-multiply.webp)
+![6664](midnight-multiply.webp)
 
 Normally, we could use pseudo-elements to achieve that, but in the case of `<img>` or `<video>` that is not possible as they are [replaced elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element).
 
@@ -194,11 +194,11 @@ Instead, we can wrap them into small embed components before adding them to the 
 
 2\. Disable status bar and as much of iOS Chrome as possible:
 
-![7629](midnight-no-status.webp)
+![7562](midnight-no-status.webp)
 
 3\. The Home Bar cannot be removed, but it still generates less light than a Status Bar since we tend to cover it with our hands when reading:
 
-![7803](midnight-home-button.webp)
+![7736](midnight-home-button.webp)
 
 
 

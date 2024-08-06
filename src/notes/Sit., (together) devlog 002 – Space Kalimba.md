@@ -1,5 +1,5 @@
 ---
-cover: https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2FyspsIf2WNhPUy2rIAD8GM%2F5e26a8b284c44b5159c7364235c9f720%2F120539466_177280657319386_3338556339530525352_n_17894788447616091.jpg&w=3840&q=75
+cover: 'https://images.ctfassets.net/hyylafu4fjks/yspsIf2WNhPUy2rIAD8GM/5e26a8b284c44b5159c7364235c9f720/120539466_177280657319386_3338556339530525352_n_17894788447616091.jpg'
 publish: true
 ---
 
@@ -55,7 +55,7 @@ My advice: don't repeat my mistakes here!
 
 Finally, I went with a simple scale played on a finger piano, with every note isolated. I sliced the sample and split it into separate files played with Howler.js. Another approach would be to keep the original file and use audio sprites, but I find multiple files easier to work with.
 
-![3471](audacity-screenshot.webp)
+![3406](audacity-screenshot.webp)
 
 I also accidentally went to some [dark places](https://pixabay.com/sound-effects/cat-piano-87087/) when searching for the right sample.
 

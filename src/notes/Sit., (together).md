@@ -1,8 +1,8 @@
 ---
-cover: 'https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F2zmDSMHaaupKmgVbsE5DEm%2F92f1650f3a800f38a44f9e515b0b21e6%2Fchairs_wide.webp&w=3840&q=75'
+cover: 'https://images.ctfassets.net/hyylafu4fjks/2zmDSMHaaupKmgVbsE5DEm/92f1650f3a800f38a44f9e515b0b21e6/chairs_wide.webp'
 publish: true
 ---
-![213](chairs-lecture-big.webp)
+![146](chairs-lecture-big.webp)
 <center><em>Students are out few char</em></center>
 
 This is a sketch/working note on two possible variants of [Sit.](https://sit.sonnet.io), so it will likely change as I continue to work on it. But if any of the ideas shared below sounds interesting to you or you have any questions/suggestions on how to improve it, [let me know!](mailto:hello@sonnet.io)  
@@ -16,11 +16,11 @@ I can see this being built in two steps. I like it when every iteration, no matt
 
 Sit., is very simple to use. It's a glorified timer. You open it, select the break duration, hit `[start]` and see this:
 
-![1218](Pasted%20image%2020231009174017.png)
+![1151](Pasted%20image%2020231009174017.png)
 
 In this iteration, I'd like to add an option where instead of the timer you'll see a black background with little droplets. They're small, slightly blurry and don't get in your way. You can toggle them off. But, here's the thing: **every drop is another person**, meditating alongside.
 
-![1543](sit-together-screenshot.webp)
+![1476](sit-together-screenshot.webp)
 
 Now, every time a gong goes off, the droplet belonging to a person will ripple gently. There's no audio. Just the acknowledgement that they're there.
 

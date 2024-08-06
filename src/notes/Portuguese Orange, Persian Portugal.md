@@ -1,5 +1,5 @@
 ---
-cover: 'https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F6OiVarOnM3HteOW36FtTPV%2F58dce3b9806f6e32eb0a4d54ed0d7129%2Forange-crime-scene.webp&w=2048&q=75'
+cover: 'https://images.ctfassets.net/hyylafu4fjks/6OiVarOnM3HteOW36FtTPV/58dce3b9806f6e32eb0a4d54ed0d7129/orange-crime-scene.webp'
 publish: true
 ---
 ![two oranges and a line of ants, three concerned stones looking at the oranges, and following the ants with curiosity, a sad lonely mouse sitting in the corner, unnoticed](orange-crime-scene.webp)

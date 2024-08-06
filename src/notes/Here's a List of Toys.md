@@ -1,8 +1,8 @@
 ---
-cover: 'https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F7BbS5siteD7AxVeqY2bU10%2F227485bc17dd0e055fcf89c35816b762%2F121672148_381523866218353_6465314069363865610_n_18138807475096229.jpg&w=3840&q=75'
+cover: 'https://images.ctfassets.net/hyylafu4fjks/7BbS5siteD7AxVeqY2bU10/227485bc17dd0e055fcf89c35816b762/121672148_381523866218353_6465314069363865610_n_18138807475096229.jpg'
 publish: true
 ---
-![266](121672148_381523866218353_6465314069363865610_n_18138807475096229.webp)
+![199](121672148_381523866218353_6465314069363865610_n_18138807475096229.webp)
 
 I love making toys. I learn and rest through building seemingly useless things. Building "useless" projects for me is also a way to vent, explore, or just get out of my own head ([Why make toys, why play?](<../Why make toys, why play?>)). 
 

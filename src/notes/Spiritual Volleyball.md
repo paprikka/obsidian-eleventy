@@ -1,5 +1,5 @@
 ---
-cover: 'https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F5VKxODn6qi7ViGxEX7AqHv%2F35635b71f5291f3549d696bbe62a7948%2FC4C852EE-7C41-438D-B593-68BA2DB56718.JPG&w=1920&q=75'
+cover: 'https://images.ctfassets.net/hyylafu4fjks/5VKxODn6qi7ViGxEX7AqHv/35635b71f5291f3549d696bbe62a7948/C4C852EE-7C41-438D-B593-68BA2DB56718.JPG'
 publish: true
 ---
 I was trying to work on [Night Rider](<../Night Rider>), but unfortunately I'm cursed by a secret group of Cupertino-based warlocks: every time I start a new SwiftUI project, I need to spend hours fixing Xcode. It was still worth the hassle, not just because I finally succeeded, but because I stumbled upon a small project I completely forgot about. After all, it *is* about the journey, thank you [Ursula](<../Ursula K. Le Guin>)!

@@ -1,5 +1,5 @@
 ---
-cover: 'https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F6qaksrTmmDxnhyCqW0talV%2Fb684a2d6005df7fd864e22cda38663d0%2FIMG_0144_2.PNG&w=3840&q=75'
+cover: 'https://images.ctfassets.net/hyylafu4fjks/6qaksrTmmDxnhyCqW0talV/b684a2d6005df7fd864e22cda38663d0/IMG_0144_2.PNG'
 publish: true
 ---
 
@@ -10,7 +10,7 @@ Happy Friday! Today I will:
 - make sure there's something for you to learn (or just tickle your curiosity antennae)
 - finish the thing in 1 hour
 
-![445](balloon.png)
+![378](balloon.png)
 psst. If you were looking for some mildly cursed retrospective templates, [here](https://sonnet.io/posts/hot-air-balloon/) you [go](https://sonnet.io/posts/hot-air-balloon/)
 
 I'll start with the last bullet point. I want to finish writing this post in under 1 hour because I have already spent 2 hours drafting 3 other posts. I think you'll like them, but I don't know how to slice them into smaller chunks.
@@ -33,7 +33,7 @@ I'll start with the last bullet point. I want to finish writing this post in und
 - Using a linear blog format (at least not always).
 - **The current publishing workflow.** It's distracting. I went for simplicity, but these tools have too many yaks to shave and I'm already tired of typing like a Baz Luhrman montage scene. Also, the high-performance 11ty template takes 3 minutes to build. Obsidian or Svelte would take 10-30s. It makes fixing typos annoying. Bear in mind, I've worked on/built publishing pipelines used by publishers with 100,000s of readers. The irony of this  does not escape me.
 
-![3188](starfish.png)
+![3121](starfish.png)
 
 ## What I've learned:
 

@@ -1,5 +1,5 @@
 ---
-cover: 'https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F7uY3ZO1WrL7SF6CdnuKpDD%2F608c25cc9ad8ea81de3765f0f31440d7%2F242293958_708645003404775_5900798368535425752_n_17885109731514351.jpg&w=3840&q=75'
+cover: 'https://images.ctfassets.net/hyylafu4fjks/7uY3ZO1WrL7SF6CdnuKpDD/608c25cc9ad8ea81de3765f0f31440d7/242293958_708645003404775_5900798368535425752_n_17885109731514351.jpg'
 publish: true
 ---
 
@@ -34,7 +34,7 @@ You can find a quick demo below. If you have a phone with an OLED screen, dim it
 
 I wish I could show you! I can't give you a link to the app (yet), since it needs to be reviewed before the public beta. The good news is that I don't give up that easily and I hired Janusz ([How to draw a Janusz](<../How to draw a Janusz>), [The Janusz I Live In](<../The Janusz I Live In>)) to help me with a quick photoshoot. 
 
-![2031](janusz-resting-in-the-storage.webp)
+![1964](janusz-resting-in-the-storage.webp)
 *Janusz was enjoying his nap in the storage when I found him. Since he turned into half man-half spider (or Spider-Janusz if you will) his stamina has suffered but his affinity for cold and dark places has increased *
 
 
@@ -48,13 +48,13 @@ I took the pictures below in complete darkness, using an iPhone 12 Pro (OLED) sc
 The results are **exaggerated and brighter than what you'd see with your own eyes**.
 I used [this article](https://sonnet.io/posts/emotive-conjugation/) for testing purposes.
 
-![2718](janusz-night-reader-web-full.webp) ![2757](janusz-night-reader-web-half.webp) ![2796](janusz-night-reader-reader.webp) ![2833](janusz-night-reader-nr.webp)
+![2651](janusz-night-reader-web-full.webp) ![2690](janusz-night-reader-web-half.webp) ![2729](janusz-night-reader-reader.webp) ![2766](janusz-night-reader-nr.webp)
 
 *From left to right: Safari (regular), Reader Mode (picture and text), Reader Mode (text), Night Reader(text).*
 
 Reader vs. Night Reader:
 
-![3006](janusz-night-reader-horizontal-reader.webp) ![3054](janusz-night-reader-horizontal-nr.webp)
+![2939](janusz-night-reader-horizontal-reader.webp) ![2987](janusz-night-reader-horizontal-nr.webp)
 
 ## Implementation
 

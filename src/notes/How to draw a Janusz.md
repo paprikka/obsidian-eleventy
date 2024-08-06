@@ -1,6 +1,6 @@
 ---
 title: How to Draw a Janusz
-cover: https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F1x6XqliqGQPXTodDVCogp0%2F14e3c09213cf95389e73150fdbc06763%2FUntitled_Artwork_96.png&w=2048&q=75
+cover: 'https://images.ctfassets.net/hyylafu4fjks/1x6XqliqGQPXTodDVCogp0/14e3c09213cf95389e73150fdbc06763/Untitled_Artwork_96.png'
 publish: true
 ---
 

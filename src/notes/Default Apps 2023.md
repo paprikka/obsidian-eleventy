@@ -1,5 +1,5 @@
 ---
-cover: 'https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F7BmWmpA3R8xQvTVyb87P9C%2F5e14f00ca17b33260baca842083c8ede%2F120073961_818961295320061_4080147874484498692_n_18135266164110555.jpg&w=3840&q=75'
+cover: 'https://images.ctfassets.net/hyylafu4fjks/7BmWmpA3R8xQvTVyb87P9C/5e14f00ca17b33260baca842083c8ede/120073961_818961295320061_4080147874484498692_n_18135266164110555.jpg'
 publish: true
 ---
 This little exercise was inspired by [Chris Coyer](https://chriscoyier.net/2023/11/25/default-apps-2023/), who was inspired by [Matt C](https://mattcool.tech/posts/default-apps-2023/)... who was inspired by [Tracy Durnell](https://tracydurnell.com) and the [HomeBrew Website Club](https://events.indieweb.org). I think it'll be fun to make another list like this next year and compare with this one.
