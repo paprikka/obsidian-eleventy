@@ -215,6 +215,7 @@ mark::before {
 }
 
 .page-note__article {
+  min-height: 40vh;
   & a[href^="http"]{
     position: relative;
     padding-inline-end: 0.6em;
