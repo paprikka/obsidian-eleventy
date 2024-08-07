@@ -31,10 +31,6 @@ export function ObsidianImportPlugin(eleventyConfig) {
       .attr("target", "_blank")
       .attr("rel", "noopener noreferrer");
 
-    $('article :is(a[href^="/"], a[href^="./"], a[href^="../"])').addClass(
-      "link link--broken",
-    );
-
     return $.root().html();
   });
 
@@ -94,9 +90,9 @@ export function ObsidianImportPlugin(eleventyConfig) {
               }
               $embed.wrap("<blockquote>");
             } catch (err) {
-              console.error(
-                `Error reading file [${absoluteFilePath}]:\nMessage: ${err.message}`,
-              );
+              // console.error(
+              //   `Error reading file [${absoluteFilePath}]:\nMessage: ${err.message}`,
+              // );
               $embed.replaceWith(
                 `<!-- Error loading ${absoluteFilePath}: ${err.message} -->`,
               );
@@ -109,6 +105,39 @@ export function ObsidianImportPlugin(eleventyConfig) {
         console.error(`Error processing sonnet embeds: ${err.message}`);
         return content;
       }
+    },
+  );
+
+  // TODO: this won't work with asset links
+  eleventyConfig.addTransform(
+    "markBrokenLinks",
+    async (content, outputPath) => {
+      if (!outputPath || !outputPath.endsWith(".html")) return content;
+
+      const $ = cheerio.load(content);
+      const all = $('article :is(a[href^="/"], a[href^="./"], a[href^="../"])');
+      const allArr = all.toArray();
+
+      await Promise.all(
+        allArr.map(async (element) => {
+          const $element = $(element);
+          const href = decodeURIComponent($element.attr("href"));
+
+          const resolvedTargetDir = path.resolve(
+            path.dirname(outputPath),
+            href,
+          );
+          const targetExists = await fs
+            .access(resolvedTargetDir, fs.constants.F_OK)
+            .then((_) => true)
+            .catch((_) => false);
+
+          if (targetExists) return;
+          $element.addClass("link link--broken");
+        }),
+      );
+
+      return $.root().html();
     },
   );
 }
