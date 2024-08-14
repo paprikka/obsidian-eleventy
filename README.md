@@ -9,6 +9,7 @@ Things will move and change a lot, but if you have any questions or tips - let m
 - [ ] CF/Vercel images urls seem to be escaped and breaking import
   - [ ] e.g. src/notes/Abusing and reviewing Obsidian Publish.md (`&` becomes `&amp;`)
   - [ ] twitter img
+- [ ] broken embeds
 - [ ] handle .mp4 files treated like markdown
 - [ ] ignore shortcodes inside code blocks
 - [ ] handle local videos (or migrate the existing ones)
@@ -17,7 +18,6 @@ Things will move and change a lot, but if you have any questions or tips - let m
 - [x] render dead links
 - [ ] make it plomk, like potato.horse or lines.potato.horse
 - [x] note embeds
-- [ ] broken embeds
 - [ ] handle aliases
 - [ ] handle non YT embeds
 - [ ] render covers

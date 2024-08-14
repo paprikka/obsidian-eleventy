@@ -36,7 +36,7 @@ loader = WebBaseLoader(
 
 We're using RAG ([Retrieval-augmented Generation](<../RAG>)). RAG is a technique used to give language models access to more recent data without the need for training.
 
-<sonnet-embed data-target="#Example">RAG.md</sonnet-embed>
+[Embed](<../RAG>){data-embed, data-target="#Example"}
 
 ## Initial results
 

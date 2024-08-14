@@ -10,7 +10,7 @@ I had a few more hours to play with [Sit., (together)](<../Sit., (together)>) (t
 
 Now users can communicate by sending each other little chirps!
 
-<sonnet-embed >chirps.mp4</sonnet-embed>
+<span style="color: red">Missing embed: chirps.mp4</span>
 
 Here's how this works:
 

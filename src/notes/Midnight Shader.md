@@ -12,7 +12,7 @@ So, a few days ago I tried to add a simple background animation with an organic 
 
 
 
-<sonnet-embed >midnight-shader-demo-video-intro.mp4</sonnet-embed>
+<span style="color: red">Missing embed: midnight-shader-demo-video-intro.mp4</span>
 ## How it works:
 
 ### Constraints

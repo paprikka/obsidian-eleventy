@@ -1,5 +1,9 @@
 /* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1600,20,1.25,6,3,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --s--3: clamp(0.64rem, 0.6538rem + -0.0138vi, 0.651rem);
   --s--2: clamp(0.7813rem, 0.7766rem + 0.0234vi, 0.8rem);
@@ -20,7 +24,7 @@
   --color-negative: red;
   --color-link: hsl(2deg 85% 54%);
   --color-link-broken: hsl(2deg 35% 54%);
-  --color-loading-placeholder: hsl(0 0 0 /.2);
+  --color-loading-placeholder: hsl(0 0 0 /0.2);
   --article-width: calc(30 * var(--s-0));
   --page-margin: var(--s-1);
 
@@ -82,7 +86,6 @@ main {
   max-width: var(--article-width);
 }
 
-
 footer {
   margin: 0 auto;
   max-width: var(--article-width);
@@ -110,7 +113,7 @@ blockquote {
   border-left: 4px solid var(--color-butter);
   padding-left: 1em;
   margin-left: 0;
-  opacity: 0.6;
+  font-style: italic;
 }
 /* .hero { */
 /*   margin: 3rem 0; */
@@ -144,7 +147,6 @@ a {
       text-decoration: none;
     }
   }
-
 }
 
 img {
@@ -156,14 +158,13 @@ img {
   font-style: italic;
   shape-margin: 1em;
 
-  &[loading='lazy']{
-      transition: .7s opacity;
-      &:not(.img--is-loaded) {
-          opacity: .3;
-          background-color: var(--color-loading-placeholder);
-      }
+  &[loading="lazy"] {
+    transition: 0.7s opacity;
+    &:not(.img--is-loaded) {
+      opacity: 0.3;
+      background-color: var(--color-loading-placeholder);
+    }
   }
-
 }
 /* video { */
 /*   aspect-ratio: 4/3; */
@@ -216,15 +217,15 @@ mark::before {
 
 .page-note__article {
   min-height: 40vh;
-  & a[href^="http"]{
+  & a[href^="http"] {
     position: relative;
     padding-inline-end: 0.6em;
-    &::after{
+    &::after {
       content: "⤴";
       position: absolute;
-      font-size: .75em;
-      opacity: .5;
-      bottom:0;
+      font-size: 0.75em;
+      opacity: 0.5;
+      bottom: 0;
     }
   }
 }
@@ -317,11 +318,26 @@ mark::before {
 .embed {
   width: 100%;
   height: auto;
+  position: relative;
 
-  & > * {
+  & > :only-child {
     vertical-align: bottom;
     border: 2px solid var(--color-text);
     box-shadow: 4px 4px 0 0 var(--color-text);
+  }
+
+  & .embed__source {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0.5em;
+    font-size: 0.75em;
+    color: var(--color-text);
+    opacity: 0.7;
+    font-style: normal;
+    background: #0000000d;
+    line-height: 1;
+    border-radius: 0.25em;
   }
 }
 
@@ -331,7 +347,7 @@ mark::before {
 .embed--video {
   & video {
     max-width: 100%;
-    width: 100%
+    width: 100%;
     height: auto;
   }
 }
@@ -343,17 +359,28 @@ mark::before {
 }
 
 .link.link--broken {
-    opacity: .6;
-    cursor: not-allowed;
-    color: var(--color-link-broken);
-    &::after{
-        content: '🏴‍☠️';
-    }
+  opacity: 0.6;
+  cursor: not-allowed;
+  color: var(--color-link-broken);
+  &::after {
+    content: "🏴‍☠️";
+  }
 }
 
+.debug-alert {
+  color: var(--color-negative);
+  font-size: var(--s-2);
+  border: 1px solid var(--color-negative);
+}
 
-.debug-alert{
-    color: var(--color-negative);
-    font-size: var(--s-2);
-    border: 1px solid var(--color-negative);
+.vh {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  white-space: nowrap;
 }

@@ -11,7 +11,7 @@ Feel free to play with it [here](https://sit-together-toy.vercel.app) or watch t
 
 
 
-<sonnet-embed >sit-together full.mp4</sonnet-embed>
+<span style="color: red">Missing embed: sit-together full.mp4</span>
 1. We have a single room filled with stars. Every star is a user.
 2. A star appears when a user joins the room and shimmers and disappears when they leave.
 3. Users **can** communicate although in a **limited** fashion: by hitting the sun (☉) button.
@@ -24,18 +24,18 @@ Reason: this was much easier to code than expected. This is a toy. This is the t
 
 First, the gong button has a cooldown effect. I turn it into a little animated sun during cooldown:
 
-<sonnet-embed >gong-click-1.mp4</sonnet-embed>
+<span style="color: red">Missing embed: gong-click-1.mp4</span>
 
 I'm also thinking about letting the users communicate by sending short melodies:
 
-<sonnet-embed >melodies.mp4</sonnet-embed>
+<span style="color: red">Missing embed: melodies.mp4</span>
 
 This is the animation triggered when people are leaving or joining sessions:
-<sonnet-embed >enter-leave.mp4</sonnet-embed>
+<span style="color: red">Missing embed: enter-leave.mp4</span>
 
 And this is the map when it's filled with users:
 
-<sonnet-embed >sit-full-map.mp4</sonnet-embed>
+<span style="color: red">Missing embed: sit-full-map.mp4</span>
 ## Next steps
 
 1. Add this background animation to Sit., (as an optional setting)

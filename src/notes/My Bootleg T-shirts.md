@@ -30,5 +30,5 @@ Two older designs, based on a drawing from potato.horse
 
 King Gizzard and the Lizard Wizard × [Achewood](https://www.achewood.com/random.php) mashup
 
-<sonnet-embed data-target="#Update">Bootleg T-Shirts - December Batch.md</sonnet-embed>
+[Embed](<../Bootleg T-Shirts - December Batch>){data-embed, data-target="#Update"}
 

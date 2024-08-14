@@ -77,10 +77,10 @@ The proportions of the 2d version of Janusz would translate poorly into a 3d ver
 
 Adding those classic rosy cheeks. Janusz is blushing because of all that hackernews karma.
 
-<sonnet-embed >janusz cheeks.mp4</sonnet-embed>
+<span style="color: red">Missing embed: janusz cheeks.mp4</span>
 
 ## Final result
 
-<sonnet-embed >janusz catwalk.mp4</sonnet-embed>
+<span style="color: red">Missing embed: janusz catwalk.mp4</span>
 
 See you tomorrow!

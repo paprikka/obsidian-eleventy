@@ -1,3 +1,4 @@
 ---
+publish: true
 ---
 Extreme Programming

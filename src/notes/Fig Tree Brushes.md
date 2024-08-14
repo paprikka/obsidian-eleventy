@@ -3,7 +3,7 @@ cover: https://res.cloudinary.com/dlve3inen/image/upload/v1715090711/Screenshot_
 publish: true
 ---
 
-<sonnet-embed >Rosie's Poem.md</sonnet-embed>
+[Embed](<../Rosie's Poem>){data-embed}
 
 
 One of the unexpected discoveries from playing with [Fig](<../Fig>) was how much fun I had designing, messing with (and breaking!) brushes. I thought I'd share how they work, how they *don't work* and why I will keep many of the bugs collected during my escapade in pixel land.

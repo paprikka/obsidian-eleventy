@@ -76,7 +76,10 @@ export const postprocess = async (current, all) => {
 
       const $wrapper = $("<blockquote>");
       $wrapper.addClass("embed embed--note");
-      $wrapper.append(`<a href="${target.url}">${$fileDOM("h1").text()}</a>`);
+      $wrapper.append(
+        `<a href="${target.url}" class="embed__source">Source</a>`,
+        // `<a href="${target.url}" class="embed__source">${$fileDOM("h1").text()}</a>`,
+      );
       $wrapper.append(contentToEmbed);
 
       $embed.replaceWith($wrapper);

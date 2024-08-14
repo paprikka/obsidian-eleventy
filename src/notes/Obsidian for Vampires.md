@@ -145,7 +145,7 @@ Imagine *this* but in a movie where Sean Connery, *the Soviet Union's best subma
 
 Night Sky is a fantastic stargazing app. It has a secondary, dimmed mode which reduces the time my eyes need to adjust between glancing at the screen and looking at the sky.
 
-<sonnet-embed >night-sky.mp4</sonnet-embed>
+<span style="color: red">Missing embed: night-sky.mp4</span>
 
 ## How to install nightnight:
 
