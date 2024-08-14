@@ -35,6 +35,16 @@ const all = {
       '<html><head></head><body><p><a href="/a/b/c/hello">ABC</a></p>\n</body></html>',
     rawInput: "[ABC](/a/b/c/hello)\n",
   },
+
+  "/has-embed/": {
+    inputPath: "./src/exists.md",
+    outputPath: "./_site/exists/index.html",
+    url: "/exists/",
+    content: `<html><head></head><body>
+     <sonnet-embed></sonnet-embed> 
+      </body></html>`,
+    rawInput: "[ABC](/a/b/c/hello)\n",
+  },
 };
 
 test("returns the current page unchanged", () => {
@@ -54,6 +64,18 @@ test("marks a broken link", () => {
 });
 
 test("marks relative links", () => {
+  expect(postprocess(all["/folder/path/"], all)).toMatchInlineSnapshot(`
+    "<html><head></head><body>
+        <article>
+        <a href="/exists/">Correct link</a> 
+        <a href="../../hello-from-root">Relative link</a>
+        <a href="../" class="link link--broken">Broken Relative link</a>
+        </article>
+        </body></html>"
+  `);
+});
+
+test("handles full note embeds", () => {
   expect(postprocess(all["/folder/path/"], all)).toMatchInlineSnapshot(`
     "<html><head></head><body>
         <article>

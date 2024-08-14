@@ -19,6 +19,9 @@ dependencies:
   markdown-it:
     specifier: ^14.1.0
     version: 14.1.0
+  markdown-it-attrs:
+    specifier: ^4.2.0
+    version: 4.2.0(markdown-it@14.1.0)
 
 devDependencies:
   '@11ty/eleventy-img':
@@ -1824,6 +1827,15 @@ packages:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
+
+  /markdown-it-attrs@4.2.0(markdown-it@14.1.0):
+    resolution: {integrity: sha512-m7svtUBythvcGFFZAv9VjMEvs8UbHri2sojJ3juJumoOzv8sdkx9a7W3KxiHbXxAbvL3Xauak8TMwCnvigVPKw==}
+    engines: {node: '>=6'}
+    peerDependencies:
+      markdown-it: '>= 9.0.0'
+    dependencies:
+      markdown-it: 14.1.0
+    dev: false
 
   /markdown-it@14.1.0:
     resolution: {integrity: sha512-a54IwgWPaeBCAAsv13YgmALOF1elABB08FxO9i+r4VFk5Vl4pKokRPeX8u5TCgSsPi6ec1otfLjdOpVcgbpshg==}

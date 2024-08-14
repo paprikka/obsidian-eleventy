@@ -16,7 +16,7 @@ import url from "url";
  * @param {ProcessedPage[]} all
  * @returns {void}
  */
-export const postprocess = (current, all) => {
+export const postprocess = async (current, all) => {
   const $ = load(current.content);
 
   $('article :is(a[href^="/"], a[href^="./"], a[href^="../"])').each((_, a) => {
@@ -33,5 +33,61 @@ export const postprocess = (current, all) => {
 
     $a.addClass("link link--broken");
   });
+
+  const embedsArray = $("article a[data-embed]").toArray();
+  const getTargetFile = (hrefNonNormalised, all) => {
+    const normalisedHref = url.resolve(current.url, hrefNonNormalised);
+    if (all[hrefNonNormalised]) return all[hrefNonNormalised];
+    if (all[normalisedHref]) return all[normalisedHref];
+    if (all[normalisedHref + "/"]) return all[normalisedHref + "/"];
+    if (all[decodeURIComponent(normalisedHref)])
+      return all[decodeURIComponent(normalisedHref)];
+    if (all[decodeURIComponent(normalisedHref) + "/"])
+      return all[decodeURIComponent(normalisedHref) + "/"];
+  };
+
+  for (let embed of embedsArray) {
+    const $embed = $(embed);
+    const targetHref = $embed.attr("href");
+    try {
+      const target = getTargetFile(targetHref, all);
+      if (!target) {
+        console.log(`Cannot find embed for ${targetHref} from ${current.url}`);
+        continue;
+      }
+      const targetId = $embed.attr("data-embed").trim();
+      const fileContent = target.content;
+      const $fileDOM = load(fileContent);
+
+      let contentToEmbed = "";
+      // Fragment Embed
+      if (targetId) {
+        const fragment = $fileDOM(targetId).parent();
+        if (fragment) {
+          contentToEmbed = $fileDOM(fragment).html();
+        } else {
+          // TODO: render a placeholder
+          contentToEmbed = "Missing fragment";
+        }
+      } else {
+        // Full embed
+        contentToEmbed = $fileDOM("article").html();
+      }
+
+      const $wrapper = $("<blockquote>");
+      $wrapper.addClass("embed embed--note");
+      $wrapper.append(`<a href="${target.url}">${$fileDOM("h1").text()}</a>`);
+      $wrapper.append(contentToEmbed);
+
+      $embed.replaceWith($wrapper);
+    } catch (err) {
+      console.error(
+        `Error reading file [${targetHref}]:\nMessage: ${err.message}`,
+      );
+      // TODO: render a placeholder element
+      $embed.replaceWith(`<!-- Error loading ${targetHref} -->`);
+    }
+  }
+
   return $.html();
 };

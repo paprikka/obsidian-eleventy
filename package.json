@@ -24,7 +24,8 @@
     "cheerio": "1.0.0-rc.12",
     "directory-tree": "^3.5.1",
     "gray-matter": "^4.0.3",
-    "markdown-it": "^14.1.0"
+    "markdown-it": "^14.1.0",
+    "markdown-it-attrs": "^4.2.0"
   },
   "devDependencies": {
     "@11ty/eleventy-img": "5.0.0-beta.10",

@@ -84,8 +84,14 @@ export const processSingleFile = async (
     // note embed
     if (!imageRegexp.test(src) && !hasExtension) {
       const id = src.split("#")[1]?.trim();
-      const targetAttr = id ? `data-target="#${id}"` : "";
-      return `<sonnet-embed ${targetAttr}>${resolvedLink}</sonnet-embed>`;
+      const resolvedLink = resolveLink(absolutePath, src, resourceIndex, ".md");
+
+      if (!resolvedLink)
+        return `<span style="color: red">Missing embed: ${src}</span>`;
+
+      const url = resourcePathToLink(resolvedLink);
+      if (id) return `[Embed](<../${url}>){data-embed, data-target="#${id}"}`;
+      return `[Embed](<../${url}>){data-embed}`;
     }
 
     relatedAssets.push({ absolutePath: targetAbsolutePath });
