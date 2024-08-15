@@ -2,7 +2,7 @@ import { promises as fs } from "fs";
 import grayMatter from "gray-matter";
 import path from "path";
 import { resolveLink, resourcePathToLink } from "./resource-index.js";
-
+import slugify from "slugify";
 export async function checkIfPublishable(fileContent) {
   return grayMatter(fileContent).data.publish === true;
 }
@@ -44,6 +44,10 @@ export const processSingleFile = async (
   const canPublish = await checkIfPublishable(fileContent);
   if (!canPublish) return null;
 
+  const getAnchorInternalMarkup = (_, p1, p2) => {
+    return `[${p2}](<#${p1}>)`;
+  };
+
   const getAnchorMarkup = (linkVerbatim, title) => {
     const resolvedLink = resolveLink(
       absolutePath,
@@ -52,7 +56,7 @@ export const processSingleFile = async (
       ".md",
     );
 
-    if (!resolvedLink) return `<span style="color: red">${title}</span>`;
+    if (!resolvedLink) return `[${title}](<../${linkVerbatim}>)`;
 
     const url = resourcePathToLink(resolvedLink);
     return `[${title}](<../${url}>)`;
@@ -110,11 +114,13 @@ export const processSingleFile = async (
 
   const embedAlt = /!\[\[([^\]|]+)\|([^\]]+)\]\]/g;
   const embedSimple = /!\[\[([^\]]+)\]\]/g;
+  const anchorInternal = /\[\[#([^\]]+)\|([^\]]+)\]\]/g;
   const anchorAlt = /\[\[([^\]|]+)\|([^\]]+)\]\]/g;
   const anchorSimple = /\[\[([^\]]+)\]\]/g;
   const linkMarker = /(?<!#)\^([a-zA-Z0-9]{6})/g;
   // Handle link transformations
   const content = fileContent
+    .replace(anchorInternal, getAnchorInternalMarkup)
     .replace(embedAlt, getEmbedMarkup)
     .replace(embedSimple, getEmbedMarkup)
     .replace(anchorAlt, (_, p1, p2) => {

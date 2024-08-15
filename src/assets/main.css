@@ -109,6 +109,25 @@ h2 {
   font-size: var(--s-2);
 }
 
+article {
+  & h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    position: relative;
+    & a.headline-anchor {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      &::after {
+        content: "⚓︎";
+      }
+    }
+  }
+}
 blockquote {
   border-left: 4px solid var(--color-butter);
   padding-left: 1em;
@@ -304,7 +323,26 @@ mark::before {
     letter-spacing: 0.05em;
   }
 }
+.page-notes.page-notes--articles {
+  & ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+  }
 
+  li {
+    background-color: #0000000d;
+    padding: var(--s--2);
+  }
+
+  h3 {
+    font-size: var(--s--2);
+    line-height: 1;
+  }
+}
 .widget-subscribe {
   padding: 0.75em;
   margin-inline: -0.75em;
