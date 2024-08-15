@@ -1,22 +1,11 @@
 import { load } from "cheerio";
 import { promises as fs } from "fs";
 import path from "path";
-import { fileURLToPath } from "url";
 import { postprocess } from "./postprocess.js";
 import { projectRootDir } from "./get-root.js";
-import slugifyOriginal from "slugify";
-const slugify = (text) => {
-  return slugifyOriginal(text, {
-    replacement: "-",
-    lower: true,
-    strict: true,
-    locale: "en",
-    trim: true,
-  });
-};
+import { slugify } from "../slugify.js";
 
 export function ObsidianImportPlugin(eleventyConfig, options) {
-  const { fileIndex } = options;
   // TODO: this should be done in markdown, move
   eleventyConfig.addTransform(
     "processRegularEmbeds",

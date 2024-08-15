@@ -47,13 +47,15 @@ const all = {
   },
 };
 
-test("returns the current page unchanged", () => {
-  expect(postprocess(all["/exists/"], all)).toEqual(all["/exists/"].content);
+test("returns the current page unchanged", async () => {
+  expect(await postprocess(all["/exists/"], all)).toEqual(
+    all["/exists/"].content,
+  );
 });
 
-test("marks a broken link", () => {
+test("marks a broken link", async () => {
   const current = all["/hello-from-root/"];
-  expect(postprocess(current, all)).toMatchInlineSnapshot(`
+  expect(await postprocess(current, all)).toMatchInlineSnapshot(`
     "<html><head></head><body>
         <article>
         <a href="/exists/">Correct link</a> 
@@ -63,8 +65,8 @@ test("marks a broken link", () => {
   `);
 });
 
-test("marks relative links", () => {
-  expect(postprocess(all["/folder/path/"], all)).toMatchInlineSnapshot(`
+test("marks relative links", async () => {
+  expect(await postprocess(all["/folder/path/"], all)).toMatchInlineSnapshot(`
     "<html><head></head><body>
         <article>
         <a href="/exists/">Correct link</a> 
@@ -75,8 +77,8 @@ test("marks relative links", () => {
   `);
 });
 
-test("handles full note embeds", () => {
-  expect(postprocess(all["/folder/path/"], all)).toMatchInlineSnapshot(`
+test("handles full note embeds", async () => {
+  expect(await postprocess(all["/folder/path/"], all)).toMatchInlineSnapshot(`
     "<html><head></head><body>
         <article>
         <a href="/exists/">Correct link</a> 

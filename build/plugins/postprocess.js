@@ -1,5 +1,4 @@
 import { load } from "cheerio";
-import path from "path";
 import url from "url";
 
 /**
@@ -14,7 +13,7 @@ import url from "url";
 /**
  * @param {ProcessedPage} current
  * @param {ProcessedPage[]} all
- * @returns {void}
+ * @returns {Promise<string>}
  */
 export const postprocess = async (current, all) => {
   const $ = load(current.content);
