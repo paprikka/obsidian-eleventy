@@ -13,7 +13,7 @@ I also immensely enjoy reading, writing and thinking in graphs ([Wikipedia rabbi
 
 I have fairly specific needs, experience, and biases: I've been building authoring and publishing tools for more than a decade, with clients ranging from a) me, to b) small indie publishers to c) large publishing enterprises. Even Storienteer was a publishing platform in a sense, although with 6 degrees of freedom and (possibly) commute required to navigate the content instead of scrolling, but I digress. The point is – I really like this stuff and, for better or worse, **I have opinions™**!
 
-Then, I love playing with the Web Platform, either experimenting or just messing with simple HTML templates and CSS. It's one of my favourite forms of expression, it's my LEGOs! (<span style="color: red">How I learned to love the web and stopped worrying about Javascript Fatigue</span>)
+Then, I love playing with the Web Platform, either experimenting or just messing with simple HTML templates and CSS. It's one of my favourite forms of expression, it's my LEGOs! ([How I learned to love the web and stopped worrying about Javascript Fatigue](<../How I learned to love the web and stopped worrying about Javascript Fatigue>))
 
 I also publish my content in several places, using a variety of technologies, from markdown, to plain HTML, to Next.js (examples: this site, sonnet.io, potato.horse, most of the mini-app/games and articles on sonnet.io/projects). 
 

@@ -58,5 +58,5 @@ It's not my first generative project. Storienteer used procgen to create locatio
 
 
 
-<span style="color: red">Illuminated Manuscripts and CSS</span>
-<span style="color: red">What's a Manicula, Who stole my Breviary and What's up with those Murderous Rabbits?</span>
+[Illuminated Manuscripts and CSS](<../Illuminated Manuscripts and CSS>)
+[What's a Manicula, Who stole my Breviary and What's up with those Murderous Rabbits?](<../What's a Manicula, Who stole my Breviary and What's up with those Murderous Rabbits?>)

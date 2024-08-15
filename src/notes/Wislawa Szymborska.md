@@ -6,4 +6,4 @@ publish: true
 
 
 [Nothing Twice](<../Nothing Twice>)
-<span style="color: red">Poetry</span> [Sit., (together)](<../Sit., (together)>)
+[Poetry](<../Poetry>) [Sit., (together)](<../Sit., (together)>)

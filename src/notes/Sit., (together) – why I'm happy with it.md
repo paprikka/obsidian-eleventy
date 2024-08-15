@@ -2,7 +2,7 @@
 publish: true
 ---
 
-I'm rarely happy with my work. I'm consciously trying to get better at appreciating the effort put in it, instead of going through the grind and moving on as soon as I share the work (<span style="color: red">The Importance of Celebrating Your Own Work</span>).
+I'm rarely happy with my work. I'm consciously trying to get better at appreciating the effort put in it, instead of going through the grind and moving on as soon as I share the work ([The Importance of Celebrating Your Own Work](<../The Importance of Celebrating Your Own Work>)).
 
 I consider [Sit (together)](https://nothing-together.sonnet.io) a successful experiment because of *luck* and *happy little accidents*:
 

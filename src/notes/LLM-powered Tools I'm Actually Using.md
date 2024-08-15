@@ -54,7 +54,7 @@ Writing this down made me realise how little utility I get from Github Copilot c
 
 ### How I use it
 - **Code**
-	-  <span style="color: red">stack overflow replacement</span> but for more complex queries:
+	-  [stack overflow replacement](<#^11117c>) but for more complex queries:
 		- looking up documentation + code samples, example usage 
 	- looking up and comparing different implementation patterns, e.g. this is an example `colander` schema, how can I implement a new schema following these TS type signatures: `...`.
 	- learning new programming languages, e.g.:

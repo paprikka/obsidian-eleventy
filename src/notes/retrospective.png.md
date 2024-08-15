@@ -42,7 +42,7 @@ I'll start with the last bullet point. I want to finish writing this post in und
 	- A more natural approach for me is sharing my research notes in their original shape. 
 	- I will write a note about this, so I'll keep it short: if you enjoy going down wikipedia rabbit holes, then you'll love reading digital gardens. Writing in this manner gives me a similar pleasure, and I think this will come across.
 - **That my ideal publishing platform is *Obsidian Publish... to a folder*™**, so I can style content myself. 
-- **People seem to be more likely to interact with the content here, than on sonnet.io!** I suppose this is nothing new: people are more likely to interact with messy prototypes. Polished work often doesn't invite feedback, messy work is an invitation to play. <span style="color: red">Polished vs. messy prototypes -- let me break your toy</span> 
+- **People seem to be more likely to interact with the content here, than on sonnet.io!** I suppose this is nothing new: people are more likely to interact with messy prototypes. Polished work often doesn't invite feedback, messy work is an invitation to play. [Polished vs. messy prototypes -- let me break your toy](<../Polished vs. messy prototypes -- let me break your toy>) 
 - Did you see the `[[]]` above? That's a wikilink. You could use those to jump between notes,and to read the text at the level of detail you prefer. It's fun!
 - That it became easier for me to just sit down and write, but the **new obstacle is to stick to the deadline I gave myself**.
 

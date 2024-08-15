@@ -10,7 +10,7 @@ In the spirit of working with the [garage door up](<../Work on my notes with the
 
 Achievement unlocked: Midnight paid for a bowl of a "posh" locally sourced ramen!
  
-*Now imagine I could get a **second** order of ramen, this time for Mango, so he wouldn't give us <span style="color: red">his Kubrick stare</span> while Luna and I are eating the first bowl, sitting in a dark corner, ashamed of our selfishness.*
+*Now imagine I could get a **second** order of ramen, this time for Mango, so he wouldn't give us [his Kubrick stare](<../poorly-drawn-mango-kubrick-stare.webp>) while Luna and I are eating the first bowl, sitting in a dark corner, ashamed of our selfishness.*
 
 **Buy Midnight [here](https://apps.apple.com/gb/app/midnight-no-blue-light-reader/id6472076217).**
 

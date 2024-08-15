@@ -29,7 +29,7 @@ We're at step 4. I've been fucking around and finding out for long enough to sta
 
 I have some initial sketches done in [Concepts](https://concepts.app/en/). We'll use them as a map to navigate the rest of this note:
 ![1838](sit-together-concepts-0.webp)
-Full-size preview <span style="color: red">here</span>.
+Full-size preview [here](<../sit-part-2-dev-notes-entire-board.pdf>).
 
 The subject matter is fairly simple from a technical PoV. It's a remote controlled timer, with rooms defined by unique URLs, at least for now. So, this board is much cleaner than what I usually start with, e.g.:
 

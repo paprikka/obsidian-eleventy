@@ -61,7 +61,7 @@ Perhaps to some of the people reading this, this sounds silly, but on the off ch
 
 Let people play with your toys. Bless your mess!
 
-Counter-argument: <span style="color: red">finding space to work alone</span>
+Counter-argument: [finding space to work alone](<../finding space to work alone>)
 
 [Make](<../Make>),  [Half-ass it](<../Half-ass it>)
 

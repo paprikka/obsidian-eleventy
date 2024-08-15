@@ -1,6 +1,8 @@
 ---
-cover: 'https://images.ctfassets.net/hyylafu4fjks/4UWkoYIWWZXnUrN0Fqkz2q/950caf4694c2b2cb10382dff8ea0a55d/Untitled_Artwork_17.png'
+cover: https://images.ctfassets.net/hyylafu4fjks/4UWkoYIWWZXnUrN0Fqkz2q/950caf4694c2b2cb10382dff8ea0a55d/Untitled_Artwork_17.png
 publish: true
+tags:
+  - untested-article
 ---
 My main website is published using [11ty](https://11ty.dev). I try to keep it as "low-tech" and close to the bare web platform as possible. There are three reasons for that:
 
@@ -20,20 +22,20 @@ But, as I already warned you in the title, I'm a cheap bastard and I want to be 
 
 1\. Open the old version of the page
 2\. Take a screenshot:
-![1736](002-screenshot.png)
+![1761](002-screenshot.png)
 (yes, you can do it in Chrome too, but [why](https://mastodon.cloud/@raf/111017064287821057))
 
 
 3\. Open the new version of the page and take another screenshot
 4\. Paste both screenshots into an image editor with layers (like Affinity or the ==next Paint==)
 5\. Set the top layer blending mode to *difference* 
-![2072](002-difference.png)
+![2097](002-difference.png)
 
 If both pages are identical, you should see a completely blank canvas:
-![2168](002-preview-small.png)
-![2195](002-preview-long.png)
+![2193](002-preview-small.png)
+![2220](002-preview-long.png)
 If there are any visual differences between the pages, they'll appear in the screen roughly like this:
-![2324](002-preview-broken.png)
+![2349](002-preview-broken.png)
 For instance, in the example above you can see that the page has moved by a few pixels to the left.
 
 You might ask: why would you bother with all of this pantomime if the user neither cares nor is able to notice the difference anyway? Also, who cares about keeping things pixel perfect?
@@ -50,16 +52,16 @@ The slightly longer answer:
 
 The *difference* blending mode, as the name suggests, calculates the difference between each component of a colour in a pixel. 
 
-![3414](002-explanation.jpeg)
+![3439](002-explanation.jpeg)
 
 I use it in two different places:
 
 1\. to generate a nicer speech bubble in this drawing:
-![3531](002-off-my-lawn.webp)
+![3556](002-off-my-lawn.webp)
 
 2\. to generate nicer brush size previews in [the uncolouring book](https://lines.potato.horse)
 
-![3655](002-uncolouring.png)
+![3680](002-uncolouring.png)
 
 
 PPS. Note to myself: it was hard to pick a subject of the next post and balance usefulness vs. feasibility. The smaller the post, the easier it is for me to deliver something of acceptable quality. I time boxed selecting the subject to 2 minutes.

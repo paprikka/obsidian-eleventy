@@ -4,7 +4,7 @@ publish: true
 ---
 This little exercise was inspired by [Chris Coyer](https://chriscoyier.net/2023/11/25/default-apps-2023/), who was inspired by [Matt C](https://mattcool.tech/posts/default-apps-2023/)... who was inspired by [Tracy Durnell](https://tracydurnell.com) and the [HomeBrew Website Club](https://events.indieweb.org). I think it'll be fun to make another list like this next year and compare with this one.
 
-Also, I've attached a template <span style="color: red">below</span> in case you wan to do this yourself.
+Also, I've attached a template [below](<#Template>) in case you wan to do this yourself.
 
 
 ## Defaults

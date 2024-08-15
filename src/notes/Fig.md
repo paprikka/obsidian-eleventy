@@ -74,7 +74,7 @@ I played with sand instead of a standard flood fill because:
 - using sand is a bit harder than using a bucket fill ([Constraints mean focus and the freedom to break them.](<../Constraints mean focus and the freedom to break them.>))
 - it just _feels_ fun to use! (also, I wish I could come up with a sound effect for it)
 
-Under the hood, I'm using simple cellular automata and it's really tempting to make these rules more clever. But, I want to make sure that the process of drawing is itself fun and accessible (remember <span style="color: red">#What Fig is not</span>).
+Under the hood, I'm using simple cellular automata and it's really tempting to make these rules more clever. But, I want to make sure that the process of drawing is itself fun and accessible (remember [#What Fig is not](<../#What Fig is not>)).
 
 #### Fills
 

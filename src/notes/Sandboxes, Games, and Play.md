@@ -14,7 +14,7 @@ I'll keep this note as a bucket where I'll hoard bookmarks, notes and screenshot
 
 ![1014](TIL/weekly/54/orb-farm.webp)
 
-Orb farm is an interactive, aquatic terrarium created by the author of <span style="color: red">Sandspiel.club</span>, [Max Bittker](<../Max Bittker>). It's a purely browser-based, simulated ecosystem. It looks like a more specialised, trimmed down, themed version of Sandspiel.club. 
+Orb farm is an interactive, aquatic terrarium created by the author of [Sandspiel.club](<#^8ef331>), [Max Bittker](<../Max Bittker>). It's a purely browser-based, simulated ecosystem. It looks like a more specialised, trimmed down, themed version of Sandspiel.club. 
 
 I'm planning to do something similar with Fig. That is: start with a broader app, and then [create smaller, more specialised toys](<../Fig>).
 
@@ -23,10 +23,10 @@ Also, I wrote about it earlier in [Weekly TIL 54](<../TIL/weekly/54>).
 The other projects might seem more impressive from a technical point of view, but this one has been my favourite, one of the few uses of my tablet to wind down instead of getting wired up.
 
 ## Sandspiel.club
-![1705](Screenshot-of-a-forest-fire-model-simulated-on-https-sandspielclub-The-simulation-is.png)
+![1706](Screenshot-of-a-forest-fire-model-simulated-on-https-sandspielclub-The-simulation-is.png)
 Picture taken from [Beauty of life in dynamical systems: an aesthetic viewpoint of life | ResearchGate](https://www.researchgate.net/figure/Screenshot-of-a-forest-fire-model-simulated-on-https-sandspielclub-The-simulation-is_fig8_360618706)o
 
-[Max Bittker](<../Max Bittker>) calls it a falling sand game inspired by <span style="color: red">The Powder Toy</span>. I see it slightly differently and unfortunately my stepmother tongue fails me here. That's mainly because in Polish the distinction between *game* and *play* is stronger:
+[Max Bittker](<../Max Bittker>) calls it a falling sand game inspired by [The Powder Toy](<#^8ef331>). I see it slightly differently and unfortunately my stepmother tongue fails me here. That's mainly because in Polish the distinction between *game* and *play* is stronger:
 
   - zabawa /zabava/ – party, fun, play, game (esp. in a social context, not in the sense used in *computer game* or *game of \<insert a ball here>*)
   - zabawka /zabavka/ – toy, gadget
@@ -40,17 +40,17 @@ The Powder Toy fits the *zabawa* category more here. Playing with beetles or fal
 Sandspiel.Club and Orb.farm are closer to being ~~toys~~ playthings, then Sandspiel Studio which is more of a creative playground for creating and sharing falling sand elements.  
 
 ## [The Powder Toy](https://powdertoy.co.uk) 
-![3081](Screen1.png)
+![3083](Screen1.png)
 
 Not the OG, but often mentioned as such falling sand/physics sandbox game. Created by Stanislaw K. Skowronek (a.k.a. Skylark). This project is very mature, featuring the ability to share levels, as well as playing together.
 
 ## [Sandboxels](https://sandboxels.r74n.com)
 
-![3370](3347078-wallpaper.png)
+![3372](3347078-wallpaper.png)
 
 A **browser based** simulation with more than 500 elements, including the community-created ones. It feels incredibly intricate and flexible. It is developed by [R74n](https://r74n.com). Their website itself is a rabbit hole with a ton of projects like *Every Ant on Earth – browse every single individual ant!* 
 
-![3712](Pasted%20image%2020240516131541.png)
+![3714](Pasted%20image%2020240516131541.png)
 
 Tangent, my a friend from [mossy.earth](https://mossy.earth)worked in Slovakian floodplain forests last year. I wonder if they met?
 
@@ -65,6 +65,6 @@ Three new questions arose when I was reviewing these notes:
 
 Thanks for reading, see you tomorrow!
 
-![4495](Untitled_Artwork.webp)
+![4497](Untitled_Artwork.webp)
 
 Got anything interesting that would fit this list? [Let me know](mailto:hello@sonnet.io), give my crabs a new friend!

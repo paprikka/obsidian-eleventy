@@ -1,7 +1,9 @@
 ---
 title: How to Draw a Janusz
-cover: 'https://images.ctfassets.net/hyylafu4fjks/1x6XqliqGQPXTodDVCogp0/14e3c09213cf95389e73150fdbc06763/Untitled_Artwork_96.png'
+cover: https://images.ctfassets.net/hyylafu4fjks/1x6XqliqGQPXTodDVCogp0/14e3c09213cf95389e73150fdbc06763/Untitled_Artwork_96.png
 publish: true
+tags:
+  - untested-article
 ---
 
 I'm not completely sure where I'm going with this, but stay with me, ok? Let's hold hands. No? OK, fine, that's fine too.
