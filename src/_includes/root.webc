@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#161616" />
+    <title @html="this.page.url || 'no title'"></title>
+    <link webc:keep rel="stylesheet" href="/assets/common.css" />
+    <style @raw="this.getCSS(this.page.url)" webc:keep></style>
+    <webc:keep>
+        <script async defer data-website-id="378d312b-4c09-48e2-8276-f2d213375ef0"
+            src="https://sonnet-events.vercel.app/umami.js"
+            data-domains="untested.sonnet.io, https://new.untested.sonnet.io/"></script>
+    </webc:keep>
+</head>
+
+<body @html="this.content" webc:nokeep></body>
+
+<script type="module" @raw="this.getJS(this.page.url)" webc:keep></script>
+
+</html>

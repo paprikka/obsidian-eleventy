@@ -1,0 +1,20 @@
+<footer webc:root="override">🦶🏼🦶🏼🦶🏼
+
+    <h2>asdad</h2>
+
+    🦶🏼🦶🏼🦶🏼🦶🏼🦶🏼
+</footer>
+
+<style webc:scoped>
+    footer {
+        box-shadow: 2px 2px 0 0 red;
+    }
+
+    :host {
+        border: 2px solid red;
+    }
+
+    h2 {
+        color: blue;
+    }
+</style>

@@ -5,6 +5,7 @@ import { mdEmbed } from "./build/plugins/md-embed.js";
 import { ObsidianImportPlugin } from "./build/plugins/obsidian.js";
 import markdownIt from "markdown-it";
 import markdownItAttrs from "markdown-it-attrs";
+import pluginWebc from "@11ty/eleventy-plugin-webc";
 export default function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.setQuietMode(true);
@@ -43,6 +44,9 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addPlugin(ObsidianImportPlugin);
   eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPlugin(pluginWebc, {
+    components: "src/_components/**/*.webc",
+  });
 
   return {
     dir: {
@@ -50,7 +54,7 @@ export default function (eleventyConfig) {
       output: "_site",
       includes: "_includes",
     },
-    templateFormats: ["md", "njk", "html"],
+    templateFormats: ["md", "njk", "html", "webc"],
     htmlTemplateEngine: "njk",
     dataTemplateEngine: "njk",
   };

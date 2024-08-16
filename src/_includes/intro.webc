@@ -1,0 +1,52 @@
+---
+layout: root.webc
+---
+<main webc:root="override">
+    <div class="placeholder about"></div>
+    <div class="placeholder contact"></div>
+    <div class="placeholder writing"></div>
+    <div class="placeholder all"></div>
+</main>
+
+<script type="module" webc:keep>
+    window.counter = window.counter || 0
+    window.counter++
+
+    console.log(`Counter: ${window.counter}`)
+</script>
+
+
+<style webc:scoped="page-intro">
+    :host .placeholder {
+        background: rgba(0, 0, 0, .1);
+        border-radius: 1vmin;
+    }
+
+    :host {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas:
+            'about contact'
+            'writing all';
+        position: absolute;
+        inset: 10px;
+        border-radius: 10px;
+        gap: var(--spacing-xs);
+    }
+
+    :host .about {
+        grid-area: about;
+    }
+
+    :host .contact {
+        grid-area: contact;
+    }
+
+    :host .writing {
+        grid-area: writing;
+    }
+
+    :host .all {
+        grid-area: all;
+    }
+</style>
