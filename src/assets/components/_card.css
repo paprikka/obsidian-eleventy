@@ -1,0 +1,28 @@
+.card {
+  list-style: none;
+
+  & h3 {
+    margin: 0;
+    font-size: var(--s--2);
+  }
+
+  a {
+    color: var(--color-text);
+    display: block;
+  }
+
+  figure {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xxs);
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  img {
+    box-shadow:
+      4px 4px 0 var(--color-text),
+      0 0 0 1px var(--color-text);
+    border-radius: 0.4em;
+  }
+}

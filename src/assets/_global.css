@@ -1,0 +1,40 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+
+  font-family: var(--font-family-body);
+  background-color: var(--color-page-bg);
+}
+
+::selection {
+  background-color: var(--color-butter);
+  color: var(--color-text);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  font-style: italic;
+  shape-margin: 1em;
+
+  &[loading="lazy"] {
+    transition: 0.7s opacity;
+    &:not(.img--is-loaded) {
+      opacity: 0.3;
+      background-color: var(--color-loading-placeholder);
+    }
+  }
+}
+a:not([class]) {
+  color: var(--color-link);
+
+  @media (hover: hover) {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

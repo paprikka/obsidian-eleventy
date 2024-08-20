@@ -1,0 +1,18 @@
+.page-intro {
+  padding: var(--page-margin);
+
+  main {
+    margin: 0 auto;
+    max-width: var(--page-width-narrow);
+    width: 100%;
+  }
+}
+
+.page-intro__about {
+}
+.page-intro__contact {
+}
+.page-intro__articles {
+}
+.page-intro__feed {
+}

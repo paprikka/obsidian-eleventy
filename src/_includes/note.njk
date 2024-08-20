@@ -1,5 +1,5 @@
 ---
-layout: base.njk
+layout: root.njk
 pageClass: page--note
 ---
 
@@ -13,7 +13,7 @@ pageClass: page--note
 
 <article class="page-note__article">{{ content | safe }}</article>
 
-{% include "widget-subscribe.njk" %}
+{% include "components/widget-subscribe.njk" %}
 
 
 <script>

@@ -1,6 +1,6 @@
 ---
 title: How to Draw a Janusz
-cover: https://images.ctfassets.net/hyylafu4fjks/1x6XqliqGQPXTodDVCogp0/14e3c09213cf95389e73150fdbc06763/Untitled_Artwork_96.png
+cover: 'https://images.ctfassets.net/hyylafu4fjks/1x6XqliqGQPXTodDVCogp0/14e3c09213cf95389e73150fdbc06763/Untitled_Artwork_96.png'
 publish: true
 tags:
   - untested-article
@@ -88,3 +88,4 @@ R.
 
 - PS. Share your Janusz with me! You can use my [email](mailto:hello@sonnet.io), [mastodon](https://mastodon.cloud/@raf), or [twitter](https://twitter.com/rafalpast).
 - PPS. Check my [meeting notes](https://potato.horse) for more drawings of Janusz, like [Janusz Detective](https://www.potato.horse/p/4ZPPRo37jC3hrFg4RCX5rz), [Jodie Foster Nut](https://www.potato.horse/p/6ChJKGuyRCltoTFqj3zMCK)  and more!
+

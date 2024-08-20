@@ -1,0 +1,61 @@
+---
+layout: root.njk
+pageClass: intro
+---
+
+<main>
+  <section class="page-intro__about">
+    <p>
+      Hi there, I'm <a href="https://sonnet.io">Rafał Pastuszak</a>. I'm a
+      product developer, working at the intersection of technology, design &
+      mental health. I'm using this space to publish my #til/lab notes.
+    </p>
+  </section>
+  <section class="page-intro__contact"></section>
+  <section class="page-intro__articles">
+    <h2>Articles</h2>
+    <ol class="cards">
+      {% for note in collections['untested-article'] | reverse | limit(3) %}
+      <li class="card">
+        <a href="{{ note.url }}">
+          <figure>
+            <img src="{{note.data.cover}}" alt="{{note.data.title}}" />
+            <figcaption>
+              <h3>{{ note.data.title }}</h3>
+            </figcaption>
+          </figure>
+        </a>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+  <section class="page-intro__feed">
+    <h2>Timeline</h2>
+    <ol class="timeline" reverse>
+      {% for note in collections.notes | reverse %}
+
+      <li><a href="{{ note.url }}">{{ note.data.title }}</a></li>
+      {% endfor %}
+    </ol>
+  </section>
+</main>
+
+<script type="module">
+  const onLoaded = () => {
+    const images = document.querySelectorAll("img[loading='lazy']");
+    images.forEach((img) => {
+      if (img.complete) {
+        img.classList.add("image--is-loaded");
+      } else {
+        img.addEventListener("load", () => {
+          img.classList.add("img--is-loaded");
+        });
+      }
+    });
+  };
+  if (document.readyState !== "loading") {
+    onLoaded();
+  } else {
+    document.addEventListener("DOMContentLoaded", onLoaded);
+  }
+</script>

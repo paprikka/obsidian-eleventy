@@ -23,7 +23,9 @@ export default function (eleventyConfig) {
   mdLib.use(markdownItAttrs);
   mdLib.use(mdEmbed);
   eleventyConfig.setLibrary("md", mdLib);
-
+  eleventyConfig.addFilter("limit", function (arr, limit) {
+    return arr.slice(0, limit);
+  });
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     extensions: "html",
     formats: ["auto"],

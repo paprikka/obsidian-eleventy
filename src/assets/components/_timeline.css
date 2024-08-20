@@ -1,0 +1,27 @@
+.timeline {
+  font-size: var(--s--1);
+  counter-reset: day-counter;
+  display: flex;
+  flex-direction: column-reverse;
+  list-style-type: none;
+  padding-inline-start: 0;
+  line-height: var(--leading-base);
+  gap: var(--spacing-xxs);
+
+  & .timeline__item {
+    display: grid;
+    grid-template-columns: auto min-content;
+    position: relative;
+  }
+
+  & .timeline__item::after {
+    text-align: right;
+    display: inline-block;
+    content: "#" counter(day-counter, decimal-leading-zero);
+    counter-increment: day-counter;
+    font-family: monospace;
+    opacity: 0.3;
+    justify-self: start;
+    letter-spacing: 0.05em;
+  }
+}
