@@ -6,35 +6,30 @@ pageClass: intro
 <main>
   <section class="page-intro__about">
     <p>
-      Hi there, I'm <a href="https://sonnet.io">Rafał Pastuszak</a>. I'm a
-      product developer, working at the intersection of technology, design &
-      mental health. I'm using this space to publish my #til/lab notes.
+      Hi there, I'm <a href="https://sonnet.io">Rafał Pastuszak</a>. I'm using this space to publish my #til/lab notes,
+      learn, and work in the open (<a href="/111">more</a>).
     </p>
+    <blockquote>
+      <em>untested</em> like <em>undead</em>, so not
+      <em><strong>not</strong>-tested</em>, but in a limbo causing constant fear
+      and anxiety, boooo!
+    </blockquote>
+
   </section>
-  <section class="page-intro__contact"></section>
-  <section class="page-intro__articles">
-    <h2>Articles</h2>
-    <ol class="cards">
-      {% for note in collections['untested-article'] | reverse | limit(3) %}
-      <li class="card">
-        <a href="{{ note.url }}">
-          <figure>
-            <img src="{{note.data.cover}}" alt="{{note.data.title}}" />
-            <figcaption>
-              <h3>{{ note.data.title }}</h3>
-            </figcaption>
-          </figure>
-        </a>
-      </li>
-      {% endfor %}
-    </ol>
+  <section class="page-intro__contact">
+    Want to receive my work as I publish it?
+    <a href="https://letters.sonnet.io/profile/posts"><strong>Subscribe here</strong></a>.
   </section>
+
   <section class="page-intro__feed">
-    <h2>Timeline</h2>
+    <header class="page-intro__section-nav">
+      <h2>Articles</h2>
+      <!-- <h2><a href='/all'>View all</a></h2> -->
+    </header>
     <ol class="timeline" reverse>
       {% for note in collections.notes | reverse %}
-
-      <li><a href="{{ note.url }}">{{ note.data.title }}</a></li>
+      <li class="timeline__item"><a href="{{ note.url }}">{{ note.data.title }}</a><time>{{ note.page.date |
+          dateFormat('dd·MM·yyyy')}}</time></li>
       {% endfor %}
     </ol>
   </section>
@@ -59,3 +54,5 @@ pageClass: intro
     document.addEventListener("DOMContentLoaded", onLoaded);
   }
 </script>
+
+{% include "components/footer.njk" %}

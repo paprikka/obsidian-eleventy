@@ -1,0 +1,27 @@
+.footer {
+  --_border-width: 2px;
+  --_shadow-height: 2rem;
+  position: sticky;
+  bottom: 0;
+  padding: var(--s--2);
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: var(--page-width-wide);
+  background: var(--color-page-bg);
+  border-top: var(--_border-width) solid var(--color-text);
+
+  ::after {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(
+      to top,
+      var(--color-page-bg),
+      transparent
+    );
+    height: var(--_shadow-height);
+    left: 0;
+    right: 0;
+    top: calc(-1 * var(--_border-width) - var(--_shadow-height));
+  }
+}

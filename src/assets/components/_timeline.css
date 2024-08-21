@@ -1,27 +1,26 @@
 .timeline {
   font-size: var(--s--1);
-  counter-reset: day-counter;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   list-style-type: none;
   padding-inline-start: 0;
   line-height: var(--leading-base);
-  gap: var(--spacing-xxs);
 
   & .timeline__item {
     display: grid;
     grid-template-columns: auto min-content;
     position: relative;
+    margin-block-end: var(--spacing-xs);
   }
 
-  & .timeline__item::after {
-    text-align: right;
+  & .timeline__item time {
     display: inline-block;
-    content: "#" counter(day-counter, decimal-leading-zero);
-    counter-increment: day-counter;
     font-family: monospace;
-    opacity: 0.3;
+    opacity: 0.4;
     justify-self: start;
-    letter-spacing: 0.05em;
+    white-space: nowrap;
+  }
+  & .timeline__item a {
+    font-weight: bolder;
   }
 }

@@ -5,6 +5,7 @@ html {
 
   font-family: var(--font-family-body);
   background-color: var(--color-page-bg);
+  line-height: var(--leading-base);
 }
 
 ::selection {

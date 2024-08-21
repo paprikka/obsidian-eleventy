@@ -3,6 +3,7 @@
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import { mdEmbed } from "./build/plugins/md-embed.js";
 import { ObsidianImportPlugin } from "./build/plugins/obsidian.js";
+import { dateFormat } from "./build/date-format.js";
 import markdownIt from "markdown-it";
 import markdownItAttrs from "markdown-it-attrs";
 export default function (eleventyConfig) {
@@ -45,6 +46,7 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addPlugin(ObsidianImportPlugin);
   eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addFilter("dateFormat", dateFormat);
 
   return {
     dir: {

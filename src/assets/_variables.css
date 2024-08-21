@@ -14,6 +14,7 @@
 :root {
   --color-page-bg: #fff;
   --color-butter: #fef4c3;
+  --color-accent: var(--color-butter);
   --color-text: #222;
   --color-negative: red;
   --color-link: hsl(2deg 85% 54%);
