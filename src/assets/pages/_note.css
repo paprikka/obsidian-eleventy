@@ -46,6 +46,14 @@
         bottom: 0;
       }
     }
+    pre:has(code) {
+      margin-inline: 0;
+      padding: 1em;
+      overflow-x: auto;
+      font-size: 0.9em;
+      background-color: var(--color-accent);
+      box-shadow: 0 0 0 0.5em var(--color-accent);
+    }
   }
   main {
     margin: calc(5 * var(--s-1)) auto;

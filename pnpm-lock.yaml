@@ -16,6 +16,9 @@ dependencies:
   gray-matter:
     specifier: ^4.0.3
     version: 4.0.3
+  highlight.js:
+    specifier: ^11.10.0
+    version: 11.10.0
   luxon:
     specifier: ^3.5.0
     version: 3.5.0
@@ -1626,6 +1629,11 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       function-bind: 1.1.2
+    dev: false
+
+  /highlight.js@11.10.0:
+    resolution: {integrity: sha512-SYVnVFswQER+zu1laSya563s+F8VDGt7o35d4utbamowvUNLLMovFqwCLSocpZTz3MgaSRA1IbqRWZv97dtErQ==}
+    engines: {node: '>=12.0.0'}
     dev: false
 
   /htmlparser2@7.2.0:

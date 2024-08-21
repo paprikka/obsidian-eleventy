@@ -5,7 +5,10 @@ import { mdEmbed } from "./build/plugins/md-embed.js";
 import { ObsidianImportPlugin } from "./build/plugins/obsidian.js";
 import { dateFormat } from "./build/date-format.js";
 import markdownIt from "markdown-it";
+import { escapeHtml } from "markdown-it/lib/common/utils.mjs";
 import markdownItAttrs from "markdown-it-attrs";
+import hljs from "highlight.js";
+
 export default function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.setQuietMode(true);
@@ -20,11 +23,25 @@ export default function (eleventyConfig) {
     });
   });
 
-  const markdownOptions = { linkify: false, breaks: true, html: true };
+  const markdownOptions = {
+    linkify: false,
+    breaks: true,
+    html: true,
+    highlight: (str, lang) => {
+      if (lang && hljs.getLanguage(lang)) {
+        try {
+          return `<pre class="hljs"><code>${hljs.highlight(lang, str, true).value}</code></pre>`;
+        } catch (__) {}
+      }
+
+      return `<pre class="hljs"><code>${escapeHtml(str)}</code></pre>`;
+    },
+  };
   const mdLib = markdownIt(markdownOptions);
   mdLib.use(markdownItAttrs);
   mdLib.use(mdEmbed);
   eleventyConfig.setLibrary("md", mdLib);
+
   eleventyConfig.addFilter("limit", function (arr, limit) {
     return arr.slice(0, limit);
   });

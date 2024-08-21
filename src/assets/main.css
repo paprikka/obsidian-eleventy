@@ -2,6 +2,8 @@
 @import "./_reset.css";
 @import "./_global.css";
 
+@import "./vendor/_hljs.css";
+
 @import "./components/_cards.css";
 @import "./components/_card.css";
 @import "./components/_timeline.css";
