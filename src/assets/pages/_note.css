@@ -18,9 +18,8 @@
     ul {
       margin: 1em 0;
       padding-inline-start: 1em;
-      ol,
-      ul {
-        margin-block-start: 0;
+      li {
+        margin: 0.5em 0;
       }
     }
     p {
