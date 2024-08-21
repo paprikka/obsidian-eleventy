@@ -15,6 +15,7 @@ export default function (eleventyConfig) {
     return collectionApi.getFilteredByGlob("src/notes/**/*.md").map((item) => {
       item.data.title = item.data?.title || item.fileSlug;
       item.data.layout = "note.njk";
+      item.data.pageClass = "note";
       return item;
     });
   });

@@ -1,0 +1,45 @@
+.page-note {
+  header {
+    margin-block-end: var(--spacing-xl);
+    h1 {
+      line-height: 1;
+    }
+    time {
+      font-weight: var(--font-weight-normal);
+      font-size: 0.75em;
+
+      opacity: 0.5;
+    }
+  }
+  article {
+    font-size: var(--s--1);
+    ol,
+    ul {
+      margin: 1em 0;
+      padding-inline-start: 1em;
+      ol,
+      ul {
+        margin-block-start: 0;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    h2 {
+      margin-block-end: var(--spacing-m);
+    }
+    blockquote {
+      /* font-size: var(--s-0); */
+      line-height: var(--leading-base);
+      padding-inline-start: 2em;
+      margin: 1em 0;
+      border-left: var(--color-text) 2px solid;
+    }
+  }
+  main {
+    margin: calc(5 * var(--s-1)) auto;
+    max-width: var(--page-width-narrow);
+    width: 100%;
+    min-height: 100dvh;
+  }
+}

@@ -28,7 +28,9 @@
 
   --leading-base: 140%;
   --leading-loose: 170%;
+  --leading-tight: 120%;
 
+  --spacing-xl: var(--s-2);
   --spacing-l: var(--s-1);
   --spacing-m: var(--s-0);
   --spacing-s: var(--s--1);
@@ -36,4 +38,7 @@
   --spacing-xxs: var(--s--3);
   --page-width-wide: 60em;
   --page-width-narrow: 40em;
+
+  --font-weight-normal: 400;
+  --font-weight-bold: 600;
 }
