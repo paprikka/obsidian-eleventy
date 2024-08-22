@@ -8,6 +8,7 @@
 @import "./components/_card.css";
 @import "./components/_timeline.css";
 @import "./components/_footer.css";
+@import "./components/_page-sticker.css";
 
 @import "./pages/_intro.css";
 @import "./pages/_note.css";

@@ -1,0 +1,22 @@
+.page-sticker {
+  position: fixed;
+
+  &.page-sticker--theseus {
+    width: 20vmin;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  /* TODO: use variables */
+  @media (min-width: 768px) {
+    &.page-sticker--angst {
+      width: 30vmin;
+      height: auto;
+      top: 0;
+      right: 0;
+      z-index: 1;
+    }
+  }
+}

@@ -9,7 +9,7 @@
       "contact"
       "feed";
     grid-template-columns: 1fr;
-    margin: calc(5 * var(--s-1)) auto;
+    margin: calc(3 * var(--s-1)) auto;
     max-width: var(--page-width-narrow);
     width: 100%;
   }
@@ -30,6 +30,17 @@
     padding-inline-start: 2em;
     margin: 1em 0;
     border-left: var(--color-text) 2px solid;
+  }
+
+  p:has(img) {
+    display: flex;
+    justify-content: center;
+
+    img {
+      max-width: 100%;
+      width: 50%;
+      margin-bottom: var(--spacing-l);
+    }
   }
 }
 .page-intro__contact {
