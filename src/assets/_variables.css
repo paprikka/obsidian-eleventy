@@ -37,6 +37,7 @@
   --spacing-xs: var(--s--2);
   --spacing-xxs: var(--s--3);
   --page-width-wide: 60em;
+  --page-width-mid: 45em;
   --page-width-narrow: 40em;
 
   --font-weight-normal: 400;
