@@ -37,25 +37,5 @@ pageClass: intro
 </main>
 
 {% include "components/page-stickers.njk" %}
-
-<script type="module">
-  const onLoaded = () => {
-    const images = document.querySelectorAll("img[loading='lazy']");
-    images.forEach((img) => {
-      if (img.complete) {
-        img.classList.add("image--is-loaded");
-      } else {
-        img.addEventListener("load", () => {
-          img.classList.add("img--is-loaded");
-        });
-      }
-    });
-  };
-  if (document.readyState !== "loading") {
-    onLoaded();
-  } else {
-    document.addEventListener("DOMContentLoaded", onLoaded);
-  }
-</script>
-
+{% include "components/style-lazy.njk" %}
 {% include "components/footer.njk" %}
