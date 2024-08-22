@@ -1,5 +1,13 @@
+@scroll-timeline scroll-in-document-timeline {
+  source: auto;
+  orientation: vertical;
+  scroll-offsets: 0 100vh;
+}
+
 .page-intro {
   padding: var(--page-margin);
+  --_intro-page-width: var(--page-width-narrow);
+  --_intro-margin-top: calc(3 * var(--s-1));
 
   main {
     display: grid;
@@ -9,38 +17,52 @@
       "contact"
       "feed";
     grid-template-columns: 1fr;
-    margin: calc(3 * var(--s-1)) auto;
-    max-width: var(--page-width-narrow);
+    margin: var(--_intro-margin-top) auto;
+    max-width: var(--_intro-page-width);
     width: 100%;
   }
 }
 
 .page-intro__about {
+  position: relative;
   grid-area: about;
   line-height: var(--leading-base);
-  /* font-size: var(--s-1); */
-
   p:first-of-type {
     margin: 0;
   }
 
   blockquote {
-    /* font-size: var(--s-0); */
     line-height: var(--leading-base);
     padding-inline-start: 2em;
     margin: 1em 0;
     border-left: var(--color-text) 2px solid;
   }
 
-  p:has(img) {
-    display: flex;
-    justify-content: center;
-
-    img {
-      max-width: 100%;
-      width: 50%;
-      margin-bottom: var(--spacing-l);
-    }
+  img {
+    max-width: 100%;
+    width: 7%;
+    margin-bottom: var(--spacing-l);
+    position: absolute;
+    left: -0.5em;
+    translate: -100% 0;
+    animation-name: me;
+    /* #til needed for FF support? */
+    animation-duration: 1ms;
+    animation-fill-mode: forwards;
+    animation-timeline: scroll(root block);
+    animation-range: calc(var(--_intro-margin-top) * 0.5) 15vh;
+  }
+}
+@keyframes me {
+  50% {
+    scale: 1.2;
+  }
+  to {
+    /* translate: calc(100% * -1 - var(--_intro-page-width)) 0; */
+    /* translate: calc(-100% - (50vw - var(--_intro-page-width))) 0; */
+    rotate: -240deg;
+    scale: 0;
+    opacity: 0;
   }
 }
 .page-intro__contact {
