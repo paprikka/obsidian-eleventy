@@ -5,11 +5,16 @@
   bottom: 0;
   padding: var(--s--2);
   text-align: center;
+  font-size: var(--s--2);
   margin: 0 auto;
   width: 100%;
   max-width: var(--page-width-mid);
   background: var(--color-page-bg);
   border-top: var(--_border-width) solid var(--color-text);
+
+  box-shadow:
+    var(--page-margin) 0 0 0 var(--color-page-bg),
+    calc(var(--page-margin) * -1) 0 0 0 var(--color-page-bg);
 
   ::after {
     content: "";
@@ -20,8 +25,8 @@
       transparent
     );
     height: var(--_shadow-height);
-    left: 0;
-    right: 0;
+    left: calc(var(--page-margin) * -1);
+    right: calc(var(--page-margin) * -1);
     top: calc(-1 * var(--_border-width) - var(--_shadow-height));
   }
 }

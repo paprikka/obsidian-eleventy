@@ -1,4 +1,5 @@
 .page-note {
+  padding: var(--page-margin);
   header {
     margin-block-end: var(--spacing-xl);
     h1 {
@@ -20,12 +21,15 @@
   }
 }
 .page-note__nav a {
+  --_color-bg: var(--color-page-bg);
   position: fixed;
   font-size: var(--s-0);
   font-weight: var(--font-weight-bold);
   top: var(--s--3);
   left: var(--s--3);
   color: var(--color-text);
+  background-color: var(--_color-bg);
+  box-shadow: 0 0 0 0.4em var(--_color-bg);
   text-decoration: none;
   border-radius: 0.4vmin;
 
@@ -33,8 +37,7 @@
   transition-duration: 0.2s;
   @media (hover: hover) {
     &:hover {
-      background-color: var(--color-butter);
-      box-shadow: 0 0 0 0.4em var(--color-accent);
+      --_color-bg: var(--color-accent);
     }
   }
 

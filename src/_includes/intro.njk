@@ -5,11 +5,14 @@ pageClass: intro
 
 <main>
   <section class="page-intro__about">
-    <img src="./assets/tiny-janusz.png" alt="a face drawn by a modestly talented man-child">
+    <img
+      src="./assets/tiny-janusz.png"
+      alt="a face drawn by a modestly talented man-child"
+    />
     <p>
-      Hi there, I'm <a href="https://sonnet.io">Rafał Pastuszak</a>. I'm using this space to publish my #til/lab
-      notes,
-      learn, and work in the open (<a href="/111">more</a>).
+      Hi there, I'm <a href="https://sonnet.io">Rafał Pastuszak</a>. Untested is
+      my digital garden. It's where I learn, share what I've learned, and work
+      with the garage door up (<a href="/111">more</a>).
     </p>
     <blockquote>
       <em>untested</em> like <em>undead</em>, so not
@@ -24,17 +27,18 @@ pageClass: intro
   <section class="page-intro__feed">
     <header class="page-intro__section-nav">
       <h2>Articles</h2>
-      <a href='/all'>View all</a>
+      <a href="/all">View all</a>
     </header>
     <ol class="timeline" reverse>
       {% for note in collections['untested-article'] | reverse %}
-      <li class="timeline__item"><a href="{{ note.url }}">{{ note.data.title }}</a><time>{{ note.page.date |
-          dateFormat('dd·MM·yyyy')}}</time></li>
+      <li class="timeline__item">
+        <a href="{{ note.url }}">{{ note.data.title }}</a
+        ><time>{{ note.page.date | dateFormat('dd·MM·yyyy')}}</time>
+      </li>
       {% endfor %}
     </ol>
   </section>
 </main>
 
-{% include "components/page-stickers.njk" %}
-{% include "components/style-lazy.njk" %}
-{% include "components/footer.njk" %}
+{% include "components/page-stickers.njk" %} {% include
+"components/style-lazy.njk" %} {% include "components/footer.njk" %}
