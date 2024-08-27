@@ -13,6 +13,7 @@
   }
 
   article {
+    margin-bottom: var(--spacing-xl);
     font-size: var(--s--1);
     ol,
     ul {
@@ -29,7 +30,6 @@
       margin-block-end: var(--spacing-m);
     }
     blockquote {
-      /* font-size: var(--s-0); */
       line-height: var(--leading-base);
       padding-inline-start: 2em;
       margin: 1em 0;
@@ -46,13 +46,23 @@
         bottom: 0;
       }
     }
+
+    & a.link.link--broken {
+      color: var(--color-link);
+      position: relative;
+      &::after {
+        content: " †";
+        position: absolute;
+      }
+    }
     pre:has(code) {
-      margin-inline: 0;
+      font-size: var(--s--2);
+      line-height: var(--leading-tight);
       padding: 1em;
       overflow-x: auto;
-      font-size: 0.9em;
-      background-color: var(--color-accent);
-      box-shadow: 0 0 0 0.5em var(--color-accent);
+      border: 2px solid var(--color-text);
+      box-shadow: 4px 4px 0 0 var(--color-text);
+      margin: 1em -2em;
     }
   }
   main {

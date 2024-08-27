@@ -6,24 +6,24 @@ permalink: /all
 
 <main>
   <section class="page-intro__contact">
-    Want to receive my work as I publish it?
-    <a href="https://letters.sonnet.io/profile/posts"><strong>Subscribe here</strong></a>.
+    {% include "components/widget-subscribe.njk" %}
   </section>
 
   <section class="page-intro__feed">
     <header class="page-intro__section-nav">
       <h2>All notes</h2>
-      <a href='/'>View selected notes</a>
+      <a href="/">View selected notes</a>
     </header>
     <ol class="timeline" reverse>
       {% for note in collections.notes | reverse %}
-      <li class="timeline__item"><a href="{{ note.url }}">{{ note.data.title }}</a><time>{{ note.page.date |
-          dateFormat('dd·MM·yyyy')}}</time></li>
+      <li class="timeline__item">
+        <a href="{{ note.url }}">{{ note.data.title }}</a
+        ><time>{{ note.page.date | dateFormat('dd·MM·yyyy')}}</time>
+      </li>
       {% endfor %}
     </ol>
   </section>
 </main>
 
-{% include "components/page-stickers.njk" %}
-{% include "components/style-lazy.njk" %}
-{% include "components/footer.njk" %}
+{% include "components/page-stickers.njk" %} {% include
+"components/style-lazy.njk" %} {% include "components/footer.njk" %}

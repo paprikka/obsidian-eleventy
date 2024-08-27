@@ -26,7 +26,6 @@ img {
     transition: 0.7s opacity;
     &:not(.img--is-loaded) {
       opacity: 0.3;
-      background-color: var(--color-loading-placeholder);
     }
   }
 }

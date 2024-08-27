@@ -19,7 +19,6 @@
   --color-negative: red;
   --color-link: hsl(2deg 85% 54%);
   --color-link-broken: hsl(2deg 35% 54%);
-  --color-loading-placeholder: hsl(0 0 0 /0.2);
   --article-width: calc(30 * var(--s-0));
   --page-margin: var(--s-1);
 

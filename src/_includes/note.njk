@@ -2,25 +2,44 @@
 layout: root.njk
 pageClass: note
 ---
+
 <main>
+  <nav class="page-note__nav">
+    <a href="/">← notes</a>
+  </nav>
 
+  <header class="page-note__header">
+    <h1>{{title}}</h1>
+    <h2><time>{{ page.date | dateFormat('dd·MM·yyyy')}}</time></h2>
+  </header>
 
-    <nav class="page-note__nav">
-        <a href="/">← notes</a>
-    </nav>
+  <article class="page-note__article">{{ content | safe }}</article>
 
-    <header class="page-note__header">
-        <h1>{{title}}</h1>
-        <h2><time>{{ page.date |
-                dateFormat('dd·MM·yyyy')}}</time></h2>
-    </header>
-
-    <article class="page-note__article">{{ content | safe }}</article>
-
-    {% include "components/widget-subscribe.njk" %}
-
+  {% include "components/widget-subscribe.njk" %}
 </main>
 
-{% include "components/page-stickers.njk" %}
-{% include "components/style-lazy.njk" %}
-{% include "components/footer.njk" %}
+{% include "components/page-stickers.njk" %} {% include
+"components/style-lazy.njk" %} {% include "components/footer.njk" %}
+
+<script>
+  document.addEventListener("click", function (event) {
+    let targetElement = event.target;
+
+    while (targetElement && targetElement !== document) {
+      if (targetElement.matches(".link--broken")) {
+        event.preventDefault();
+        const result = window.confirm(
+          "This link hasn't hatched yet. Click OK to request it.",
+        );
+        if (!result) return;
+
+        const content = `I'd like to learn more about: ${targetElement.textContent}`;
+        const subject = `Broken link: ${targetElement.href}`;
+        const mailTo = `mailto:hello@sonnet.io?subject=${subject}&body=${content}`;
+        window.open(mailTo, "_blank");
+        break;
+      }
+      targetElement = targetElement.parentElement;
+    }
+  });
+</script>
