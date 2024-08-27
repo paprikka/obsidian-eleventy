@@ -1,8 +1,12 @@
 ---
-cover: 'https://res.cloudinary.com/dlve3inen/image/upload/v1718045749/env-cover_sy0xhp.png?foo'
+cover: https://res.cloudinary.com/dlve3inen/image/upload/v1718045749/env-cover_sy0xhp.png?foo
 publish: true
+title: $ cp example.env .env (a.k.a. adventures of the Bun-man)
+date: 2024-06-10
+tags:
+  - untested-article
 ---
-![118](env-cover.png)
+![224](env-cover.png)
 
 *Some late night doodles, the punchline is the same as the reason the oopsie mentioned below happened (lost track of time). Title: "nightmares of the bun man"*
 

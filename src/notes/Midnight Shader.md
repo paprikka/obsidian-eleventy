@@ -1,6 +1,9 @@
 ---
-cover: 'https://res.cloudinary.com/dlve3inen/image/upload/v1702327016/midnight-shader-cover.png'
+cover: https://res.cloudinary.com/dlve3inen/image/upload/v1702327016/midnight-shader-cover.png
 publish: true
+date: 2023-12-11
+tags:
+  - untested-article
 ---
 ![cover](https://res.cloudinary.com/dlve3inen/image/upload/v1702327016/midnight-shader-cover.png)
 
@@ -58,7 +61,7 @@ We could replace `--delay` with `animation-duration`, but CSS  variables offer m
 
 `position: relative` ensures that some text is rendered *in front* of the shaded animation. Those elements are already dimmed so darkening them even further would make them hard to read.
 
-![1943](midnight-shader-shader-or-not.webp)
+![1985](midnight-shader-shader-or-not.webp)
 
 ### 2. fade in the WebGL noise animation (shaders)
 
@@ -69,7 +72,7 @@ The WebGL animation has two main parts:
 
 **[You can check out the interactive demo here.](https://night-reader-site-git-feat-shader-park-sonnet.vercel.app)** Use the dropdown in the top-left corner to toggle between *normal* and *multiply* blend modes.
 
-![2399](midnight-shader-blend-modes.webp)
+![2441](midnight-shader-blend-modes.webp)
 Tech-wise, I'm using [ShaderPark](https://shaderpark.com) because:
 
 - it offers a good balance between ease of use (a simple JS-like DSL with the power of shaders)
@@ -104,7 +107,7 @@ setMaxIterations(1);
 
 `setMaxIterations` reduces the number of iterations of the SDF algorithm. In our case, we're not rendering any *precise* 3d shapes. Effectively, we're just projecting a noise texture on the screen. This means that we can keep this value as low as possible to reduce battery impact of the animation. Here's the same code rendered with `setMaxIterations(1);` and `setMaxIterations(1000);`:
 
-![3466](midnight-shader-iterations.webp)
+![3508](midnight-shader-iterations.webp)
 
 Let's move on to the noise itself. Shader Park uses simplex noise, which generates values between -1 and 1:
 
@@ -132,7 +135,7 @@ let n2 = 0.5 * noise(noiseScale * s + time * timeScale + n * 1.5) + 0.5;
 
 Here's a neat trick: we can make the texture more complex and create "creases" in the fabric by computing a noise with the previous noise `n` as one of the parameters.
 
-![4559](midnight-shader-multiple-noises.webp)
+![4601](midnight-shader-multiple-noises.webp)
 
 Finally, let's turn that noise into colours we can render on the screen. I've split the colour calculation code into smaller steps. Also, it'll make more sense to read them backwards!
 
@@ -156,7 +159,7 @@ Why these numbers? The short answer: trial and error, laziness and my adventurou
 
 This is not the ideal solution and I'd go with a [Sigmoid function](<../Sigmoid function>) or trigonometry to have more control over the contrast.
 
-![5822](maude-lebowski.jpeg)
+![5864](maude-lebowski.jpeg)
 
 *Does the sound of a sigmoid function make you uncomfortable Mr Lebowski? Well, my art has been commented as strongly hacky, which bothers some 10x engineers, the word sss..sigmoid itself makes some 10x engineers uncomfortable.* 
 

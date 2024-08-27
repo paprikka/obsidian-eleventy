@@ -1,6 +1,9 @@
 ---
-cover: 'https://images.ctfassets.net/hyylafu4fjks/4drq2gSGYr8INYte7bdiTh/f64a699f0d868f9152db63b6b63fb9fb/245491987_342644317634651_7224792750543159376_n_18064078861288800.jpg'
+cover: https://images.ctfassets.net/hyylafu4fjks/4drq2gSGYr8INYte7bdiTh/f64a699f0d868f9152db63b6b63fb9fb/245491987_342644317634651_7224792750543159376_n_18064078861288800.jpg
 publish: true
+date: 2023-11-20
+tags:
+  - untested-article
 ---
 
 <img src="https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F4drq2gSGYr8INYte7bdiTh%2Ff64a699f0d868f9152db63b6b63fb9fb%2F245491987_342644317634651_7224792750543159376_n_18064078861288800.jpg&w=2048&q=75" alt="">
@@ -30,7 +33,7 @@ For instance, I was recently messing with a bug in Safari, where hitting the shi
 
 [Sit.](https://sit.sonnet.io), — My baby is *beautiful* and I love it the way it is, but let's face it: it's a dumb alarm clock, it's a glorified gong. It's the borzoi of my apps. <span id="^b2eef4" class="link-marker">^b2eef4</span>
 
-![2149](borzoi-2.jpg)
+![2191](borzoi-2.jpg)
 *You beautiful, majestic, sweet summer child. CC by [Deb](https://www.flickr.com/photos/ferlinka/51819368370/)*
 
 The hardest technical bit involved preventing the device from falling asleep. I love the way it looks and thanks to its simplicity I could focus on making it look and feel the way I wanted to. 
@@ -40,7 +43,7 @@ The hardest technical bit involved preventing the device from falling asleep. I 
 [Night Reader](https://testflight.apple.com/join/jn7XlV3M) — a focused reading web browser, sort of. It's much *less* than that ([context](<../Heart of Dorkness>)). The main goal: firing as few photons as possible to give you a pleasant reading experience. Not a single wave/particle more than necessary, Mr Heisenberg. The only colours allowed: black, dark red, even darker red. 
 
 The difficulty here is to prevent the WKWebView from doing its job: giving you a smooth, interactive web browsing experience, showing you the content as soon as its available (sometimes [too soon](https://en.wikipedia.org/wiki/Flash_of_unstyled_content) for *our* use-case). 
-![3227](lobotomy-figure.png)
+![3269](lobotomy-figure.png)
 *Lobotomy–the fuck around and find out of medical science*
 
 These problems are fun constraints to deal with, and work in this manner can be both frustrating and incredibly rewarding. 

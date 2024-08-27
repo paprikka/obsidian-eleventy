@@ -1,6 +1,9 @@
 ---
-cover: 'https://images.ctfassets.net/hyylafu4fjks/6Yn1685J5TznJupIYgjp5v/5faa9ffe8fd5d3d6513bbc55defa4064/Untitled_Artwork_13.png'
+cover: https://images.ctfassets.net/hyylafu4fjks/6Yn1685J5TznJupIYgjp5v/5faa9ffe8fd5d3d6513bbc55defa4064/Untitled_Artwork_13.png
 publish: true
+date: 2023-10-25
+tags:
+  - untested-article
 ---
 <img src="https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F6Yn1685J5TznJupIYgjp5v%2F5faa9ffe8fd5d3d6513bbc55defa4064%2FUntitled_Artwork_13.png&w=3840&q=75" alt=""/>
 
@@ -10,7 +13,7 @@ Feel free to give it a go if you read in the dark, have a somewhat complicated r
 
 You can find the setup instructions at the bottom of this note.
 
-![711](nightnight-screenshot-hero.webp)
+![753](nightnight-screenshot-hero.webp)
 Bear in mind that these screenshots are going to appear too dark on most screens as they're meant to be viewed using an OLED display, in a dark environment.
 
 ## How does this work?
@@ -35,11 +38,11 @@ First, I wanted to get this done in 2 pomodoros, so needed to make some compromi
 
 The Style Settings plugin provides a UI to override the CSS variables used to customise the appearance of Obsidian. 
 
-![2073](style-settings-screenshot.png)
+![2115](style-settings-screenshot.png)
 
 However, I didn't like having to click through each colour picker to modify the settings. I'm also picky, so instead of reading the whole thing I extracted all the CSS vars from their documentation with a simple JS snippet.
 
-![2334](extract-obsidian-theme-vars.webp)
+![2376](extract-obsidian-theme-vars.webp)
 Thank you RyanAir and DHL for teaching me to read the web through the WebInspector (*the \#1 Accessibility Tool™*).
 
 ```javascript
@@ -79,7 +82,7 @@ This gave me the CSS + inline docs in a format where I can just hit `CMD+SHIFT+/
 
 I added my `nightnight.css` file to Obsidian...
 
-![3490](obsidian-appearance-snippets.png)
+![3532](obsidian-appearance-snippets.png)
 And from there I could just play with the CSS variables and see the changes in realtime, since Obsidian live-reloads the CSS snippets.
 
 I'm using CSS vars to give the UI some detail through shading:
@@ -96,7 +99,7 @@ I'm using CSS vars to give the UI some detail through shading:
 ```
 
 Note the uneven colouring of the icons below. That's because I'm (incorrectly) using opacity instead of luminosity to control how bright the details appear. 
-![4128](nightnight-icon-alpha-bug.webp)
+![4170](nightnight-icon-alpha-bug.webp)
 
 
 I also improved the overall (really "loud" if I may say so) colour palette of Obsidian's Minimal Theme:
@@ -112,14 +115,14 @@ I also improved the overall (really "loud" if I may say so) colour palette of Ob
 ```
 
 I tried to make my theme as non-invasive as possible (e.g. don't change the layout-related properties), so I tried to (ab)use the sepia filter and hue-shift to make the images look nicer. 
-![4661](nightnight-fish.webp)
+![4703](nightnight-fish.webp)
 However, my site has a tonne of line art drawings on white background which would look terrible with this approach.
 
 So, I resorted to a dark red overlay and blending mode set to multiply:
 
-![4877](nightnight-fish-multiply.webp)
+![4919](nightnight-fish-multiply.webp)
 
-![4913](nightnight-dark-janusz.webp)
+![4955](nightnight-dark-janusz.webp)
 Embrace the new, dark Janusz.
 
 ## Inspirations:
@@ -138,7 +141,7 @@ Nowadays I just go to a different room, make tea and write with Ensō. I keep th
 ### Heads-up displays:
 
 Most of the examples I could find here are green. 
-![5560](Rockwell-CL601-CVS-CL605-PL21adv-HUD-Image_02_824x549.png)
+![5602](Rockwell-CL601-CVS-CL605-PL21adv-HUD-Image_02_824x549.png)
 Imagine *this* but in a movie where Sean Connery, *the Soviet Union's best submarine captain violates orders and heads for the U.S. in a new undetectable sub.* 
 
 ### Night Sky
@@ -151,10 +154,10 @@ Night Sky is a fantastic stargazing app. It has a secondary, dimmed mode which r
 
 1\. Install the Minimal Theme and Minimal Theme Settings in Obsidian.
 2.\ Enable the *True Black* mode:
-![6130](nightnight-minimal-theme-settings.webp)
+![6172](nightnight-minimal-theme-settings.webp)
 
 3\. Get the snippet from [here](https://gist.github.com/paprikka/47204f1ddddd29039b2b72880f548ff2) and add it to Obsidian.
-![6298](nightnight-snippets.webp)
+![6340](nightnight-snippets.webp)
 
 ## Possible applications:
 

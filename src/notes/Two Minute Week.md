@@ -1,6 +1,9 @@
 ---
-cover: 'https://res.cloudinary.com/dlve3inen/image/upload/v1715257145/2-weeks-cover_mfcnax.png'
+cover: https://res.cloudinary.com/dlve3inen/image/upload/v1715257145/2-weeks-cover_mfcnax.png
 publish: true
+date: 2024-05-09
+tags:
+  - untested-article
 ---
 I learned about this idea from the [Future of Coding](https://futureofcoding.slack.com/archives/C0120A3L30R) Slack channel. Here's how it works:
 
@@ -10,7 +13,7 @@ I learned about this idea from the [Future of Coding](https://futureofcoding.sla
 
 - To find an excuse/force yourself to articulate what you're thinking about
 
-![442](listbon-thinking-dog.webp)
+![484](listbon-thinking-dog.webp)
 
 ### To which I'd add:
 

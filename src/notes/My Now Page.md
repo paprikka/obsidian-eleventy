@@ -1,8 +1,11 @@
 ---
-cover: 'https://res.cloudinary.com/dlve3inen/image/upload/v1702925706/card_tc0obn.png'
+cover: https://res.cloudinary.com/dlve3inen/image/upload/v1702925706/card_tc0obn.png
 publish: true
+date: 2023-12-18
+tags:
+  - untested-article
 ---
-![109](days-now-diagram.webp)
+![151](days-now-diagram.webp)
 
 I have a now page, now!  You can check it out [here](https://sonnet.io/now).
 

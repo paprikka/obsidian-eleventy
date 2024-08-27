@@ -1,9 +1,10 @@
 ---
 description: Don't yell at a barking dog.
-cover: 'https://images.ctfassets.net/hyylafu4fjks/3WKWuWcniO6PVjc44gdfBZ/f76852eb3f9906e24e01c7b6ca2e9f55/Untitled_Artwork_3.png'
+cover: https://images.ctfassets.net/hyylafu4fjks/3WKWuWcniO6PVjc44gdfBZ/f76852eb3f9906e24e01c7b6ca2e9f55/Untitled_Artwork_3.png
 publish: true
 tags:
   - untested-article
+date: 2023-09-25
 ---
 
 ![a bunch of dogs of all shapes and sizes surrouding a confused bear, there's an elf riding a fox](dog-mode.png)

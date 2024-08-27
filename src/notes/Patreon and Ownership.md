@@ -1,5 +1,8 @@
 ---
 publish: true
+date: 2023-12-27
+tags:
+  - untested-article
 ---
 Here's how Sibylla Bostoniensis (from here on SB) describes the Patreon model in [How to Compete with Patreon [New Media, Tech, Patreon]](https://siderea.dreamwidth.org/1824441.html):
 

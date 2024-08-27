@@ -1,8 +1,11 @@
 ---
-cover: 'https://res.cloudinary.com/dlve3inen/image/upload/v1701788479/autohibernate-subscriptions-cover-og.png'
+cover: https://res.cloudinary.com/dlve3inen/image/upload/v1701788479/autohibernate-subscriptions-cover-og.png
 publish: true
+date: 2023-12-05
+tags:
+  - untested-article
 ---
-![134](autohibernate-subscriptions.webp)
+![176](autohibernate-subscriptions.webp)
 Balsamiq Cloud [doesn't charge you for the months you're not using it](https://balsamiq.com/wireframes/cloud/sales/subscription/#auto-hibernation).
 
 I like this approach because it works for the customer and the business ([Kind software](<../Kind software>)):

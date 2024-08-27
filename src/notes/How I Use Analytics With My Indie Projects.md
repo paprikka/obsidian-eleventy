@@ -1,6 +1,9 @@
 ---
-cover: 'https://res.cloudinary.com/dlve3inen/image/upload/v1705418292/card-analytics_ochmpn.png'
+cover: https://res.cloudinary.com/dlve3inen/image/upload/v1705418292/card-analytics_ochmpn.png
 publish: true
+date: 2024-01-16
+tags:
+  - untested-article
 ---
 ![https://res.cloudinary.com/dlve3inen/image/upload/v1705418292/card-analytics_ochmpn.png](https://res.cloudinary.com/dlve3inen/image/upload/v1705418292/card-analytics_ochmpn.png)
 
@@ -19,7 +22,7 @@ Most of the 50 or so little projects I built don't rely on analytics. I have a s
 
 My railway usage is low enough not to exceed the monthly free usage tier ($5, I wouldn't mind paying.) Setting up a self-hosted umami instance is pretty simple. Learn more [here](https://umami.is/docs/install).
 
-![1295](analytics-diagram.webp)
+![1337](analytics-diagram.webp)
 
 Untested doesn't use analytics at all. Similarly, Ensō (the web app) fires a single *hello* event so I can get a rough number of page impressions for a given day.
 
@@ -66,7 +69,7 @@ I use analytics to solve user problems. Every metric should reflect that. Anythi
 
 I'm trying to be strict with collecting only the metrics that can answer relevant questions. I also don't collect any "open" user input data in my tracking events (e.g. Meat GPT chat "queries"). The [Tip of the Tongue](https://tip.potato.horse) is an exception here as I allow users to opt-**in** to sharing their queries.
 
- ![3323](tip-analytics-opt-in.webp)
+ ![3365](tip-analytics-opt-in.webp)
 
 ### Custom events
 

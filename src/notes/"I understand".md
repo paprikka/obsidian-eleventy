@@ -1,7 +1,10 @@
 ---
 description: Don't yell at a barking dog.
-cover: 'https://images.ctfassets.net/hyylafu4fjks/311IXqF7sflIyXVCdpbkhM/440b375549b3c31c8656e5696ead5d09/0CD10530-8791-4168-A3F7-6F130C401128.png'
+cover: https://images.ctfassets.net/hyylafu4fjks/311IXqF7sflIyXVCdpbkhM/440b375549b3c31c8656e5696ead5d09/0CD10530-8791-4168-A3F7-6F130C401128.png
 publish: true
+date: 2023-09-26
+tags:
+  - untested-article
 ---
 
 ![hands touching fingers, on tiny leashes](hands-touching-on-threads.png)

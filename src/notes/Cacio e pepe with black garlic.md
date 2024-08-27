@@ -1,10 +1,13 @@
 ---
-cover: 'https://res.cloudinary.com/dlve3inen/image/upload/v1703609084/cacio-e-pepe-temporada_q6gl9x.jpg'
+cover: https://res.cloudinary.com/dlve3inen/image/upload/v1703609084/cacio-e-pepe-temporada_q6gl9x.jpg
 publish: true
+date: 2023-12-26
+tags:
+  - untested-article
 ---
 I didn't know anyone in London when I moved there, so I decided to meet new people by cooking for them every two weeks. This is the dish I'd cook for my first-time visitors. 
 
-![303](cacio-e-pepe-temporada.jpg)
+![345](cacio-e-pepe-temporada.jpg)
 *Feeding people I don't/didn't know with my cacio e pepe and spicy kale crisps, [credit](https://www.instagram.com/temporada.pt/).*
 
 *Cacio e pepe* means *cheese and pepper*. Adding black garlic changes this dish quite a bit: it feels meatier, less cheesy and the spiciness of pepper pops out a bit more. I've fed it to a bunch of Italians and at least one chef without gaining any mortal enemies, so you should be fine eating it.

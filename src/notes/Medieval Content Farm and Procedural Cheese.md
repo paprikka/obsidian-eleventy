@@ -1,6 +1,9 @@
 ---
-cover: 'https://images.ctfassets.net/hyylafu4fjks/4drq2gSGYr8INYte7bdiTh/f64a699f0d868f9152db63b6b63fb9fb/245491987_342644317634651_7224792750543159376_n_18064078861288800.jpg'
+cover: https://images.ctfassets.net/hyylafu4fjks/4drq2gSGYr8INYte7bdiTh/f64a699f0d868f9152db63b6b63fb9fb/245491987_342644317634651_7224792750543159376_n_18064078861288800.jpg
 publish: true
+date: 2023-10-10
+tags:
+  - untested-article
 ---
 [The Medieval Content](https://tidings.potato.horse) farm is a joke about crappy, AI-generated content. It's a rant I over-engineered to the point it became an autonomous generative publication powered by the very thing I was ranting about. You can read more about it [here](https://tidings.potato.horse/about). 
 
@@ -47,7 +50,7 @@ Granted, Latin seems historically more correct, but at the same time I wanted th
 
 MeatGPT works (at least for those who don't message me asking about my mental state) because it uses the limitations of the current tech to its advantage. It's like poorly done taxidermy or a hedgehog-shaped Jesus.
 
-![3483](taxidermy-cat.jpg)
+![3525](taxidermy-cat.jpg)
 
 
 When working on any generative project, embrace the cheese, have fun with it. It's more fun with AI of course, because of the amount of hype and expectations around it. AI tool catalogues are a big source of traffic for MeatGPT and real, human people with jobs and working thought-sponges asked me how I wanted to monetise Butter. Both projects are obviously jokes.

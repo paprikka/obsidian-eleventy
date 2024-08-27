@@ -1,6 +1,9 @@
 ---
-cover: 'https://res.cloudinary.com/dlve3inen/image/upload/v1703168413/what-the-fuck_ivuau8.png'
+cover: https://res.cloudinary.com/dlve3inen/image/upload/v1703168413/what-the-fuck_ivuau8.png
 publish: true
+date: 2023-12-21
+tags:
+  - untested-article
 ---
 ![https://res.cloudinary.com/dlve3inen/image/upload/v1703168413/what-the-fuck_ivuau8.png](https://res.cloudinary.com/dlve3inen/image/upload/v1703168413/what-the-fuck_ivuau8.png)
 
@@ -12,7 +15,7 @@ This process is messy, anything-but-optimal, possibly slightly deranged, but als
 
 # What you'll need:
 
-![641](tee-tutorial-tools.webp)
+![683](tee-tutorial-tools.webp)
 
 - [Posca](https://poscausa.com) markers
 - a soft pencil (or a fabric pencil)
@@ -60,15 +63,15 @@ Acrylic markers are a pain to wash off and the last thing you want to deal with 
 
 Use safety pins or heavy rectangular objects like this overpriced mortar and pestle I'm expecting to fall on my head and separate my soul from my body one day:
 
-![3033](tee-tutorial-setup-mortar.webp)
+![3075](tee-tutorial-setup-mortar.webp)
 
 ## 6\. Trace the initial sketch
 
-![3103](tee-tutorial-trace-dots-zoom.webp)
+![3145](tee-tutorial-trace-dots-zoom.webp)
 Trace the sketch, by gently *pulling* the pencil. The softer the pencil, the better. You can also leave dotted marks with a fine point marker if it's of the same colour as the lines you'll draw in the next step. I'm using a Sakura Pigma brush pen like [this one](https://kawaiipenshop.com/products/sakura-pigma-brush-pen) (I didn't buy it from that site).
 
 ## 7\. Draw the thing
-![3521](tee-tutorial-longer.webp)
+![3563](tee-tutorial-longer.webp)
 Again, draw by gently pulling the Posca marker. Take your time, enjoy a nicely rolled leaf of Satan's lettuce and play some music. Here's a good playlist: [1](https://www.youtube.com/watch?v=tSv04ylc6To), [2](https://www.youtube.com/watch?v=q4xKvHANqjk&t=2816s&pp=ygUKa2hydWFuZ2Jpbg%3D%3D), [3](https://www.youtube.com/watch?v=d8eVBS7c_hU)
 
 ## 8\. Wash

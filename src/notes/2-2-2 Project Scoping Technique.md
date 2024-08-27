@@ -1,10 +1,12 @@
 ---
 publish: true
 cover: https://res.cloudinary.com/dlve3inen/image/upload/v1707157525/cover-2-2-2_bigph5.webp
-title: 2-2-2 oi oi
+date: 2024-02-05
+tags:
+  - untested-article
 ---
 
-![135](cover-2-2-2.webp)
+![160](cover-2-2-2.webp)
 _My **earlier** work titled: "A Quick Study of the Canine Form"_
 
 2-2-2 stands for 2 hours, 2 days and 2 weeks. It's a technique of scoping experiment work I learned from [Jordi Bruin](https://twitter.com/jordibruin) and I've applied it to a bunch of projects including [Sit.](https://sit/sonnet.io) .

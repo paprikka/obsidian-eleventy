@@ -1,8 +1,11 @@
 ---
-cover: 'https://res.cloudinary.com/dlve3inen/image/upload/v1703014345/cover_social_hlohtq.jpg'
+cover: https://res.cloudinary.com/dlve3inen/image/upload/v1703014345/cover_social_hlohtq.jpg
 publish: true
+date: 2023-12-19
+tags:
+  - untested-article
 ---
-![117](project-cemetery-article-cover-0.webp)
+![159](project-cemetery-article-cover-0.webp)
 
 This will require some framing: as a kid I was afraid of ghosts, so I decided to challenge myself and started photographing cemeteries with my crappy digital camera. Twenty years later, I've visited dozens of necropolises across Europe, Africa and South East Asia and, more importantly, I somehow turned a fear into a source of calmness. This also means that to some readers my language might be confusing as where many see decay and ugliness, I see peace. (I'm not unique in this, but I've grown to realise I tend to overestimate the amount of people who share my perspective.)
 

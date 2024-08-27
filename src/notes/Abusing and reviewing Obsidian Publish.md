@@ -1,6 +1,9 @@
 ---
-cover: 'https://images.ctfassets.net/hyylafu4fjks/kNNfi5Au0wDA07eXNGaGf/64cbc7f731a08606c4a1ae8968545a34/5E3A6100-41C2-4D62-A4A9-4E820D2587A8.png'
+cover: https://images.ctfassets.net/hyylafu4fjks/kNNfi5Au0wDA07eXNGaGf/64cbc7f731a08606c4a1ae8968545a34/5E3A6100-41C2-4D62-A4A9-4E820D2587A8.png
 publish: true
+date: 2023-11-23
+tags:
+  - untested-article
 ---
 
 <img src="https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2FkNNfi5Au0wDA07eXNGaGf%2F64cbc7f731a08606c4a1ae8968545a34%2F5E3A6100-41C2-4D62-A4A9-4E820D2587A8.png&w=3840&q=75" alt="a boy on a skateboard, running away from seagulls"/>
@@ -107,7 +110,7 @@ Another one to just use markdown and add a paragraph with the caption below:
 *meow*
 ```
 
-![6190](TIL/weekly/uncolouring-book-butt-art.png)
+![6232](TIL/weekly/uncolouring-book-butt-art.png)
 *[Uncolouring Book](https://lines.potato.horse) v. 2 (the Uncolouring Butt)*
 
 
@@ -146,14 +149,14 @@ Obsidian Publish has a UI to automatically publish linked resources. For example
 What happens often is that I click Add Linked and see this:
 
 
-![7898](obsidian-publish-linked-notes-too-many.webp)
+![7940](obsidian-publish-linked-notes-too-many.webp)
 
 
 So, now I have to scroll through 100s notes to make sure that I'm not including anything I don't want to share or don't want to share *yet*. 
 
 Temporary workaround: if you type *something*, literally *anything* in the search box, the UI will display the newly linked notes:
 
-![8224](Pasted%20image%2020231123122223.png)
+![8266](Pasted%20image%2020231123122223.png)
 
 This gets a bit unwieldy when you have +1 level of linked notes or you're not 100% sure if 2 of 10 linked notes are ready to be published. Currently I just go back and forth between the editing and publishing UI to double check that I'm not accidentally sharing a brain fart, my secret cacio e pepe recipe or the reason I convinced the board of Open AI to fire Sam Altman.
 

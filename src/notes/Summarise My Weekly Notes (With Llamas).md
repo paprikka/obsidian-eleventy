@@ -1,8 +1,11 @@
 ---
-cover: 'https://res.cloudinary.com/dlve3inen/image/upload/v1706208401/card-human-llama_tvtd8m.png'
+cover: https://res.cloudinary.com/dlve3inen/image/upload/v1706208401/card-human-llama_tvtd8m.png
 publish: true
+date: 2024-01-25
+tags:
+  - untested-article
 ---
-![121](human-llama.webp)
+![163](human-llama.webp)
 
 *<strong>human llama</strong> was the brand behind your favourite AAA titles such as "[Tommy the Toe](<../Tommy the Toe>) and the Chamber of Hostile Carpentry" and ["How to Run an All-hands Meeting"](https://rafsters.itch.io/all-hands)*
 

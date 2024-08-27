@@ -1,6 +1,9 @@
 ---
-cover: 'https://res.cloudinary.com/dlve3inen/image/upload/v1703265614/card-newsletter_kzk98x.png'
+cover: https://res.cloudinary.com/dlve3inen/image/upload/v1703265614/card-newsletter_kzk98x.png
 publish: true
+date: 2023-12-22
+tags:
+  - untested-article
 ---
 This time instead of sending a newsletter about the Indie Web, I thought I'd share some of the sources I rely on to put it together.
 
@@ -65,7 +68,7 @@ Disclaimer and probably the worst possible start of a post like this:
 ## Other
 
 I often check the domain names associated with the email addresses of people who message me with feedback or contact me via [Say Hi](https://sonnet.io/posts/hi). 
-![3184](untested-visitor-sites-mail-client.webp)
+![3226](untested-visitor-sites-mail-client.webp)
 
 ### Niche and tech-specific sites or forums, e.g.:
 

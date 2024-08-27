@@ -1,6 +1,9 @@
 ---
-cover: 'https://publish-01.obsidian.md/access/eeaad4d8787612061c379ba2cca364bf/fishlist-cover.webp'
+cover: https://publish-01.obsidian.md/access/eeaad4d8787612061c379ba2cca364bf/fishlist-cover.webp
 publish: true
+date: 2023-10-02
+tags:
+  - untested-article
 ---
 <span style="color: red">Missing embed: fishlist-cover.webp </span>
 

@@ -1,8 +1,11 @@
 ---
-cover: 'https://images.ctfassets.net/hyylafu4fjks/2CzjlSvJU5f2bi7i4CLdQA/99f9e46ce4b1f2bfaeadc60623011a9a/banana-boys.webp'
+cover: https://images.ctfassets.net/hyylafu4fjks/2CzjlSvJU5f2bi7i4CLdQA/99f9e46ce4b1f2bfaeadc60623011a9a/banana-boys.webp
 publish: true
+date: 2023-11-30
+tags:
+  - untested-article
 ---
-![146](banana-boys.webp)
+![188](banana-boys.webp)
 
 There's an important aspect of communication which to some people (especially the so-called free speech absolutists) is very hard to grasp: communication *is* action. 
 

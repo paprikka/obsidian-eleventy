@@ -1,6 +1,9 @@
 ---
-cover: 'https://res.cloudinary.com/dlve3inen/image/upload/v1705606786/card-good-cat_jpkkqm.png'
+cover: https://res.cloudinary.com/dlve3inen/image/upload/v1705606786/card-good-cat_jpkkqm.png
 publish: true
+date: 2024-01-18
+tags:
+  - untested-article
 ---
 Sometimes I make hand-drawn bootleg band t-shirts for my friends. Read [My Bootleg T-shirts](<../My Bootleg T-shirts>) for context. 
 
@@ -14,20 +17,20 @@ I based them on some of my older drawings from [potato.horse](https://potato.hor
 
 ### My Deer
 
-![541](t-shirt-deer-1.webp)
+![583](t-shirt-deer-1.webp)
 *TIL: White acrylic paint on black fabric seems to handle washing much worse than dark/colour on white.*
 
 ### Perfect Cat
 
-![689](t-shirt-perfect-cat-front.webp)
+![731](t-shirt-perfect-cat-front.webp)
 *Perfect cat (front)*
 
-![748](t-shirt-perfect-cat-back.webp)
+![790](t-shirt-perfect-cat-back.webp)
 *Perfect cat (back)*
 
 #### Details
 
-![819](t-shirt-perfect-cat-front-detail.jpg)
+![861](t-shirt-perfect-cat-front-detail.jpg)
 
-![862](t-shirt-perfect-cat-back-detail.jpg)
+![904](t-shirt-perfect-cat-back-detail.jpg)
 *TIL: The child-like / the Cure album wannabe cover style was quite hard to transfer from my iPad to fabric. It looks much better after the first wash.*

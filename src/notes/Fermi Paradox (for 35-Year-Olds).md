@@ -1,8 +1,11 @@
 ---
-cover: 'https://images.ctfassets.net/hyylafu4fjks/1usLgunes5QmAffC4NnSOn/f3a48be89f1d62cad50f2ce0793c7463/Untitled_Artwork_9.png'
+cover: https://images.ctfassets.net/hyylafu4fjks/1usLgunes5QmAffC4NnSOn/f3a48be89f1d62cad50f2ce0793c7463/Untitled_Artwork_9.png
 publish: true
+date: 2023-11-29
+tags:
+  - untested-article
 ---
-![152](sun-moon-fermi.png)
+![194](sun-moon-fermi.png)
 
 Planet Earth has more than 8,000,000,000 inhabitants. But where are my friends?
 

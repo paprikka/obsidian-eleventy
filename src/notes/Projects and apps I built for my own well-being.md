@@ -1,7 +1,10 @@
 ---
-description: 'and a brief, yet complicated history of carpentry in Galicia'
-cover: 'https://images.ctfassets.net/hyylafu4fjks/5II9ZElSYHJMwwfqOstAUZ/7feb916809844a32fecf5ef75db4fa44/187645860_461996798431815_7608224688697832132_n_17998562548336246.jpg'
+description: and a brief, yet complicated history of carpentry in Galicia
+cover: https://images.ctfassets.net/hyylafu4fjks/5II9ZElSYHJMwwfqOstAUZ/7feb916809844a32fecf5ef75db4fa44/187645860_461996798431815_7608224688697832132_n_17998562548336246.jpg
 publish: true
+date: 2023-09-27
+tags:
+  - untested-article
 ---
 ### Featured in today's episode:
 

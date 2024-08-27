@@ -1,10 +1,13 @@
 ---
-cover: 'https://images.ctfassets.net/hyylafu4fjks/46swMR3NKFRzJKXZrOcxua/359554dc951d74ea113a3499862a80e1/birrrd.png'
+cover: https://images.ctfassets.net/hyylafu4fjks/46swMR3NKFRzJKXZrOcxua/359554dc951d74ea113a3499862a80e1/birrrd.png
 publish: true
+date: 2023-11-21
+tags:
+  - untested-article
 ---
 (Last updated on 2023-11-21)
 
-![170](birrrd-unoptimised.webp)
+![212](birrrd-unoptimised.webp)
 
 ## Problem:
 
@@ -20,4 +23,4 @@ for i in *.png; do ffmpeg -i "$i" "${i%.*}.webp"; done
 
 ### Solution 2:  Batch process with [Affinity Photo](https://affinity.serif.com/en-gb/)
 
-![926](affinity-batch-processing.webp)Since you're here, you might also want to check out the [Alternatives to Adobe](<../Alternatives to Adobe>).
+![968](affinity-batch-processing.webp)Since you're here, you might also want to check out the [Alternatives to Adobe](<../Alternatives to Adobe>).

@@ -1,8 +1,11 @@
 ---
-cover: 'https://res.cloudinary.com/dlve3inen/image/upload/v1706127243/card-baked-potato_nyjawm.png'
+cover: https://res.cloudinary.com/dlve3inen/image/upload/v1706127243/card-baked-potato_nyjawm.png
 publish: true
+date: 2024-01-24
+tags:
+  - untested-article
 ---
-![122](baked-potato.webp)
+![164](baked-potato.webp)
 *I didn't have any drawings ready for this post, so please enjoy this contemplative baked potato instead.*
 
 Obligatory: [This is not writing or productivity advice](<../This is not writing or productivity advice>). 
@@ -29,15 +32,15 @@ The example below is based on an older entry (cleaned up and censored).
 
 1\. Review the previous week.
 
-![1955](new-week-retro-example.png)
+![1997](new-week-retro-example.png)
 
 2\. Imagine it's the next Friday and you're just wrapping up the week. What have you done and how do you feel about it? Write 4-5 short sentences about it. No TODOs allowed.
 
-![2163](new-week-main-focus-example.png)
+![2205](new-week-main-focus-example.png)
 
 3\. Based on that blurb, write down the tasks:
 
-![2249](new-week-tasks-example.png)
+![2291](new-week-tasks-example.png)
 
 
 You can see the complete example here: [Template - Current Week](<../Template - Current Week>). 

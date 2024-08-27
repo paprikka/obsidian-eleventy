@@ -1,8 +1,11 @@
 ---
-cover: 'https://res.cloudinary.com/dlve3inen/image/upload/v1706640253/card-talk-to-the-blog_qxxztt.png'
+cover: https://res.cloudinary.com/dlve3inen/image/upload/v1706640253/card-talk-to-the-blog_qxxztt.png
 publish: true
+date: 2024-01-30
+tags:
+  - untested-article
 ---
-![126](head-tree-cat.webp)
+![168](head-tree-cat.webp)
 
 *I'm expecting the next few weeks to get a bit more busy, so I'll be posting shorter, TIL posts and dev notes ([Share your unfinished, scrappy work](<../Share your unfinished, scrappy work>)).*
 

@@ -1,6 +1,9 @@
 ---
-cover: 'https://images.ctfassets.net/hyylafu4fjks/5JqHpF9jsGmK2wmNHKQlIp/346383a29dc0cec6ef445e87d7079ccb/Untitled_Artwork_87.png'
+cover: https://images.ctfassets.net/hyylafu4fjks/5JqHpF9jsGmK2wmNHKQlIp/346383a29dc0cec6ef445e87d7079ccb/Untitled_Artwork_87.png
 publish: true
+date: 2023-09-28
+tags:
+  - untested-article
 ---
 
 > A user agent is a computer program representing a person, for example, a [browser](https://developer.mozilla.org/en-US/docs/Glossary/Browser) in a [Web](https://developer.mozilla.org/en-US/docs/Glossary/World_Wide_Web) context.

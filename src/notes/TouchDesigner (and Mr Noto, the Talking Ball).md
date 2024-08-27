@@ -1,9 +1,12 @@
 ---
-cover: 'https://res.cloudinary.com/dlve3inen/image/upload/v1706032219/p5pactvtiw7umxe1cqxs.png'
+cover: https://res.cloudinary.com/dlve3inen/image/upload/v1706032219/p5pactvtiw7umxe1cqxs.png
 publish: true
+date: 2024-01-23
+tags:
+  - untested-article
 ---
 
-![119](touch-designer-cover.png)
+![161](touch-designer-cover.png)
 
 I noticed a bunch of posts [mentioning](https://twitter.com/tBlankensmith/status/1749684104289718346) TouchDesigner on social media recently. I had an hour to play with it this morning. Here's what I've learned so far.
 
@@ -30,7 +33,7 @@ TouchDesigner uses python as its scripting language of choice (compare this with
 The 101 example added to each new TouchDesigner project is fine, but a bit too complex for a decaf Rafał with 1 hour to spare. So here's an intro ***I*** would've liked to see:  distort an image based on a noise value and animate the thing using time (so, show me how to access, pass and manipulate variables, then spit them out on the screen). 
 
 
-![2001](touch-designer-simple-demo.webp)
+![2043](touch-designer-simple-demo.webp)
 
 1. we sample a noise value and use an offset based on the absolute time
 	1.  `absTime.seconds * .1` is a python expression
@@ -52,7 +55,7 @@ The 101 example added to each new TouchDesigner project is fine, but a bit too c
 - I had to save the previous project before starting this one. Every project is saved in a `*.toe` file. 
 - In most graphics frameworks this effect would be achieved by "clearing" the canvas with a semi-transparent texture, so each frame would retain a bit of the previous picture, slowly fading out. In tools like TouchDesigner this is not the case -- there's no previous canvas state to clear. Instead,  we use a  [*Feedback*](https://www.youtube.com/watch?v=83K3QEK6Iv0&embeds_referring_euri=https%3A%2F%2Fwww.toolify.ai%2F&source_ve_path=MjM4NTE&feature=emb_title) node to retain the previous texture value and compose the previous texture with the next frame.
 
-![3541](touch-designer-feedback-demo.webp)
+![3583](touch-designer-feedback-demo.webp)
 
 
 ## Resources

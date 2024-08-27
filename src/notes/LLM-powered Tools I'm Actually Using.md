@@ -1,8 +1,11 @@
 ---
-cover: 'https://res.cloudinary.com/dlve3inen/image/upload/v1717612937/cover-ai-tools_mft8eq.png'
+cover: https://res.cloudinary.com/dlve3inen/image/upload/v1717612937/cover-ai-tools_mft8eq.png
 publish: true
+date: 2024-06-05
+tags:
+  - untested-article
 ---
-![119](black-snake.webp)
+![161](black-snake.webp)
 
 
 I don't like [starting my notes with disclaimers](<../Disclaimer>), so I'll keep this short. None of these tools replace decision making, so read this critically. This note is descriptive, not prescriptive. Having said that, I still did my best to keep it useful to you.

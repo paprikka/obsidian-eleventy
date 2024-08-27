@@ -1,8 +1,11 @@
 ---
-cover: 'https://res.cloudinary.com/dlve3inen/image/upload/v1709059764/aye-aye-card_wkokut.png'
+cover: https://res.cloudinary.com/dlve3inen/image/upload/v1709059764/aye-aye-card_wkokut.png
 publish: true
+date: 2024-02-27
+tags:
+  - untested-article
 ---
-![117](aye-aye-screenshot.webp)
+![159](aye-aye-screenshot.webp)
 
 A few weeks back [Shawn Liu](https://mrshawnliu.com), a friend from [good enough](https://goodenough.us) asked me if I could build a tool to help him explore links in indie sites quickly. Here's what I've come up with.
 
@@ -14,7 +17,7 @@ Aye-aye is browser extension that turns indie web sites and webrings into someth
 
 ### Why "aye-aye"?
 
-![1098](aye-aye-animal.jpeg)
+![1140](aye-aye-animal.jpeg)
 
 It's called an aye-aye for three reasons:
 
@@ -38,7 +41,7 @@ Alternatively, skip step one and build it yourself from the [source code](https:
 - [ ] add keyboard shortcuts
 - [ ] let more people use it for a few weeks
 
-![1974](GHVq62ZXoAAlH_c.jpeg)
+![2016](GHVq62ZXoAAlH_c.jpeg)
 *This is not an aye-aye, but the creature the author of this note identifies with.*
 
 

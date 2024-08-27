@@ -1,9 +1,12 @@
 ---
 publish: true
 cover: https://res.cloudinary.com/dlve3inen/image/upload/v1706731509/card-spikes_wueslr.webp
+date: 2024-01-31
+tags:
+  - untested-article
 ---
 
-![116](bees-spike.webp)
+![160](bees-spike.webp)
 
 Code spikes are simple throwaway pieces of work. Consider them sketches for the feature you want to implement. I'd call it a dry run, but a good spike is anything but dry: it's wet, it's messy and it has a familiar, enticing, yet disturbing (yet enticing) smell.
 

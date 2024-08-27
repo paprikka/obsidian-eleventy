@@ -1,6 +1,9 @@
 ---
-cover: 'https://images.ctfassets.net/hyylafu4fjks/5VKxODn6qi7ViGxEX7AqHv/35635b71f5291f3549d696bbe62a7948/C4C852EE-7C41-438D-B593-68BA2DB56718.JPG'
+cover: https://images.ctfassets.net/hyylafu4fjks/5VKxODn6qi7ViGxEX7AqHv/35635b71f5291f3549d696bbe62a7948/C4C852EE-7C41-438D-B593-68BA2DB56718.JPG
 publish: true
+date: 2023-11-08
+tags:
+  - untested-article
 ---
 I was trying to work on [Night Rider](<../Night Rider>), but unfortunately I'm cursed by a secret group of Cupertino-based warlocks: every time I start a new SwiftUI project, I need to spend hours fixing Xcode. It was still worth the hassle, not just because I finally succeeded, but because I stumbled upon a small project I completely forgot about. After all, it *is* about the journey, thank you [Ursula](<../Ursula K. Le Guin>)!
 

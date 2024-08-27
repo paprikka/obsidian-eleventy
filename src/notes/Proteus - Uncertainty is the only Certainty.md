@@ -1,6 +1,9 @@
 ---
-cover: 'https://images.ctfassets.net/hyylafu4fjks/5z45txmyp9yU6emr8HpFYY/52b2f38fd94dd5951c5392f8f592bce1/wet_detective.png'
+cover: https://images.ctfassets.net/hyylafu4fjks/5z45txmyp9yU6emr8HpFYY/52b2f38fd94dd5951c5392f8f592bce1/wet_detective.png
 publish: true
+date: 2023-10-24
+tags:
+  - untested-article
 ---
 I keep coming back to this quote from [Zygmunt Bauman](<../Zygmunt Bauman>):
 

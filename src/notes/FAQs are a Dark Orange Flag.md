@@ -1,8 +1,11 @@
 ---
-cover: 'https://res.cloudinary.com/dlve3inen/image/upload/v1704905924/card-orange-traffic-lights_lcfl2q.png'
+cover: https://res.cloudinary.com/dlve3inen/image/upload/v1704905924/card-orange-traffic-lights_lcfl2q.png
 publish: true
+date: 2024-01-10
+tags:
+  - untested-article
 ---
-![131](my-uncle-dark-orange-traffic-lights.webp)
+![173](my-uncle-dark-orange-traffic-lights.webp)
 *My uncle suffered from traffic-induced colour blindness. Every time he crossed on the red light, he'd say that it was, in fact, dark-orange.*
 
 Perhaps you're familiar with [FAQs: why we don’t have them (GDS)](https://gds.blog.gov.uk/2013/07/25/faqs-why-we-dont-have-them/).
@@ -23,7 +26,7 @@ Additionally, **FAQs lead to more duplication:** people sharing the same problem
 
 Now, HMRC/GDS can afford the UX/content structure work to come up with better alternatives (or: they can't afford *not* to do this). But most of us are simple mortals, and not Byzantine bureaucracies. How about smaller businesses or indie developers like Jordi Brun and his [MacGPT](https://www.macgpt.com)? 
 
-![2342](mac-gpt-faq.webp)
+![2384](mac-gpt-faq.webp)
 
 In this case FAQs make more sense as:
 
@@ -39,7 +42,7 @@ FAQs are not necessarily bad but similar to messy, untested code: it's a tradeof
 
 One entry from the comment section that stood out to me:
 
-![2960](gds-faq-comment-a-bygone-era.webp)
+![3002](gds-faq-comment-a-bygone-era.webp)
 
 I can't decide if this statement was a bit premature or too far in the future as we seem to have gone the full circle. Although we *do* have the right tech, the quality of search results is abysmal, due to [SEO spam](https://danluu.com/seo-spam/) and the fact that most of the search engines are storefronts.
 

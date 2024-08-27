@@ -10,7 +10,7 @@
     display: grid;
     grid-template-columns: auto min-content;
     position: relative;
-    margin-block-end: var(--spacing-xs);
+    line-height: var(--leading-loose);
   }
 
   & .timeline__item time {
@@ -21,6 +21,7 @@
     white-space: nowrap;
   }
   & .timeline__item a {
-    font-weight: bolder;
+    font-weight: var(--font-weight-semibold);
+    text-decoration: none;
   }
 }

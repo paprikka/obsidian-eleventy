@@ -1,10 +1,13 @@
 ---
-cover: 'https://images.ctfassets.net/hyylafu4fjks/7aZSe6sRvK4MJXkXRbRjVU/9fcecb1c157e85ac43bdf1b2caed66a7/Untitled_Artwork_5.png'
+cover: https://images.ctfassets.net/hyylafu4fjks/7aZSe6sRvK4MJXkXRbRjVU/9fcecb1c157e85ac43bdf1b2caed66a7/Untitled_Artwork_5.png
 publish: true
+date: 2023-11-22
+tags:
+  - untested-article
 ---
 Remember, [This is not writing or productivity advice](<../This is not writing or productivity advice>). It's also not note taking advice ([Better note taking is not the problem, it's better thinking](<../Better note taking is not the problem, it's better thinking>)). 
 
-![312](moonworm.webp)
+![354](moonworm.webp)
 
 ## Short version
 

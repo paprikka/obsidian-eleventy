@@ -1,8 +1,11 @@
 ---
-cover: 'https://images.ctfassets.net/hyylafu4fjks/4JpaULvQaYzrvr3nRFumHU/7e81cb6af96c70edfb1c75fc8d14f86c/Untitled_Artwork_5.png'
+cover: https://images.ctfassets.net/hyylafu4fjks/4JpaULvQaYzrvr3nRFumHU/7e81cb6af96c70edfb1c75fc8d14f86c/Untitled_Artwork_5.png
 publish: true
+date: 2023-10-05
+tags:
+  - untested-article
 ---
-![152](home.webp)
+![194](home.webp)
 
 Some [ACT](<../ACT>) materials encourage people to imagine what they'd put on their gravestone. 
 

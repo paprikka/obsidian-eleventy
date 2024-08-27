@@ -1,8 +1,11 @@
 ---
-cover: 'https://images.ctfassets.net/hyylafu4fjks/2qnCWmraBKC14LdL0QVZPY/3a95e76adede3eedf5db81383703a267/Untitled_Artwork_13.png'
+cover: https://images.ctfassets.net/hyylafu4fjks/2qnCWmraBKC14LdL0QVZPY/3a95e76adede3eedf5db81383703a267/Untitled_Artwork_13.png
 publish: true
+date: 2023-12-04
+tags:
+  - untested-article
 ---
-![153](tribe-precarious.webp)
+![195](tribe-precarious.webp)
 
 The world is big enough.
 

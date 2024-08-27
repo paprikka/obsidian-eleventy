@@ -1,8 +1,11 @@
 ---
-cover: 'https://images.ctfassets.net/hyylafu4fjks/5kgsys02XeOt8vZl0hZZc4/9a5e8737393b72ec0a04578bacb508cf/Untitled_Artwork_11.png'
+cover: https://images.ctfassets.net/hyylafu4fjks/5kgsys02XeOt8vZl0hZZc4/9a5e8737393b72ec0a04578bacb508cf/Untitled_Artwork_11.png
 publish: true
+date: 2023-11-07
+tags:
+  - untested-article
 ---
-![153](too-cool-for-school.webp)
+![195](too-cool-for-school.webp)
 This note is biased, very personal and by no means prescriptive. It's not an opinion piece on CS education itself.
 
 Here's how to read it: imagine you're having a ~~beer~~ [delicious nocturnal cheese toast](https://www.youtube.com/watch?v=OJOZFKwN1qg) with a friend. They're sharing their experiences, likely in an overly verbose way. Some parts of their story might resonate with you, some won't. And, that's ok! The toast is delicious. Your hands meet on the last slice of this kimchi and cheddar filled goodness. It's so crunchy. You know that sinking your teeth in it would feel so good you'd start wondering if you're doing something illegal. Now, your *eyes* meet on the toast, this time in a tug-of-war. I think French people call this sport *frottage de fromage*, but I don't speak French, so can't guarantee I'm correct here. Your (once) friend wrestles the last slice out of your hand and runs away into perfect darkness making a squeaky, eldritch sound you've never heard before. You'll never see them again, and the only thing that's left are the crumbs on the chopping board. 

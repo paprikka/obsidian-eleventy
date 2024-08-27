@@ -1,7 +1,10 @@
 ---
 description: Sometimes a seemingly small change can cascade into a completely different reality.
-cover: 'https://images.ctfassets.net/hyylafu4fjks/7wd1FoLKsddppjxycuWB0A/1f7a8503e2036bd372b5b83b44be6264/226023183_2831673570419431_5892104880406410119_n_17925609661710057.jpg'
+cover: https://images.ctfassets.net/hyylafu4fjks/7wd1FoLKsddppjxycuWB0A/1f7a8503e2036bd372b5b83b44be6264/226023183_2831673570419431_5892104880406410119_n_17925609661710057.jpg
 publish: true
+date: 2023-12-25
+tags:
+  - untested-article
 ---
 Sometimes a seemingly small change can cascade into a completely different reality. 
 

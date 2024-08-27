@@ -1,6 +1,9 @@
 ---
 cover: https://res.cloudinary.com/dlve3inen/image/upload/v1715090711/Screenshot_2024-05-07_at_13.28.51_x06c4f.png
 publish: true
+date: 2024-05-07
+tags:
+  - untested-article
 ---
 
 [Embed](<../Rosie's Poem>){data-embed}
@@ -30,7 +33,7 @@ Regular brushes are just rectangles with occasional holes, Edam cheese style (or
 
 Draw the shape of your brush on a tiny 9x9 grid based editor. That's all!
 
-![1274](Pasted%20image%2020240507132857.png)
+![1318](Pasted%20image%2020240507132857.png)
 *No, **I** didn't mix x and y coords, you're sideways! (and [Jonathan is a school](https://youtu.be/jK60Jpe0ito?t=52).)*
 
 The original reason I added that little editor was to have a simple debugging/prototyping tool. What I particularly like about it:
@@ -74,7 +77,7 @@ Let's break this down:
 - `i` is the number of the current iteration, increased each frame
 - `x` and `y` are the grid coords
 
-![3411](Pasted%20image%2020240507124018.png)
+![3455](Pasted%20image%2020240507124018.png)
 
 We run `ixy` for each pixel of the brush grid, for each iteration. Every time the function returns `true` we draw a pixel, otherwise we leave it empty.
 
@@ -143,12 +146,12 @@ Now: implement the body of this function that will render a circle (9x9):
 
 Result:
 
-![5961](Pasted%20image%2020240507132505.png)
+![6005](Pasted%20image%2020240507132505.png)
 
 
 ## The woods are lovely dark and deep, so these are the bugs I'd like to keep:
 
-![6080](Pasted%20image%2020240507145004.png)
+![6124](Pasted%20image%2020240507145004.png)
 
 Procreate is a wonderful piece of software. The faster, messier my brush strokes are, the better they look (thanks for their stabilisation and motion filtering algos). Every line is smooth, dynamic, drawn by a (hand-held) hand. This is useful and valuable as it allows more people to express themselves in ways that were previously impossible or very difficult. I used Procreate and MS Paint as a reference when looking for UX patterns.
 

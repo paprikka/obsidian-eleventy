@@ -1,8 +1,11 @@
 ---
-cover: 'https://images.ctfassets.net/hyylafu4fjks/4lSAa64LX6sFKJdYj1pV1t/b965abf8793d9bc3b4d9fc5ebaec34c2/175784178_509016940120211_3408298645667599302_n_17847913190546027.jpg'
+cover: https://images.ctfassets.net/hyylafu4fjks/4lSAa64LX6sFKJdYj1pV1t/b965abf8793d9bc3b4d9fc5ebaec34c2/175784178_509016940120211_3408298645667599302_n_17847913190546027.jpg
 publish: true
+date: 2023-10-17
+tags:
+  - untested-article
 ---
-![199](spider.webp)
+![241](spider.webp)
 
 I've been using Photoshop since AD 2000. Flash paid for the unhealthy amounts of ~~ramen~~ [obwarzanki](https://en.wikipedia.org/wiki/Obwarzanek_krakowski) I ingested during my high school and uni. Still, since I ditched all Adobe software last year, I haven't looked back for a second.
 

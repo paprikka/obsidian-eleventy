@@ -1,6 +1,9 @@
 ---
-cover: 'https://sonnet.io/images/opt/KLx9IAq0xu-1200.webp'
+cover: https://sonnet.io/images/opt/KLx9IAq0xu-1200.webp
 publish: true
+date: 2023-10-18
+tags:
+  - untested-article
 ---
 ![KLx9IAq0xu-1200.avif](https://sonnet.io/images/opt/KLx9IAq0xu-1200.avif)
 I want to talk about two cheap and relatively simple changes you can add to your CSS to make gradients look much better: easing linear gradients and colour spaces.
@@ -9,7 +12,7 @@ I want to talk about two cheap and relatively simple changes you can add to your
 
 Let's start with a real-world problem. Last week I was working on my new and shiny [Consulting Page](https://consulting.sonnet.io). I wanted to add a slider similar to the one one the site of [Gabriel Valdivia](https://www.gabrielvaldivia.com), but more aligned with the style of my own site (example [here](https://consulting.sonnet.io/#testimonials)):
 
-![691](gradient-sharp.webp)
+![733](gradient-sharp.webp)
 
 What bugs me about this screenshot is that the gradient cuts off sharply, it doesn't blend with the element behind it.
 
@@ -63,7 +66,7 @@ This is ridiculously verbose and of course I didn't generate these stops manuall
 
 ### Here's the result:
 
-![2799](gradient-smooth.webp)
+![2841](gradient-smooth.webp)
 Narrator: *Smooth, sophisticated, mysterious - nothing says "I'm looking for a job" better than a perfectly eased gradient.*
 
 ## Colour spaces:

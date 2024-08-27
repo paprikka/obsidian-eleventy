@@ -1,6 +1,9 @@
 ---
-cover: 'https://res.cloudinary.com/dlve3inen/image/upload/v1705513270/card-sit_jxfj32.png'
+cover: https://res.cloudinary.com/dlve3inen/image/upload/v1705513270/card-sit_jxfj32.png
 publish: true
+date: 2024-01-17
+tags:
+  - untested-article
 ---
 ![two worms hugging, a black cloud holding a fork and a knife, one worm is looking away, terrified, another one -- is facing the cloud and smiling, he's blind](https://res.cloudinary.com/dlve3inen/image/upload/v1705513270/card-sit_jxfj32.png)
 

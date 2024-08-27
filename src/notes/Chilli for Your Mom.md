@@ -1,8 +1,11 @@
 ---
-cover: 'https://images.ctfassets.net/hyylafu4fjks/5II9ZElSYHJMwwfqOstAUZ/7feb916809844a32fecf5ef75db4fa44/187645860_461996798431815_7608224688697832132_n_17998562548336246.jpg'
+cover: https://images.ctfassets.net/hyylafu4fjks/5II9ZElSYHJMwwfqOstAUZ/7feb916809844a32fecf5ef75db4fa44/187645860_461996798431815_7608224688697832132_n_17998562548336246.jpg
 publish: true
+date: 2023-10-03
+tags:
+  - untested-article
 ---
-![199](smiling-pepper.jpeg)
+![241](smiling-pepper.jpeg)
 
 *Attaching this picture in hopes that pepper pareidolia will distract you from the fact that I never take photos of my chillies.*
 

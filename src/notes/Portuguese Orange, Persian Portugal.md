@@ -1,6 +1,9 @@
 ---
-cover: 'https://images.ctfassets.net/hyylafu4fjks/6OiVarOnM3HteOW36FtTPV/58dce3b9806f6e32eb0a4d54ed0d7129/orange-crime-scene.webp'
+cover: https://images.ctfassets.net/hyylafu4fjks/6OiVarOnM3HteOW36FtTPV/58dce3b9806f6e32eb0a4d54ed0d7129/orange-crime-scene.webp
 publish: true
+date: 2023-11-27
+tags:
+  - untested-article
 ---
 ![two oranges and a line of ants, three concerned stones looking at the oranges, and following the ants with curiosity, a sad lonely mouse sitting in the corner, unnoticed](orange-crime-scene.webp)
 The word for *orange* and its cognates in several Indoeuropean languages arrived in Europe via Persian (نارنگ‎ *nārang* then, and نارنج *nārenj* nowadays).

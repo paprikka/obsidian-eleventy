@@ -1,6 +1,9 @@
 ---
-cover: 'https://res.cloudinary.com/dlve3inen/image/upload/v1706552829/card-human-bentham_vdgcji.png'
+cover: https://res.cloudinary.com/dlve3inen/image/upload/v1706552829/card-human-bentham_vdgcji.png
 publish: true
+date: 2024-01-29
+tags:
+  - untested-article
 ---
 I wrote a pitch for a Christmas movie. My inspiration was a recent philosophical debate spotted in the Hacker News comment section and my previous failed startup idea: [Roland Topor Fidget Spinner](<../Roland Topor Fidget Spinner>). Here we go:
 
@@ -10,9 +13,9 @@ I wrote a pitch for a Christmas movie. My inspiration was a recent philosophical
 
 *Jeremy Bent-ham is a story of friendship, utilitarian morality and a proof that even in the darkest times — kindness, compassion, and salt are the best cure.*
 
-![782](jeremy-bent-ham.png)
+![824](jeremy-bent-ham.png)
 *Jeremy Bent-ham: A Sefungehup?*
 
-![841](jeremy-bent-ham-2.png)
+![883](jeremy-bent-ham-2.png)
 
 Related: [Medieval Content Farm and Procedural Cheese](<../Medieval Content Farm and Procedural Cheese>)

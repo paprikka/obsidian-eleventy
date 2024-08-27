@@ -1,8 +1,11 @@
 ---
-cover: 'https://images.ctfassets.net/hyylafu4fjks/4JGzzyc4XZvM4Ck20s6YYL/78c83131336ee484cd0b93a42f6e7f2d/Untitled_Artwork_25.png'
+cover: https://images.ctfassets.net/hyylafu4fjks/4JGzzyc4XZvM4Ck20s6YYL/78c83131336ee484cd0b93a42f6e7f2d/Untitled_Artwork_25.png
 publish: true
+date: 2023-10-04
+tags:
+  - untested-article
 ---
-![153](ice-skating-monkey-saying-hail-satan.webp)
+![195](ice-skating-monkey-saying-hail-satan.webp)
 
 This is about two games that never happened and probably will never happen. I find their mechanics somewhat interesting and I wish I could play them myself. But they died early, buried under a pile of more useful projects. A partial inspiration for those games was my work in ad-tech, and stories about fantastically insatiable Czech demon-tree-babies (more on that in the [footnotes](<../Demon Tamagotchis>)).
 
