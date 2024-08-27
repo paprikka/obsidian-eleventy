@@ -10,6 +10,7 @@
 @import "./components/_footer.css";
 @import "./components/_page-sticker.css";
 @import "./components/_subscribe.css";
+@import "./components/_task-list.css";
 
 @import "./pages/_intro.css";
 @import "./pages/_note.css";
