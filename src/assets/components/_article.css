@@ -60,6 +60,11 @@
     margin: 1em -2em;
   }
 
+  p > img {
+    margin-inline: calc(-1 * var(--page-margin));
+    max-width: calc(100% + var(--page-margin) * 2);
+  }
+
   .embed {
     width: 100%;
     height: auto;
