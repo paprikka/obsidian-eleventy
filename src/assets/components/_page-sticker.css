@@ -9,9 +9,13 @@
     z-index: 1;
   }
 
+  &.page-sticker--angst {
+    display: none;
+  }
   /* TODO: use variables */
   @media (min-width: 768px) {
     &.page-sticker--angst {
+      display: block;
       width: 30vmin;
       height: auto;
       top: 0;
