@@ -50,6 +50,14 @@
       position: absolute;
     }
   }
+  p > code {
+    --_color-bg: color-mix(in srgb, var(--color-text) 6%, transparent);
+    background-color: var(--_color-bg);
+    font-size: 0.8em;
+    padding: 0.1em 0.3em;
+    box-shadow: 0 0 0 0.1em var(--_color-bg);
+    border-radius: 0.1em;
+  }
   pre:has(code) {
     font-size: var(--s--2);
     line-height: var(--leading-tight);
