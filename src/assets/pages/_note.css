@@ -3,12 +3,11 @@
   header {
     margin-block-end: var(--spacing-xl);
     h1 {
-      line-height: 1;
+      line-height: 1.25rlh;
     }
     time {
       font-weight: var(--font-weight-normal);
-      font-size: 0.75em;
-
+      font-size: 0.6em;
       opacity: 0.5;
     }
   }
