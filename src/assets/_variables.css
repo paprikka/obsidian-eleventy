@@ -14,9 +14,11 @@
 :root {
   --color-page-bg: #fff;
   --color-butter: #fef4c3;
+  --color-info: #4ad0e2;
   --color-accent: var(--color-butter);
   --color-text: #222;
   --color-negative: red;
+  --border-radius-panel: 0.3vmin;
   --color-link: hsl(2deg 85% 54%);
   --color-link-broken: hsl(2deg 35% 54%);
   --article-width: calc(30 * var(--s-0));
@@ -29,6 +31,9 @@
   --leading-loose: 170%;
   --leading-tight: 120%;
 
+  --spacing-hero: var(--s-5);
+  --spacing-xxxl: var(--s-4);
+  --spacing-xxl: var(--s-3);
   --spacing-xl: var(--s-2);
   --spacing-l: var(--s-1);
   --spacing-m: var(--s-0);

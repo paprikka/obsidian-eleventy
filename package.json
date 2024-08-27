@@ -28,6 +28,7 @@
     "luxon": "^3.5.0",
     "markdown-it": "^14.1.0",
     "markdown-it-attrs": "^4.2.0",
+    "markdown-it-github-alerts": "^0.3.0",
     "slugify": "^1.6.6"
   },
   "devDependencies": {

@@ -12,7 +12,8 @@ Hi there! This one will be quick. Let's let the code speak for itself for a chan
 A week back or so I saw a [video by a channel called Texture Labs](https://www.youtube.com/watch?v=1poWgZWpsiY&t=22s) explaining a simple shading technique using gradients, grain and posterise. I thought it would be a fun thing to play with, so here you go. [Just Some Innocent Gradient Fun](https://grain.potato.horse) is a simple graphics editor demonstrating the technique mentioned in the video.
 
 
-> [!NOTE] **Check it out [here](https://grain.potato.horse/).**
+> [!note]  
+> **Check it out [here](https://grain.potato.horse/).**
 
 <marquee style='font-family: cursive; font-size: 2em'>
 or <a href='//grain.potato.horse' target='_blank'>heeere</a> 

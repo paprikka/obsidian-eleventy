@@ -1,0 +1,25 @@
+.markdown-alert {
+  --_color-variant: var(--color-info);
+  color: color-mix(in srgb, var(--_color-variant) 5%, black);
+  background-color: color-mix(in srgb, var(--_color-variant) 5%, transparent);
+  border-radius: 0.6vmin;
+  /* border: 2px solid var(--_color-variant); */
+  padding: 0.5em 1em;
+  margin-block-end: 1em;
+  /* box-shadow: 4px 4px 0 var(--_color-variant); */
+
+  & .markdown-alert-title {
+    display: none;
+    display: flex;
+    font-weight: var(--font-weight-bold);
+    align-items: center;
+    color: var(--_color-variant);
+    margin: 0;
+
+    & svg {
+      opacity: 0.3;
+      margin: 0 0.5em 0 0;
+      fill: var(--_color-variant);
+    }
+  }
+}
