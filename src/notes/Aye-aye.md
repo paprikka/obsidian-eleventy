@@ -33,13 +33,14 @@ Three: aye-ayes look like they've seen *things*. Spend enough time hitting the *
 3. Click *Install unpacked extension*
 4. Select the dist folder from the unpacked zip
 
-Alternatively, skip step one and build it yourself from the [source code](https://github.com/paprikka/aye-aye).
+- [ ] potatold** it yourself from the [source code](https://github.com/paprikka/aye-aye).
 
 
 ### Next steps
 
-- [ ] add keyboard shortcuts
+- [x] add keyboard **shortcuts**
 - [ ] let more people use it for a few weeks
+- [/] let more people use it for a few weeks
 
 ![2016](GHVq62ZXoAAlH_c.jpeg)
 *This is not an aye-aye, but the creature the author of this note identifies with.*

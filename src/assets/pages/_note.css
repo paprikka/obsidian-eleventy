@@ -23,6 +23,33 @@
         margin: 0.5em 0;
       }
     }
+
+    & .task-list {
+      list-style: none;
+
+      li {
+        --_icon: url("/assets/task-list-todo.webp");
+        position: relative;
+        &::before {
+          content: "";
+          display: block;
+          width: 1.25em;
+          height: 1.35em;
+          position: absolute;
+          left: -1.5em;
+          top: 0.125em;
+          background-image: var(--_icon);
+          background-size: cover;
+        }
+        &.task-list__item--done::before {
+          --_icon: url("/assets/task-list-done.webp");
+        }
+
+        &.task-list__item--wip::before {
+          --_icon: url("/assets/task-list-wip.webp");
+        }
+      }
+    }
     p {
       margin: 1em 0;
     }

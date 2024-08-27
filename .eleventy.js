@@ -7,6 +7,7 @@ import { dateFormat } from "./build/date-format.js";
 import markdownIt from "markdown-it";
 import { escapeHtml } from "markdown-it/lib/common/utils.mjs";
 import markdownItAttrs from "markdown-it-attrs";
+import taskListPlugin from "./build/plugins/md-task-list.js";
 import hljs from "highlight.js";
 
 export default function (eleventyConfig) {
@@ -38,6 +39,7 @@ export default function (eleventyConfig) {
   };
   const mdLib = markdownIt(markdownOptions);
   mdLib.use(markdownItAttrs);
+  mdLib.use(taskListPlugin);
   mdLib.use(mdEmbed);
   eleventyConfig.setLibrary("md", mdLib);
 
