@@ -12,6 +12,7 @@
 @import "./components/_subscribe.css";
 @import "./components/_task-list.css";
 @import "./components/_alert.css";
+@import "./components/_article.css";
 
 @import "./pages/_intro.css";
 @import "./pages/_note.css";

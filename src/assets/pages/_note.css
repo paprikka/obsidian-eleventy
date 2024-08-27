@@ -12,68 +12,6 @@
     }
   }
 
-  article {
-    margin-bottom: var(--spacing-hero);
-    font-size: var(--s--1);
-    ol,
-    ul {
-      margin: 1em 0;
-      padding-inline-start: 1em;
-      li {
-        margin: 0.5em 0;
-      }
-    }
-
-    p {
-      margin: 1em 0;
-    }
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      margin-block: 2em 1em;
-    }
-
-    h2 {
-      margin-block-end: var(--spacing-m);
-    }
-    blockquote {
-      line-height: var(--leading-base);
-      padding-inline-start: 2em;
-      margin: 1em 0;
-      border-left: var(--color-text) 2px solid;
-    }
-    & a[href^="http"] {
-      position: relative;
-      padding-inline-end: 0.6em;
-      &::after {
-        content: "⤴";
-        position: absolute;
-        font-size: 0.75em;
-        opacity: 0.5;
-        bottom: 0;
-      }
-    }
-
-    & a.link.link--broken {
-      color: var(--color-link);
-      position: relative;
-      &::after {
-        content: " †";
-        position: absolute;
-      }
-    }
-    pre:has(code) {
-      font-size: var(--s--2);
-      line-height: var(--leading-tight);
-      padding: 1em;
-      overflow-x: auto;
-      border: 2px solid var(--color-text);
-      box-shadow: 4px 4px 0 0 var(--color-text);
-      margin: 1em -2em;
-    }
-  }
   main {
     margin: calc(5 * var(--s-1)) auto;
     max-width: var(--page-width-narrow);

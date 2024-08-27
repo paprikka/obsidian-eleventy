@@ -13,7 +13,7 @@ pageClass: note
     <h2><time>{{ page.date | dateFormat('dd·MM·yyyy')}}</time></h2>
   </header>
 
-  <article class="page-note__article">{{ content | safe }}</article>
+  <article class="page-note__article article">{{ content | safe }}</article>
 
   {% include "components/widget-subscribe.njk" %}
 </main>
