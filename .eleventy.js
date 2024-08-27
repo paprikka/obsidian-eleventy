@@ -13,7 +13,6 @@ export default function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.setQuietMode(true);
 
-  // TODO: drop from here and colocate with the content
   eleventyConfig.addCollection("notes", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/notes/**/*.md").map((item) => {
       item.data.title = item.data?.title || item.fileSlug;

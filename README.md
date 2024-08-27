@@ -22,6 +22,7 @@ Things will move and change a lot, but if you have any questions or tips - let m
 - [ ] handle non YT embeds
 - [ ] render covers
 - [ ] theme - make usable
+- [ ] Importer: ignore unchanged notes when processing
 - [ ] "I'm curious" - unpublished link CTA
 - [ ] OG metadata
 - [ ] backlinks
