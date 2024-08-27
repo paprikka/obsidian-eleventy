@@ -16,6 +16,7 @@
   & .timeline__item time {
     display: inline-block;
     font-family: monospace;
+    font-size: 0.8em;
     opacity: 0.4;
     justify-self: start;
     white-space: nowrap;

@@ -89,7 +89,22 @@
     margin: 1em 0 0;
   }
 
-  h3 {
+  & > a {
     margin: 1em 0 0;
+    position: relative;
+
+    &::after {
+      content: "→";
+      position: absolute;
+      right: -0.1em;
+      translate: 100% 0;
+      transition: 0.2s translate ease-out;
+    }
+
+    @media (hover: hover) {
+      &:hover::after {
+        translate: 120% 0;
+      }
+    }
   }
 }
