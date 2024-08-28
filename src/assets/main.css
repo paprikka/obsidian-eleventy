@@ -13,6 +13,7 @@
 @import "./components/_task-list.css";
 @import "./components/_alert.css";
 @import "./components/_article.css";
+@import "./components/_logo.css";
 
 @import "./pages/_intro.css";
 @import "./pages/_note.css";

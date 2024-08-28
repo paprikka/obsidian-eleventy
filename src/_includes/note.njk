@@ -3,11 +3,9 @@ layout: root.njk
 pageClass: note
 ---
 
-<main>
-  <nav class="page-note__nav">
-    <a href="/">← notes</a>
-  </nav>
+{% set logoShowArrow = true %} {%include "components/logo.njk"%}
 
+<main>
   <header class="page-note__header">
     <h1>{{title}}</h1>
     <h2><time>{{ page.date | dateFormat('dd·MM·yyyy')}}</time></h2>
