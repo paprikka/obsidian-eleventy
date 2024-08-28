@@ -47,4 +47,9 @@
   --font-weight-normal: 400;
   --font-weight-semibold: 500;
   --font-weight-bold: 600;
+
+  --layer-behind: -1;
+  --layer-bg: 0;
+  --layer-label: 1;
+  --layer-tooltip: 2;
 }
