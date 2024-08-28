@@ -49,7 +49,7 @@ Once I misclicked and a middle aged man (a man or a shade, I did not know for su
 
 ## How to hide the Desktop on MacOS
 
-<span id="^6007d1" class="link-marker">^6007d1</span>
+<span id="6007d1" class="link-marker">6007d1</span>
 
 ```bash
 defaults write com.apple.finder CreateDesktop true

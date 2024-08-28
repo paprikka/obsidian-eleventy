@@ -10,7 +10,7 @@ Allow LLMs use data outside of their training set, by:
 
 ## Example:
 
-1. Load documents (websites, PDFs, .md files) <span id="^c7597f" class="link-marker">^c7597f</span>
+1. Load documents (websites, PDFs, .md files) <span id="c7597f" class="link-marker">c7597f</span>
 2. Create embeddings for the documents
 3. Store them in a vector db (e.g. sqlite w. a vector extension or ChromaDB)
 4. Find the closest documents in a vector db given the query

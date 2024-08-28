@@ -38,7 +38,7 @@ Pickles is an ancient Mesopotamian demon, named after [the holiest of all vegeta
 
 ### References, inspirations:
 
-<span id="^d6752d" class="link-marker">^d6752d</span>
+<span id="d6752d" class="link-marker">d6752d</span>
 
 - Adtech [VAST chain](https://www.iab.com/guidelines/vast/), [OpenRTB](https://iabtechlab.com/press-releases/tech-lab-releases-openrtb-2-6-for-public-comment/), behavioural targeting
 - Little Otik, [movie](https://www.rottentomatoes.com/m/little_otik), [fairytale](https://en.wikipedia.org/wiki/Otesánek)

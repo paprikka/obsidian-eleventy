@@ -50,6 +50,11 @@
       position: absolute;
     }
   }
+
+  .link-marker {
+    display: none;
+  }
+
   p > code {
     --_color-bg: color-mix(in srgb, var(--color-text) 6%, transparent);
     background-color: var(--_color-bg);

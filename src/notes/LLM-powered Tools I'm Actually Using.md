@@ -17,7 +17,7 @@ I don't like [starting my notes with disclaimers](<../Disclaimer>), so I'll keep
 - as a replacement for Google in tandem with [DuckDuckGo](https://duckduckgo.com/) (search by meanings, not words)
 - following up on [Wikipedia Rabbit Holes](<../Wikipedia Rabbit Holes>) 
 	- I start with Wikipedia, ask follow-up questions, pick the next rabbit hole and read the article itself  
-- Stack Overflow replacement: example API usage, common bugs, pitfalls, workarounds <span id="^11117c" class="link-marker">^11117c</span>
+- Stack Overflow replacement: example API usage, common bugs, pitfalls, workarounds <span id="11117c" class="link-marker">11117c</span>
 - I still keep coming back to Github Issues or grep.app for example API usage and real world patterns
 
 The main strength of perplexity for me are the inline references. I rarely trust LLM output verbatim, especially given how well [they trick our bullshit detectors](https://tidings.potato.horse/about).
@@ -130,7 +130,7 @@ I also used their 3rd-party clients (like Machato) and even wrote a simple clien
 
 ## Summary
 
-I use LLMs for *search*. It's search where I *control the shape of the input and the format of the output.*  <span id="^6ef7b9" class="link-marker">^6ef7b9</span>
+I use LLMs for *search*. It's search where I *control the shape of the input and the format of the output.*  <span id="6ef7b9" class="link-marker">6ef7b9</span>
 
 For instance, instead of going through the docs of `colander` (a python schema library), reading up problems and examples on SO, I can just ask it to provide me with sample implementations of a generalised version of a problem. This saves me a ton of time, but also means that I need to know what questions to ask, and how. None of this can replace reasoning, critical thinking and experience.
 

@@ -129,7 +129,7 @@ Embrace the new, dark Janusz.
 
 ### Insomnia: reading
 
-<span id="^bb0439" class="link-marker">^bb0439</span>
+<span id="bb0439" class="link-marker">bb0439</span>
 
 I suffered from insomnia between the ages of 10 and 29. Reading used to help me fall asleep, but not when staring at a glowing screen and accidentally waking up my partner. But a dimmed kindle worked just fine. 
 
