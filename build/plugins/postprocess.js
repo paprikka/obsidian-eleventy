@@ -54,7 +54,7 @@ export const postprocess = async (current, all) => {
         console.log(`Cannot find embed for ${targetHref} from ${current.url}`);
         continue;
       }
-      const targetId = $embed.attr("data-embed").trim();
+      const targetId = $embed.attr("data-target")?.trim();
       const fileContent = target.content;
       const $fileDOM = load(fileContent);
 
@@ -75,8 +75,9 @@ export const postprocess = async (current, all) => {
 
       const $wrapper = $("<blockquote>");
       $wrapper.addClass("embed embed--note");
+      const fullTargetUrl = targetId ? `${target.url}${targetId}` : target.url;
       $wrapper.append(
-        `<a href="${target.url}" class="embed__source">Source</a>`,
+        `<a href="${fullTargetUrl}" class="embed__source">Source ${fullTargetUrl}</a>`,
         // `<a href="${target.url}" class="embed__source">${$fileDOM("h1").text()}</a>`,
       );
       $wrapper.append(contentToEmbed);

@@ -52,7 +52,11 @@
   }
 
   .link-marker {
-    display: none;
+    display: inline-block;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    overflow: hidden;
   }
 
   p > code {
@@ -106,5 +110,12 @@
       border-radius: 0.25em;
       z-index: var(--layer-tooltip);
     }
+  }
+
+  & p:has(:target) {
+    --_c: color-mix(in srgb, var(--color-accent) 50%, transparent);
+    background-color: var(--_c);
+    box-shadow: 0 0 0 0.25em var(--_c);
+    border-radius: 0.3vmin;
   }
 }

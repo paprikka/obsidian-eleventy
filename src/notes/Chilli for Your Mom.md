@@ -28,7 +28,7 @@ The recipe itself is pretty standard, with two small additions:
 
 ## Ingredients (for 4 portions)
 
-<span id="35dc57" class="link-marker">35dc57</span>
+<span id="^35dc57" class="link-marker">^35dc57</span>
 
 - 1 onion
 - 1-2 sticks celery 

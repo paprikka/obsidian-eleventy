@@ -11,7 +11,7 @@ I was today years old when I learned that *zhoozh* (/ˈʒʊʒ/) comes from [Pola
 
 Different competing ways of spelling it exist: *jeuje*, *jush*, *zhoosh*.
 
-However, I still think that we should adopt the Polish way here: *żuż*. It's short, it's phonetic, it has two cute little eyes, it's something I can show to my UK-born friend next time he repeats his joke about the liberal use of consonants in Polish. *They're free*, Giles, they're *free*, it was the 20th century geopolitics that made our economy suffer, not the fact that we're consonant floosies! <span id="d876ce" class="link-marker">d876ce</span>
+However, I still think that we should adopt the Polish way here: *żuż*. It's short, it's phonetic, it has two cute little eyes, it's something I can show to my UK-born friend next time he repeats his joke about the liberal use of consonants in Polish. *They're free*, Giles, they're *free*, it was the 20th century geopolitics that made our economy suffer, not the fact that we're consonant floosies! <span id="^d876ce" class="link-marker">^d876ce</span>
 
 ![959](zhoozh-snake.webp)
 

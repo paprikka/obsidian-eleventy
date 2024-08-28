@@ -31,7 +31,7 @@ I was going to publish my review of Obsidian Publish today, but I realised it wo
 
 ## Slightly longer version
 
-<span id="6f8ae1" class="link-marker">6f8ae1</span>
+<span id="^6f8ae1" class="link-marker">^6f8ae1</span>
 
 I start my day by writing in [Ensō](https://enso.sonnet.io)  — a "stream of consciousness" app I wrote for myself. Ensō makes it really hard for you to edit text, so you start focusing on *what you want to say* instead of *how you want to say it*. In that sense it's similar to using a typewriter or a piece of paper and a pen. Record the fleeting thoughts, and move on.
 

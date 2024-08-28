@@ -54,7 +54,7 @@ Long time ago, I used to have run a public DIY analytics service so my users cou
 
 ## Why and what to collect
 
-<span id="47718f" class="link-marker">47718f</span>
+<span id="^47718f" class="link-marker">^47718f</span>
 
 I use analytics to solve user problems. Every metric should reflect that. Anything more than that is a [burden](<../Data Is the New Oil>): to the user, to my problem solving ability (focus) and to my own mental health. So, I try to collect as little as possible.
 

@@ -23,7 +23,7 @@ What I like about this:
 
 To us, modern humans [Property and Ownership are Sacred](<../Property and Ownership are Sacred>). To truly own something means more than to control it: we need to be able to prevent others from benefiting from it and we need to be able to destroy it.
 
-[Embed](<../Property and Ownership are Sacred>){data-embed, data-target="#Roman law"}
+[Embed](<../Property and Ownership are Sacred>){data-embed data-target="#Roman law"}
 
 
 This is similar to what The Guardian was talking a few years back — many of their supporters paid them so *others* could read it.

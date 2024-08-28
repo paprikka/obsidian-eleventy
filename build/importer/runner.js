@@ -40,12 +40,12 @@ export const run = async () => {
         path.dirname(destinationPath),
         encodeURIComponent(path.basename(destinationPath)),
       );
-      if (destinationPathEscaped !== destinationPath) {
-        console.log({
-          destinationPath,
-          destinationPathEscaped,
-        });
-      }
+      // if (destinationPathEscaped !== destinationPath) {
+      //   console.log({
+      //     destinationPath,
+      //     destinationPathEscaped,
+      //   });
+      // }
       try {
         await fs.mkdir(destinationDir, { recursive: true });
         // await fs.copyFile(absolutePath, destinationPath);
@@ -66,20 +66,6 @@ export const run = async () => {
       processSingleFile(f, resourceIndex, relatedAssets),
     ),
   ).then((all) => all.filter(Boolean));
-
-  // // TODO: move to a post processing step in 11ty
-  // // (works ok for now #yolo)
-  // const filesToPublishByPath = Object.fromEntries(
-  //   filesToPublish.map(({ absolutePath, content }) => [absolutePath, content]),
-  // );
-  //
-  // for (let i = 0; i < filesToPublish.length; i++) {
-  //   const f = filesToPublish[i];
-  //   if (!resourceHasEmbeds(f)) continue;
-  //
-  //   console.log(`Processing embeds in ${f.absolutePath}`);
-  //   filesToPublish[i] = await processEmbed(f, filesToPublishByPath);
-  // }
 
   console.log(
     "Files to publish:",

@@ -94,7 +94,7 @@ export const processSingleFile = async (
         return `<span style="color: red">Missing embed: ${src}</span>`;
 
       const url = resourcePathToLink(resolvedLink);
-      if (id) return `[Embed](<../${url}>){data-embed, data-target="#${id}"}`;
+      if (id) return `[Embed](<../${url}>){data-embed data-target="#${id}"}`;
       return `[Embed](<../${url}>){data-embed}`;
     }
 
@@ -131,8 +131,7 @@ export const processSingleFile = async (
       return getAnchorMarkup(p1, p1);
     })
     .replace(linkMarker, (match) => {
-      const id = match.replace("^", "");
-      return `<span id="${id}" class="link-marker">${id}</span>`;
+      return `<span id="${match}" class="link-marker">${match}</span>`;
     });
 
   return { absolutePath, content };

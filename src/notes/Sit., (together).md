@@ -15,7 +15,7 @@ Sit. is a tool for *doing nothing*. Since its launch, we've managed to generate 
 I can see this being built in two steps. I like it when every iteration, no matter how small, brings in something useful and meaningful (or at least pretty), so we'll split it into two apps: a *toy* and a *tool*.
 ## Passenger (the toy)
 
-<span id="90b7ce" class="link-marker">90b7ce</span>
+<span id="^90b7ce" class="link-marker">^90b7ce</span>
 
 Sit., is very simple to use. It's a glorified timer. You open it, select the break duration, hit `[start]` and see this:
 
@@ -31,7 +31,7 @@ You're not meditating (or doing nothing) alone, you're sharing a ride with a bun
 
 ## Group meditation (the tool)
 
-<span id="5a62df" class="link-marker">5a62df</span>
+<span id="^5a62df" class="link-marker">^5a62df</span>
 
 The *tool* is built on top of the technology used for the *toy*. But, from the UX perspective it's even simpler. In fact it has fewer steps than the 2 clicks required to use Sit., since you don't need to select the session duration: it's a remote controlled gong. That's it.
 

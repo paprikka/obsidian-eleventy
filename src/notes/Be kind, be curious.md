@@ -23,7 +23,7 @@ Courage is a loaded term. My definition: it's not a single Hollywood-like heroic
 - approaching a stranger on the street (they looked lost),
 - saying hi to your neighbour (you missed the opportunity to do so earlier, and now it seems weird to start),
 - not trying to help someone when the only thing they need is to be heard,
-- **seeing something considered ugly or disgusting and finding beauty in it, taking it into hour hands and sharing it with others** <span id="4d44b8" class="link-marker">4d44b8</span>
+- **seeing something considered ugly or disgusting and finding beauty in it, taking it into hour hands and sharing it with others** <span id="^4d44b8" class="link-marker">^4d44b8</span>
 
 I admire people who approach others with kindness and curiosity, seemingly with such effortlessness. We all know the kind, when they talk they rarely talk in labels, when you talk they truly listen and look you in the eyes, when they're with you, they're present. 
 
