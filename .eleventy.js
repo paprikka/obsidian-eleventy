@@ -41,7 +41,12 @@ export default function (eleventyConfig) {
   const mdLib = markdownIt(markdownOptions);
   mdLib.use(markdownItAttrs);
   mdLib.use(taskListPlugin);
-  mdLib.use(markdownItCallout, { markers: "*", icons: false });
+  mdLib.use(markdownItCallout, {
+    markers: "*",
+    // Just disable all titles and icons
+    icons: new Proxy({}, { get: () => "" }),
+    titles: new Proxy({}, { get: () => "" }),
+  });
   mdLib.use(mdEmbed);
   eleventyConfig.setLibrary("md", mdLib);
 

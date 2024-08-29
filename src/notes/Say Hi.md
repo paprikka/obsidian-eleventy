@@ -9,7 +9,8 @@ tags:
 
 In August 2020 I decided to open my calendar to strangers from anywhere in the world to talk about their ideas and their dreams, to pair program, or to rant.
 
-> [!info] **Read about it [here](https://sonnet.io/posts/hi).**
+> [!info] 
+> **Read about it [here](https://sonnet.io/posts/hi).**
 
 By the time of writing this (2024-01-17) I've met more than **150 beautifully weird and kind** people via [Say Hi](https://sonnet.io/posts/hi).  Examples include (random sample):
 

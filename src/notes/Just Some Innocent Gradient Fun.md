@@ -12,7 +12,8 @@ Hi there! This one will be quick. Let's let the code speak for itself for a chan
 A week back or so I saw a [video by a channel called Texture Labs](https://www.youtube.com/watch?v=1poWgZWpsiY&t=22s) explaining a simple shading technique using gradients, grain and posterise. I thought it would be a fun thing to play with, so here you go. [Just Some Innocent Gradient Fun](https://grain.potato.horse) is a simple graphics editor demonstrating the technique mentioned in the video.
 
 
-> [!NOTE] **Check it out [here](https://grain.potato.horse/).**
+> [!NOTE] 
+> **Check it out [here](https://grain.potato.horse/).**
 
 <marquee style='font-family: cursive; font-size: 2em'>
 or <a href='//grain.potato.horse' target='_blank'>heeere</a> 
@@ -29,7 +30,7 @@ The video does a pretty good job explaining the effect itself, so I recommend wa
 
 I prefer learning by playing, tweaking, and breaking things. So I added a bit of UI to control different parts of the effect, in case you're similar to me in that regard:
 
-![1365](innocent-gradient-fun-bela.webp)
+![1368](innocent-gradient-fun-bela.webp)
 
 ### How it works in HTML + CSS
 
@@ -84,5 +85,5 @@ OK, there's one tempting idea: creating a web component that wraps an image elem
 
 Thanks for reading, see you tomorrow!
 
-![3387](innocent-gradient-fun.png)
+![3390](innocent-gradient-fun.png)
 
