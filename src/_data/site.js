@@ -1,8 +1,13 @@
+import { makeAbsoluteUrl } from "../../build/absolute-url.js";
+
 const domain = "new.untested.sonnet.io";
+const rootUrl = `https://${domain}`;
+
 export default {
-  rootUrl: `https://${domain}`,
+  rootUrl,
   buildTime: new Date(),
-  title: "Untested · Rafał Pastuszak",
   description: "Projects, experiments and toys by Rafał Pastuszak",
   name: "Untested",
+  defaultCover: makeAbsoluteUrl(rootUrl)("/assets/cover-default.png"),
+  defaultTitle: "Untested · Rafał Pastuszak",
 };

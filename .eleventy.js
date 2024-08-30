@@ -1,6 +1,6 @@
 // TODO: ignore twitter images
 
-import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import { eleventyImageTransformPlugin, Image } from "@11ty/eleventy-img";
 import { mdEmbed } from "./build/plugins/md-embed.js";
 import { ObsidianImportPlugin } from "./build/plugins/obsidian.js";
 import { dateFormat } from "./build/date-format.js";
@@ -73,6 +73,18 @@ export default function (eleventyConfig) {
       },
     },
   });
+
+  eleventyConfig.addShortcode(
+    "imagePath",
+    async function (src, widths = [1200]) {
+      let metadata = await new Image(src, { widths, formats: ["jpeg"] });
+      const stats = metadata.getFullStats(metadata);
+
+      const relativeUrl = stats?.jpeg?.[0]?.url;
+      const url = makeAbsoluteUrl(SiteData.rootUrl)(relativeUrl);
+      return url;
+    },
+  );
 
   eleventyConfig.addPlugin(ObsidianImportPlugin);
   eleventyConfig.addPassthroughCopy("src/assets");

@@ -6,5 +6,6 @@ export default {
   social: {
     twitter: "@rafalpast",
     mastodon: "@raf@mastodon.cloud",
+    github: "paprikka",
   },
 };
