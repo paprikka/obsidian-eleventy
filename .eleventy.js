@@ -1,17 +1,18 @@
 // TODO: ignore twitter images
 
-import { eleventyImageTransformPlugin, Image } from "@11ty/eleventy-img";
-import { mdEmbed } from "./build/plugins/md-embed.js";
-import { ObsidianImportPlugin } from "./build/plugins/obsidian.js";
-import { dateFormat } from "./build/date-format.js";
-import markdownIt from "markdown-it";
-import { escapeHtml } from "markdown-it/lib/common/utils.mjs";
-import markdownItAttrs from "markdown-it-attrs";
-import taskListPlugin from "./build/plugins/md-task-list.js";
-import markdownItCallout from "markdown-it-github-alerts";
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import hljs from "highlight.js";
-import SiteData from "./src/_data/site.js";
+import markdownIt from "markdown-it";
+import markdownItAttrs from "markdown-it-attrs";
+import markdownItCallout from "markdown-it-github-alerts";
+import { escapeHtml } from "markdown-it/lib/common/utils.mjs";
 import { makeAbsoluteUrl } from "./build/absolute-url.js";
+import { dateFormat } from "./build/date-format.js";
+import { imagePath } from "./build/image-path.js";
+import { mdEmbed } from "./build/plugins/md-embed.js";
+import taskListPlugin from "./build/plugins/md-task-list.js";
+import { ObsidianImportPlugin } from "./build/plugins/obsidian.js";
+import SiteData from "./src/_data/site.js";
 
 export default function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
@@ -74,18 +75,7 @@ export default function (eleventyConfig) {
     },
   });
 
-  eleventyConfig.addShortcode(
-    "imagePath",
-    async function (src, widths = [1200]) {
-      let metadata = await new Image(src, { widths, formats: ["jpeg"] });
-      const stats = metadata.getFullStats(metadata);
-
-      const relativeUrl = stats?.jpeg?.[0]?.url;
-      const url = makeAbsoluteUrl(SiteData.rootUrl)(relativeUrl);
-      return url;
-    },
-  );
-
+  eleventyConfig.addShortcode("imagePath", imagePath);
   eleventyConfig.addPlugin(ObsidianImportPlugin);
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addFilter("dateFormat", dateFormat);
