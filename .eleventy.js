@@ -10,6 +10,8 @@ import markdownItAttrs from "markdown-it-attrs";
 import taskListPlugin from "./build/plugins/md-task-list.js";
 import markdownItCallout from "markdown-it-github-alerts";
 import hljs from "highlight.js";
+import SiteData from "./src/_data/site.js";
+import { makeAbsoluteUrl } from "./build/absolute-url.js";
 
 export default function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
@@ -20,6 +22,8 @@ export default function (eleventyConfig) {
       item.data.title = item.data?.title || item.fileSlug;
       item.data.layout = "note.njk";
       item.data.pageClass = "note";
+      item.data.isArticle = true;
+
       return item;
     });
   });
@@ -73,6 +77,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPlugin(ObsidianImportPlugin);
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addFilter("dateFormat", dateFormat);
+  eleventyConfig.addFilter("absoluteUrl", makeAbsoluteUrl(SiteData.rootUrl));
 
   return {
     dir: {
