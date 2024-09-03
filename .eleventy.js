@@ -75,7 +75,6 @@ export default function (eleventyConfig) {
     },
   });
 
-  eleventyConfig.addShortcode("imagePath", imagePath);
   eleventyConfig.addPlugin(ObsidianImportPlugin);
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addFilter("dateFormat", dateFormat);
