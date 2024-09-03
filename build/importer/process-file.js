@@ -2,19 +2,7 @@ import { promises as fs } from "fs";
 import grayMatter from "gray-matter";
 import path from "path";
 import { resolveLink, resourcePathToLink } from "./resource-index.js";
-import slugify from "slugify";
-export async function checkIfPublishable(fileContent) {
-  return grayMatter(fileContent).data.publish === true;
-}
-
-function isRemoteUrl(url) {
-  try {
-    const urlObj = new URL(url);
-    return urlObj.protocol === "http:" || urlObj.protocol === "https:";
-  } catch (_) {
-    return false;
-  }
-}
+import { isRemoteUrl } from "../is-remote-url.js";
 
 function isBlockedUrl(url, blockedDomains) {
   try {
@@ -41,7 +29,8 @@ export const processSingleFile = async (
   relatedAssets,
 ) => {
   const fileContent = await fs.readFile(absolutePath, "utf8");
-  const canPublish = await checkIfPublishable(fileContent);
+  const frontmatter = grayMatter(fileContent).data;
+  const canPublish = frontmatter.publish === true;
   if (!canPublish) return null;
 
   const getAnchorInternalMarkup = (_, p1, p2) => {
@@ -133,6 +122,13 @@ export const processSingleFile = async (
     .replace(linkMarker, (match) => {
       return `<span id="${match}" class="link-marker">${match}</span>`;
     });
+
+  if (!frontmatter.cover || isRemoteUrl(frontmatter.cover))
+    return { absolutePath, content };
+
+  relatedAssets.push({
+    absolutePath: path.resolve(absolutePath, "..", frontmatter.cover),
+  });
 
   return { absolutePath, content };
 };

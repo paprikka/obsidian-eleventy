@@ -53,7 +53,9 @@ export const run = async () => {
       } catch (error) {
         if (!hasRun) {
           hasRun = true;
-          console.log(absolutePath);
+          console.log(
+            `Cannot copy asset: [${absolutePath}] to [${destinationDir}]`,
+          );
         }
       }
     });
@@ -67,11 +69,10 @@ export const run = async () => {
     ),
   ).then((all) => all.filter(Boolean));
 
-  console.log(
-    "Files to publish:",
-    filesToPublish.map((_) => _.absolutePath),
-  );
+  console.log(`📘 Total files to publish: ${filesToPublish.length}`);
 
   await copyAssets(relatedAssets, sourceBase, destinationBase);
   await exportEntries(filesToPublish, sourceBase, destinationBase);
+
+  console.log(`✏️ done`);
 };
