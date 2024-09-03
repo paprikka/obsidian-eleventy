@@ -27,28 +27,26 @@ export const postprocess = async (current, all) => {
   const filesToCopy = {};
 
   // TODO: could me made more generic with something like: data-transform-attr='attr-name'
-  $('meta:is([property="og:image"], [property="twitter:image"])').each(
-    (_, meta) => {
-      const $meta = $(meta);
-      if (!$meta.attr("content")) {
-        console.log(
-          `[postprocess] missing meta image for [${current.inputPath}]`,
-        );
-        return;
-      }
+  $('meta[property="og:image"], meta[name="twitter:image"]').each((_, meta) => {
+    const $meta = $(meta);
+    if (!$meta.attr("content")) {
+      console.log(
+        `[postprocess] missing meta image for [${current.inputPath}]`,
+      );
+      return;
+    }
 
-      const src = $meta.attr("content");
-      if (isRemoteUrl(src)) return;
+    const src = $meta.attr("content");
+    if (isRemoteUrl(src)) return;
 
-      const cwd = process.cwd();
-      const fromPath = path.join(cwd, path.dirname(current.inputPath), src);
-      const toPath = path.join(cwd, path.dirname(current.outputPath), src);
+    const cwd = process.cwd();
+    const fromPath = path.join(cwd, path.dirname(current.inputPath), src);
+    const toPath = path.join(cwd, path.dirname(current.outputPath), src);
 
-      const updatedUrl = absoluteUrl(url.resolve(current.url, src));
-      $meta.attr("content", updatedUrl);
-      filesToCopy[fromPath] = toPath;
-    },
-  );
+    const updatedUrl = absoluteUrl(url.resolve(current.url, src));
+    $meta.attr("content", updatedUrl);
+    filesToCopy[fromPath] = toPath;
+  });
 
   // TODO: extract so this cache is shared
   const filesToCopyList = Object.entries(filesToCopy);
