@@ -1,5 +1,8 @@
 import { load } from "cheerio";
 import url from "url";
+import path from "path";
+import fs from "fs/promises";
+import { isRemoteUrl } from "../is-remote-url.js";
 
 /**
  * @typedef {Object} ProcessedPage
@@ -17,6 +20,41 @@ import url from "url";
  */
 export const postprocess = async (current, all) => {
   const $ = load(current.content);
+  const filesToCopy = {};
+
+  // TODO: could me made more generic with something like: data-transform-attr='attr-name'
+  $('meta:is([property="og:image"], [property="og:twitter"])').each(
+    (_, meta) => {
+      const $meta = $(meta);
+      if (!$meta.attr("content")) {
+        console.log(
+          `[postprocess] missing meta image for [${current.inputPath}]`,
+        );
+        return;
+      }
+
+      const src = $meta.attr("content");
+      if (isRemoteUrl(src)) return;
+
+      const cwd = process.cwd();
+      const fromPath = path.join(cwd, path.dirname(current.inputPath), src);
+      const toPath = path.join(cwd, path.dirname(current.outputPath), src);
+
+      $meta.attr("content", url.resolve(current.url, src));
+      filesToCopy[fromPath] = toPath;
+    },
+  );
+
+  const filesToCopyList = Object.entries(filesToCopy);
+  for (const [fromPath, toPath] of filesToCopyList) {
+    try {
+      await fs.copyFile(fromPath, toPath);
+    } catch (error) {
+      console.log(
+        `[postprocess] failed to copy relatd asset ${fromPath} to ${toPath}`,
+      );
+    }
+  }
 
   $('article :is(a[href^="/"], a[href^="./"], a[href^="../"])').each((_, a) => {
     const $a = $(a);
