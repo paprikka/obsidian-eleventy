@@ -27,7 +27,7 @@ export const postprocess = async (current, all) => {
   const filesToCopy = {};
 
   // TODO: could me made more generic with something like: data-transform-attr='attr-name'
-  $('meta:is([property="og:image"], [property="og:twitter"])').each(
+  $('meta:is([property="og:image"], [property="twitter:image"])').each(
     (_, meta) => {
       const $meta = $(meta);
       if (!$meta.attr("content")) {
