@@ -58,6 +58,8 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("limit", function (arr, limit) {
     return arr.slice(0, limit);
   });
+
+  // TODO: increase cache duration
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     extensions: "html",
     formats: ["auto"],

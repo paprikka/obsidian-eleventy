@@ -3,6 +3,10 @@ import url from "url";
 import path from "path";
 import fs from "fs/promises";
 import { isRemoteUrl } from "../is-remote-url.js";
+import { makeAbsoluteUrl } from "../absolute-url.js";
+import SiteData from "../../src/_data/site.js";
+
+const absoluteUrl = makeAbsoluteUrl(SiteData.rootUrl);
 
 /**
  * @typedef {Object} ProcessedPage
@@ -40,18 +44,20 @@ export const postprocess = async (current, all) => {
       const fromPath = path.join(cwd, path.dirname(current.inputPath), src);
       const toPath = path.join(cwd, path.dirname(current.outputPath), src);
 
-      $meta.attr("content", url.resolve(current.url, src));
+      const updatedUrl = absoluteUrl(url.resolve(current.url, src));
+      $meta.attr("content", updatedUrl);
       filesToCopy[fromPath] = toPath;
     },
   );
 
+  // TODO: extract so this cache is shared
   const filesToCopyList = Object.entries(filesToCopy);
   for (const [fromPath, toPath] of filesToCopyList) {
     try {
       await fs.copyFile(fromPath, toPath);
     } catch (error) {
       console.log(
-        `[postprocess] failed to copy relatd asset ${fromPath} to ${toPath}`,
+        `[postprocess] failed to copy related asset ${fromPath} to ${toPath}`,
       );
     }
   }
