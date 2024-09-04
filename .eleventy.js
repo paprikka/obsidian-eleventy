@@ -59,13 +59,13 @@ export default function (eleventyConfig) {
     return arr.slice(0, limit);
   });
 
-  // TODO: increase cache duration
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     extensions: "html",
     formats: ["auto"],
     defaultAttributes: { loading: "lazy", decoding: "async" },
     sharpOptions: { animated: true },
     cacheOptions: {
+      duration: "30000d", // I'll update it on my 118th birthday
       formatUrlForDisplay: (url) => url,
       fetchOptions: {
         headers: {

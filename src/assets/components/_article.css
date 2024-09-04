@@ -30,7 +30,7 @@
     margin: 1em 0;
     border-left: var(--color-text) 2px solid;
   }
-  & a[href^="http"] {
+  & a[href^="http"]:not(.embed) {
     position: relative;
     padding-inline-end: 0.6em;
     &::after {
@@ -87,7 +87,7 @@
     height: auto;
     position: relative;
 
-    & > :only-child {
+    &:not(.embed--twitter) > :only-child {
       vertical-align: bottom;
       border: 2px solid var(--color-text);
       box-shadow: 4px 4px 0 0 var(--color-text);
@@ -115,6 +115,12 @@
       aspect-ratio: 16 / 9;
       margin-inline: calc(-1 * var(--page-margin));
       width: calc(100% + var(--page-margin) * 2);
+      border-radius: var(--border-radius-panel);
+      overflow: hidden;
+    }
+
+    &.embed--twitter {
+      /* TODO: fix the borders */
       border-radius: var(--border-radius-panel);
       overflow: hidden;
     }

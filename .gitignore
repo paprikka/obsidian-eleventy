@@ -5,3 +5,4 @@ _site
 .vscode
 vault
 .vercel
+.env
