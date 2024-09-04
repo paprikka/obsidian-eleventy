@@ -18,7 +18,6 @@
   --color-accent: var(--color-butter);
   --color-text: #222;
   --color-negative: red;
-  --border-radius-panel: 0.3vmin;
   --color-link: hsl(2deg 85% 54%);
   --color-link-broken: hsl(2deg 35% 54%);
   --article-width: calc(30 * var(--s-0));
@@ -53,4 +52,6 @@
   --layer-bg: 0;
   --layer-label: 1;
   --layer-tooltip: 2;
+
+  --border-radius-panel: 1vmin;
 }

@@ -1,3 +1,4 @@
+import { escapeHtml } from "../escape-html.js";
 const getYTVideoUrlFromSrc = (src) => {
   if (src.includes("youtube.com")) {
     const url = new URL(src);
@@ -22,13 +23,16 @@ export const mdEmbed = function (md, env) {
     const token = tokens[idx];
     const srcIndex = token.attrIndex("src");
     const src = token.attrs[srcIndex][1];
+    const maybeTitle = token.children.at(0)?.content;
 
+    console.log("alt", { maybeAlt: maybeTitle });
+    const titleAttr = maybeTitle ? ` title="${escapeHtml(maybeTitle)}"` : "";
     if (src.includes("youtube.com") || src.includes("youtu.be")) {
       const videoUrl = getYTVideoUrlFromSrc(src);
       if (!videoUrl)
         return `<div class="debug-alert">Missing YT URL: ${src}</div>`;
 
-      return `<iframe width="560" height="315" src="${videoUrl}" frameborder="0" allowfullscreen></iframe>`;
+      return `<iframe class='embed embed--youtube' lazy width="560" height="315" src="${videoUrl}" ${titleAttr} frameborder="0" allowfullscreen></iframe>`;
     }
     if (src.includes("twitter.com")) {
       return ` <a class="debug-alert" href="${src}">Embedded tweet (work in progress!)  </a>`;

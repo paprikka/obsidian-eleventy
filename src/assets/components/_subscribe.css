@@ -1,5 +1,5 @@
 .widget-subscribe {
   background-color: var(--color-accent);
-  border-radius: var(--border-radius-panel);
+  border-radius: calc(var(--border-radius-panel) / 3);
   box-shadow: var(--color-accent) 0 0 0 var(--spacing-xxs);
 }

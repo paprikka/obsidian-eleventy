@@ -13,6 +13,9 @@ dependencies:
   directory-tree:
     specifier: ^3.5.1
     version: 3.5.1
+  escape-goat:
+    specifier: ^4.0.0
+    version: 4.0.0
   gray-matter:
     specifier: ^4.0.3
     version: 4.0.3
@@ -1401,6 +1404,11 @@ packages:
       '@esbuild/win32-ia32': 0.21.5
       '@esbuild/win32-x64': 0.21.5
     dev: true
+
+  /escape-goat@4.0.0:
+    resolution: {integrity: sha512-2Sd4ShcWxbx6OY1IHyla/CVNwvg7XwZVoXZHcSu9w9SReNP1EzzD5T8NWKIR38fIqEns9kDWKUQTXXAmlDrdPg==}
+    engines: {node: '>=12'}
+    dev: false
 
   /escape-html@1.0.3:
     resolution: {integrity: sha512-NiSupZ4OeuGwr68lGIeym/ksIZMJodUGOSCZ/FSnTxcrekbvqrgdUxlJOMpijaKZVjAJrWrGs/6Jy8OMuyj9ow==}
