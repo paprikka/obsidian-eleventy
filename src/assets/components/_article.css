@@ -1,3 +1,9 @@
+@property --alpha {
+  initial-value: 0%;
+  inherits: false;
+  syntax: "<percentage>";
+}
+
 .article {
   margin-bottom: var(--spacing-hero);
   font-size: var(--s--1);
@@ -52,11 +58,18 @@
   }
 
   .link-marker {
-    display: inline-block;
+    display: contents;
     width: 1px;
     height: 1px;
     opacity: 0;
     overflow: hidden;
+  }
+  :where(p, ol, ul, blockquote):has(.link-marker:target) {
+    --_c: color-mix(in srgb, var(--color-accent) var(--alpha), transparent);
+    background-color: var(--_c);
+    box-shadow: 0 0 0 0.25em var(--_c);
+    border-radius: 0.3vmin;
+    animation: flash 2s 0s ease-in-out 1 both;
   }
 
   p > code {
@@ -124,12 +137,22 @@
       border-radius: var(--border-radius-panel);
       overflow: hidden;
     }
-  }
 
-  & p:has(:target) {
-    --_c: color-mix(in srgb, var(--color-accent) 50%, transparent);
-    background-color: var(--_c);
-    box-shadow: 0 0 0 0.25em var(--_c);
-    border-radius: 0.3vmin;
+    &.embed--error {
+      /* TODO: style */
+      color: var(--color-negative);
+    }
+  }
+}
+
+@keyframes flash {
+  from {
+    --alpha: 0%;
+  }
+  15% {
+    --alpha: 80%;
+  }
+  to {
+    --alpha: 0%;
   }
 }
