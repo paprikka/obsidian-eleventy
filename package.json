@@ -5,6 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "push": "pnpm vault:build && pnpm build && vercel --prod",
     "build": "eleventy",
     "import-notes": "rm -rf src/sol && mkdir src/sol && obsidian-export  ../backup-sol src/sol --only-tags publish",
     "dev": "rm -rf _site && eleventy --serve",
