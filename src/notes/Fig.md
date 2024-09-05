@@ -27,7 +27,7 @@ Want to know how to build a graphics editor that is [not capable](<../MISS – M
 - finding ways to make impermanence enjoyable
   - set the right expectations from the beginning (turns out things disappearing from the screen isn't a very peaceful and meditative experience)
   - quick or messy drawings still feel and look enjoyable
-- playfulness <span id="^af5286" class="link-marker">^af5286</span>
+- playfulness <span id="^af5286" class="link-marker"></span>
   - make it accessible, make it feel like a toy
   - drawing itself (i.e. literally dragging the finger/pen on the screen) should _feel_ fun
 - balancing flexibility and a recognisable aesthetic
@@ -36,7 +36,7 @@ Want to know how to build a graphics editor that is [not capable](<../MISS – M
 
 ### What Fig is _not_
 
-Fig is not a [sandbox simulation app](<../Sandboxes, Games, and Play>) (e.g. [sandspiel.club](https://sandspiel.club)). It's a toy, but its primary use is _doodling_. In fact, I avoided researching sandboxes while I worked on Fig because they are just so much fun to play with and hack (cue: [💧 Top 9 Ways To Make Water](https://www.youtube.com/watch?v=2qfjJ-0ZeVM&t=316s)). <span id="^e375d3" class="link-marker">^e375d3</span>
+Fig is not a [sandbox simulation app](<../Sandboxes, Games, and Play>) (e.g. [sandspiel.club](https://sandspiel.club)). It's a toy, but its primary use is _doodling_. In fact, I avoided researching sandboxes while I worked on Fig because they are just so much fun to play with and hack (cue: [💧 Top 9 Ways To Make Water](https://www.youtube.com/watch?v=2qfjJ-0ZeVM&t=316s)). <span id="^e375d3" class="link-marker"></span>
 
 ## Features
 
@@ -128,7 +128,7 @@ I play _in_ and _with_ it:
 
 ## Next steps
 
-<span id="^8c282a" class="link-marker">^8c282a</span>
+<span id="^8c282a" class="link-marker"></span>
 
 ### Smaller improvements:
 

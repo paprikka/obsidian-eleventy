@@ -14,7 +14,7 @@ tags:
 
 ## Galician Carpentry crash course
 
-<span id="^35cfc4" class="link-marker">^35cfc4</span>
+<span id="^35cfc4" class="link-marker"></span>
 
 I grew up above a carpentry workshop. The past 4 generations of Pastuszaks were carpenters (with enough fingers for only 3 generations, but I digress.) The constant sound of the Cadillac-shaped woodworking machines hummed through the floor from below. It wasn't loud and I didn't mind. To this day this sound helps me fall asleep. 
 

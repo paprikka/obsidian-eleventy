@@ -4,6 +4,7 @@ import path from "path";
 import { postprocess } from "./postprocess.js";
 import { projectRootDir } from "./get-root.js";
 import { slugify } from "../slugify.js";
+import { kill } from "process";
 
 export function ObsidianImportPlugin(eleventyConfig, options) {
   // TODO: this should be done in markdown, move
@@ -62,7 +63,26 @@ export function ObsidianImportPlugin(eleventyConfig, options) {
 
     return $.root().html();
   });
+  // TODO: move to the obsidian import script and use markdown-it
+  // markdown-it would:
+  // find the correct link-marker token (or what it replaced)
+  // traverse the AST to find the associated element
+  // append the correct classes and targets to that element.
+  // this is slower but still will work so no rush, pal
 
+  eleventyConfig.addTransform("inlineLinks", (content, outputPath) => {
+    if (!outputPath || !outputPath.endsWith(".html")) return content;
+
+    const $ = load(content);
+
+    $(".link-marker").each((_, el) => {
+      const $el = $(el);
+      const $targetEl = $el.parent().prev();
+      $targetEl.append($el);
+    });
+
+    return $.root().html();
+  });
   // Process broken links
   eleventyConfig.on(
     "eleventy.after",

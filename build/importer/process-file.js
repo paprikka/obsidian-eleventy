@@ -120,7 +120,7 @@ export const processSingleFile = async (
       return getAnchorMarkup(p1, p1);
     })
     .replace(linkMarker, (match) => {
-      return `<span id="${match}" class="link-marker">${match}</span>`;
+      return `<span id="${match}" class="link-marker"></span>`;
     });
 
   if (!frontmatter.cover || isRemoteUrl(frontmatter.cover))

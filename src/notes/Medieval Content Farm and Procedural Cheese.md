@@ -46,7 +46,7 @@ Granted, Latin seems historically more correct, but at the same time I wanted th
 
 #### My dear dairy
 
-**All cheese, including AI cheese is good.** Whatever crappy tool you use for your creative endeavours, use its limitations as your brush/chisel/you get the point. <span id="^cba64c" class="link-marker">^cba64c</span>
+**All cheese, including AI cheese is good.** Whatever crappy tool you use for your creative endeavours, use its limitations as your brush/chisel/you get the point. <span id="^cba64c" class="link-marker"></span>
 
 MeatGPT works (at least for those who don't message me asking about my mental state) because it uses the limitations of the current tech to its advantage. It's like poorly done taxidermy or a hedgehog-shaped Jesus.
 

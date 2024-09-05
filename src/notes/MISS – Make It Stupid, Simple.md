@@ -31,7 +31,7 @@ One of the obvious benefits of that is focus: it's easier to talk about it, to e
 
 For instance, I was recently messing with a bug in Safari, where hitting the shift key would suddenly trigger a pointer event and display the UI, since the app assumed the user moved their mouse cursor and they want to interact with the navigation. One of the earlier bugs let some people edit much faster because of a missing `e.preventDefault()` call. Not on my watch!
 
-[Sit.](https://sit.sonnet.io), — My baby is *beautiful* and I love it the way it is, but let's face it: it's a dumb alarm clock, it's a glorified gong. It's the borzoi of my apps. <span id="^b2eef4" class="link-marker">^b2eef4</span>
+[Sit.](https://sit.sonnet.io), — My baby is *beautiful* and I love it the way it is, but let's face it: it's a dumb alarm clock, it's a glorified gong. It's the borzoi of my apps. <span id="^b2eef4" class="link-marker"></span>
 
 ![2191](borzoi-2.jpg)
 *You beautiful, majestic, sweet summer child. CC by [Deb](https://www.flickr.com/photos/ferlinka/51819368370/)*

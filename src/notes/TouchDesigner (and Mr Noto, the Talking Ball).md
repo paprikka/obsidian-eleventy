@@ -12,8 +12,8 @@ I noticed a bunch of posts [mentioning](https://twitter.com/tBlankensmith/status
 
 TouchDesigner is a node-based visual programming tool used for interactive media installations, processing/p5.js style generative art, multimedia performances. I'm not a generative art expert, but from my perspective it sits somewhere between PureData and Processing.
 
-![X](https://twitter.com/pfree05/status/1709956985586581620)
 
+![X](https://twitter.com/pfree05/status/1709956985586581620)
 It feels much more modern and than PureData, both in terms of UI polish and the feature set. Inputs such as Kinect or WebRTC are available out of the box. This means that with relative ease you should be able to control audio or animations with signals such as voice/movement/body pose. And of course a wealth of other high-level APIs (anything that can talk web).
 
 ![twitter.com/Infratonal/status/1742613391816982873](https://twitter.com/Infratonal/status/1742613391816982873)

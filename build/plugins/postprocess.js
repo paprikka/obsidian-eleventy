@@ -102,13 +102,16 @@ export const postprocess = async (current, all) => {
 
       let contentToEmbed = "";
       // Fragment Embed
+      // TODO: separate attaching anchors and generating embeds
+      // - link-markers need to be moved so that we can focus on the content and not the marker AFTER the content
+      // - if we have all of this in one place, we'll end up with a ton of conditional logic
       if (targetId) {
         const fragment = $fileDOM(targetId).parent();
         if (fragment) {
-          contentToEmbed = $fileDOM(fragment).html();
+          contentToEmbed = fragment.html();
         } else {
           // TODO: render a placeholder
-          contentToEmbed = "Missing fragment";
+          contentToEmbed = `<div class="embed embed--error">Embed not found: ${targetHref}</div>`;
         }
       } else {
         // Full embed
@@ -119,8 +122,7 @@ export const postprocess = async (current, all) => {
       $wrapper.addClass("embed embed--note");
       const fullTargetUrl = targetId ? `${target.url}${targetId}` : target.url;
       $wrapper.append(
-        `<a href="${fullTargetUrl}" class="embed__source">Source ${fullTargetUrl}</a>`,
-        // `<a href="${target.url}" class="embed__source">${$fileDOM("h1").text()}</a>`,
+        `<a href="${fullTargetUrl}" class="embed__source">Source</a>`,
       );
       $wrapper.append(contentToEmbed);
 

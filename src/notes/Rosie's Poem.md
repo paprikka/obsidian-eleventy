@@ -8,4 +8,6 @@ publish: true
 >
 >  — Rosie, 3
 
+<span id="^6dcdc7" class="link-marker"></span>
+
 [original (🇵🇱)](<../Pierwsza Bajka Róży>)
