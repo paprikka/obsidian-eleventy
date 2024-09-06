@@ -14,6 +14,12 @@ import taskListPlugin from "./build/plugins/md-task-list.js";
 import { ObsidianImportPlugin } from "./build/plugins/obsidian.js";
 import SiteData from "./src/_data/site.js";
 
+/**
+ * Eleventy Configuration File
+ *
+ * @param {import("@11ty/eleventy").UserConfig} eleventyConfig - Eleventy configuration object.
+ * @returns {import("@11ty/eleventy").UserConfig} Eleventy configuration options.
+ */
 export default function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.setQuietMode(true);
