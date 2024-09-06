@@ -1,5 +1,4 @@
 node_modules
-.cache
 _site
 .DS_Store
 .vscode
