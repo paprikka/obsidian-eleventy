@@ -5,7 +5,16 @@
     <link rel="stylesheet" href="/assets/main.css" />
     {% include 'umami.njk' %}
   </head>
-  <body {% if pageClass %}class="page-{{ pageClass }}" {% endif %}>
+  <body
+    data-last-build="{{site.buildTime}}"
+    {%
+    if
+    pageClass
+    %}class="page-{{ pageClass }}"
+    {%
+    endif
+    %}
+  >
     {{ content | safe }}
   </body>
 </html>
