@@ -41,12 +41,12 @@ export function ObsidianImportPlugin(eleventyConfig, options) {
         .prependTo($el);
     });
 
-    $('article a[href^="#"]').each((_, el) => {
-      const $el = $(el);
-      const href = $el.attr("href");
-      const hrefFormatted = normalizeLocalLinkHref(href);
-      $el.attr("href", hrefFormatted);
-    });
+    // $('article a[href^="#"]').each((_, el) => {
+    //   const $el = $(el);
+    //   const href = $el.attr("href");
+    //   const hrefFormatted = normalizeLocalLinkHref(href);
+    //   $el.attr("href", hrefFormatted);
+    // });
 
     return $.root().html();
   });
