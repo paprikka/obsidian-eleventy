@@ -2,19 +2,6 @@ import { slugify } from "./slugify.js";
 
 const PREFIX = "h-";
 
-export const normalizeLocalLinkHref = (linkHref) => {
-  if (linkHref.startsWith("#^")) return linkHref;
-  return `#${getAnchorId(linkHref, true, true)}`;
-};
-
-export const getAnchorIdForLink = (
-  linkIdAttr,
-  needsEncoding,
-  needsPrefix = false,
-) => {
-  if (linkIdAttr.startsWith("#^")) return linkIdAttr.slice(1);
-  return getAnchorId(linkIdAttr, needsEncoding, needsPrefix);
-};
 export const getAnchorIdForHeader = (text, needsEncoding) =>
   getAnchorId(text, needsEncoding, true);
 

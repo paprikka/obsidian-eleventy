@@ -1,13 +1,9 @@
 import { load } from "cheerio";
 import { promises as fs } from "fs";
 import path from "path";
-import { postprocess } from "./postprocess.js";
+import { getHeaderIdFromEl } from "../anchor-ids.js";
 import { projectRootDir } from "./get-root.js";
-import {
-  getAnchorIdForLink,
-  getHeaderIdFromEl,
-  normalizeLocalLinkHref,
-} from "../anchor-ids.js";
+import { postprocess } from "./postprocess.js";
 
 export function ObsidianImportPlugin(eleventyConfig, options) {
   // TODO: this should be done in markdown, move

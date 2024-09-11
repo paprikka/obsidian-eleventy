@@ -1,12 +1,11 @@
 import { load } from "cheerio";
-import url from "url";
-import path from "path";
 import fs from "fs/promises";
-import { isRemoteUrl } from "../is-remote-url.js";
-import { makeAbsoluteUrl } from "../absolute-url.js";
+import path from "path";
+import url from "url";
 import SiteData from "../../src/_data/site.js";
+import { makeAbsoluteUrl } from "../absolute-url.js";
+import { isRemoteUrl } from "../is-remote-url.js";
 import { getEmbedContent } from "./get-embed-content.js";
-import { getAnchorIdForLink } from "../anchor-ids.js";
 
 const absoluteUrl = makeAbsoluteUrl(SiteData.rootUrl);
 
