@@ -6,6 +6,7 @@ Things will move and change a lot, but if you have any questions or tips - let m
 
 ### TODO
 
+- [ ] fix missing iframe embeds in the shader toy articles 
 - [ ] fix broken embeds in https://new.untested.sonnet.io/notes/My%20Bootleg%20T-shirts/
 - [ ] fix the internal link on this page https://new.untested.sonnet.io/notes/LLM-powered%20Tools%20I'm%20Actually%20Using/#11117c
 - [ ] separate DEV and BUILD caches to speed up builds
