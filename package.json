@@ -14,7 +14,7 @@
     "vault:watch": "npx nodemon --inspect --watch build --watch 'vault/**/*.*' build/importer/run.js",
     "vault:debug": "node --inspect-brk build/importer/run.js",
     "format": "prettier --write .",
-    "test": "vitest"
+    "test": "vitest --reporter=basic --disable-console-intercept --no-file-parallelism --silent=false"
   },
   "keywords": [],
   "author": "",

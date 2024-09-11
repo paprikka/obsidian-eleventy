@@ -3,8 +3,11 @@ import { promises as fs } from "fs";
 import path from "path";
 import { postprocess } from "./postprocess.js";
 import { projectRootDir } from "./get-root.js";
-import { slugify } from "../slugify.js";
-import { kill } from "process";
+import {
+  getAnchorIdForLink,
+  getHeaderIdFromEl,
+  normalizeLocalLinkHref,
+} from "../anchor-ids.js";
 
 export function ObsidianImportPlugin(eleventyConfig, options) {
   // TODO: this should be done in markdown, move
@@ -27,24 +30,22 @@ export function ObsidianImportPlugin(eleventyConfig, options) {
     if (!outputPath || !outputPath.endsWith(".html")) return content;
 
     const $ = load(content);
-    $("article h1,h2,h3,h4,h5,h6").each((_, el) => {
+    $("article :is(h1, h2, h3, h4, h5, h6)").each((_, el) => {
       const $el = $(el);
-      const id = $el.attr("id") || encodeURIComponent($el.text().trim());
-
-      const idFormatted = slugify(decodeURIComponent(id));
+      const idFormatted = getHeaderIdFromEl($el);
+      $el.attr("id", idFormatted);
       $('<a class="headline-anchor"/>')
         .attr("href", `#${idFormatted}`)
-        .attr("id", idFormatted)
         .attr("aria-hidden", "true")
         .attr("tabindex", "-1")
-        .appendTo($el);
+        .prependTo($el);
     });
 
     $('article a[href^="#"]').each((_, el) => {
       const $el = $(el);
       const href = $el.attr("href");
-      const hrefFormatted = slugify(decodeURIComponent(href));
-      $el.attr("href", `#${hrefFormatted}`).addClass("oi");
+      const hrefFormatted = normalizeLocalLinkHref(href);
+      $el.attr("href", hrefFormatted);
     });
 
     return $.root().html();

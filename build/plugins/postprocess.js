@@ -5,6 +5,8 @@ import fs from "fs/promises";
 import { isRemoteUrl } from "../is-remote-url.js";
 import { makeAbsoluteUrl } from "../absolute-url.js";
 import SiteData from "../../src/_data/site.js";
+import { getEmbedContent } from "./get-embed-content.js";
+import { getAnchorIdForLink } from "../anchor-ids.js";
 
 const absoluteUrl = makeAbsoluteUrl(SiteData.rootUrl);
 
@@ -90,46 +92,40 @@ export const postprocess = async (current, all) => {
   for (let embed of embedsArray) {
     const $embed = $(embed);
     const targetHref = $embed.attr("href");
+
     try {
       const target = getTargetFile(targetHref, all);
       if (!target) {
         console.log(`Cannot find embed for ${targetHref} from ${current.url}`);
+        const embedNamePretty = decodeURIComponent(targetHref)
+          .split("/")
+          .at(-1);
+        $embed.replaceWith(
+          `<p class="embed embed--error">
+              Missing embed: <strong>${embedNamePretty}</strong>
+           </p>`,
+        );
         continue;
       }
-      const targetId = $embed.attr("data-target")?.trim();
-      const fileContent = target.content;
-      const $fileDOM = load(fileContent);
 
-      let contentToEmbed = "";
-      // Fragment Embed
-      // TODO: separate attaching anchors and generating embeds
-      // - link-markers need to be moved so that we can focus on the content and not the marker AFTER the content
-      // - if we have all of this in one place, we'll end up with a ton of conditional logic
-      if (targetId) {
-        const fragment = $fileDOM(targetId).parent();
-        if (fragment) {
-          contentToEmbed = fragment.html();
-        } else {
-          // TODO: render a placeholder
-          contentToEmbed = `<div class="embed embed--error">Embed not found: ${targetHref}</div>`;
-        }
-      } else {
-        // Full embed
-        contentToEmbed = $fileDOM("article").html();
-      }
-
+      const targetIdAttr = $embed.attr("data-target")?.trim();
+      const targetId = targetIdAttr;
+      const embed = getEmbedContent(target.content, targetId);
       const $wrapper = $("<blockquote>");
       $wrapper.addClass("embed embed--note");
-      const fullTargetUrl = targetId ? `${target.url}${targetId}` : target.url;
+      const fullTargetUrl = targetId
+        ? `${target.url}${embed.selector}`
+        : target.url;
+
       $wrapper.append(
         `<a href="${fullTargetUrl}" class="embed__source">Source</a>`,
       );
-      $wrapper.append(contentToEmbed);
 
+      $wrapper.append(embed.content);
       $embed.replaceWith($wrapper);
     } catch (err) {
       console.error(
-        `Error reading file [${targetHref}]:\nMessage: ${err.message}`,
+        `Error reading file [${targetHref}]:\nMessage: ${err.message}\nStack: ${err.stack}`,
       );
       // TODO: render a placeholder element
       $embed.replaceWith(`<!-- Error loading ${targetHref} -->`);

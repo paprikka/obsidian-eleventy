@@ -17,3 +17,19 @@
 
 @import "./pages/_intro.css";
 @import "./pages/_note.css";
+
+/* DEBUG  */
+/* 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  &::after { content: " [" attr(id) "]"; }
+}
+
+a[href*="#"] {
+  &::after { content: " [" attr(href) "]"; }
+}
+*/

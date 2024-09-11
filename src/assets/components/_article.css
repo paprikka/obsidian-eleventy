@@ -25,6 +25,33 @@
   h5,
   h6 {
     margin-block: 2em 1em;
+    position: relative;
+
+    & .headline-anchor {
+      font-family: var(--font-family-mono);
+      position: absolute;
+      left: -1em;
+      color: inherit;
+      font-style: normal;
+      text-decoration: none;
+      opacity: 0.2;
+      font-weight: var(--font-weight-normal);
+      transition: opacity, scale;
+      transition-duration: 0.2s;
+
+      @media (hover: hover) {
+        &:hover {
+          opacity: 1;
+        }
+      }
+      &:active {
+        scale: 0.9;
+      }
+
+      &::before {
+        content: "⌘";
+      }
+    }
   }
 
   h2 {
@@ -100,13 +127,13 @@
     height: auto;
     position: relative;
 
-    &:not(.embed--twitter) > :only-child {
+    &:not(.embed--twitter, .embed--error) > :only-child {
       vertical-align: bottom;
       border: 2px solid var(--color-text);
       box-shadow: 4px 4px 0 0 var(--color-text);
     }
 
-    & .embed__source {
+    &:not(.embed--error) .embed__source {
       position: absolute;
       right: 0;
       top: 0;
@@ -140,7 +167,7 @@
 
     &.embed--error {
       /* TODO: style */
-      color: var(--color-negative);
+      color: color-mix(in srgb, var(--color-text) 50%, transparent);
     }
   }
 }
