@@ -28,6 +28,12 @@ export const postprocess = async (current, all) => {
   const $ = load(current.content);
   const filesToCopy = {};
 
+  $(`article > iframe`).each((_, iframe) => {
+    const $iframe = $(iframe);
+    $iframe.attr("lazy", "lazy");
+    $iframe.addClass("embed embed--generic-iframe");
+  });
+
   // TODO: could me made more generic with something like: data-transform-attr='attr-name'
   $('meta[property="og:image"], meta[name="twitter:image"]').each((_, meta) => {
     const $meta = $(meta);
