@@ -1,6 +1,6 @@
 .footer {
   --_border-width: 2px;
-  --_shadow-height: 2rem;
+  --_shadow-height: 4rem;
   position: sticky;
   bottom: 0;
   padding: var(--s--2);
@@ -21,8 +21,19 @@
     position: absolute;
     background-image: linear-gradient(
       to top,
-      var(--color-page-bg),
-      transparent
+      color-mix(in srgb, var(--color-page-bg) 100%, transparent),
+      color-mix(in srgb, var(--color-page-bg) 73.8%, transparent),
+      color-mix(in srgb, var(--color-page-bg) 54.1%, transparent),
+      color-mix(in srgb, var(--color-page-bg) 38.2%, transparent),
+      color-mix(in srgb, var(--color-page-bg) 27.8%, transparent),
+      color-mix(in srgb, var(--color-page-bg) 19.4%, transparent),
+      color-mix(in srgb, var(--color-page-bg) 12.6%, transparent),
+      color-mix(in srgb, var(--color-page-bg) 7.5%, transparent),
+      color-mix(in srgb, var(--color-page-bg) 4.2%, transparent),
+      color-mix(in srgb, var(--color-page-bg) 2.1%, transparent),
+      color-mix(in srgb, var(--color-page-bg) 0.8%, transparent),
+      color-mix(in srgb, var(--color-page-bg) 0.2%, transparent),
+      color-mix(in srgb, var(--color-page-bg) 0%, transparent)
     );
     height: var(--_shadow-height);
     left: calc(var(--page-margin) * -1);
