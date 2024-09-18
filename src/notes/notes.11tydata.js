@@ -2,7 +2,7 @@ export default {
   layout: "note.njk",
   pageClass: "note",
   isArticle: true,
-  permalink: "/notes/{{ page.fileSlug | slugify }}/",
+  permalink: "/{{ page.filePathStem | slugifyPermalink }}/",
   collection: "notes",
 
   eleventyComputed: {

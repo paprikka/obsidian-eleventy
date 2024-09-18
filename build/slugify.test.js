@@ -1,5 +1,5 @@
 import { test, expect } from "vitest";
-import { slugifyPath } from "./slugify.js";
+import { slugifyPath, slugifyPermalink } from "./slugify.js";
 
 test.each([
   ["../some path.md", "../some-path/"],
@@ -12,3 +12,10 @@ test.each([
 ])("slugifyPath(%s) => %s", (input, expected) => {
   expect(slugifyPath(input)).toBe(expected);
 });
+
+test.each([["/notes/I understand/", "/notes/i-understand/"]])(
+  "slugifyPermalink(%s) => %s",
+  (input, expected) => {
+    expect(slugifyPermalink(input)).toBe(expected);
+  },
+);

@@ -11,7 +11,7 @@ import { dateFormat } from "./build/date-format.js";
 import { mdEmbed } from "./build/plugins/md-embed.js";
 import taskListPlugin from "./build/plugins/md-task-list.js";
 import { ObsidianImportPlugin } from "./build/plugins/obsidian.js";
-import { slugifyPath } from "./build/slugify.js";
+import { slugifyPath, slugifyPermalink } from "./build/slugify.js";
 import SiteData from "./src/_data/site.js";
 
 /**
@@ -97,7 +97,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addFilter("dateFormat", dateFormat);
   eleventyConfig.addFilter("absoluteUrl", makeAbsoluteUrl(SiteData.rootUrl));
-
+  eleventyConfig.addFilter("slugifyPermalink", slugifyPermalink);
   return {
     dir: {
       input: "src",
