@@ -1,4 +1,5 @@
 import slugifyOriginal from "slugify";
+import path from "path";
 
 export const slugify = (text) => {
   return slugifyOriginal(text, {
@@ -8,4 +9,15 @@ export const slugify = (text) => {
     locale: "en",
     trim: true,
   });
+};
+
+export const slugifyPath = (pathString) => {
+  const pathTrimmed = pathString.replace(/\.md$/, "").replace(/^\.\./, "");
+  const pathParts = pathTrimmed.split("/");
+  const pathPartsSlugified = pathParts
+    .map((part) => decodeURIComponent(part))
+    .map((part) => slugify(part));
+
+  const joined = path.join("..", ...pathPartsSlugified);
+  return joined.endsWith("/") ? joined : `${joined}/`;
 };

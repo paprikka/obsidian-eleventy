@@ -8,10 +8,10 @@ import markdownItCallout from "markdown-it-github-alerts";
 import { escapeHtml } from "markdown-it/lib/common/utils.mjs";
 import { makeAbsoluteUrl } from "./build/absolute-url.js";
 import { dateFormat } from "./build/date-format.js";
-import { imagePath } from "./build/image-path.js";
 import { mdEmbed } from "./build/plugins/md-embed.js";
 import taskListPlugin from "./build/plugins/md-task-list.js";
 import { ObsidianImportPlugin } from "./build/plugins/obsidian.js";
+import { slugifyPath } from "./build/slugify.js";
 import SiteData from "./src/_data/site.js";
 
 /**
@@ -23,17 +23,6 @@ import SiteData from "./src/_data/site.js";
 export default function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.setQuietMode(true);
-
-  eleventyConfig.addCollection("notes", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("src/notes/**/*.md").map((item) => {
-      item.data.title = item.data?.title || item.fileSlug;
-      item.data.layout = "note.njk";
-      item.data.pageClass = "note";
-      item.data.isArticle = true;
-
-      return item;
-    });
-  });
 
   const markdownOptions = {
     linkify: false,
@@ -59,6 +48,27 @@ export default function (eleventyConfig) {
     titles: new Proxy({}, { get: () => "" }),
   });
   mdLib.use(mdEmbed);
+
+  function adjustLinks(md) {
+    const defaultRender =
+      md.renderer.rules.link_open ||
+      function (tokens, idx, options, env, self) {
+        return self.renderToken(tokens, idx, options);
+      };
+
+    md.renderer.rules.link_open = function (tokens, idx, options, env, self) {
+      const hrefIndex = tokens[idx].attrIndex("href");
+      if (hrefIndex >= 0) {
+        const href = tokens[idx].attrs[hrefIndex][1];
+        if (href.startsWith("../")) {
+          tokens[idx].attrs[hrefIndex][1] = slugifyPath(href);
+        }
+      }
+      return defaultRender(tokens, idx, options, env, self);
+    };
+  }
+
+  mdLib.use(adjustLinks);
   eleventyConfig.setLibrary("md", mdLib);
 
   eleventyConfig.addFilter("limit", function (arr, limit) {
