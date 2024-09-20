@@ -22,6 +22,19 @@ export const run = async () => {
       const destinationDir = path.dirname(destinationPath);
 
       await fs.mkdir(destinationDir, { recursive: true });
+
+      try {
+        const existingContent = await fs.readFile(destinationPath, "utf-8");
+        if (existingContent === content) {
+          console.log(`[ importer ] SKIP ${relativePath} (content unchanged)`);
+          return;
+        } else {
+          console.log(`[ importer ] UPDATE ${relativePath}`);
+        }
+      } catch (error) {
+        console.log(`[ importer ] CREATE ${relativePath}`);
+      }
+
       await fs.writeFile(destinationPath, content);
     });
 
