@@ -12,9 +12,9 @@ import { mdAdjustLinks } from "./build/plugins/md-adjust-links.js";
 import { mdEmbed } from "./build/plugins/md-embed.js";
 import taskListPlugin from "./build/plugins/md-task-list.js";
 import { ObsidianImportPlugin } from "./build/plugins/obsidian.js";
+import { shuffle } from "./build/shuffle.js";
 import { slugifyPermalink } from "./build/slugify.js";
 import SiteData from "./src/_data/site.js";
-
 /**
  * Eleventy Configuration File
  *
@@ -25,7 +25,6 @@ export default function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.setQuietMode(true);
 
-  const cols = eleventyConfig.getCollections();
   const markdownOptions = {
     linkify: false,
     breaks: true,
@@ -53,6 +52,7 @@ export default function (eleventyConfig) {
   mdLib.use(mdAdjustLinks);
   eleventyConfig.setLibrary("md", mdLib);
 
+  eleventyConfig.addFilter("shuffle", shuffle);
   eleventyConfig.addFilter("limit", function (arr, limit) {
     return arr.slice(0, limit);
   });

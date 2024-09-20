@@ -16,10 +16,10 @@ eleventyExcludeFromCollections: true
       <a href="/">View selected notes</a>
     </header>
     <ol class="timeline" reverse>
-      {% for note in collections.all | reverse %}
+      {% for note in collections.all | shuffle %}
       <li class="timeline__item{% if note.data.tags and ('untested-article' in note.data.tags) %} timeline__item--article{% endif %}">
         <a href="{{ note.url }}">{{ note.data.title }}</a
-        ><time>{{ note.page.date | dateFormat('dd·MM·yyyy')}}</time>
+        > {# <time>{{ note.page.date | dateFormat('dd·MM·yyyy')}}</time> #}
       </li>
       {% endfor %}
     </ol>
