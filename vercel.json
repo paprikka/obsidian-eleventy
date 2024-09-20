@@ -1,14 +1,666 @@
 {
-  "builds": [
+  "builds": [{ "src": "_site/**/*", "use": "@vercel/static" }],
+  "routes": [{ "src": "/(.*)", "dest": "/_site/$1" }],
+  "redirects": [
     {
-      "src": "_site/**/*",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
+      "source": "/posts/001",
+      "destination": "/111",
+      "permanent": true
+    },
     {
-      "src": "/(.*)",
-      "dest": "/_site/$1"
+      "source": "/posts/002",
+      "destination": "/Visual+Snapshot+Tests%2C+Cheap+Bastard+Edition%E2%84%A2",
+      "permanent": true
+    },
+    {
+      "source": "/posts/003",
+      "destination": "/Instead+or+writing+a+comment%2C+write+a+post+and+link+it",
+      "permanent": true
+    },
+    {
+      "source": "/posts/004",
+      "destination": "/How+to+draw+a+Janusz",
+      "permanent": true
+    },
+    {
+      "source": "/posts/005",
+      "destination": "/Physical+uncolouring+book",
+      "permanent": true
+    },
+    {
+      "source": "/posts/006",
+      "destination": "/Dog+mode",
+      "permanent": true
+    },
+    {
+      "source": "/posts/007",
+      "destination": "/%22I+understand%22",
+      "permanent": true
+    },
+    {
+      "source": "/posts/008",
+      "destination": "/Projects+and+apps+I+built+for+my+own+well-being",
+      "permanent": true
+    },
+    {
+      "source": "/posts/009",
+      "destination": "/The+modern+Web+has+lost+the+User+Agent",
+      "permanent": true
+    },
+    {
+      "source": "/posts/010",
+      "destination": "/retrospective.png",
+      "permanent": true
+    },
+    {
+      "source": "/posts/001/",
+      "destination": "/111",
+      "permanent": true
+    },
+    {
+      "source": "/posts/002/",
+      "destination": "/Visual+Snapshot+Tests%2C+Cheap+Bastard+Edition%E2%84%A2",
+      "permanent": true
+    },
+    {
+      "source": "/posts/003/",
+      "destination": "/Instead+or+writing+a+comment%2C+write+a+post+and+link+it",
+      "permanent": true
+    },
+    {
+      "source": "/posts/004/",
+      "destination": "/How+to+draw+a+Janusz",
+      "permanent": true
+    },
+    {
+      "source": "/posts/005/",
+      "destination": "/Physical+uncolouring+book",
+      "permanent": true
+    },
+    {
+      "source": "/posts/006/",
+      "destination": "/Dog+mode",
+      "permanent": true
+    },
+    {
+      "source": "/posts/007/",
+      "destination": "/%22I+understand%22",
+      "permanent": true
+    },
+    {
+      "source": "/posts/008/",
+      "destination": "/Projects+and+apps+I+built+for+my+own+well-being",
+      "permanent": true
+    },
+    {
+      "source": "/posts/009/",
+      "destination": "/The+modern+Web+has+lost+the+User+Agent",
+      "permanent": true
+    },
+    {
+      "source": "/posts/010/",
+      "destination": "/retrospective.png",
+      "permanent": true
+    },
+    {
+      "source": "/111",
+      "destination": "/notes/111/",
+      "permanent": true
+    },
+    {
+      "source": "/Visual\\+Snapshot\\+Tests%2C\\+Cheap\\+Bastard\\+Edition%E2%84%A2",
+      "destination": "/notes/visual-snapshot-tests-cheap-bastard-editiontm/",
+      "permanent": true
+    },
+    {
+      "source": "/Instead\\+or\\+writing\\+a\\+comment%2C\\+write\\+a\\+post\\+and\\+link\\+it",
+      "destination": "/notes/instead-or-writing-a-comment-write-a-post-and-link-it/",
+      "permanent": true
+    },
+    {
+      "source": "/How\\+to\\+draw\\+a\\+Janusz",
+      "destination": "/notes/how-to-draw-a-janusz/",
+      "permanent": true
+    },
+    {
+      "source": "/Physical\\+uncolouring\\+book",
+      "destination": "/notes/physical-uncolouring-book/",
+      "permanent": true
+    },
+    {
+      "source": "/Dog\\+mode",
+      "destination": "/notes/dog-mode/",
+      "permanent": true
+    },
+    {
+      "source": "/%22I\\+understand%22",
+      "destination": "/notes/i-understand/",
+      "permanent": true
+    },
+    {
+      "source": "/Projects\\+and\\+apps\\+I\\+built\\+for\\+my\\+own\\+well\\-being",
+      "destination": "/notes/projects-and-apps-i-built-for-my-own-well-being/",
+      "permanent": true
+    },
+    {
+      "source": "/The\\+modern\\+Web\\+has\\+lost\\+the\\+User\\+Agent",
+      "destination": "/notes/the-modern-web-has-lost-the-user-agent/",
+      "permanent": true
+    },
+    {
+      "source": "/retrospective\\.png",
+      "destination": "/notes/retrospectivepng/",
+      "permanent": true
+    },
+    {
+      "source": "/Things\\+to\\+support\\+my\\+own\\+well\\-being\\+%E2%80%93\\+a\\+wishlist",
+      "destination": "/notes/things-to-support-my-own-well-being-a-wishlist/",
+      "permanent": true
+    },
+    {
+      "source": "/Chilli\\+for\\+Your\\+Mom",
+      "destination": "/notes/chilli-for-your-mom/",
+      "permanent": true
+    },
+    {
+      "source": "/Demon\\+Tamagotchis",
+      "destination": "/notes/demon-tamagotchis/",
+      "permanent": true
+    },
+    {
+      "source": "/Be\\+kind%2C\\+be\\+curious",
+      "destination": "/notes/be-kind-be-curious/",
+      "permanent": true
+    },
+    {
+      "source": "/TIL/weekly/40",
+      "destination": "/notes/til/weekly/40/",
+      "permanent": true
+    },
+    {
+      "source": "/Journey",
+      "destination": "/notes/journey/",
+      "permanent": true
+    },
+    {
+      "source": "/Medieval\\+Content\\+Farm\\+and\\+Procedural\\+Cheese",
+      "destination": "/notes/medieval-content-farm-and-procedural-cheese/",
+      "permanent": true
+    },
+    {
+      "source": "/Sit\\.%2C\\+\\(together\\)",
+      "destination": "/notes/sit-together/",
+      "permanent": true
+    },
+    {
+      "source": "/Stream\\+of\\+Consciousness\\+Morning\\+Notes",
+      "destination": "/notes/stream-of-consciousness-morning-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/TIL/weekly/41",
+      "destination": "/notes/til/weekly/41/",
+      "permanent": true
+    },
+    {
+      "source": "/Vercel%2C\\+Svelte\\+and\\+Doom\\-Driven\\+Development",
+      "destination": "/notes/vercel-svelte-and-doom-driven-development/",
+      "permanent": true
+    },
+    {
+      "source": "/Alternatives\\+to\\+Adobe",
+      "destination": "/notes/alternatives-to-adobe/",
+      "permanent": true
+    },
+    {
+      "source": "/Natural\\+Gradients\\+in\\+CSS",
+      "destination": "/notes/natural-gradients-in-css/",
+      "permanent": true
+    },
+    {
+      "source": "/Here's\\+a\\+List\\+of\\+Toys",
+      "destination": "/notes/heres-a-list-of-toys/",
+      "permanent": true
+    },
+    {
+      "source": "/TIL/weekly/42",
+      "destination": "/notes/til/weekly/42/",
+      "permanent": true
+    },
+    {
+      "source": "/Sit\\.%2C\\+\\(together\\)\\+devlog\\+001",
+      "destination": "/notes/sit-together-devlog-001/",
+      "permanent": true
+    },
+    {
+      "source": "/Proteus\\+\\-\\+Uncertainty\\+is\\+the\\+only\\+Certainty",
+      "destination": "/notes/proteus-uncertainty-is-the-only-certainty/",
+      "permanent": true
+    },
+    {
+      "source": "/Obsidian\\+for\\+Vampires",
+      "destination": "/notes/obsidian-for-vampires/",
+      "permanent": true
+    },
+    {
+      "source": "/Sit\\.%2C\\+\\(together\\)\\+devlog\\+002\\+%E2%80%93\\+Space\\+Kalimba",
+      "destination": "/notes/sit-together-devlog-002-space-kalimba/",
+      "permanent": true
+    },
+    {
+      "source": "/TIL/weekly/43",
+      "destination": "/notes/til/weekly/43/",
+      "permanent": true
+    },
+    {
+      "source": "/The\\+Janusz\\+I\\+Live\\+In",
+      "destination": "/notes/the-janusz-i-live-in/",
+      "permanent": true
+    },
+    {
+      "source": "/Dogs\\+and\\+Palimpsests",
+      "destination": "/notes/dogs-and-palimpsests/",
+      "permanent": true
+    },
+    {
+      "source": "/Night\\+Rider",
+      "destination": "/notes/night-rider/",
+      "permanent": true
+    },
+    {
+      "source": "/Bless\\+this\\+Mess",
+      "destination": "/notes/bless-this-mess/",
+      "permanent": true
+    },
+    {
+      "source": "/TIL/weekly/44",
+      "destination": "/notes/til/weekly/44/",
+      "permanent": true
+    },
+    {
+      "source": "/Sit\\.%2C\\+part\\+2\\+%E2%80%93\\+devlog\\+001",
+      "destination": "/notes/sit-part-2-devlog-001/",
+      "permanent": true
+    },
+    {
+      "source": "/Why\\+I\\+Didn't\\+Study\\+Computer\\+Science",
+      "destination": "/notes/why-i-didnt-study-computer-science/",
+      "permanent": true
+    },
+    {
+      "source": "/Spiritual\\+Volleyball",
+      "destination": "/notes/spiritual-volleyball/",
+      "permanent": true
+    },
+    {
+      "source": "/Leading\\+or\\+Line\\+Height\\+\\-\\+a\\+Measured\\+Response",
+      "destination": "/notes/leading-or-line-height-a-measured-response/",
+      "permanent": true
+    },
+    {
+      "source": "/TIL/weekly/45",
+      "destination": "/notes/til/weekly/45/",
+      "permanent": true
+    },
+    {
+      "source": "/Bird\\-knife",
+      "destination": "/notes/bird-knife/",
+      "permanent": true
+    },
+    {
+      "source": "/Heart\\+of\\+Dorkness",
+      "destination": "/notes/heart-of-dorkness/",
+      "permanent": true
+    },
+    {
+      "source": "/Web\\+and\\+Feedback\\+Loops",
+      "destination": "/notes/web-and-feedback-loops/",
+      "permanent": true
+    },
+    {
+      "source": "/Share\\+your\\+unfinished%2C\\+scrappy\\+work",
+      "destination": "/notes/share-your-unfinished-scrappy-work/",
+      "permanent": true
+    },
+    {
+      "source": "/TIL/weekly/46",
+      "destination": "/notes/til/weekly/46/",
+      "permanent": true
+    },
+    {
+      "source": "/MISS\\+%E2%80%93\\+Make\\+It\\+Stupid%2C\\+Simple",
+      "destination": "/notes/miss-make-it-stupid-simple/",
+      "permanent": true
+    },
+    {
+      "source": "/How\\+to\\+optimise\\+images\\+for\\+Obsidian\\+Publish",
+      "destination": "/notes/how-to-optimise-images-for-obsidian-publish/",
+      "permanent": true
+    },
+    {
+      "source": "/How\\+I\\+Use\\+Obsidian\\+to\\+Publish\\+These\\+Notes",
+      "destination": "/notes/how-i-use-obsidian-to-publish-these-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/Abusing\\+and\\+reviewing\\+Obsidian\\+Publish",
+      "destination": "/notes/abusing-and-reviewing-obsidian-publish/",
+      "permanent": true
+    },
+    {
+      "source": "/TIL/weekly/47",
+      "destination": "/notes/til/weekly/47/",
+      "permanent": true
+    },
+    {
+      "source": "/Portuguese\\+Orange%2C\\+Persian\\+Portugal",
+      "destination": "/notes/portuguese-orange-persian-portugal/",
+      "permanent": true
+    },
+    {
+      "source": "/Default\\+Apps\\+2023",
+      "destination": "/notes/default-apps-2023/",
+      "permanent": true
+    },
+    {
+      "source": "/Fermi\\+Paradox\\+\\(for\\+35\\-Year\\-Olds\\)",
+      "destination": "/notes/fermi-paradox-for-35-year-olds/",
+      "permanent": true
+    },
+    {
+      "source": "/Communication\\+is\\+Action",
+      "destination": "/notes/communication-is-action/",
+      "permanent": true
+    },
+    {
+      "source": "/TIL/weekly/48",
+      "destination": "/notes/til/weekly/48/",
+      "permanent": true
+    },
+    {
+      "source": "/Find\\+Your\\+Tribe",
+      "destination": "/notes/find-your-tribe/",
+      "permanent": true
+    },
+    {
+      "source": "/Auto\\-hibernate\\+Subscriptions",
+      "destination": "/notes/auto-hibernate-subscriptions/",
+      "permanent": true
+    },
+    {
+      "source": "/Midnight\\+Ramen",
+      "destination": "/notes/midnight-ramen/",
+      "permanent": true
+    },
+    {
+      "source": "/Shader\\+Park\\+is\\+Kinda\\+Neat",
+      "destination": "/notes/shader-park-is-kinda-neat/",
+      "permanent": true
+    },
+    {
+      "source": "/TIL/weekly/49",
+      "destination": "/notes/til/weekly/49/",
+      "permanent": true
+    },
+    {
+      "source": "/Midnight\\+Shader",
+      "destination": "/notes/midnight-shader/",
+      "permanent": true
+    },
+    {
+      "source": "/Building\\+a\\+private%2C\\+clutter\\-free\\+browser\\+on\\+top\\+of\\+Safari",
+      "destination": "/notes/building-a-private-clutter-free-browser-on-top-of-safari/",
+      "permanent": true
+    },
+    {
+      "source": "/Shader\\+Park\\+and\\+2D",
+      "destination": "/notes/shader-park-and-2d/",
+      "permanent": true
+    },
+    {
+      "source": "/Texas\\+Friendship\\+Massacre",
+      "destination": "/notes/texas-friendship-massacre/",
+      "permanent": true
+    },
+    {
+      "source": "/TIL/weekly/50",
+      "destination": "/notes/til/weekly/50/",
+      "permanent": true
+    },
+    {
+      "source": "/My\\+Now\\+Page",
+      "destination": "/notes/my-now-page/",
+      "permanent": true
+    },
+    {
+      "source": "/Project\\+Cemetery",
+      "destination": "/notes/project-cemetery/",
+      "permanent": true
+    },
+    {
+      "source": "/My\\+Bootleg\\+T\\-shirts",
+      "destination": "/notes/my-bootleg-t-shirts/",
+      "permanent": true
+    },
+    {
+      "source": "/How\\+I\\+Make\\+My\\+Bootleg\\+T\\-shirts",
+      "destination": "/notes/how-i-make-my-bootleg-t-shirts/",
+      "permanent": true
+    },
+    {
+      "source": "/Places\\+to\\+Find\\+Indie\\+Web\\+Content",
+      "destination": "/notes/places-to-find-indie-web-content/",
+      "permanent": true
+    },
+    {
+      "source": "/What's\\+a\\+Peach%3F",
+      "destination": "/notes/whats-a-peach/",
+      "permanent": true
+    },
+    {
+      "source": "/Cacio\\+e\\+pepe\\+with\\+black\\+garlic",
+      "destination": "/notes/cacio-e-pepe-with-black-garlic/",
+      "permanent": true
+    },
+    {
+      "source": "/Patreon\\+and\\+Ownership",
+      "destination": "/notes/patreon-and-ownership/",
+      "permanent": true
+    },
+    {
+      "source": "/Montaigne",
+      "destination": "/notes/montaigne/",
+      "permanent": true
+    },
+    {
+      "source": "/Sit\\.\\+Offline\\+Mode",
+      "destination": "/notes/sit-offline-mode/",
+      "permanent": true
+    },
+    {
+      "source": "/FAQs\\+are\\+a\\+Dark\\+Orange\\+Flag",
+      "destination": "/notes/faqs-are-a-dark-orange-flag/",
+      "permanent": true
+    },
+    {
+      "source": "/Sleepy\\+Safari",
+      "destination": "/notes/sleepy-safari/",
+      "permanent": true
+    },
+    {
+      "source": "/TIL/weekly/51",
+      "destination": "/notes/til/weekly/51/",
+      "permanent": true
+    },
+    {
+      "source": "/Why\\+is\\+it\\+So\\+Hard\\+to\\+Respond\\+to\\+Positive\\+Comments",
+      "destination": "/notes/why-is-it-so-hard-to-respond-to-positive-comments/",
+      "permanent": true
+    },
+    {
+      "source": "/How\\+I\\+Use\\+Analytics\\+With\\+My\\+Indie\\+Projects",
+      "destination": "/notes/how-i-use-analytics-with-my-indie-projects/",
+      "permanent": true
+    },
+    {
+      "source": "/Say\\+Hi",
+      "destination": "/notes/say-hi/",
+      "permanent": true
+    },
+    {
+      "source": "/Bootleg\\+T\\-Shirts\\+\\-\\+December\\+Batch",
+      "destination": "/notes/bootleg-t-shirts-december-batch/",
+      "permanent": true
+    },
+    {
+      "source": "/TIL/weekly/52",
+      "destination": "/notes/til/weekly/52/",
+      "permanent": true
+    },
+    {
+      "source": "/Zhoozh",
+      "destination": "/notes/zhoozh/",
+      "permanent": true
+    },
+    {
+      "source": "/TouchDesigner\\+\\(and\\+Mr\\+Noto%2C\\+the\\+Talking\\+Ball\\)",
+      "destination": "/notes/touchdesigner-and-mr-noto-the-talking-ball/",
+      "permanent": true
+    },
+    {
+      "source": "/New\\+Week",
+      "destination": "/notes/new-week/",
+      "permanent": true
+    },
+    {
+      "source": "/Summarise\\+My\\+Weekly\\+Notes\\+\\(With\\+Llamas\\)",
+      "destination": "/notes/summarise-my-weekly-notes-with-llamas/",
+      "permanent": true
+    },
+    {
+      "source": "/TIL/weekly/53",
+      "destination": "/notes/til/weekly/53/",
+      "permanent": true
+    },
+    {
+      "source": "/Jeremy\\+Bent\\-ham",
+      "destination": "/notes/jeremy-bent-ham/",
+      "permanent": true
+    },
+    {
+      "source": "/Talk\\+to\\+the\\+Blog",
+      "destination": "/notes/talk-to-the-blog/",
+      "permanent": true
+    },
+    {
+      "source": "/Spikes",
+      "destination": "/notes/spikes/",
+      "permanent": true
+    },
+    {
+      "source": "/Tip\\+of\\+the\\+Tongue\\+and\\+Handmade\\+Software",
+      "destination": "/notes/tip-of-the-tongue-and-handmade-software/",
+      "permanent": true
+    },
+    {
+      "source": "/TIL/weekly/54",
+      "destination": "/notes/til/weekly/54/",
+      "permanent": true
+    },
+    {
+      "source": "/2\\-2\\-2\\+Project\\+Scoping\\+Technique",
+      "destination": "/notes/2-2-2-project-scoping-technique/",
+      "permanent": true
+    },
+    {
+      "source": "/Kill\\+your\\+darlings%2C\\+their\\+bones\\+are\\+the\\+best\\+fertiliser",
+      "destination": "/notes/kill-your-darlings-their-bones-are-the-best-fertiliser/",
+      "permanent": true
+    },
+    {
+      "source": "/TIL/weekly/55",
+      "destination": "/notes/til/weekly/55/",
+      "permanent": true
+    },
+    {
+      "source": "/Aye\\-aye",
+      "destination": "/notes/aye-aye/",
+      "permanent": true
+    },
+    {
+      "source": "/Fig",
+      "destination": "/notes/fig/",
+      "permanent": true
+    },
+    {
+      "source": "/Fig\\+Tree\\+Brushes",
+      "destination": "/notes/fig-tree-brushes/",
+      "permanent": true
+    },
+    {
+      "source": "/Two\\+Minute\\+Week",
+      "destination": "/notes/two-minute-week/",
+      "permanent": true
+    },
+    {
+      "source": "/56",
+      "destination": "/notes/56/",
+      "permanent": true
+    },
+    {
+      "source": "/Sandboxes%2C\\+Games%2C\\+and\\+Play",
+      "destination": "/notes/sandboxes-games-and-play/",
+      "permanent": true
+    },
+    {
+      "source": "/TIL/weekly/57",
+      "destination": "/notes/til/weekly/57/",
+      "permanent": true
+    },
+    {
+      "source": "/Defaults\\+Matter%2C\\+Don't\\+Assume\\+Consent",
+      "destination": "/notes/defaults-matter-dont-assume-consent/",
+      "permanent": true
+    },
+    {
+      "source": "/TIL/weekly/58",
+      "destination": "/notes/til/weekly/58/",
+      "permanent": true
+    },
+    {
+      "source": "/Disclaimer",
+      "destination": "/notes/disclaimer/",
+      "permanent": true
+    },
+    {
+      "source": "/LLM\\-powered\\+Tools\\+I'm\\+Actually\\+Using",
+      "destination": "/notes/llm-powered-tools-im-actually-using/",
+      "permanent": true
+    },
+    {
+      "source": "/TIL/weekly/59",
+      "destination": "/notes/til/weekly/59/",
+      "permanent": true
+    },
+    {
+      "source": "/Adventures\\+of\\+the\\+Bun\\-man",
+      "destination": "/notes/adventures-of-the-bun-man/",
+      "permanent": true
+    },
+    {
+      "source": "/Just\\+Some\\+Innocent\\+Gradient\\+Fun",
+      "destination": "/notes/just-some-innocent-gradient-fun/",
+      "permanent": true
+    },
+    {
+      "source": "/TIL/weekly/60",
+      "destination": "/notes/til/weekly/60/",
+      "permanent": true
+    },
+    {
+      "source": "/112",
+      "destination": "/notes/112/",
+      "permanent": true
     }
   ]
 }
