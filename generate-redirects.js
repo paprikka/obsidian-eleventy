@@ -159,17 +159,6 @@ let updatedLinks = hrefs.map((href) => {
   };
 });
 
-const broken = await Promise.all(
-  updatedLinks.map(async (link) => {
-    const absoluteUrl = `${destinationPrefixHost}${link.destination}`;
-    const res = await fetch(absoluteUrl);
-    return [link, res.status !== 200];
-  }),
-);
-console.log(broken.filter(([_, status]) => status));
-
-console.log(updatedLinks.slice(0, 3));
-
 import { promises as fs } from "fs";
 // Vercel uses path-to-regexp for redirects, so we need to escape the regex chars
 const escapeRegexChars = (str) => str.replace(/[-^$*+?.()|[\]{}]/g, "\\$&");
@@ -179,6 +168,12 @@ const escapeRedirectPaths = (_) => ({
   source: escapeRegexChars(_.source),
 });
 const oldRedirects = [
+  {
+    source: "/Physical+uncolouring+book",
+    destination:
+      "https://new.untested.sonnet.io/notes/physical-uncolouring-book/",
+    permanent: true,
+  },
   {
     source: "/Physical+uncolouring+book",
     destination:
@@ -290,4 +285,50 @@ const oldRedirects = [
 
 const updatedLinksPathRegexFriendly = updatedLinks.map(escapeRedirectPaths);
 
-await save([...oldRedirects, ...updatedLinksPathRegexFriendly]);
+const allRedirects = [...oldRedirects, ...updatedLinksPathRegexFriendly];
+await save(allRedirects);
+
+const broken = await Promise.all(
+  [...oldRedirects, ...updatedLinks].map(async (link) => {
+    const absoluteUrl = `${destinationPrefixHost}${link.source}`;
+    const res = await fetch(absoluteUrl);
+    return [link, res.status];
+  }),
+);
+console.log(
+  broken
+    .filter(([_, status]) => status !== 200)
+    .map(([{ source }, status]) => `${source} -> ${status}`),
+);
+// console.log(updatedLinks.slice(0, 3));
+
+const live = await Promise.all(
+  [...oldRedirects, ...updatedLinks].map(async (link) => {
+    const absoluteSrcUrl = `${destinationPrefixHost}${link.source}`;
+    const srcRes = await fetch(absoluteSrcUrl);
+    const srcText = await srcRes.text();
+    const srcTitle = load(srcText)("h1").text();
+    const srcTime = load(srcText)("time").text();
+    const absoluteDestUrl = link.destination.startsWith("http")
+      ? link.destination
+      : `${destinationPrefixHost}${link.destination}`;
+    console.log(absoluteSrcUrl, absoluteDestUrl);
+    const destRes = await fetch(absoluteDestUrl);
+
+    const destText = await destRes.text();
+    const destTitle = load(destText)("h1").text();
+    const destTime = load(destText)("time").text();
+
+    return [link, srcTitle, srcTime, destTitle, destTime];
+  }),
+);
+
+save(
+  live.map(([link, srcTitle, srcTime, destTitle, destTime]) => ({
+    ...link,
+    srcTitle,
+    srcTime,
+    destTitle,
+    destTime,
+  })),
+);
