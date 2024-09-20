@@ -118,12 +118,21 @@ const input = `
 import { load } from "cheerio";
 import { slugify } from "./build/slugify.js";
 import path from "path";
+const save = async (obj) => {
+  // Write the JSON string to redirects.json
+  try {
+    await fs.writeFile("redirects.json", JSON.stringify(obj, null, 2), "utf8");
+    console.log("Successfully wrote redirects to redirects.json");
+  } catch (err) {
+    console.error("Error writing to redirects.json:", err);
+  }
+};
 // Load the HTML content
 const $ = load(input);
 
 // Extract all hrefs into an array
 const hrefs = $("a")
-  .map((index, element) => $(element).attr("href"))
+  .map((_, element) => $(element).attr("href"))
   .get();
 
 const slugifyPath = (pathString) => {
@@ -137,18 +146,148 @@ const slugifyPath = (pathString) => {
   return joined.endsWith("/") ? joined : `${joined}/`;
 };
 
-let updatedLinks = hrefs
-  .map((href) => href.replace("https://untested.sonnet.io/", ""))
-  .map((href) => slugifyPath(href))
-  //   .map((href) => `https://new.untested.sonnet.io/notes/${href}`);
-  .map((href) => `http://localhost:8080/notes/${href}`);
+const destinationPrefix = "/notes";
+const destinationPrefixHost = `https://new.untested.sonnet.io`;
+
+let updatedLinks = hrefs.map((href) => {
+  const source = href.replace("https://untested.sonnet.io/", "");
+  const destination = slugifyPath(source);
+  return {
+    source: `/${source}`,
+    destination: `${destinationPrefix}/${destination}`,
+    permanent: true,
+  };
+});
 
 const broken = await Promise.all(
   updatedLinks.map(async (link) => {
-    const res = await fetch(link);
+    const absoluteUrl = `${destinationPrefixHost}${link.destination}`;
+    const res = await fetch(absoluteUrl);
     return [link, res.status !== 200];
   }),
 );
 console.log(broken.filter(([_, status]) => status));
 
 console.log(updatedLinks.slice(0, 3));
+
+import { promises as fs } from "fs";
+// Vercel uses path-to-regexp for redirects, so we need to escape the regex chars
+const escapeRegexChars = (str) => str.replace(/[-^$*+?.()|[\]{}]/g, "\\$&");
+
+const escapeRedirectPaths = (_) => ({
+  ..._,
+  source: escapeRegexChars(_.source),
+});
+const oldRedirects = [
+  {
+    source: "/Physical+uncolouring+book",
+    destination:
+      "https://new.untested.sonnet.io/notes/physical-uncolouring-book/",
+    permanent: true,
+  },
+  {
+    source: "/posts/001",
+    destination: "/111",
+    permanent: true,
+  },
+  {
+    source: "/posts/002",
+    destination: "/Visual+Snapshot+Tests%2C+Cheap+Bastard+Edition%E2%84%A2",
+    permanent: true,
+  },
+  {
+    source: "/posts/003",
+    destination: "/Instead+or+writing+a+comment%2C+write+a+post+and+link+it",
+    permanent: true,
+  },
+  {
+    source: "/posts/004",
+    destination: "/How+to+draw+a+Janusz",
+    permanent: true,
+  },
+  {
+    source: "/posts/005",
+    destination: "/Physical+uncolouring+book",
+    permanent: true,
+  },
+  {
+    source: "/posts/006",
+    destination: "/Dog+mode",
+    permanent: true,
+  },
+  {
+    source: "/posts/007",
+    destination: "/%22I+understand%22",
+    permanent: true,
+  },
+  {
+    source: "/posts/008",
+    destination: "/Projects+and+apps+I+built+for+my+own+well-being",
+    permanent: true,
+  },
+  {
+    source: "/posts/009",
+    destination: "/The+modern+Web+has+lost+the+User+Agent",
+    permanent: true,
+  },
+  {
+    source: "/posts/010",
+    destination: "/retrospective.png",
+    permanent: true,
+  },
+
+  {
+    source: "/posts/001/",
+    destination: "/111",
+    permanent: true,
+  },
+  {
+    source: "/posts/002/",
+    destination: "/Visual+Snapshot+Tests%2C+Cheap+Bastard+Edition%E2%84%A2",
+    permanent: true,
+  },
+  {
+    source: "/posts/003/",
+    destination: "/Instead+or+writing+a+comment%2C+write+a+post+and+link+it",
+    permanent: true,
+  },
+  {
+    source: "/posts/004/",
+    destination: "/How+to+draw+a+Janusz",
+    permanent: true,
+  },
+  {
+    source: "/posts/005/",
+    destination: "/Physical+uncolouring+book",
+    permanent: true,
+  },
+  {
+    source: "/posts/006/",
+    destination: "/Dog+mode",
+    permanent: true,
+  },
+  {
+    source: "/posts/007/",
+    destination: "/%22I+understand%22",
+    permanent: true,
+  },
+  {
+    source: "/posts/008/",
+    destination: "/Projects+and+apps+I+built+for+my+own+well-being",
+    permanent: true,
+  },
+  {
+    source: "/posts/009/",
+    destination: "/The+modern+Web+has+lost+the+User+Agent",
+    permanent: true,
+  },
+  {
+    source: "/posts/010/",
+    destination: "/retrospective.png",
+    permanent: true,
+  },
+];
+
+const updatedLinksPathRegexFriendly = updatedLinks.map(escapeRedirectPaths);
+
+await save([...oldRedirects, ...updatedLinksPathRegexFriendly]);
