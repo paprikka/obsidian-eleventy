@@ -25,4 +25,14 @@
     font-weight: var(--font-weight-semibold);
     text-decoration: none;
   }
+
+  & .timeline__item--article {
+    &::before {
+      content: "★";
+      position: absolute;
+      color: var(--color-link);
+      font-size: 0.75em;
+      left: -1.5em;
+    }
+  }
 }

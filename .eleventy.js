@@ -25,6 +25,7 @@ export default function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.setQuietMode(true);
 
+  const cols = eleventyConfig.getCollections();
   const markdownOptions = {
     linkify: false,
     breaks: true,

@@ -2,6 +2,7 @@
 layout: root.njk
 pageClass: intro
 permalink: /all/index.html
+eleventyExcludeFromCollections: true
 ---
 
 <main>
@@ -15,8 +16,8 @@ permalink: /all/index.html
       <a href="/">View selected notes</a>
     </header>
     <ol class="timeline" reverse>
-      {% for note in collections.notes | reverse %}
-      <li class="timeline__item">
+      {% for note in collections.all | reverse %}
+      <li class="timeline__item{% if note.data.tags and ('untested-article' in note.data.tags) %} timeline__item--article{% endif %}">
         <a href="{{ note.url }}">{{ note.data.title }}</a
         ><time>{{ note.page.date | dateFormat('dd·MM·yyyy')}}</time>
       </li>
