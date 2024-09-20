@@ -20,7 +20,7 @@ We have **4 authors**, each writing **at least one poem per day**. The site has 
 
 Now a month or so ago I started receiving these error messages from Vercel:
 
-![1510](When you might not want to use the svelte/Pasted%20image%2020231016185416.png)
+![](When you might not want to use the svelte/Pasted%20image%2020231016185416.png)
 
 I was confused as I already used the Vercel adapter and set my pages to static using the prerender option:
 

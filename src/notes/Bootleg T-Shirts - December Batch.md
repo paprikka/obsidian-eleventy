@@ -17,20 +17,20 @@ I based them on some of my older drawings from [potato.horse](https://potato.hor
 
 ### My Deer
 
-![583](t-shirt-deer-1.webp)
+![](t-shirt-deer-1.webp)
 *TIL: White acrylic paint on black fabric seems to handle washing much worse than dark/colour on white.*
 
 ### Perfect Cat
 
-![731](t-shirt-perfect-cat-front.webp)
+![](t-shirt-perfect-cat-front.webp)
 *Perfect cat (front)*
 
-![790](t-shirt-perfect-cat-back.webp)
+![](t-shirt-perfect-cat-back.webp)
 *Perfect cat (back)*
 
 #### Details
 
-![861](t-shirt-perfect-cat-front-detail.jpg)
+![](t-shirt-perfect-cat-front-detail.jpg)
 
-![904](t-shirt-perfect-cat-back-detail.jpg)
+![](t-shirt-perfect-cat-back-detail.jpg)
 *TIL: The child-like / the Cure album wannabe cover style was quite hard to transfer from my iPad to fabric. It looks much better after the first wash.*

@@ -1,10 +1,11 @@
 ---
 publish: true
+date: '2024-09-20'
 ---
-![22](TIL/weekly/asemic-writing.jpg)
+![an  example of asemic writing - black lines shaped in a way reminescent of words or sentences](TIL/weekly/asemic-writing.jpg)
 [Asemic Writing and the Desire for the Esoteric](https://www.samwoolfe.com/2022/06/asemic-writing-and-the-esoteric.html) — Asemic writing is a form of abstract writing without any specific semantic content. It *looks* and *feels* like traditional writing but it doesn't convey any fixed meaning. Check out Mirtha Dermisache for more examples. (found in [this birdshite thread](https://twitter.com/codexnoirmatic/status/1746598498470920251))
 
-![488](asemic-reed.jpg)
+![](asemic-reed.jpg)
 *I still wonder if this reed on one of the beaches of the Baltic was practicing asemic writing or nastaliq calligraphy. Read more [here](https://sonnet.io/posts/face/).*
 
 

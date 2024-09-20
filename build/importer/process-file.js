@@ -28,10 +28,30 @@ export const processSingleFile = async (
   resourceIndex,
   relatedAssets,
 ) => {
-  const fileContent = await fs.readFile(absolutePath, "utf8");
-  const frontmatter = grayMatter(fileContent).data;
+  const originalContent = await fs.readFile(absolutePath, "utf8");
+  const frontmatter = grayMatter(originalContent).data;
   const canPublish = frontmatter.publish === true;
   if (!canPublish) return null;
+
+  let fileContent = originalContent;
+  if (!frontmatter.date) {
+    try {
+      const stats = await fs.stat(absolutePath);
+      const lastModified = stats.mtime;
+      frontmatter.date = lastModified.toISOString().split("T")[0]; // Format as YYYY-MM-DD
+
+      fileContent = grayMatter.stringify(originalContent, frontmatter);
+
+      console.log(
+        `Added date: ${frontmatter.date} to frontmatter of ${path.basename(absolutePath)}`,
+      );
+    } catch (error) {
+      console.error(
+        `Error getting last modified date for ${absolutePath}:`,
+        error,
+      );
+    }
+  }
 
   const getAnchorInternalMarkup = (_, p1, p2) => {
     return `[${p2}](<#${p1}>)`;
@@ -112,7 +132,9 @@ export const processSingleFile = async (
   const content = fileContent
     .replace(anchorInternal, getAnchorInternalMarkup)
     .replace(embedAlt, getEmbedMarkup)
-    .replace(embedSimple, getEmbedMarkup)
+    .replace(embedSimple, (_, src) => {
+      return getEmbedMarkup(_, src, "");
+    })
     .replace(anchorAlt, (_, p1, p2) => {
       return getAnchorMarkup(p1, p2);
     })

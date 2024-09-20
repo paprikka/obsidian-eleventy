@@ -13,9 +13,9 @@ I wrote a pitch for a Christmas movie. My inspiration was a recent philosophical
 
 *Jeremy Bent-ham is a story of friendship, utilitarian morality and a proof that even in the darkest times — kindness, compassion, and salt are the best cure.*
 
-![824](jeremy-bent-ham.png)
+![](jeremy-bent-ham.png)
 *Jeremy Bent-ham: A Sefungehup?*
 
-![883](jeremy-bent-ham-2.png)
+![](jeremy-bent-ham-2.png)
 
 Related: [Medieval Content Farm and Procedural Cheese](<../Medieval Content Farm and Procedural Cheese>)

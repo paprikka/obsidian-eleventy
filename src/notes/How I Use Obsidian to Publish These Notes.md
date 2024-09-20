@@ -7,7 +7,7 @@ tags:
 ---
 Remember, [This is not writing or productivity advice](<../This is not writing or productivity advice>). It's also not note taking advice ([Better note taking is not the problem, it's better thinking](<../Better note taking is not the problem, it's better thinking>)). 
 
-![354](moonworm.webp)
+![](moonworm.webp)
 
 ## Short version
 

@@ -2,6 +2,7 @@
 aliases:
   - Receptive Aphasia
 publish: true
+date: '2024-08-22'
 ---
 a.k.a. Receptive Aphasia because it's about the inability to comprehend speech. 
 This is **separate** from the ability to **produce** speech. Compare with [Brocas's Aphasia](<../Brocas's Aphasia>).

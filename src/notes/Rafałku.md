@@ -1,5 +1,6 @@
 ---
 publish: true
+date: '2024-08-22'
 ---
 *Rafałku* - vocative of a diminutive of Rafał (the name of yours truly in the tongue of [consonant floosies](<../Zhoozh>)), translates roughly to *Oh, lil' Rafał boy*. Augmentative and diminutive forms are used in Polish relatively frequently compared to many Indo-European languages. They're also more layered (for the lack of a better word), by which I mean that you can say: kotek (kitten), koteczek (lil' kitten), kiciuś, kociak (kitten, or calling someone babe), kociaczek (same but lil'), kiciunia, kociątko (lil' baby kitten). 
 

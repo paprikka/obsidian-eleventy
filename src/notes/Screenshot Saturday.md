@@ -1,5 +1,6 @@
 ---
 publish: true
+date: '2024-08-22'
 ---
 Share a screenshot of your game each Saturday. That's all. 
 
@@ -8,47 +9,47 @@ Share a screenshot of your game each Saturday. That's all.
 
 A Mickey Mouse inspired shooter. (somehow less sinister than the original character):
 
-![442](Pasted%20image%2020240509115238.png)
+![](Pasted%20image%2020240509115238.png)
 
 
 Underwater arcade/bullet hell shooter:
 
-![521](Pasted%20image%2020240509114741.png)
+![](Pasted%20image%2020240509114741.png)
 
 
 Someone sharing their dogfight AI demo:
 (I don't care much about fight in games, but I know that the experience of building a game AI you can play with or against is very rewarding)
 
-![743](Pasted%20image%2020240509114759.png)
+![](Pasted%20image%2020240509114759.png)
 
 This cute, jRPG with sci-fi elements and dinosaurs!
-![833](Pasted%20image%2020240509114819.png)
+![](Pasted%20image%2020240509114819.png)
 
 A classing Quake-inspired shooter
-![905](Pasted%20image%2020240509114838.png)
+![](Pasted%20image%2020240509114838.png)
 
 A trippy platformer (too fast to take a screenshot)
-![995](Pasted%20image%2020240509114934.png)
+![](Pasted%20image%2020240509114934.png)
 
 A cat in a hat, jumping on clouds.
 
-![1069](Pasted%20image%2020240509114945.png)
+![](Pasted%20image%2020240509114945.png)
 
 A Quake-like retro FPS/Victorian horror
 
-![1148](Pasted%20image%2020240509115058.png)
+![](Pasted%20image%2020240509115058.png)
 
 
 A VHS bodycam horror in the atmosphere of Soviet Backrooms.
 
-![1248](Pasted%20image%2020240509115120.png)
+![](Pasted%20image%2020240509115120.png)
 
 Another hat! This one's a wizard.
-![1320](Pasted%20image%2020240509115136.png)
+![](Pasted%20image%2020240509115136.png)
 
 
 Peter Shorts.
-![1373](Pasted%20image%2020240509115209.png)
+![](Pasted%20image%2020240509115209.png)
 
 
 That's all. 

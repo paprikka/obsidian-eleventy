@@ -6,7 +6,7 @@ tags:
   - untested-article
 ---
 
-![193](journey-game-cover.webp)
+![](journey-game-cover.webp)
 
 The goal of Journey is to reach the Mountain. The Mountain rises above the horizon, far away, behind the dunes of a seemingly never-ending desert. The story is simple, far from unique: the protagonist travelling to axis mundi to find their beginning-end. I'd still rather not spoil it completely here, as it's told so beautifully.
 

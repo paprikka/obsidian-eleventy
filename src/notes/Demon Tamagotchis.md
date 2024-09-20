@@ -5,7 +5,7 @@ date: 2023-10-04
 tags:
   - untested-article
 ---
-![195](ice-skating-monkey-saying-hail-satan.webp)
+![](ice-skating-monkey-saying-hail-satan.webp)
 
 This is about two games that never happened and probably will never happen. I find their mechanics somewhat interesting and I wish I could play them myself. But they died early, buried under a pile of more useful projects. A partial inspiration for those games was my work in ad-tech, and stories about fantastically insatiable Czech demon-tree-babies (more on that in the [footnotes](<../Demon Tamagotchis>)).
 

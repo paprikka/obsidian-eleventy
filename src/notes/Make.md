@@ -1,5 +1,6 @@
 ---
 publish: true
+date: '2024-08-22'
 ---
 [Programmers have a Pavlovian Engineering Response](<../Programmers have a Pavlovian Engineering Response>)
 [How to find clients?](<../How to find clients?>)

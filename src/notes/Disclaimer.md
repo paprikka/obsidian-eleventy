@@ -7,7 +7,7 @@ date: 2024-06-04
 tags:
   - untested-article
 ---
-![188](whatever-fuckit-bird.avif)
+![](whatever-fuckit-bird.avif)
 
 Dear [Rafałku](<../Rafałku>), if you have something to say, say it, don't dilute the information with long intros or disclaimers.
 
@@ -42,7 +42,7 @@ Sometimes this is a trap: there's no need to please every audience and end up wi
 
 Sometimes it's a signal: perhaps the controversy comes from my own biases, lack of knowledge or prejudice, like a racist starting whatever they have to shit out of their mouth with *I'm not racist but...*
 
-![2730](citrus-blind.webp)
+![](citrus-blind.webp)
 
 ### How I approach this:
 

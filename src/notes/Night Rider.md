@@ -25,9 +25,9 @@ tags:
 **Process images** so they generate as little light as possible but are still clear enough to see what they represent.
 
 The browser chrome and the status bar still generates too much light. Hide it.
-![967](night-mode-1.webp)
+![](night-mode-1.webp)
 That's better:
-![1005](night-mode-2.webp)
+![](night-mode-2.webp)
 
 
 ### Implementation
@@ -46,7 +46,7 @@ Mobile Safari doesn't support fullscreen mode unless opening websites added to t
 
 - let the user temporarily disable the night mode when holding down a little icon with a lamp (releasing the finger would re-enable the night mode)
 
-![1774](night-mode-3.webp)
+![](night-mode-3.webp)
 
 ## Why do this?
 

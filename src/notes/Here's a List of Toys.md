@@ -5,7 +5,7 @@ date: 2023-10-19
 tags:
   - untested-article
 ---
-![241](121672148_381523866218353_6465314069363865610_n_18138807475096229.webp)
+![](121672148_381523866218353_6465314069363865610_n_18138807475096229.webp)
 
 I love making toys. I learn and rest through building seemingly useless things. Building "useless" projects for me is also a way to vent, explore, or just get out of my own head ([Why make toys, why play?](<../Why make toys, why play?>)). 
 

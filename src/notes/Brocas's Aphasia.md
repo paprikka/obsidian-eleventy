@@ -2,6 +2,7 @@
 aliases:
   - Expressive Aphasia
 publish: true
+date: '2024-08-22'
 ---
 Caused by the damage to [Broca's Area](<../Broca's Area>).
 

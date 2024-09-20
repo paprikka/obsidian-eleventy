@@ -6,7 +6,7 @@ tags:
   - untested-article
 ---
 
-![160](cover-2-2-2.webp)
+![](cover-2-2-2.webp)
 _My **earlier** work titled: "A Quick Study of the Canine Form"_
 
 2-2-2 stands for 2 hours, 2 days and 2 weeks. It's a technique of scoping experiment work I learned from [Jordi Bruin](https://twitter.com/jordibruin) and I've applied it to a bunch of projects including [Sit.](https://sit/sonnet.io) .

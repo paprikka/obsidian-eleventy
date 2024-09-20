@@ -1,5 +1,6 @@
 ---
 publish: true
+date: '2024-08-22'
 ---
 
 ![200](dither_it_Bauman-Profil.jpg)

@@ -5,7 +5,7 @@ date: 2024-01-08
 tags:
   - untested-article
 ---
-![172](michel-montaigne-portrait.webp)
+![](michel-montaigne-portrait.webp)
 
 Before the Christmas break I had a few moments to play with [Montaigne](https://montaigne.io)  by [Anton Podviaznikov](https://podviaznikov.com). Montaigne is to Apple Notes what Obsidian Publish is to Obsidian: an almost frictionless way to publish your notes/digital garden on the web.
 

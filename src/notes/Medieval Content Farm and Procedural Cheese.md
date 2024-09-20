@@ -50,7 +50,7 @@ Granted, Latin seems historically more correct, but at the same time I wanted th
 
 MeatGPT works (at least for those who don't message me asking about my mental state) because it uses the limitations of the current tech to its advantage. It's like poorly done taxidermy or a hedgehog-shaped Jesus.
 
-![3525](taxidermy-cat.jpg)
+![](taxidermy-cat.jpg)
 
 
 When working on any generative project, embrace the cheese, have fun with it. It's more fun with AI of course, because of the amount of hype and expectations around it. AI tool catalogues are a big source of traffic for MeatGPT and real, human people with jobs and working thought-sponges asked me how I wanted to monetise Butter. Both projects are obviously jokes.

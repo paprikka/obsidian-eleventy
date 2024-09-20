@@ -5,7 +5,7 @@ date: 2023-10-05
 tags:
   - untested-article
 ---
-![194](home.webp)
+![](home.webp)
 
 Some [ACT](<../ACT>) materials encourage people to imagine what they'd put on their gravestone. 
 

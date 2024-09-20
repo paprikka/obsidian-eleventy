@@ -1,5 +1,6 @@
 ---
 publish: true
+date: '2024-08-22'
 ---
 [Bluetooth 'cat' thermal printer review — HackSpace magazine](https://hackspace.raspberrypi.com/articles/bluetooth-cat-thermal-printer-review)
 [GitHub - JJJollyjim/catprinter: A central repository to link to documentation and projects related to cat-shaped bluetooth thermal printers. PRs encouraged.](https://github.com/JJJollyjim/catprinter)

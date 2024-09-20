@@ -4,7 +4,7 @@ date: 2023-10-23
 tags:
   - untested-article
 ---
-![66](Pasted%20image%2020231023204649.png)
+![](Pasted%20image%2020231023204649.png)
 
 I had a few hours to work on the first part of [Sit., (together)](<../Sit., (together)>), so I thought that in the spirit of working with the garage door up (and fighting my own perfectionism) I could share my progress.
 
@@ -96,11 +96,11 @@ I started with all stars drawn purely in CSS:
 
 The stars looked good and the performance on desktop was decent even at 100s of users, but my phone became unresponsive as soon as the page loaded. The reason was that every star generated 3 separate layers. This is a lot for a mobile GPU to handle (and would turn your battery into a frying pan). 
 
-![4142](Pasted%20image%2020231023205802.png)
+![](Pasted%20image%2020231023205802.png)
 
 A good compromise between my own laziness and decent performance was creating a texture with three layers but still animating it in CSS:
 
-![4318](Pasted%20image%2020231023211204.png)
+![](Pasted%20image%2020231023211204.png)
 I can still control most of my animations using seeded CSS vars. Sweet!
 
 

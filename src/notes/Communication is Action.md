@@ -5,7 +5,7 @@ date: 2023-11-30
 tags:
   - untested-article
 ---
-![188](banana-boys.webp)
+![](banana-boys.webp)
 
 There's an important aspect of communication which to some people (especially the so-called free speech absolutists) is very hard to grasp: communication *is* action. 
 

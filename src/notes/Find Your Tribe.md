@@ -5,7 +5,7 @@ date: 2023-12-04
 tags:
   - untested-article
 ---
-![195](tribe-precarious.webp)
+![](tribe-precarious.webp)
 
 The world is big enough.
 

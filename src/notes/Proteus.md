@@ -1,5 +1,6 @@
 ---
 publish: true
+date: '2024-08-22'
 ---
 Prophetic god of rivers and seas. His name means: "first" (from [Greek](https://en.wikipedia.org/wiki/Greek_language "Greek language") "πρῶτος" _prōtos_, "first"), to be understood as primordial.
 

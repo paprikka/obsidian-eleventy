@@ -1,5 +1,6 @@
 ---
 publish: true
+date: '2024-08-22'
 ---
 - it's ethical
 - they're the future

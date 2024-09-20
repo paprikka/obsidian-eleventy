@@ -5,7 +5,7 @@ date: 2024-05-06
 tags:
   - untested-article
 ---
-![156](fig-pacman.webp)
+![](fig-pacman.webp)
 
 [First Fig Digression](<../First Fig Digression>)
 
@@ -20,7 +20,7 @@ Fig is a drawing app that helps you focus on the _process_ of drawing without ob
 
 Here's how it works: in Fig, every pixel has a lifespan. Over time, all the pixels die and parts of your drawing will fade away.
 
-![720](fig-screenshot.webp)
+![](fig-screenshot.webp)
 
 Want to know how to build a graphics editor that is [not capable](<../MISS – Make It Stupid, Simple>) of keeping pixels on the screen? Here is what I focussed on:
 
@@ -95,7 +95,7 @@ I wanted to make a new toy, and [a fig tree died](<../Second Fig Digression>). A
 
 I built a quick and dirty prototype and kept using it almost every evening before falling asleep. I didn't force myself to stick to a routine: I played with it [when I felt like it](https://x.com/rafalpast/status/1771256689175445633). Dogfeeding is useful, but the _felt like it_ part even more so: most of the ideas implemented in the app come from those evening doodling sessions.
 
-![4960](6C083E2E-F149-4249-877A-EAB439C13130_1_105_c.jpeg)
+![](6C083E2E-F149-4249-877A-EAB439C13130_1_105_c.jpeg)
 
 Related: [2-2-2 Project Scoping Technique](<../2-2-2 Project Scoping Technique>), [Share your unfinished, scrappy work](<../Share your unfinished, scrappy work>)
 
@@ -108,7 +108,7 @@ I'll try to keep this moderately low on tech, but feel free to [message me](mail
 3. Add tests when I realise that I spend too much time debugging and catching missing grains of sand in the simulation
    1. refactor, improve performance once we've had a test coverage
 
-![5568](ascii-art-tests-fig.jpeg)
+![](ascii-art-tests-fig.jpeg)
 *Testing with ASCII art*
 
 Balancing prototyping and technical improvements is [inherently risky and annoying in hindsight](<../inherently risky and annoying in hindsight>). I'm somewhat less annoyed about this one, but I'm not yet sure why.
@@ -142,7 +142,7 @@ I play _in_ and _with_ it:
 
 #### A simple 3 colour pixel art editor inspired by this drawing:
 
-![7140](ukiyo.png)
+![](ukiyo.png)
 _by [Susan Kare](http://kare.com)_ ([context](https://www.behance.net/gallery/25434317/MacPaint-Ukiyo-e))
 
 #### SSS
@@ -157,6 +157,6 @@ I'm particularly excited about this one, but I'm still looking for a concise way
 
 Now, imagine that this oscillation is synced with music (i.e. the shape and size of the brush follows the beat). Your goal is to trace the lines of a drawing while matching their stroke shape and size. The only way to match it perfectly is to draw in time with the music. In other words - by dancing with your fingers!
 
-![8081](fig-mould.webp)
+![](fig-mould.webp)
 
 That's all for today. See you tomorrow!

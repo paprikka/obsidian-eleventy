@@ -1,5 +1,6 @@
 ---
 publish: true
+date: '2024-08-22'
 ---
 I used to keep a tiny notebook where every evening I'd put 2-3 beautiful things I'd noticed the day before. Most of these bullet points were really short, almost never full sentences (*the light falling on X's face on a particular evening*, *a friendly spider dancing to a song by Bauhaus*, *a dying fly*, *an unusual sound*, *a mysterious soup*.) 
 

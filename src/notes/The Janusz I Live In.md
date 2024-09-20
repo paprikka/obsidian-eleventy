@@ -16,7 +16,7 @@ So here's a quick and messy tutorial on how to turn a humble hollow styrofoam sp
 
 We start with a sphere of course:
 
-![651](IMG_9831.jpg)
+![](IMG_9831.jpg)
 
 Fun fact: without any ears or eyes, I couldn't gauge the direction of sound, but I was able to ***hear*** through my neck.
 
@@ -25,58 +25,58 @@ My initial idea was to create a papier-mâché head, similar to [Frank Sidebotto
 Instead I used a styrofoam sphere  45 cm in radius, with 2 cm thick walls. This meant that I needed to carve space for my chin and nose, which I did using a torch and heated metal. The end result doesn't look pretty, but since it's inside the sphere, I will be the only one to suffer the cost of my own ineptitude.
 
 
-![1383](janusz-mask-back.jpeg)
+![](janusz-mask-back.jpeg)
 
 
 The next step was carving out the eyes and sketching the details, like the nose and mouth. 
 
-![1505](janusz-mask-mango.webp)
+![](janusz-mask-mango.webp)
 
 
 Here we are adding a mesh to cover the eyes. Notice the tiny ring around the right eye: seems like the glue interacted with styrofoam and melted it.
 
-![1685](janusz-mask-tools.webp)
+![](janusz-mask-tools.webp)
 
 This is a tradeoff between clarity and field of view:
-![1768](IMG_9855.jpeg)
+![](IMG_9855.jpeg)
 
 I spray-painted both hemispheres. I have little experience with this spray paint, but its comforting smell reminded me of growing up above a carpentry workshop and the long, long naps we all enjoyed.
 
-![1989](janusz-spray.webp)
+![](janusz-spray.webp)
 
 We had to move under a roof as it started raining. The main upside of using spray paint is that it dries very quickly.
 
-![2133](IMG_9857.jpeg)
+![](IMG_9857.jpeg)
 
 I was trying to use stencils for the eyes, however I quickly realised that stencils make almost no sense here as I needed to carve out both the shape of the eye and the pupils.
 
-![2331](IMG_9863.jpeg)
+![](IMG_9863.jpeg)
 
 So, I painted them using a regular acrylic paint. I'm OK with this looking uneven, messy, [shoddy](<../Medieval Content Farm and Procedural Cheese>). 
 
-![2507](Pasted%20image%2020231030182803.png)
-![2544](Pasted%20image%2020231030183937.png)
+![](Pasted%20image%2020231030182803.png)
+![](Pasted%20image%2020231030183937.png)
 
 
 We finished the eyes and moved on to the hairline. Have you ever seen the back of Janusz's head? Me neither.
 
-![2693](IMG_9893.jpeg)
+![](IMG_9893.jpeg)
 
 OK, a rat tail it is then:
 
-![2741](IMG_9914.jpeg)
+![](IMG_9914.jpeg)
 
 Time for the ears. Fun fact: Victorians considered lobed ears superior, as ears without earlobes were considered more primitive, animal-like. I want my Janusz-child to be better than his hopeless, lobeless father.
 
-![2976](IMG_9918.jpeg)
+![](IMG_9918.jpeg)
 
 Front of the mask, without the lips: 
 
-![3035](IMG_9932.jpeg)
+![](IMG_9932.jpeg)
 
 The proportions of the 2d version of Janusz would translate poorly into a 3d version, so I sketched a few options in Procreate. Also, seems that Procreate dropped their 3d projection tools, which is a shame because this is the first time I would've found them useful.
 
-![3324](IMG_9939.jpeg)
+![](IMG_9939.jpeg)
 
 Adding those classic rosy cheeks. Janusz is blushing because of all that hackernews karma.
 

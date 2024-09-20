@@ -72,7 +72,7 @@ Instead of meshes and polygons Shader Park relies on an algorithm called Signed 
 
 [Alan Zucconi](https://www.alanzucconi.com) compares vertex based rendering and SDF to pixels and SVG: all vertex meshes representing curved shapes are just approximations. SDF represents entire shapes as mathematical functions, thus allowing for a much higher level of detail, whereas a 3D mesh will have a finite level of detail depending on its  polygon count. 
 
-![3058](sdf-vs-polygons-janusz.webp)
+![](sdf-vs-polygons-janusz.webp)
 *SDF–a mathematical function describing the "[Januszness](<../How to draw a Janusz>)" vs. an approximation using polygons and vertices*
 
 In practice this means that certain shapes are much easier to define and render using SDF, whereas in other cases using meshes will be more performant. This also allows for a slightly different coding style. 
@@ -95,7 +95,7 @@ Now, I've been building games and messing with generative art for a relatively l
 
 Why am I playing with Shader Park? I want to add a simple background animation to [midnight.sonnet.io](https://midnight.sonnet.io). The animation I have in mind adds a bit of smooth, "silky" shading to the text. It's almost imperceptible, and looks a bit like a smooth satin sheet (how sensual and classy, I know).
 
-![4896](midnight-satin-experiment.webp)
+![](midnight-satin-experiment.webp)
 
 Simplex noise rendered using WebGL seems like a perfect way of achieving the look I'm after, but the developer experience and amount of boilerplate required to set them up seems like overkill (at least to me).
 

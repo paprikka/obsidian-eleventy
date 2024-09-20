@@ -11,12 +11,12 @@ I was going to post a longer note but I'm both a typography and languages nerd a
 
 In typography *line height* (or more precisely *interline* height) is the space between two adjacent lines of text:
 
-![461](leading-line-height.webp)
+![](leading-line-height.webp)
 *Don't worry about the monkeys, they just want your attention*
 
 In a more traditional typesetting context, line height is usually called leading (*/led-ing/* not */leed-ing/*). But why is that? This has to do with the fact that historically spacing between lines of text was achieved through filling the gaps with lead strips (called leads, hence the pronunciation). 
 
-![860](leads.webp)
+![](leads.webp)
 
 Currently both terms can be used interchangeably, although leading is more common in more classic DTP software (e.g. InDesign or QuarkXPress).
 

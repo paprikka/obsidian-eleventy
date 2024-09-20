@@ -1,5 +1,6 @@
 ---
 publish: true
+date: '2024-08-22'
 ---
 Features like [FLOC](https://www.eff.org/deeplinks/2021/03/googles-floc-terrible-idea), or WEI ([Web Environment Integrity](https://en.wikipedia.org/wiki/Web_Environment_Integrity)) pushed by Alphabet make it harder to maintain anonymity and control over the way we access information on the web, by making it harder to control our identity.
 

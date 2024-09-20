@@ -1,5 +1,6 @@
 ---
 publish: true
+date: '2024-08-22'
 ---
 - it supports hypertext via links
 - it's content, not behaviour - oriented

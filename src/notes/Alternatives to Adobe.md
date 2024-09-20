@@ -5,7 +5,7 @@ date: 2023-10-17
 tags:
   - untested-article
 ---
-![241](spider.webp)
+![](spider.webp)
 
 I've been using Photoshop since AD 2000. Flash paid for the unhealthy amounts of ~~ramen~~ [obwarzanki](https://en.wikipedia.org/wiki/Obwarzanek_krakowski) I ingested during my high school and uni. Still, since I ditched all Adobe software last year, I haven't looked back for a second.
 

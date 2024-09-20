@@ -5,7 +5,7 @@ date: 2024-01-25
 tags:
   - untested-article
 ---
-![163](human-llama.webp)
+![](human-llama.webp)
 
 *<strong>human llama</strong> was the brand behind your favourite AAA titles such as "[Tommy the Toe](<../Tommy the Toe>) and the Chamber of Hostile Carpentry" and ["How to Run an All-hands Meeting"](https://rafsters.itch.io/all-hands)*
 

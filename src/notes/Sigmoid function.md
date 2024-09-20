@@ -1,9 +1,10 @@
 ---
 publish: true
+date: '2024-08-22'
 ---
 [A Gentle Introduction To Sigmoid Function](https://machinelearningmastery.com/a-gentle-introduction-to-sigmoid-function/)
 
-![146](Pasted%20image%2020221025152354.png)
+![](Pasted%20image%2020221025152354.png)
 [Sigma notation](<../Sigma notation>)
 
 > [!note] Etymology

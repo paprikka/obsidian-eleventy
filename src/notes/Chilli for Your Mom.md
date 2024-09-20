@@ -5,7 +5,7 @@ date: 2023-10-03
 tags:
   - untested-article
 ---
-![241](smiling-pepper.jpeg)
+![](smiling-pepper.jpeg)
 
 *Attaching this picture in hopes that pepper pareidolia will distract you from the fact that I never take photos of my chillies.*
 

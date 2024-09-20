@@ -68,7 +68,7 @@ Disclaimer and probably the worst possible start of a post like this:
 ## Other
 
 I often check the domain names associated with the email addresses of people who message me with feedback or contact me via [Say Hi](https://sonnet.io/posts/hi). 
-![3226](untested-visitor-sites-mail-client.webp)
+![](untested-visitor-sites-mail-client.webp)
 
 ### Niche and tech-specific sites or forums, e.g.:
 

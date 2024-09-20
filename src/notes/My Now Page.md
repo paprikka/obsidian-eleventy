@@ -5,7 +5,7 @@ date: 2023-12-18
 tags:
   - untested-article
 ---
-![151](days-now-diagram.webp)
+![](days-now-diagram.webp)
 
 I have a now page, now!  You can check it out [here](https://sonnet.io/now).
 

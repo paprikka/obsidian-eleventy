@@ -11,17 +11,17 @@ I posted Sit. on HN earlier this month and it blew up, with more than 50k people
 
 As I was reading the comments on HN, one thing in particular stood out:
 
-![687](Pasted%20image%2020240109121539.png)
+![](Pasted%20image%2020240109121539.png)
 
-![725](Pasted%20image%2020240109121606.png)
+![](Pasted%20image%2020240109121606.png)
 
 So, I shipped a change making Sit. a Progressive Web App (PWA) this morning.
 
-![841](sit-offline-android-ios.webp)
+![](sit-offline-android-ios.webp)
 
 To check it out go to [sit.sonnet.io](https://sit.sonnet.io) and hit *Install App (Android)* or *Add to Home Screen (iOS)*:
 
-![1001](sit-offline-setup.webp)
+![](sit-offline-setup.webp)
 
 Now, the rest of this note will discuss a) the current progress, b) implementation, and c) the next steps in this process.
 
@@ -100,7 +100,7 @@ workbox: {
 
 ### Icons
 
-![3651](sit-offline-figma-icons.webp)
+![](sit-offline-figma-icons.webp)
 
 I'm using @vite-pwa/assets-generator to generate images in the right sizes and formats. 
 
@@ -113,7 +113,7 @@ I'm using @vite-pwa/assets-generator to generate images in the right sizes and f
 
 ### Adaptive/Maskable icons
 
-![3950](sit-offline-ios-home-screen.webp)
+![](sit-offline-ios-home-screen.webp)
 
 Modern Android apps support maskable icons. In short, using a maskable icon allows you to tell the OS/User Agent to wrap your full-bleed icons in its own "chrome". This means you can decouple your icon design from a specific OS version. Neat! You can learn more about Maskable Icons [here](https://web.dev/articles/maskable-icon).
 

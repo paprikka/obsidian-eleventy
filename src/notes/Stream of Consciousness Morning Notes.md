@@ -7,7 +7,7 @@ tags:
 ---
 I was going to publish my review of Obsidian Publish today, but I realised it would get too long and messy to be useful. Instead of publishing it as one long blog post, I'll share it as several smaller, connected notes. This way you'll be able to read the review at your own pace and the level of detail you like. It's more fun this way anyway ([Wikipedia rabbit holes and writing evergreen notes](<../Wikipedia rabbit holes and writing evergreen notes>)).
 
-![615](here-comes-the-sun.webp)
+![](here-comes-the-sun.webp)
 
 
 1. **[This is not writing or productivity advice](<../This is not writing or productivity advice>)**.
@@ -39,7 +39,7 @@ My journal didn't have much structure to start with, but with time patterns emer
 
 I'm also not a good typist, but I write these notes relatively fast. I don't worry about typos, grammatical errors or sounding "stupid", incoherent, weird. It doesn't matter.
 
-![2253](morning%20notes%20diagram.webp)
+![](morning%20notes%20diagram.webp)
 
 Writing this way is like playing a Choose Your Own Adventure game. You might know roughly where you'll end up but you rarely know how to get there! So, I don't worry about keeping the chronological order of events. If anything comes to my mind, I just write it down and move on. This means that often I go back to a previous event, a semi-random tangent, fast forward. Ensō makes it very easy.
 

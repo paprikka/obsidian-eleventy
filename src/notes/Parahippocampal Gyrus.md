@@ -1,5 +1,6 @@
 ---
 publish: true
+date: '2024-08-22'
 ---
 Brain structure related to memory **encoding** and **retrieval**.
 

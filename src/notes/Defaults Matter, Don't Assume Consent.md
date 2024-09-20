@@ -7,7 +7,7 @@ tags:
 ---
 Defaults matter!
 
-![179](Pasted%20image%2020240522134317.png)
+![](Pasted%20image%2020240522134317.png)
 *<5% people opt-in on [tip](<../Tip of the Tongue and Handmade Software>) and that's actually pretty cool* 
 
 Recent week gave us the news about:
@@ -46,7 +46,7 @@ That's the number of people who opted out of Facebook tracking when Apple introd
 
 It's almost amusing to see the amount of verbal gymnastics Facebook used to fight back, ranging from stating that this is just a useless prompt to stating that the change will hurt mainly small businesses (only ca. 5% of their revenue  at the time.) It's *almost* amusing, because these numbers won't reach the general populace who, frankly, don't have time to deal with this shit. 
 
-![3675](Pasted%20image%2020240522133713.png)
+![](Pasted%20image%2020240522133713.png)
 
 *The mural in the London News(corp) office, with the phrase "always sticking up for the little guy". I couldn't decide whether our dystopia would be 1984 or Brave New World flavoured, but it turns out it was just [ice cream](https://www.youtube.com/watch?v=YbYWhdLO43Q).* 
 

@@ -5,7 +5,7 @@ date: 2023-12-05
 tags:
   - untested-article
 ---
-![176](autohibernate-subscriptions.webp)
+![](autohibernate-subscriptions.webp)
 Balsamiq Cloud [doesn't charge you for the months you're not using it](https://balsamiq.com/wireframes/cloud/sales/subscription/#auto-hibernation).
 
 I like this approach because it works for the customer and the business ([Kind software](<../Kind software>)):

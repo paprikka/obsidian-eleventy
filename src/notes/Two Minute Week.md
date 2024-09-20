@@ -13,7 +13,7 @@ I learned about this idea from the [Future of Coding](https://futureofcoding.sla
 
 - To find an excuse/force yourself to articulate what you're thinking about
 
-![484](listbon-thinking-dog.webp)
+![](listbon-thinking-dog.webp)
 
 ### To which I'd add:
 

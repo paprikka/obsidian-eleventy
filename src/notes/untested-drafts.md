@@ -1,5 +1,6 @@
 ---
 publish: true
+date: '2024-08-22'
 ---
 [Just Some Innocent Gradient Fun](<../Just Some Innocent Gradient Fun>)
 [Adventures of the Bun-man](<../Adventures of the Bun-man>)

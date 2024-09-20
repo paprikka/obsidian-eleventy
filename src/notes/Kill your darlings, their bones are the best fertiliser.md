@@ -5,7 +5,7 @@ date: 2024-02-19
 tags:
   - untested-article
 ---
-![161](chicken-attack.webp)
+![](chicken-attack.webp)
 
 - Good ideas will come back, improved.
 - Removing bad ideas will leave space for new (likely better) ideas to come.

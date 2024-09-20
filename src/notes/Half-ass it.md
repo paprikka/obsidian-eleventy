@@ -1,5 +1,6 @@
 ---
 publish: true
+date: '2024-08-22'
 ---
 Keeping this quote from Mandy Brown in case if ever disappears from the interwebs. 
 

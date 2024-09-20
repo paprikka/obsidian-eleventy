@@ -1,8 +1,9 @@
 ---
 publish: true
+date: '2024-08-22'
 ---
 ### SVG can't he hidden using `display:none` on Firefox:
-![79](../innocent-gradients-svg-firefox.webp)
+![](../innocent-gradients-svg-firefox.webp)
 
 To fix, make it visually hidden without changing the display mode.
 

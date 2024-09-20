@@ -5,7 +5,7 @@ date: 2024-06-05
 tags:
   - untested-article
 ---
-![161](black-snake.webp)
+![](black-snake.webp)
 
 
 I don't like [starting my notes with disclaimers](<../Disclaimer>), so I'll keep this short. None of these tools replace decision making, so read this critically. This note is descriptive, not prescriptive. Having said that, I still did my best to keep it useful to you.

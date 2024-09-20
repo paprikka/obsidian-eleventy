@@ -1,5 +1,6 @@
 ---
 publish: true
+date: '2024-08-22'
 ---
 ## Customising Obsidian + a quick intro to how our eyes and brains process colours:
 [Obsidian for Vampires](<../Obsidian for Vampires>)

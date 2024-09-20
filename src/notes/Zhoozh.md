@@ -5,7 +5,7 @@ date: 2024-01-22
 tags:
   - untested-article
 ---
-![158](zhoozh-bulgarian.png)
+![](zhoozh-bulgarian.png)
 
 I was today years old when I learned that *zhoozh* (/ˈʒʊʒ/) comes from [Polari](http://www.polarimagazine.com/bulletin-board/polari/). *To zhoozh* means *more* than *to improve*, it means to improve by adding that little something special™. I use it exclusively when talking about soups.
 
@@ -13,7 +13,7 @@ Different competing ways of spelling it exist: *jeuje*, *jush*, *zhoosh*.
 
 However, I still think that we should adopt the Polish way here: *żuż*. It's short, it's phonetic, it has two cute little eyes, it's something I can show to my UK-born friend next time he repeats his joke about the liberal use of consonants in Polish. *They're free*, Giles, they're *free*, it was the 20th century geopolitics that made our economy suffer, not the fact that we're consonant floosies! <span id="^d876ce" class="link-marker"></span>
 
-![959](zhoozh-snake.webp)
+![](zhoozh-snake.webp)
 
 At the same time, perhaps *jeuzhe* should be that one special zhoożed up word that has no established way of spelling. Instead of fighting stupid wars about gifs and jiffs we could embrace the cold tungsten-solid truth that no one really knows: what the true spelling of *jüj* is, where do all of those letters come from and what's their agenda. Do they come in peace? Can we trust them? Have I spent the past 5 hours trying to fix and reverse-engineer a 3 year old Unity project while waiting on the line to file my tax return for a country I'm not a resident of and I feel like I haven't learned anything today?
 

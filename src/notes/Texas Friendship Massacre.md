@@ -11,7 +11,7 @@ I thought I'd share another piece of linguistic trivia, but this time shorter an
 
 The Romanian word for *chainsaw* is a borrowing of a Russian (or, more broadly, Slavic) word for *friend*. Therefore:
 
-![581](texas-frienship-poster.webp)
+![](texas-frienship-poster.webp)
 
 
 

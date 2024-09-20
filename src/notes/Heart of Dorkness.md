@@ -37,7 +37,7 @@ You can find a quick demo below. If you have a phone with an OLED screen, dim it
 
 I wish I could show you! I can't give you a link to the app (yet), since it needs to be reviewed before the public beta. The good news is that I don't give up that easily and I hired Janusz ([How to draw a Janusz](<../How to draw a Janusz>), [The Janusz I Live In](<../The Janusz I Live In>)) to help me with a quick photoshoot. 
 
-![2006](janusz-resting-in-the-storage.webp)
+![](janusz-resting-in-the-storage.webp)
 *Janusz was enjoying his nap in the storage when I found him. Since he turned into half man-half spider (or Spider-Janusz if you will) his stamina has suffered but his affinity for cold and dark places has increased *
 
 
@@ -51,13 +51,13 @@ I took the pictures below in complete darkness, using an iPhone 12 Pro (OLED) sc
 The results are **exaggerated and brighter than what you'd see with your own eyes**.
 I used [this article](https://sonnet.io/posts/emotive-conjugation/) for testing purposes.
 
-![2693](janusz-night-reader-web-full.webp) ![2732](janusz-night-reader-web-half.webp) ![2771](janusz-night-reader-reader.webp) ![2808](janusz-night-reader-nr.webp)
+![](janusz-night-reader-web-full.webp) ![](janusz-night-reader-web-half.webp) ![](janusz-night-reader-reader.webp) ![](janusz-night-reader-nr.webp)
 
 *From left to right: Safari (regular), Reader Mode (picture and text), Reader Mode (text), Night Reader(text).*
 
 Reader vs. Night Reader:
 
-![2981](janusz-night-reader-horizontal-reader.webp) ![3029](janusz-night-reader-horizontal-nr.webp)
+![](janusz-night-reader-horizontal-reader.webp) ![](janusz-night-reader-horizontal-nr.webp)
 
 ## Implementation
 

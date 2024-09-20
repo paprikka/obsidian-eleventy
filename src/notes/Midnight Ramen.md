@@ -9,7 +9,7 @@ In the spirit of working with the [garage door up](<../Work on my notes with the
 
 ## Tonkotsu profitable
 
-![559](charlie-ramen-revenue.webp)
+![](charlie-ramen-revenue.webp)
 
 Achievement unlocked: Midnight paid for a bowl of a "posh" locally sourced ramen!
  
@@ -29,7 +29,7 @@ Achievement unlocked: Midnight paid for a bowl of a "posh" locally sourced ramen
 
 I've set up [midnight.sonnet.io](https://midnight.sonnet.io) as a main entry point for anything marketing related. 
 
-![1552](midnight-website-screenshot-12-23.webp)
+![](midnight-website-screenshot-12-23.webp)
 
 I'm exercising a lot of impulse control when working on this: I have a few ideas on how to illustrate how Midnight works by making the page more interactive. But still, I don't think this is the most important thing to do at the moment.
 
@@ -76,4 +76,4 @@ Our bedroom has big wooden shutters, so it stays dark till 9-10 am or till whene
 - [ ] Update project links on sonnet.io/projects (people actually read those)
 - [ ] If time permits, publish some little experiments I built when working on Midnight ([Share Bite-sized chunks of your work](<../Share Bite-sized chunks of your work>)). For instance, I wanted to add a delicate *satin sheets shading* effect to the product page, so I spent this morning learning about generating perlin noise using WebGL, then moved on to playing with [Shader Park](https://shaderpark.com) ([Shader Park is Kinda Neat](<../Shader Park is Kinda Neat>)). Many of the people I try to learn from follow this approach and I think it might help me kill two birds with one stone: instead of playing with little experiments and avoiding working on marketing, I could use them to spread the message about the project.
 
-![4468](midnight-ph-1.webp)
+![](midnight-ph-1.webp)

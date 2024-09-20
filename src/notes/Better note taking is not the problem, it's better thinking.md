@@ -1,5 +1,6 @@
 ---
 publish: true
+date: '2024-08-22'
 ---
 The goal is to **think effectively,** have a better way of using the knowledge I'm wasting (I feel like I'm learning something but then I can't recall most of the things I read). 
 

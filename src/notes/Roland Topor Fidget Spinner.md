@@ -1,4 +1,5 @@
 ---
 publish: true
+date: '2024-08-22'
 ---
-![22](roland-topor-fidget-spinner.jpeg)
+![](roland-topor-fidget-spinner.jpeg)

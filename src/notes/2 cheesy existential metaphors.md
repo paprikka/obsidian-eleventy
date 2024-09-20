@@ -1,5 +1,6 @@
 ---
 publish: true
+date: '2024-08-22'
 ---
 1\. *My dear, life is but a train! We share it for a brief moment, but people come and go as they please.*
 

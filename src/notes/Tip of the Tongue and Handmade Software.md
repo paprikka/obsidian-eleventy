@@ -5,13 +5,13 @@ date: 2024-02-01
 tags:
   - untested-article
 ---
-![157](tongue-homemade.webp)
+![](tongue-homemade.webp)
 
 As I was walking Mango with Luna this morning, I remembered a video I watched last night: a 1960s [interview](https://www.youtube.com/watch?v=ouQB3CSn2YI) with a teenager who had a bunch of LSD trips and was forcibly admitted to a mental hospital by his mother. It struck me how eloquent, measured, and well-spoken he was, especially compared to the adults. Now, notice that I already used three different phrases to describe him here: *measured*, *well-spoken*, *eloquent*. Luna gave me these suggestions when I said that the word I was looking for was on the tip of my tongue.
 
 So, I typed "tip" in Safari, opened up [Tip of the Tongue (TOT)](https://tip.potato.horse) , typed those three words and saw this:
 
-![896](tip-shortcut-articulate.webp)
+![](tip-shortcut-articulate.webp)
 *The irony of looking up "articulate" in an app called Tip of the Tongue does not escape me.*
 
 Articulate! Fuck, yes! It feels so good to tickle your [Parahippocampal Gyrus](<../Parahippocampal Gyrus>), your [Broca's](<../Broca's Area>) and [Wernicke's](<../Wernicke's Area>) areas. You did it again, Potato Horse!

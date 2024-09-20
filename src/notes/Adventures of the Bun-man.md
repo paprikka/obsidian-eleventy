@@ -6,7 +6,7 @@ date: 2024-06-10
 tags:
   - untested-article
 ---
-![224](env-cover.png)
+![](env-cover.png)
 
 *Some late night doodles, the punchline is the same as the reason the oopsie mentioned below happened (lost track of time). Title: "nightmares of the bun man"*
 

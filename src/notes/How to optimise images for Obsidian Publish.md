@@ -7,7 +7,7 @@ tags:
 ---
 (Last updated on 2023-11-21)
 
-![212](birrrd-unoptimised.webp)
+![](birrrd-unoptimised.webp)
 
 ## Problem:
 
@@ -23,4 +23,4 @@ for i in *.png; do ffmpeg -i "$i" "${i%.*}.webp"; done
 
 ### Solution 2:  Batch process with [Affinity Photo](https://affinity.serif.com/en-gb/)
 
-![968](affinity-batch-processing.webp)Since you're here, you might also want to check out the [Alternatives to Adobe](<../Alternatives to Adobe>).
+![](affinity-batch-processing.webp)Since you're here, you might also want to check out the [Alternatives to Adobe](<../Alternatives to Adobe>).

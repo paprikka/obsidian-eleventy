@@ -5,7 +5,7 @@ date: 2023-12-13
 tags:
   - untested-article
 ---
-![153](midnight-shader-sad-swing.webp)
+![](midnight-shader-sad-swing.webp)
 *The swing looks sad because everyone went to play in the Shader Park :(*
 
 [Midnight](https://midnight.sonnet.io) **doubled** its weekly *posh ramen* revenue! I also had a chance to chat with the creators of my [favourite SDF plaything](https://shaderpark.com) who gave me a bunch of tips and code samples to learn from.
@@ -36,7 +36,7 @@ color(vec3(c, c, c));
 ```
 
 And here's the generated noise (interactive example [here](https://night-reader-site-ibon38gj1-sonnet.vercel.app)):
-![1270](midnight-shader-2-noise.webp)
+![](midnight-shader-2-noise.webp)
 
 ## Using 2D mode 
 

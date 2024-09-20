@@ -58,7 +58,7 @@ My advice: don't repeat my mistakes here!
 
 Finally, I went with a simple scale played on a finger piano, with every note isolated. I sliced the sample and split it into separate files played with Howler.js. Another approach would be to keep the original file and use audio sprites, but I find multiple files easier to work with.
 
-![3448](audacity-screenshot.webp)
+![](audacity-screenshot.webp)
 
 I also accidentally went to some [dark places](https://pixabay.com/sound-effects/cat-piano-87087/) when searching for the right sample.
 
