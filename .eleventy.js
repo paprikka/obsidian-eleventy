@@ -8,10 +8,11 @@ import markdownItCallout from "markdown-it-github-alerts";
 import { escapeHtml } from "markdown-it/lib/common/utils.mjs";
 import { makeAbsoluteUrl } from "./build/absolute-url.js";
 import { dateFormat } from "./build/date-format.js";
+import { mdAdjustLinks } from "./build/plugins/md-adjust-links.js";
 import { mdEmbed } from "./build/plugins/md-embed.js";
 import taskListPlugin from "./build/plugins/md-task-list.js";
 import { ObsidianImportPlugin } from "./build/plugins/obsidian.js";
-import { slugifyPath, slugifyPermalink } from "./build/slugify.js";
+import { slugifyPermalink } from "./build/slugify.js";
 import SiteData from "./src/_data/site.js";
 
 /**
@@ -48,27 +49,7 @@ export default function (eleventyConfig) {
     titles: new Proxy({}, { get: () => "" }),
   });
   mdLib.use(mdEmbed);
-
-  function adjustLinks(md) {
-    const defaultRender =
-      md.renderer.rules.link_open ||
-      function (tokens, idx, options, env, self) {
-        return self.renderToken(tokens, idx, options);
-      };
-
-    md.renderer.rules.link_open = function (tokens, idx, options, env, self) {
-      const hrefIndex = tokens[idx].attrIndex("href");
-      if (hrefIndex >= 0) {
-        const href = tokens[idx].attrs[hrefIndex][1];
-        if (href.startsWith("../")) {
-          tokens[idx].attrs[hrefIndex][1] = slugifyPath(href);
-        }
-      }
-      return defaultRender(tokens, idx, options, env, self);
-    };
-  }
-
-  mdLib.use(adjustLinks);
+  mdLib.use(mdAdjustLinks);
   eleventyConfig.setLibrary("md", mdLib);
 
   eleventyConfig.addFilter("limit", function (arr, limit) {

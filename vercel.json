@@ -1,6 +1,12 @@
 {
-  "builds": [{ "src": "_site/**/*", "use": "@vercel/static" }],
-  "routes": [{ "src": "/(.*)", "dest": "/_site/$1" }],
+  "outputDirectory": "_site",
+  "builds": [
+    {
+      "src": "_site/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "rewrites": [{ "source": "/(.*)", "destination": "/_site/$1" }],
   "redirects": [
     {
       "source": "/posts/001",
