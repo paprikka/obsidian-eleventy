@@ -119,7 +119,8 @@
 
   p > img {
     margin-inline: calc(-1 * var(--page-margin));
-    max-width: calc(100% + var(--page-margin) * 2);
+    width: calc(100% + var(--page-margin) * 2);
+    max-width: 200%;
   }
 
   .embed {
