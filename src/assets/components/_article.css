@@ -91,6 +91,7 @@
     opacity: 0;
     overflow: hidden;
   }
+
   :where(p, ol, ul, blockquote):has(.link-marker:target) {
     --_c: color-mix(in srgb, var(--color-accent) var(--alpha), transparent);
     background-color: var(--_c);
@@ -99,7 +100,7 @@
     animation: flash 2s 0s ease-in-out 1 both;
   }
 
-  p > code {
+  :where(p, li) > code {
     --_color-bg: color-mix(in srgb, var(--color-text) 6%, transparent);
     background-color: var(--_color-bg);
     font-size: 0.8em;
