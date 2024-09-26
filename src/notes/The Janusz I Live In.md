@@ -80,10 +80,10 @@ The proportions of the 2d version of Janusz would translate poorly into a 3d ver
 
 Adding those classic rosy cheeks. Janusz is blushing because of all that hackernews karma.
 
-<video src="https://res.cloudinary.com/dlve3inen/video/upload/v1727355497/janusz_cheeks_qmx9ga.mp4" lazy preload/>
+<video controls src="https://res.cloudinary.com/dlve3inen/video/upload/v1727355497/janusz_cheeks_qmx9ga.mp4" lazy preload/>
 
 ## Final result
 
-<video src="https://res.cloudinary.com/dlve3inen/video/upload/v1727355497/janusz_catwalk_oqrzwg.mp4" lazy preload />
+<video controls src="https://res.cloudinary.com/dlve3inen/video/upload/v1727355497/janusz_catwalk_oqrzwg.mp4" lazy preload />
 
 See you tomorrow!
