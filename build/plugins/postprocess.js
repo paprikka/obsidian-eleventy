@@ -6,6 +6,7 @@ import SiteData from "../../src/_data/site.js";
 import { makeAbsoluteUrl } from "../absolute-url.js";
 import { isRemoteUrl } from "../is-remote-url.js";
 import { getEmbedContent } from "./get-embed-content.js";
+import { getBacklinks } from "./get-backlinks.js"; // Add this import
 
 const absoluteUrl = makeAbsoluteUrl(SiteData.rootUrl);
 
@@ -135,6 +136,25 @@ export const postprocess = async (current, all) => {
       // TODO: render a placeholder element
       $embed.replaceWith(`<!-- Error loading ${targetHref} -->`);
     }
+  }
+
+  // Add backlinks section
+  const backlinks = getBacklinks(current, all);
+  if (backlinks.length > 0) {
+    const $backlinksSection = $('<section class="backlinks">');
+    $backlinksSection.append("<h2>Backlinks</h2>");
+    const $backlinksList = $("<ul>");
+
+    backlinks.forEach((backlink) => {
+      $backlinksList.append(`
+        <li>
+          <a href="${backlink.url}">${backlink.title}</a>
+        </li>
+      `);
+    });
+
+    $backlinksSection.append($backlinksList);
+    $("article").append($backlinksSection);
   }
 
   return $.html();

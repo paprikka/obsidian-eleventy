@@ -185,3 +185,14 @@
     --alpha: 0%;
   }
 }
+
+.backlinks {
+  margin-block: var(--spacing-m);
+  ul {
+    list-style: none;
+  }
+  li {
+    padding: var(--s--1);
+    border: 2px solid var(--color-link);
+  }
+}
