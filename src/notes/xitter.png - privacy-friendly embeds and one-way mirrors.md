@@ -1,6 +1,8 @@
 ---
 publish: true
 date: 2024-09-24
+tags:
+  - untested-article
 ---
 Hi there! The new site's up, standing on its three (mostly finished) and one (slightly wobbly) leg. I'll continue working on it and share what I've learned along the way. Enough with intros and [disclaimers](<../Disclaimer>). This site is [the Snail of Theseus](<../the Snail of Theseus>) after all. Let's goooooooo!
 
