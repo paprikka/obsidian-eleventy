@@ -29,9 +29,9 @@ I don't like Twitter. The reasons are many. The one I'm tackling here is this, p
 
 ![X](https://twitter.com/PossumEveryHour/status/1834472079355187536)
 
-Say, you're scrolling through an article listing 10 best dressed possums. You look at the embedded tweets from crème de la crème of the Didelphimorphic fashion community. You glance at a picture of a possum wearing a colander.  Slowly, and quietly at first, a sense of envy crawls in on it's tiny, weirdly soft, weirdly human-like paws. 
+Say, you're scrolling through an article listing 10 best dressed possums. You look at the embedded tweets from crème de la crème of the Didelphimorphic fashion community. You glance at a picture of a possum wearing a colander.  Slowly, and quietly at first, a sense of envy crawls in on its tiny, weirdly soft, weirdly human-like paws. 
 
-Fine, you already expected to feel that way. But what you probably didn't expect, that when you gaze at a tweet, the tweet gazes back:
+Fine, you already expected to feel that way. But what you probably didn't expect is, *when you gaze at a tweet, the tweet gazes back*:
 
 What happens behind the possum is akin to loading an ad widget: yes, a tweet is displayed, but also a bunch of metrics about you is sent to the parent domain, then directly or not, those metrics are shared with a bunch of third-parties. 
 
