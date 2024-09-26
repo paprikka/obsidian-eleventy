@@ -3,7 +3,10 @@ publish: true
 date: 2024-09-24
 tags:
   - untested-article
+cover: xitter.png-cover.png
 ---
+![Drawing of two gnomes with red, pointy hats. The gnome on the left has a small body, a flower next to them, and a neutral expression. The gnome on the right is holding a sign that says, ‘The gnomes are not what they seem,’ while wearing glasses and standing next to a log.](xitter.png-hero-cover.png)
+
 Hi there! The new site's up, standing on its three (mostly finished) and one (slightly wobbly) leg. I'll continue working on it and share what I've learned along the way. Enough with intros and [disclaimers](<../Disclaimer>). This site is [the Snail of Theseus](<../the Snail of Theseus>) after all. Let's goooooooo!
 
 ## What's xitter.png
@@ -18,40 +21,43 @@ In short, [Don't assume consent](<../Defaults Matter, Don't Assume Consent>).
 
 ### Slightly longer version
 
-I don't like Twitter. The reasons are many. The one I'm tackling here is this, phrased as an edgy quote from 2003: 
+I don't like Twitter. The reasons are many. The one I'm tackling here is this, phrased as an edgy joke from 2003: 
 
-> In Soviet Russia, it is Internet who browses you!
+> In Soviet Russia, Internet browses you!
 
 (Another variant replaces *Soviet Russia* with *Internet Explorer*, but you get the picture)
 
 ![X](https://twitter.com/PossumEveryHour/status/1834472079355187536)
 
-Most users when they scroll through content here don't expect a picture of a possum wearing a colander to *look back* at them. However, what happens behind the scenes is akin to loading and ad widget: yes, a tweet is displayed, but also a bunch of metrics about you is sent to the parent domain, then directly or not, those metrics are shared with a bunch of third-parties. 
+Say, you're scrolling through an article listing 10 best dressed possums. You look at the embedded tweets from crème de la crème of the Didelphimorphic fashion community. You glance at a picture of a possum wearing a colander.  Slowly, and quietly at first, a sense of envy crawls in on it's tiny, weirdly soft, weirdly human-like paws. 
 
-The data can include a fingerprint of your device, cookies or anything that can be used to build a targeting profile. That profile, later is used to tell you to buy shit you don't need. This is generally achieved by finding ways to make you angry. 
+Fine, you already expected to feel that way. But what you probably didn't expect, that when you gaze at a tweet, the tweet gazes back:
+
+What happens behind the possum is akin to loading an ad widget: yes, a tweet is displayed, but also a bunch of metrics about you is sent to the parent domain, then directly or not, those metrics are shared with a bunch of third-parties. 
+
+The data can include a fingerprint of your device, cookies or anything that can be used to build a targeting profile. And that profile is then used to tell you to buy shit you don't need. This is generally achieved by finding ways to make you angry. 
 
 ## How it works
 
 ### Short version
 
-Nihil novi sub sole: replace Twitter embed widgets with screenshots of embeds and a link to the tweet. Tweets/screenshots are generated on my machine when the content is published.
+[Nihil novi sub sole](<../Nihil novi sub sole>): replace Twitter embed widgets with screenshots of embeds and a link to the tweet. Tweets/screenshots are generated on my machine when the content is published.
 
 ### Slightly longer version
 
 Here's how embeds are processed and displayed normally (I split it in two parts: *reader* and *build*):
 
-![](Pasted%20image%2020240925172325.png){.embed--wide}
+![](without-xitter.png)
+And here's how it works with xitter.png enabled:
 
-And here how it works with xitter.png enabled:
+![](with-xitter.png){.embed--wide}
 
-![](Pasted%20image%2020240925172333.png){.embed--wide}
-
-The main difference is that most of the interactions that are normally handled when a tweet is displayed (incl. tracking) happen server-side.
+The main difference in the second case is that most of the interactions that are normally handled when a tweet is *displayed* (incl. tracking) happen server-side, during build.
 
 The code is pretty rudimentary ([MISS – Make It Stupid, Simple](<../MISS – Make It Stupid, Simple>)). Here's the [source](https://github.com/paprikka/xitter.png/blob/main/main.js).
 
 1. Embed tweets in Obisidian using regular links:
-   `![X](https://twitter.com/pfree05/status/1709956985586581620)`
+   `![X](https://twitter.com/xxx/status/<tweet id>)`
 2. use a markdown-it plugin to transform images pointing to twitter.com as `http://<xitter.url>/<tweet id>`
 3. when an image is downloaded during build, xitter.png
 	1. starts a web browser
@@ -82,12 +88,12 @@ Enough training data, a relatively simple problem structure and enough personal 
 
 I don't share tweets that often. I probably could've just manually copy-pasted the screenshots into my notes. The reasons I'm *sharing* xitter.png are different from the reasons I *made* it:
 
-- I needed a break from another task. My thought sponge was tired and I felt like I wasn't moving in any direction. I needed a quick snack to give me a sense of progress
+- I needed a break from another task. My thought sponge was tired and I felt like I wasn't moving in any direction. I needed a quick snack to give me a sense of progress.
 - Having to manually add screenshots to a page doesn't take much time but it gets me tired very quickly.
 
 I bought shoelaces in Shoreditch once and after I paid, the seller asked me if I could give them my email address. I think it's creepy that this attitude towards our privacy has become normalised. 
 
-Even if just a single person reads this and adds something similar to their site, or only entertains the idea of doing so, for me that's still a win, and a real source of satisfaction.
+If just a single person reads this and adds something similar to their site, or even considers the idea of doing so, for me that's still a win, and a real source of satisfaction.
 
 ## Next steps, ideas
 
