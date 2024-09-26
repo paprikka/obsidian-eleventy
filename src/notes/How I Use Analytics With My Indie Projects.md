@@ -9,11 +9,12 @@ tags:
 
 We'll start with *how* and move on to *why*. I think *why* is more interesting than *how*.
 
-*(last update: 2024-01-16)*
+*(last update: 2024-09-26)*
 ## Scope 
 
 Most of the 50 or so little projects I built don't rely on analytics. I have a self-hosted [umami.is](https://umami.is) instance running on Vercel with a Postgres db running on Railway. It handles 25 sites, with projects such as:
 - my [blog](https://sonnet.io)
+- this website
 - my [important meeting notes](https://potato.horse) 
 - things I sell, like [midnight](https://midnight.sonnet.io)
 - some apps/experiments (e.g. [Sit.](https://sit.sonnet.io))
@@ -24,7 +25,7 @@ My railway usage is low enough not to exceed the monthly free usage tier ($5, I 
 
 ![](analytics-diagram.webp)
 
-Untested doesn't use analytics at all. Similarly, Ensō (the web app) fires a single *hello* event so I can get a rough number of page impressions for a given day.
+Ensō (the web app) only fires a single *hello* event so I can get a rough number of page impressions for a given day.
 
 ```ts
  export const trackVisits = () =>
