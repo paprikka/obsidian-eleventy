@@ -1,6 +1,7 @@
 ---
 publish: true
-date: '2024-08-22'
+eleventyExcludeFromCollections: true
+date: '2024-09-27'
 ---
 [Just Some Innocent Gradient Fun](<../Just Some Innocent Gradient Fun>)
 [Adventures of the Bun-man](<../Adventures of the Bun-man>)

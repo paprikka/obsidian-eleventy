@@ -4,8 +4,7 @@
   syntax: "<percentage>";
 }
 
-.article {
-  margin-bottom: var(--spacing-hero);
+.copy {
   font-size: var(--s--1);
   ol,
   ul {
