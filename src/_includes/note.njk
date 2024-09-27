@@ -3,21 +3,42 @@ layout: root.njk
 pageClass: note
 ---
 
-{% set logoShowArrow = true %} {%include "components/logo.njk"%}
+{% set logoShowArrow = true %}
+{%include "components/logo.njk"%}
 
 <main>
   <header class="page-note__header">
     <h1>{{title}}</h1>
-    <h2><time>{{ page.date | dateFormat('dd·MM·yyyy')}}</time></h2>
+    <h2>
+      <time>{{ page.date | dateFormat('dd·MM·yyyy')}}</time>
+    </h2>
   </header>
 
-  <article class="page-note__article article">{{ content | safe }}</article>
+  <article class="page-note__article article copy">{{ content | safe }}</article>
 
   {% include "components/widget-subscribe.njk" %}
+
+  {% set backlinks = collections.all | getBacklinks(page.url) %}
+  {% set backlinks_count = backlinks | length %}
+  {% if backlinks_count > 0 %}
+    <aside id="backlinks" class="page-note__backlinks copy">
+      <h2>Backlinks</h2>
+      <ul>
+        {% for link in backlinks %}
+          <li>
+            <a href="{{ link.url }}">{{ link.title }}</a>
+            <time>{{ link.date | dateFormat('dd·MM·yyyy')}}</time>
+          </li>
+        {% endfor %}
+      </ul>
+    </aside>
+  {% endif %}
 </main>
 
-{% include "components/page-stickers.njk" %} {% include
-"components/style-lazy.njk" %} {% include "components/footer.njk" %}
+{% include "components/page-stickers.njk" %}
+{% include
+"components/style-lazy.njk" %}
+{% include "components/footer.njk" %}
 
 <script>
   document.addEventListener("click", function (event) {
@@ -26,11 +47,10 @@ pageClass: note
     while (targetElement && targetElement !== document) {
       if (targetElement.matches(".link--broken")) {
         event.preventDefault();
-        const result = window.confirm(
-          "This link hasn't hatched yet. Click OK to request it.",
-        );
-        if (!result) return;
-
+        const result = window.confirm("This link hasn't hatched yet. Click OK to request it.",);
+        if (!result) 
+          return;
+        
         const content = `I'd like to learn more about: ${targetElement.textContent}`;
         const subject = `Broken link: ${targetElement.href}`;
         const mailTo = `mailto:hello@sonnet.io?subject=${subject}&body=${content}`;

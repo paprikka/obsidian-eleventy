@@ -14,6 +14,7 @@ import taskListPlugin from "./build/plugins/md-task-list.js";
 import { ObsidianImportPlugin } from "./build/plugins/obsidian.js";
 import { shuffle } from "./build/shuffle.js";
 import { slugifyPermalink } from "./build/slugify.js";
+import { getLinks } from "./build/plugins/backlinks.js";
 import SiteData from "./src/_data/site.js";
 /**
  * Eleventy Configuration File
@@ -53,6 +54,7 @@ export default function (eleventyConfig) {
   eleventyConfig.setLibrary("md", mdLib);
 
   eleventyConfig.addFilter("shuffle", shuffle);
+  // TODO: move to a separate file
   eleventyConfig.addFilter("limit", function (arr, limit) {
     return arr.slice(0, limit);
   });
@@ -80,12 +82,15 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("dateFormat", dateFormat);
   eleventyConfig.addFilter("absoluteUrl", makeAbsoluteUrl(SiteData.rootUrl));
   eleventyConfig.addFilter("slugifyPermalink", slugifyPermalink);
+
+  eleventyConfig.addFilter("getBacklinks", async (collection, target) =>
+    collection
+      .filter((item) => getLinks(item).has(target))
+      .map((_) => ({ url: _.url, title: _.data.title, date: _.date })),
+  );
+
   return {
-    dir: {
-      input: "src",
-      output: "_site",
-      includes: "_includes",
-    },
+    dir: { input: "src", output: "_site", includes: "_includes" },
     templateFormats: ["md", "njk", "html"],
     htmlTemplateEngine: "njk",
     dataTemplateEngine: "njk",
