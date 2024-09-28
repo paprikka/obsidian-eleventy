@@ -29,26 +29,32 @@ img {
     }
   }
 }
-a:not([class]) {
+
+a:not([class]),
+a.link {
   color: var(--color-link);
-  --highlight-color: color-mix(in srgb, var(--color-link) 20%, transparent);
-  --box-shadow-size: 0.1em;
-  --transition-duration: 0.2s;
+  --highlight-color: color-mix(in srgb, var(--color-link) 10%, transparent);
+  --box-shadow-size: 0.2em;
+  --transition-duration: 0;
   text-decoration-color: var(--highlight-color);
 
   @media (hover: hover) {
-    transition-duration: var(--transition-duration);
-    transition-property: background-color, box-shadow;
-    border-radius: 0.1em;
-
     &:hover {
       text-decoration: none;
-      background-color: var(--highlight-color);
-      box-shadow: 0 0 0 var(--box-shadow-size) var(--highlight-color);
     }
-    &:active {
-      --transition-duration: 0.1s;
-      --box-shadow-size: 0.3em;
+
+    :where(li, p) & {
+      transition-duration: var(--transition-duration);
+      transition-property: background-color, box-shadow;
+      border-radius: 0.1em;
+      &:hover {
+        background-color: var(--highlight-color);
+        box-shadow: 0 0 0 var(--box-shadow-size) var(--highlight-color);
+      }
+      &:active {
+        --transition-duration: 0.1s;
+        --box-shadow-size: 0.3em;
+      }
     }
   }
 }

@@ -52,7 +52,7 @@ It's almost amusing to see the amount of verbal gymnastics Facebook used to figh
 
 It's also a trap. I don't want you to leave this post amused. I want you to leave this post angry. Angry and informed (not angry and and eager to interact with a brand experience through elevated levels of dopamine making you wanna click on stuff.)
 
-Advertising relies on consent by default, largely because it's useless, or rather -- meant to extract value from you. Behavioural targeting (i.e. the one relying on user tracking) generates much higher CPMs at the cost of your privacy. If you ever worked in an ad exchange you know that no one really knows what happens to your data during an auction (think OPDS, or VAST chains). 
+Advertising relies on consent by default, largely because it's useless, or rather -- meant to extract value from you. Behavioural targeting (i.e. the one relying on user tracking) generates much higher CPMs at the cost of your privacy. If you ever worked in an ad exchange you know that no one really knows what happens to your data during an auction (think OpenRTB, or VAST chains). 
 
 Then, your phone or your web browser are, at least in theory, some of the most intimate spaces you interact with. Now, think about the real life situations involving privacy, fear and implied consent. How do we treat those situations and how do we call them?
 

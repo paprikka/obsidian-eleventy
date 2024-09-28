@@ -10,7 +10,7 @@ tags:
 
 One of the unexpected discoveries from playing with [Fig](<../Fig>) was how much fun I had designing, messing with (and breaking!) brushes. I thought I'd share how they work, how they *don't work* and why I will keep many of the bugs collected during my escapade in pixel land.
 
-![200](little-cinema.webp)
+![](little-cinema.webp)
 
 First, we have three types of brushes in Fig:
 

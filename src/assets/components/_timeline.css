@@ -11,6 +11,7 @@
     grid-template-columns: auto min-content;
     position: relative;
     line-height: var(--leading-loose);
+    justify-items: start;
   }
 
   & .timeline__item time {
