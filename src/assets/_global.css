@@ -58,3 +58,11 @@ a.link {
     }
   }
 }
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: var(--color-text);
+  margin-block: calc(2em - 1px);
+  opacity: 0.2;
+}
