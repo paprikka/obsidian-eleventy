@@ -9,9 +9,25 @@ pageClass: 404
     <h1>404</h1>
     <h2>Looking for something?</h2>
     <p>
-        <a href="mailto:hello@sonnet.io">Let me know</a> or
-        
+        <a href="mailto:hello@sonnet.io">Let me know</a> 
+    or
     <a href="javascript:history.back()">go back</a>.
     </p>
-    <img src="/assets/mango-bless-this-mess.webp" class="img--is-loaded" alt="404">
+    <img
+    src="/assets/mango-bless-this-mess.webp"
+    class="img--is-loaded"
+    alt="A relaxed dog lounging on a dog bed. His mouth is covered with lipstick. He looks weirdly content. In the corner, theres a small open lipstick. The're writing on the dog's back saying DOG with each letter decorated with a tiny heart."
+/>
 </article>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const mailtoLink = document.querySelector('a[href^="mailto:"]');
+        if (mailtoLink) {
+            const currentPath = window.location.pathname;
+            const subject = encodeURIComponent(`404 Error on Untested`);
+            const body = encodeURIComponent(`Hi, I can't access ${currentPath}.\n\nThanks,\nmystery visitor.`);
+            const currentHref = mailtoLink.getAttribute('href');
+            mailtoLink.setAttribute('href', `${currentHref}?subject=${subject}&body=${body}`);
+        }
+    });
+</script>
