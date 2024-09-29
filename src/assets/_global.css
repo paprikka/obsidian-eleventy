@@ -66,3 +66,16 @@ hr {
   margin-block: calc(2em - 1px);
   opacity: 0.2;
 }
+
+html::after {
+  position: fixed;
+  inset: 0;
+
+  background: url(/assets/noise.webp) repeat;
+  background-size: 512px;
+  content: "";
+  z-index: var(--layer-screen-overlay);
+  mix-blend-mode: overlay;
+  opacity: 0.05;
+  pointer-events: none;
+}

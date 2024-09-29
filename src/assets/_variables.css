@@ -57,6 +57,7 @@
   --layer-bg: 0;
   --layer-label: 1;
   --layer-tooltip: 2;
+  --layer-screen-overlay: 1000;
 
   --border-radius-panel: 1vmin;
 }
