@@ -1,0 +1,53 @@
+.page-404 {
+  --aspect-ratio: 3 / 4;
+  --max-width: calc(50vh * 4 / 3);
+  --s: 1vmin;
+
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-text);
+
+  article {
+    width: 100%;
+    max-width: var(--max-width);
+    max-height: 90vh;
+    aspect-ratio: var(--aspect-ratio);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--color-page-bg);
+    border-radius: var(--border-radius-panel);
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: calc(var(--s) * 10);
+    line-height: 1;
+    margin: 0;
+  }
+  h2 {
+    font-size: calc(var(--s) * 4);
+    line-height: 1;
+    margin: 0;
+    .headline-anchor {
+      display: none;
+    }
+  }
+
+  p {
+    line-height: 1;
+  }
+
+  img {
+    max-height: 50vh;
+    max-width: 100%;
+    object-fit: contain;
+    vertical-align: bottom;
+  }
+}
