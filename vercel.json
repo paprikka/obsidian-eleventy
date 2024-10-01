@@ -6,7 +6,10 @@
       "use": "@vercel/static"
     }
   ],
-  "rewrites": [{ "source": "/(.*)", "destination": "/_site/$1" }],
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/_site/$1" },
+    { "source": "/(.*)", "destination": "/_site/404.html" }
+  ],
   "redirects": [
     {
       "source": "/posts/001",
