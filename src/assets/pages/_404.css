@@ -57,6 +57,7 @@
     img {
       border: 2px solid var(--color-text);
       box-shadow: 4px 4px 0 0 var(--color-text);
+      margin-block-end: calc(var(--s) - 8px);
     }
     h2 {
       margin-block-end: var(--s);
