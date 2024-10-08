@@ -39,5 +39,6 @@
     left: calc(var(--page-margin) * -1);
     right: calc(var(--page-margin) * -1);
     top: calc(-1 * var(--_border-width) - var(--_shadow-height));
+    pointer-events: none;
   }
 }
