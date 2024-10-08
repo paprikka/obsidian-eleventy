@@ -1,14 +1,13 @@
 export const groupByMonth = (collection) => {
   const groupedByMonth = {};
 
-  // Use for...of loop instead of forEach
   for (const item of collection) {
     const { date } = item;
     const monthKey = `${date.getFullYear()}-${(date.getMonth() + 1).toString().padStart(2, "0")}`;
 
     if (!groupedByMonth[monthKey]) {
       groupedByMonth[monthKey] = {
-        date: new Date(date.getFullYear(), date.getMonth(), 1),
+        date: new Date(date.getFullYear(), date.getMonth(), 12),
         pages: [],
       };
     }

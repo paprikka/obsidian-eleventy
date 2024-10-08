@@ -17,14 +17,18 @@ eleventyExcludeFromCollections: true
     </header>
     <ol class="timeline" reverse>
       {% for note in collections.all | shuffle %}
-      <li class="timeline__item{% if note.data.tags and ('untested-article' in note.data.tags) %} timeline__item--article{% endif %}">
-        <a href="{{ note.url }}">{{ note.data.title }}</a
-        > {# <time>{{ note.page.date | dateFormat('dd·MM·yyyy')}}</time> #}
-      </li>
+        <li class="timeline__item{% if note.data.tags and ('untested-article' in note.data.tags) %} timeline__item--article{% endif %}">
+          <a href="{{ note.url }}">{{ note.data.title }}</a
+        >
+          {# <time>{{ note.page.date | dateFormat('dd·MM·yyyy')}}</time> #}
+        </li>
       {% endfor %}
     </ol>
+    <a href="https://sonnet.io/blog" class="page-intro__more-articles" target="_blank"><img src="/assets/more-articles-footer.webp" alt="a dog saying: but wait! there is more!"/></a>
   </section>
 </main>
 
-{% include "components/page-stickers.njk" %} {% include
-"components/style-lazy.njk" %} {% include "components/footer.njk" %}
+{% include "components/page-stickers.njk" %}
+{% include
+"components/style-lazy.njk" %}
+{% include "components/footer.njk" %}
