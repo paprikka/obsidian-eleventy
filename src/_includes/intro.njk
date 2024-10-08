@@ -33,14 +33,21 @@ eleventyExcludeFromCollections: true
       <a href="/all">View all notes</a>
     </header>
     <ol class="timeline" reverse>
-      {% for note in collections['untested-article'] | reverse %}
+      {% for group in collections['untested-article'] | reverse | groupByMonth %}
         <li class="timeline__item">
-          <a href="{{ note.url }}">{{ note.data.title }}</a
-        >
-          <time>{{ note.page.date | dateFormat('dd·MM·yyyy')}}</time>
+          <h3 class="timeline__item-title">{{ group.date | dateFormat('MMMM yyyy') }}</h3>
+          <ol class="timeline__group">
+            {% for note in group.pages %}
+              <li class="timeline__group-item">
+                <a href="{{ note.url }}">{{ note.data.title }}</a
+              >
+              </li>
+            {% endfor %}
+          </ol>
         </li>
       {% endfor %}
     </ol>
+    <a href="https://sonnet.io/blog" class="page-intro__more-articles" target="_blank"><img src="/assets/more-articles-footer.webp" alt="a dog saying: but wait! there is more!"/></a>
   </section>
 </main>
 

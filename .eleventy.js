@@ -13,6 +13,7 @@ import { mdEmbed } from "./build/plugins/md-embed.js";
 import taskListPlugin from "./build/plugins/md-task-list.js";
 import { ObsidianImportPlugin } from "./build/plugins/obsidian.js";
 import { shuffle } from "./build/shuffle.js";
+import { groupByMonth } from "./build/group-by-month.js";
 import { slugifyPermalink } from "./build/slugify.js";
 import { getLinks } from "./build/plugins/backlinks.js";
 import SiteData from "./src/_data/site.js";
@@ -53,6 +54,7 @@ export default function (eleventyConfig) {
   mdLib.use(mdAdjustLinks);
   eleventyConfig.setLibrary("md", mdLib);
 
+  eleventyConfig.addFilter("groupByMonth", groupByMonth);
   eleventyConfig.addFilter("shuffle", shuffle);
   // TODO: move to a separate file
   eleventyConfig.addFilter("limit", function (arr, limit) {

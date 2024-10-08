@@ -7,24 +7,33 @@
   line-height: var(--leading-base);
 
   & .timeline__item {
-    display: grid;
-    grid-template-columns: auto min-content;
     position: relative;
     line-height: var(--leading-loose);
-    justify-items: start;
   }
 
-  & .timeline__item time {
-    display: inline-block;
-    font-family: monospace;
-    font-size: 0.8em;
-    opacity: 0.4;
-    justify-self: start;
-    white-space: nowrap;
+  & .timeline__item-title {
+    font-size: var(--s-0);
+    line-height: var(--leading-loose);
   }
+
+  & .timeline__group {
+    padding-inline-start: 0;
+    display: grid;
+    @supports (grid-template-rows: masonry) {
+      display: grid;
+      grid-template-rows: masonry;
+    }
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+    gap: 0 var(--spacing-l);
+    margin-block-end: 4em;
+    list-style-type: none;
+    line-height: var(--leading-loose);
+  }
+
   & .timeline__item a {
     font-weight: var(--font-weight-semibold);
     text-decoration: none;
+    display: inline-block;
   }
 
   & .timeline__item--article {

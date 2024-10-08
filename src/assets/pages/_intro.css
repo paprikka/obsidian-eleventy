@@ -104,3 +104,44 @@
     }
   }
 }
+.page-intro__more-articles {
+  display: grid;
+  place-content: center;
+  margin-top: var(--spacing-l);
+  grid-template-columns: 1fr 2fr 1fr;
+
+  & img {
+    grid-column: 1/5;
+    @media (min-width: 480px) {
+      grid-column: 2;
+    }
+    @media (hover: hover) {
+      &:hover {
+        rotate: -4deg;
+        scale: 1.25;
+        animation: shake 0.25s 0s infinite;
+      }
+    }
+  }
+}
+
+@keyframes shake {
+  0% {
+    translate: 0 0;
+  }
+  20% {
+    translate: 0.1em 0.1em;
+  }
+  40% {
+    translate: -0.1em -0.1em;
+  }
+  60% {
+    translate: 0.1em -0.1em;
+  }
+  80% {
+    translate: -0.1em 0.1em;
+  }
+  100% {
+    translate: 0 0;
+  }
+}
