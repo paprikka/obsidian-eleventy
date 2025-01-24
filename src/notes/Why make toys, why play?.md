@@ -1,10 +1,11 @@
 ---
 publish: true
-date: '2024-08-22'
+date: '2025-01-24'
 ---
-DRAFT
+DRAFT #fleeting
 
 - because we're animals, and animals play
+	- 🎵 *because we're criminals, and criminals crime*
 - because play allows us learn without constraints, go to places we'd never visit otherwise
 
 
@@ -16,3 +17,7 @@ Two random examples:
 - I learned a tonne about WebRTC from [Reactive 🕳](https://reactive-hole.vercel.app/bls4w4tcd9f00000) which then helped me build VideoAsk LiveCall 
 
 Useless toys are only useless in the sense that when you start working on on them your goal is to have fun. However, when we do what we love, something amazing happens: we learn things 
+
+
+### Other examples (not mine)
+[This playful nokia phone design](<../This playful nokia phone design>)
