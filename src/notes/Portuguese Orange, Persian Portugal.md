@@ -28,6 +28,8 @@ A similar process happened with Polish and Persian: there was a period of time w
 
 As far as food related vocab goes, English has Frankfurters, Burgers or China. And, Persian has Portugal!
 
+Edit (January, 2025): OK, this a bit more complicated and seems that پرتقال arrived in Persian via the Ottoman Turkish (the official language of the Ottoman Empire) and Greek ([پرتقال - Wiktionary](https://en.wiktionary.org/wiki/پرتقال)). As pointed out by this [HN reader](https://news.ycombinator.com/item?id=38452827), *the real complexity is often more interesting and makes a bigger story.*
+
 ---
 
 PS. Burgers as food probably don't come from Hamburg, however Frankfurters deserve their name since Frankfurt has been famous for its meat sausages since the medieval period.
@@ -35,5 +37,7 @@ PS. Burgers as food probably don't come from Hamburg, however Frankfurters deser
 PPS. Speaking of sausages, if you visit [potato.horse](https://potato.horse) and hit the share button, you'll be greeted by a [pair of wonderful Sausage Angels](https://www.potato.horse/p/7dKwDiVdUXLvsTUIjGEmxD)!
 
 PPS. Apologies for the messy/inconsistent transliteration of Arabic and Persian!
+
+PPS. Also, an Algerian reader pointed out that in their dialect or Arabic oranges are called *tchina*.
 
 [Etymology](<../Etymology>)

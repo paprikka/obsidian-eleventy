@@ -87,3 +87,4 @@ Thanks for reading, see you tomorrow!
 
 ![](innocent-gradient-fun.png)
 
+Related: [Dithering](<../Dithering>)
