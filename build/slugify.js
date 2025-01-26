@@ -2,6 +2,7 @@ import slugifyOriginal from "slugify";
 import path from "path";
 
 export const slugify = (text) => {
+  if (text === "..") return text;
   return slugifyOriginal(text, {
     replacement: "-",
     lower: true,
