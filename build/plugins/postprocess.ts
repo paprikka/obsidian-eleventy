@@ -3,9 +3,9 @@ import fs from "fs/promises";
 import path from "path";
 import url from "url";
 import SiteData from "../../src/_data/site.js";
-import { makeAbsoluteUrl } from "../absolute-url.js";
-import { isRemoteUrl } from "../is-remote-url.js";
-import { getEmbedContent } from "./get-embed-content.js";
+import { makeAbsoluteUrl } from "../absolute-url.ts";
+import { isRemoteUrl } from "../is-remote-url.ts";
+import { getEmbedContent } from "./get-embed-content.ts";
 
 const absoluteUrl = makeAbsoluteUrl(SiteData.rootUrl);
 

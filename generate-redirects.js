@@ -116,7 +116,7 @@ const input = `
 `;
 
 import { load } from "cheerio";
-import { slugify } from "./build/slugify.js";
+import { slugify } from "./build/slugify.ts";
 import path from "path";
 const save = async (obj) => {
   // Write the JSON string to redirects.json

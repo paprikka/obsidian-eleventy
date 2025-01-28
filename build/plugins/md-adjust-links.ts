@@ -1,7 +1,7 @@
-import { slugifyPath } from "../slugify.js";
-import type { MarkdownItRule, MarkdownItRenderer } from "../types/markdown-it-plugin.js";
+import { slugifyPath } from "../slugify.ts";
+import type { MarkdownItRule, MarkdownItRenderer } from "../types/markdown-it-plugin.ts";
 import type MarkdownIt from "markdown-it";
-import type Token from "../types/markdown-it-token.js";
+import type Token from "../types/markdown-it-token.ts";
 
 export function mdAdjustLinks(md: MarkdownIt & MarkdownItRenderer): void {
   const defaultRender: MarkdownItRule =

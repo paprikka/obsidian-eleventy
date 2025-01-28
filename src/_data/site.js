@@ -1,4 +1,4 @@
-import { makeAbsoluteUrl } from "../../build/absolute-url.js";
+import { makeAbsoluteUrl } from "../../build/absolute-url.ts";
 
 const domain = "untested.sonnet.io";
 const rootUrl = `https://${domain}`;

@@ -1,5 +1,5 @@
 import { load, type Cheerio } from "cheerio";
-import { getAnchorId, hasPrefix } from "../anchor-ids.js";
+import { getAnchorId, hasPrefix } from "../anchor-ids.ts";
 
 type EmbedContentType = "fragment" | "header" | "page";
 

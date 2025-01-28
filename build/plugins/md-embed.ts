@@ -1,7 +1,7 @@
-import { escapeHtml } from "../escape-html.js";
+import { escapeHtml } from "../escape-html.ts";
 import type MarkdownIt from "markdown-it";
-import type { MarkdownItRenderer } from "../types/markdown-it-plugin.js";
-import type Token from "../types/markdown-it-token.js";
+import type { MarkdownItRenderer } from "../types/markdown-it-plugin.ts";
+import type Token from "../types/markdown-it-token.ts";
 
 const getYTVideoUrlFromSrc = (src: string): string | undefined => {
   if (src.includes("youtube.com")) {

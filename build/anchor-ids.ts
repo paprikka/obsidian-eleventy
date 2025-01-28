@@ -1,4 +1,4 @@
-import { slugify } from "./slugify.js";
+import { slugify } from "./slugify.ts";
 import type { Cheerio } from "cheerio";
 
 const PREFIX = "h-";

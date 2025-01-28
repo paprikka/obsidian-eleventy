@@ -6,16 +6,16 @@ import markdownIt from "markdown-it";
 import markdownItAttrs from "markdown-it-attrs";
 import markdownItCallout from "markdown-it-github-alerts";
 import { escapeHtml } from "markdown-it/lib/common/utils.mjs";
-import { makeAbsoluteUrl } from "./build/absolute-url.js";
-import { dateFormat } from "./build/date-format.js";
-import { mdAdjustLinks } from "./build/plugins/md-adjust-links.js";
-import { mdEmbed } from "./build/plugins/md-embed.js";
-import taskListPlugin from "./build/plugins/md-task-list.js";
-import { ObsidianImportPlugin } from "./build/plugins/obsidian.js";
-import { shuffle } from "./build/shuffle.js";
-import { groupByMonth } from "./build/group-by-month.js";
-import { slugifyPermalink } from "./build/slugify.js";
-import { getLinks } from "./build/plugins/backlinks.js";
+import { makeAbsoluteUrl } from "./build/absolute-url.ts";
+import { dateFormat } from "./build/date-format.ts";
+import { mdAdjustLinks } from "./build/plugins/md-adjust-links.ts";
+import { mdEmbed } from "./build/plugins/md-embed.ts";
+import taskListPlugin from "./build/plugins/md-task-list.ts";
+import { ObsidianImportPlugin } from "./build/plugins/obsidian.ts";
+import { shuffle } from "./build/shuffle.ts";
+import { groupByMonth } from "./build/group-by-month.ts";
+import { slugifyPermalink } from "./build/slugify.ts";
+import { getLinks } from "./build/plugins/backlinks.ts";
 import SiteData from "./src/_data/site.js";
 /**
  * Eleventy Configuration File

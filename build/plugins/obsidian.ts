@@ -1,9 +1,9 @@
 import { load, type Element as CheerioElement } from "cheerio";
 import { promises as fs } from "fs";
 import path from "path";
-import { getHeaderIdFromEl } from "../anchor-ids.js";
-import { projectRootDir } from "./get-root.js";
-import { postprocess } from "./postprocess.js";
+import { getHeaderIdFromEl } from "../anchor-ids.ts";
+import { projectRootDir } from "./get-root.ts";
+import { postprocess } from "./postprocess.ts";
 
 type EleventyConfig = {
   addTransform: (name: string, transform: TransformFunction) => void;
