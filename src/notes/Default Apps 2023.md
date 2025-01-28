@@ -5,7 +5,7 @@ date: 2023-11-28
 tags:
   - untested-article
 ---
-This little exercise was inspired by [Chris Coyer](https://chriscoyier.net/2023/11/25/default-apps-2023/), who was inspired by [Matt C](https://mattcool.tech/posts/default-apps-2023/)... who was inspired by [Tracy Durnell](https://tracydurnell.com) and the [HomeBrew Website Club](https://events.indieweb.org). I think it'll be fun to make another list like this next year and compare with this one.
+This little exercise was inspired by [Chris Coyer](https://chriscoyier.net/2023/11/25/default-apps-2023/), who was inspired by [Matt C](https://mattcool.tech/posts/default-apps-2023/)... who was inspired by [Tracy Durnell](https://tracydurnell.com) and the [HomeBrew Website Club](https://events.indieweb.org). I think it'll be fun to make another list like this next year and compare with this one. <span id="^3ae872" class="link-marker"></span>
 
 Also, I've attached a template [below](<#Template>) in case you wan to do this yourself.
 
@@ -65,7 +65,7 @@ Also, I've attached a template [below](<#Template>) in case you wan to do this y
 
 Most of my apps come into these categories:
 
-![a pie chart with 20% apple, 15% obsidian, 10% of my own apps](app-usage-2023.webp)
+![a pie chart with 20% apple, 15% obsidian, 10% of my own apps](app-usage-2023.webp) <span id="^eff5ba" class="link-marker"></span>
 
 Generally I prefer having multiple, smaller tools communicating with each other via well-defined interfaces (think: an app as a single atomic verb vs. a computer program as a noun/environment). Obsidian is an exception here, perhaps because it operates on text files as a primitive, making interoperability and portability trivial.
 
