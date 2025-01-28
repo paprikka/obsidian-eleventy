@@ -1,3 +1,4 @@
-import { run } from "./runner.js";
+import { run } from "./runner.ts";
+
 
 run();

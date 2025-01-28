@@ -1,17 +1,25 @@
 import directoryTree from "directory-tree";
 import path from "path";
 
+type FileTree = {
+  name: string;
+  path: string;
+  children?: FileTree[];
+};
+
+export type ResourceIndex = {
+  [key: string]: string[];
+};
+
 /**
  * Creates a file index grouped by file name from a FileTree object.
- * @param {Object} fileTree - The FileTree object to process.
- * @returns {Object} An index object with file names as keys and arrays of file paths as values.
  */
-function createFileIndex(fileTree) {
+function createFileIndex(fileTree: FileTree): ResourceIndex {
   // Initialize the index object
-  const index = {};
+  const index: ResourceIndex = {};
 
   // Helper function to recursively traverse the FileTree
-  function traverse(node) {
+  function traverse(node: FileTree): void {
     // If the node has children, it's a folder; recurse through its children
     if (node.children) {
       for (const child of node.children) {
@@ -32,21 +40,23 @@ function createFileIndex(fileTree) {
   return index;
 }
 
-export const getResourceIndex = (root) => {
+export const getResourceIndex = (root: string): ResourceIndex => {
   const fullTree = directoryTree(root);
   if (!fullTree) {
     console.log(`Directory ${root} does not exist`);
+    return {};
   }
-  return createFileIndex(fullTree);
+  return createFileIndex(fullTree as FileTree);
 };
 
-const getRelativePath = (from, to) => path.relative(path.dirname(from), to);
+const getRelativePath = (from: string, to: string): string => 
+  path.relative(path.dirname(from), to);
 
 export const linkMatchesPath = (
-  fromFileAbsolutePath,
-  candidateAbsolutePath,
-  linkText, // can be '.', absolute path or relative path
-) => {
+  fromFileAbsolutePath: string,
+  candidateAbsolutePath: string,
+  linkText: string, // can be '.', absolute path or relative path
+): boolean => {
   // Handle special cases
   if (linkText === "." || linkText === "") {
     return fromFileAbsolutePath === candidateAbsolutePath;
@@ -63,7 +73,7 @@ export const linkMatchesPath = (
   return resolvedPath === candidateAbsolutePath;
 };
 
-const normalizeLink = (link, fallbackExt) => {
+const normalizeLink = (link: string, fallbackExt?: string): string => {
   const filename = link.split(/[#^]/)[0].trim();
   if (
     !fallbackExt ||
@@ -73,7 +83,12 @@ const normalizeLink = (link, fallbackExt) => {
   return `${filename}${fallbackExt}`;
 };
 
-export const resolveLink = (from, link, resourceIndex, ext) => {
+export const resolveLink = (
+  from: string,
+  link: string,
+  resourceIndex: ResourceIndex,
+  ext?: string
+): string | null => {
   const linkNormalised = normalizeLink(link, ext);
   const filename = path.basename(linkNormalised);
   const candidates = resourceIndex[filename];
@@ -104,4 +119,4 @@ export const resolveLink = (from, link, resourceIndex, ext) => {
   return result;
 };
 
-export const resourcePathToLink = (path) => path.replace(".md", "");
+export const resourcePathToLink = (path: string): string => path.replace(".md", "");

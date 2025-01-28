@@ -1,10 +1,26 @@
 import { promises as fs } from "fs";
 import grayMatter from "gray-matter";
 import path from "path";
-import { resolveLink, resourcePathToLink } from "./resource-index.js";
-import { isRemoteUrl } from "../is-remote-url.js";
+import { resolveLink, resourcePathToLink, type ResourceIndex } from "./resource-index.ts";
+import { isRemoteUrl } from "../is-remote-url.ts";
 
-function isBlockedUrl(url, blockedDomains) {
+type AssetEntry = {
+  absolutePath: string;
+};
+
+type FileEntry = {
+  absolutePath: string;
+  content: string;
+};
+
+type Frontmatter = {
+  publish?: boolean;
+  date?: string;
+  cover?: string;
+  [key: string]: unknown;
+};
+
+function isBlockedUrl(url: string, blockedDomains: Set<string>): boolean {
   try {
     const urlObj = new URL(url);
     const hostname = urlObj.hostname;
@@ -24,12 +40,12 @@ const blockedDomains = new Set([
 ]);
 
 export const processSingleFile = async (
-  absolutePath,
-  resourceIndex,
-  relatedAssets,
-) => {
+  absolutePath: string,
+  resourceIndex: ResourceIndex,
+  relatedAssets: AssetEntry[]
+): Promise<FileEntry | null> => {
   const originalContent = await fs.readFile(absolutePath, "utf8");
-  const frontmatter = grayMatter(originalContent).data;
+  const frontmatter = grayMatter(originalContent).data as Frontmatter;
   const canPublish = frontmatter.publish === true;
   if (!canPublish) return null;
 
@@ -53,11 +69,11 @@ export const processSingleFile = async (
     }
   }
 
-  const getAnchorInternalMarkup = (_, p1, p2) => {
+  const getAnchorInternalMarkup = (_: string, p1: string, p2: string): string => {
     return `[${p2}](<#${p1}>)`;
   };
 
-  const getAnchorMarkup = (linkVerbatim, title) => {
+  const getAnchorMarkup = (linkVerbatim: string, title: string): string => {
     const resolvedLink = resolveLink(
       absolutePath,
       linkVerbatim,
@@ -71,7 +87,7 @@ export const processSingleFile = async (
     return `[${title}](<../${url}>)`;
   };
 
-  const getEmbedMarkup = (_, src, alt) => {
+  const getEmbedMarkup = (_: string, src: string, alt: string): string => {
     // blocked
     if (isBlockedUrl(src, blockedDomains)) return `<pre> BLOCKED </pre>`;
     // remote image
@@ -80,7 +96,7 @@ export const processSingleFile = async (
 
     // default embed
     const imageRegexp = /\.(jpe?g|png|gif|bmp|svg|webp|avif)$/i;
-    const hasExtension = !!src.split(".").length > 1;
+    const hasExtension = src.split(".").length >= 2;
 
     if (!imageRegexp.test(src) && hasExtension)
       return `<iframe src="${src}" class="embed embed--iframe-default" lazy />`;
@@ -118,7 +134,6 @@ export const processSingleFile = async (
     // TODO: drop encodeURIComponent once eleventyimg supports images with spaces
     // check the obsidian plugin for the corresponding fix
     return `![${alt}](${escapedLink})`;
-    // return `![${alt}](${resolvedLink})`;
   };
 
   const embedAlt = /!\[\[([^\]|]+)\|([^\]]+)\]\]/g;
