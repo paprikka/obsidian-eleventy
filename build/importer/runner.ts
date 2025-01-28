@@ -1,5 +1,5 @@
-import { promises as fs } from "fs";
-import path from "path";
+import { promises as fs } from "../compat/fs.ts";
+import * as path from "../compat/path.ts";
 import { processSingleFile } from "./process-file.ts";
 import { getResourceIndex, type ResourceIndex } from "./resource-index.ts";
 
@@ -13,8 +13,8 @@ type AssetEntry = {
 };
 
 export const run = async (): Promise<void> => {
-  const sourceBase = path.join(process.cwd(), "vault");
-  const destinationBase = path.join(process.cwd(), "src/notes");
+  const sourceBase = path.join(Deno.cwd(), "vault");
+  const destinationBase = path.join(Deno.cwd(), "src/notes");
   const relatedAssets: AssetEntry[] = [];
 
   const resourceIndex: ResourceIndex = getResourceIndex(sourceBase);

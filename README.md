@@ -1,3 +1,61 @@
+# Untested 11ty
+
+This is an 11ty project that can be run with Deno.
+
+## Prerequisites
+
+1. Install Deno: https://deno.land/#installation
+
+## Running the Project
+
+1. Development server:
+
+```bash
+deno task dev
+```
+
+2. Build the project:
+
+```bash
+deno task build
+```
+
+3. Import notes:
+
+```bash
+deno task import-notes
+```
+
+4. Build vault:
+
+```bash
+deno task vault:build
+```
+
+5. Watch vault for changes:
+
+```bash
+deno task vault:watch
+```
+
+## Project Structure
+
+- `build/` - Build scripts and utilities
+- `src/` - Source files
+- `vault/` - Content files
+- `_site/` - Generated site (output)
+
+## Permissions
+
+The project requires the following Deno permissions:
+
+- `--allow-read` - For reading source files
+- `--allow-write` - For writing output files
+- `--allow-net` - For development server
+- `--allow-run` - For running external commands (only needed for import-notes task)
+
+These permissions are already configured in the tasks in `deno.json`.
+
 ## What is this?
 
 I'm using this project as a playground before I merge sonnet.io and untested.sonnet.io (Obsidian).

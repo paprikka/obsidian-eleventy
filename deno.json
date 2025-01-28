@@ -1,0 +1,63 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "strict": true,
+    "lib": ["deno.window", "deno.ns", "dom"],
+    "types": ["./build/types/markdown-it-token.d.ts"],
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact"
+  },
+  "importMap": {
+    "imports": {
+      "@11ty/dependency-tree-esm": "npm:@11ty/dependency-tree-esm@1.0.1",
+      "@11ty/eleventy": "npm:@11ty/eleventy@3.0.1-alpha.3",
+      "@11ty/eleventy-img": "npm:@11ty/eleventy-img@5.0.0-beta.10",
+      "@sindresorhus/slugify": "npm:@sindresorhus/slugify@2.2.1",
+      "cheerio": "npm:cheerio@1.0.0-rc.12",
+      "directory-tree": "npm:directory-tree@3.5.1",
+      "escape-goat": "npm:escape-goat@4.0.0",
+      "gray-matter": "npm:gray-matter@4.0.3",
+      "highlight.js": "npm:highlight.js@11.10.0",
+      "luxon": "npm:luxon@3.5.0",
+      "markdown-it": "npm:markdown-it@14.1.0",
+      "markdown-it-attrs": "npm:markdown-it-attrs@4.2.0",
+      "markdown-it-github-alerts": "npm:markdown-it-github-alerts@0.3.0",
+      "slugify": "npm:slugify@1.6.6",
+      "fs/promises": "./build/compat/fs.ts",
+      "path": "./build/compat/path.ts"
+    },
+    "scopes": {
+      "/build/": {
+        "fs": "./build/compat/fs.ts",
+        "path": "./build/compat/path.ts"
+      }
+    }
+  },
+  "tasks": {
+    "start": "deno run --allow-read --allow-write --allow-net --watch .eleventy.js --serve",
+    "dev": "rm -rf _site && deno run --allow-read --allow-write --allow-net --watch .eleventy.js --serve",
+    "build": "deno run --allow-read --allow-write --allow-net .eleventy.js",
+    "import-notes": "rm -rf src/sol && mkdir -p src/sol && deno run --allow-read --allow-write --allow-run https://deno.land/x/obsidian_export/mod.ts ../backup-sol src/sol --only-tags publish",
+    "vault:build": "deno run --allow-read --allow-write build/importer/run.ts",
+    "vault:watch": "deno run --allow-read --allow-write --watch build/importer/run.ts",
+    "test": "deno test --allow-read",
+    "format": "deno fmt"
+  },
+  "fmt": {
+    "useTabs": false,
+    "lineWidth": 100,
+    "indentWidth": 2,
+    "semiColons": true,
+    "singleQuote": true,
+    "proseWrap": "preserve",
+    "include": ["src/", "build/"],
+    "exclude": ["_site/", "node_modules/"]
+  },
+  "lint": {
+    "include": ["src/", "build/"],
+    "exclude": ["_site/", "node_modules/"],
+    "rules": {
+      "tags": ["recommended"]
+    }
+  }
+}
