@@ -1,12 +1,20 @@
-import { load } from "cheerio";
+import { load, type Cheerio } from "cheerio";
 import { getAnchorId, hasPrefix } from "../anchor-ids.js";
+
+type EmbedContentType = "fragment" | "header" | "page";
+
+type EmbedContent = {
+  content: string;
+  type: EmbedContentType;
+  selector: string;
+};
 
 /**
  * @param {import("cheerio"). Cheerio} $fileDOM
  * @param {import("cheerio"). Cheerio} $header
  * @returns {import("cheerio").Element[]}
  */
-function getSectionUnderHeader($header) {
+function getSectionUnderHeader($header: Cheerio): Cheerio {
   if (!$header.length) throw new Error("No header found");
   const levels = [1, 2, 3, 4, 5, 6];
   const level = parseInt($header[0].tagName.replace("h", ""));
@@ -19,9 +27,9 @@ function getSectionUnderHeader($header) {
 }
 
 export const EmbeddedContentTypes = Object.freeze({
-  fragment: "fragment",
-  header: "header",
-  page: "page",
+  fragment: "fragment" as const,
+  header: "header" as const,
+  page: "page" as const,
 });
 
 /**
@@ -29,7 +37,10 @@ export const EmbeddedContentTypes = Object.freeze({
  * @param {string} targetIdWithHash
  * @returns { { content: string, type: string, selector: string } }
  */
-export const getEmbedContent = (targetFileContent, targetIdWithHash) => {
+export const getEmbedContent = (
+  targetFileContent: string,
+  targetIdWithHash: string | undefined
+): EmbedContent => {
   const $fileDOM = load(targetFileContent);
   // Fragment Embed
   // TODO: separate attaching anchors and generating embeds
@@ -37,7 +48,7 @@ export const getEmbedContent = (targetFileContent, targetIdWithHash) => {
   // - if we have all of this in one place, we'll end up with a ton of conditional logic
   if (!targetIdWithHash)
     return {
-      content: $fileDOM("article").html(),
+      content: $fileDOM("article").html() ?? "",
       type: EmbeddedContentTypes.page,
       selector: "",
     };
@@ -47,10 +58,10 @@ export const getEmbedContent = (targetFileContent, targetIdWithHash) => {
   if (isFragmentTarget) {
     const $targetEl = $fileDOM(targetIdWithHash);
     const $fragment = $targetEl.parent();
-    if (!$fragment) throw new Error("No fragment found");
+    if (!$fragment.length) throw new Error("No fragment found");
 
     return {
-      content: $fragment.html(),
+      content: $fragment.html() ?? "",
       type: EmbeddedContentTypes.fragment,
       selector: targetIdWithHash,
     };

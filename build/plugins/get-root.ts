@@ -2,15 +2,15 @@ import { fileURLToPath } from "url";
 import { dirname, join, resolve } from "path";
 import { existsSync } from "fs";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+const __filename: string = fileURLToPath(import.meta.url);
+const __dirname: string = dirname(__filename);
 
-let dir = __dirname;
+let dir: string = __dirname;
 
 while (!existsSync(join(dir, "package.json"))) {
-  const parentDir = resolve(dir, "..");
+  const parentDir: string = resolve(dir, "..");
   if (parentDir === dir) break; // Stop if we reach the root directory
   dir = parentDir;
 }
 
-export const projectRootDir = dir;
+export const projectRootDir: string = dir;

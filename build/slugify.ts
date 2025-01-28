@@ -1,7 +1,15 @@
 import slugifyOriginal from "slugify";
 import path from "path";
 
-export const slugify = (text) => {
+type SlugifyOptions = {
+  replacement: string;
+  lower: boolean;
+  strict: boolean;
+  locale: string;
+  trim: boolean;
+};
+
+export const slugify = (text: string): string => {
   if (text === "..") return text;
   return slugifyOriginal(text, {
     replacement: "-",
@@ -12,7 +20,7 @@ export const slugify = (text) => {
   });
 };
 
-export const slugifyPath = (pathString) => {
+export const slugifyPath = (pathString: string): string => {
   const pathTrimmed = pathString.replace(/\.md$/, "").replace(/^\.\./, "");
   const pathParts = pathTrimmed.split("/");
   const pathPartsSlugified = pathParts
@@ -23,7 +31,7 @@ export const slugifyPath = (pathString) => {
   return joined.endsWith("/") ? joined : `${joined}/`;
 };
 
-export const slugifyPermalink = (filePathStem) => {
+export const slugifyPermalink = (filePathStem: string): string => {
   const pathTrimmed = filePathStem.replace(/\.md$/, "").replace(/^\.\./, "");
   const pathParts = pathTrimmed.split("/");
   const pathPartsSlugified = pathParts

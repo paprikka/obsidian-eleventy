@@ -1,5 +1,18 @@
-export default function taskListPlugin(md) {
-  const classes = {
+import type MarkdownIt from "markdown-it";
+import type { MarkdownItRule, MarkdownItRenderer } from "../types/markdown-it-plugin.js";
+import type Token from "../types/markdown-it-token.js";
+
+type TaskListClasses = {
+  wip: string;
+  done: string;
+  todo: string;
+  item: string;
+  list: string;
+  marker: string;
+};
+
+export default function taskListPlugin(md: MarkdownIt & MarkdownItRenderer): void {
+  const classes: TaskListClasses = {
     wip: "task-list__item--wip",
     done: "task-list__item--done",
     todo: "task-list__item--todo",
@@ -10,12 +23,12 @@ export default function taskListPlugin(md) {
 
   // Add a custom renderer for bullet list open
   md.renderer.rules.bullet_list_open = function (
-    tokens,
-    idx,
-    options,
-    env,
-    self,
-  ) {
+    tokens: Token[],
+    idx: number,
+    options: MarkdownIt.Options,
+    env: any,
+    self: any
+  ): string {
     // Check if the list contains task items
     const nextToken = tokens[idx + 1];
     if (
@@ -33,12 +46,12 @@ export default function taskListPlugin(md) {
 
   // The rest of the code remains unchanged
   md.renderer.rules.list_item_open = function (
-    tokens,
-    idx,
-    options,
-    env,
-    self,
-  ) {
+    tokens: Token[],
+    idx: number,
+    options: MarkdownIt.Options,
+    env: any,
+    self: any
+  ): string {
     const token = tokens[idx];
     if (
       token.markup === "-" &&
@@ -59,7 +72,7 @@ export default function taskListPlugin(md) {
     return self.renderToken(tokens, idx, options);
   };
 
-  md.inline.ruler.before("text", "task_list", function (state, silent) {
+  md.inline.ruler.before("text", "task_list", function (state: any, silent: boolean): boolean {
     if (silent) return false;
     const pos = state.pos;
     const ch = state.src.charCodeAt(pos);

@@ -1,5 +1,7 @@
-export const makeAbsoluteUrl = (rootUrl) =>
-  function absoluteUrl(url) {
+type AbsoluteUrlFn = (url: string) => string;
+
+export const makeAbsoluteUrl = (rootUrl: string): AbsoluteUrlFn => {
+  return function absoluteUrl(url: string): string {
     if (url.startsWith("http://") || url.startsWith("https://")) return url;
 
     try {
@@ -10,3 +12,4 @@ export const makeAbsoluteUrl = (rootUrl) =>
       throw error;
     }
   };
+};

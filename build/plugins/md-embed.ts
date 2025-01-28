@@ -1,5 +1,9 @@
 import { escapeHtml } from "../escape-html.js";
-const getYTVideoUrlFromSrc = (src) => {
+import type MarkdownIt from "markdown-it";
+import type { MarkdownItRenderer } from "../types/markdown-it-plugin.js";
+import type Token from "../types/markdown-it-token.js";
+
+const getYTVideoUrlFromSrc = (src: string): string | undefined => {
   if (src.includes("youtube.com")) {
     const url = new URL(src);
     const videoId = url.searchParams.get("v");
@@ -13,28 +17,39 @@ const getYTVideoUrlFromSrc = (src) => {
   }
 
   if (src.includes("youtu.be")) {
-    const videoId = src.split("/").at(-1).trim();
-    return `https://www.youtube.com/embed/${videoId}`;
+    const videoId = src.split("/").at(-1)?.trim();
+    if (videoId) {
+      return `https://www.youtube.com/embed/${videoId}`;
+    }
   }
 };
 
-const renderTweet = (src, alt) => {
-  const tweetId = src.split("/").at(-1).trim();
+const renderTweet = (src: string, alt: string | undefined): string => {
+  const tweetId = src.split("/").at(-1)?.trim();
   const { XITTER_API_KEY, XITTER_URL } = process.env;
   return `
   <a href='${src}' noopener noreferrer class='embed embed--twitter'>
-    <img src='${XITTER_URL}/${tweetId}?api_key=${XITTER_API_KEY}' } alt="${escapeHtml(alt) || ""}" />
+    <img src='${XITTER_URL}/${tweetId}?api_key=${XITTER_API_KEY}' } alt="${escapeHtml(alt || "")}" />
   </a>`.trim();
 };
 
-const getTitleAttr = (str) => (str ? ` title="${escapeHtml(str)}"` : "");
+const getTitleAttr = (str: string | undefined): string => 
+  str ? ` title="${escapeHtml(str)}"` : "";
 
-export const mdEmbed = function (md, env) {
-  md.renderer.rules.image = function (tokens, idx, options, env, self) {
+export const mdEmbed = function (md: MarkdownIt & MarkdownItRenderer, env: any): void {
+  md.renderer.rules.image = function (
+    tokens: Token[],
+    idx: number,
+    options: MarkdownIt.Options,
+    env: any,
+    self: any
+  ): string {
     const token = tokens[idx];
     const srcIndex = token.attrIndex("src");
-    const src = token.attrs[srcIndex][1];
-    const maybeTitle = token.children.at(0)?.content;
+    const src = token.attrs?.[srcIndex]?.[1];
+    if (!src) return "";
+    
+    const maybeTitle = token.children?.at(0)?.content;
     const titleAttr = getTitleAttr(maybeTitle);
 
     if (src.includes("youtube.com") || src.includes("youtu.be")) {

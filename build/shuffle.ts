@@ -1,7 +1,7 @@
-export function shuffle(array) {
+export function shuffle<T>(array: T[]): T[] {
   let currentIndex = array.length,
-    temporaryValue,
-    randomIndex;
+    temporaryValue: T,
+    randomIndex: number;
 
   // While there remain elements to shuffle...
   while (0 !== currentIndex) {
