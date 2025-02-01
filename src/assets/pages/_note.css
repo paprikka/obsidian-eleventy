@@ -87,4 +87,24 @@
       line-height: 1;
     }
   }
+  .tag {
+    opacity: 0.8;
+    box-shadow: 0 0 0 1.5px var(--color-text);
+    border-radius: 0.2em;
+    padding: 0.1em 0.3em 0.2em;
+    font-weight: var(--font-weight-bold);
+    font-size: 0.8em;
+    position: relative;
+    cursor: default;
+
+    &::before {
+      content: "#";
+      display: inline-block;
+      margin-inline-end: 0.1em;
+    }
+
+    & + & {
+      margin-inline-start: 0.2em;
+    }
+  }
 }

@@ -11,6 +11,7 @@ import { dateFormat } from "./build/date-format.js";
 import { mdAdjustLinks } from "./build/plugins/md-adjust-links.js";
 import { mdEmbed } from "./build/plugins/md-embed.js";
 import taskListPlugin from "./build/plugins/md-task-list.js";
+import tagPlugin from "./build/plugins/md-tags.js";
 import { ObsidianImportPlugin } from "./build/plugins/obsidian.js";
 import { shuffle } from "./build/shuffle.js";
 import { groupByMonth } from "./build/group-by-month.js";
@@ -43,6 +44,7 @@ export default function (eleventyConfig) {
   };
   const mdLib = markdownIt(markdownOptions);
   mdLib.use(markdownItAttrs);
+  mdLib.use(tagPlugin);
   mdLib.use(taskListPlugin);
   mdLib.use(markdownItCallout, {
     markers: "*",
