@@ -107,4 +107,80 @@
       margin-inline-start: 0.2em;
     }
   }
+
+  hr {
+    margin-block: calc(var(--spacing-xl) * 2);
+    height: 1px;
+    background-color: color-mix(in srgb, var(--color-text) 10%, transparent);
+    position: relative;
+    opacity: unset;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    overflow: visible;
+    --janusz-size: var(--s-2);
+    /* margin-inline: 35%; */
+
+    &::after {
+      content: "";
+      background-image: url(/assets/tiny-janusz.png);
+      background-size: contain;
+      display: block;
+      width: var(--janusz-size);
+      height: var(--janusz-size);
+
+      cursor: pointer;
+      transition:
+        scale 0.3s ease-in-out,
+        opacity 0.3s ease-in-out;
+    }
+
+    &:hover:not(.was-clicked) {
+      &::after {
+        /* animation: none; */
+
+        scale: 1.2;
+      }
+    }
+
+    &:not(.was-clicked) {
+      &::after {
+        animation-name: animation-hr-enter;
+        animation-duration: 1ms;
+        animation-fill-mode: forwards;
+        animation-timeline: view();
+      }
+    }
+    &.was-clicked {
+      &::after {
+        animation: animation-hr-exit 0.8s ease-in both;
+      }
+    }
+  }
+}
+
+@keyframes animation-hr-enter {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: -720deg;
+  }
+}
+@keyframes animation-hr-exit {
+  0% {
+    translate: 0 0;
+    rotate: 0deg;
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    translate: 0 60vh;
+    rotate: 540deg;
+    opacity: 0;
+  }
 }

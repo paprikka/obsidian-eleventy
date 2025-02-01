@@ -61,3 +61,14 @@ pageClass: note
     }
   });
 </script>
+
+
+<script>
+  document.addEventListener("click", function (event) {
+    const targetElement = event.target;
+
+    if (targetElement.closest("hr")) {
+      targetElement.closest("hr").classList.add("was-clicked");
+    }
+  });
+</script>
