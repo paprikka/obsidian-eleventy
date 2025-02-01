@@ -5,7 +5,7 @@ date: 2024-01-11
 tags:
   - untested-article
 ---
-*One of the reasons I started untested was to [Work With the Garage Door Up](<../Work With the Garage Door Up>), so this year I'll try to share more smaller, unfinished snippets of work, including the stuff that didn't go as expected. *
+*One of the reasons I started untested was to [Work With the Garage Door Up](<../Work With the Garage Door Up>), so this year I'll try to share more smaller, unfinished snippets of work, including the stuff that didn't go as expected.*
 
 ## Problem
 
