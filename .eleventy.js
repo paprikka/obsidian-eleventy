@@ -1,6 +1,7 @@
 // TODO: ignore twitter images
 
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import hljs from "highlight.js";
 import markdownIt from "markdown-it";
 import markdownItAttrs from "markdown-it-attrs";
@@ -42,6 +43,7 @@ export default function (eleventyConfig) {
       return `<pre class="hljs"><code>${escapeHtml(str)}</code></pre>`;
     },
   };
+
   const mdLib = markdownIt(markdownOptions);
   mdLib.use(markdownItAttrs);
   mdLib.use(tagPlugin);
@@ -93,10 +95,29 @@ export default function (eleventyConfig) {
       .map((_) => ({ url: _.url, title: _.data.title, date: _.date })),
   );
 
+  eleventyConfig.addPlugin(feedPlugin, {
+    type: "atom",
+    outputPath: "/feed.xml",
+    collection: {
+      name: "untested-article",
+      limit: 20,
+    },
+    metadata: {
+      language: "en",
+      title: "Untested · Rafał Pastuszak",
+      subtitle: "Projects, experiments and toys by Rafał Pastuszak",
+      base: SiteData.rootUrl,
+      author: {
+        name: "Rafał Pastuszak",
+        email: "hello@sonnet.io",
+      },
+    },
+  });
+
   return {
     dir: { input: "src", output: "_site", includes: "_includes" },
     templateFormats: ["md", "njk", "html"],
-    htmlTemplateEngine: "njk",
+    // htmlTemplateEngine: "njk",
     dataTemplateEngine: "njk",
   };
 }
