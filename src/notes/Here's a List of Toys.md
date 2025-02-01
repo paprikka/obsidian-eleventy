@@ -55,6 +55,8 @@ A mix between the Web Animations API and hand-drawn animations.
 
 ## [Return to Castle KittenStein™](https://photos.google.com/share/AF1QipNvmuU36hIiBmWuWYEbyXQstq6b2kZadtZJbmifOEu80IEQ_6HNsKXIsrmVrGLXaQ?key=OUNNUXdMVFExeDFhVFViYjhXcVA0c3JWbElFS2VB)
 
+<span id="^fcafff" class="link-marker"></span>
+
 A purely browser-based augmented reality (dance!) game where you get a chance to fight an evil army of kittens with bananas, glowsticks and body paint.
 ## [Rainbotron](https://500px.com/photo/151829029/aaron-by-rafal-pastuszak)
 
