@@ -13,7 +13,7 @@ I'm writing this post as a reminder to myself.
 
 By sharing unfinished work:
 
-1. You're much more likely to receive useful feedback
+1. You're much more likely to receive useful feedback <span id="^6b866d" class="link-marker"></span>
 2. You will save a ton of the most precious resource you have (time)
 3. You will fulfil a basic human need
 
