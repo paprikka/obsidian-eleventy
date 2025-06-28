@@ -62,7 +62,8 @@
     margin: 1em 0;
     border-left: var(--color-text) 2px solid;
   }
-  & a[href^="http"]:not(.embed) {
+  /* TODO: make this selector more flexible so we don't have to explicitly list all classes to exclude from styling */
+  & a[href^="http"]:not(.embed, .download-cta) {
     position: relative;
     padding-inline-end: 0.6em;
     &::after {

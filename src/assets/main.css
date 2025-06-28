@@ -14,6 +14,7 @@
 @import "./components/_alert.css";
 @import "./components/_copy.css";
 @import "./components/_logo.css";
+@import "./components/_download-cta.css";
 
 @import "./pages/_intro.css";
 @import "./pages/_note.css";

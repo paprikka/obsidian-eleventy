@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm list:*)",
+      "Bash(pnpm add:*)"
+    ],
+    "deny": []
+  }
+}
