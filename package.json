@@ -10,6 +10,7 @@
     "import-notes": "rm -rf src/sol && mkdir src/sol && obsidian-export  ../backup-sol src/sol --only-tags publish",
     "dev": "rm -rf _site && eleventy --serve",
     "dev:debug": "rm -rf _site && NODE_OPTIONS=--inspect eleventy --serve",
+    "dev:watch": "concurrently \"pnpm dev\" \"pnpm vault:watch\"",
     "vault:build": "node build/importer/run.js",
     "vault:watch": "npx nodemon --inspect --watch build --watch 'vault/**/*.*' build/importer/run.js",
     "vault:debug": "node --inspect-brk build/importer/run.js",
@@ -36,6 +37,7 @@
   },
   "devDependencies": {
     "@11ty/eleventy-img": "5.0.0-beta.10",
+    "concurrently": "^9.2.0",
     "prettier": "^3.3.2",
     "vitest": "^1.6.0"
   }
