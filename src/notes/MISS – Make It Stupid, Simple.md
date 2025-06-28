@@ -4,6 +4,8 @@ publish: true
 date: 2023-11-20
 tags:
   - untested-article
+aliases:
+  - MISS
 ---
 
 <img src="https://www.potato.horse/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhyylafu4fjks%2F4drq2gSGYr8INYte7bdiTh%2Ff64a699f0d868f9152db63b6b63fb9fb%2F245491987_342644317634651_7224792750543159376_n_18064078861288800.jpg&w=2048&q=75" alt="">

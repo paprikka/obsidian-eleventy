@@ -7,7 +7,8 @@ tags:
 date: 2023-09-21
 ---
 
-I'm not completely sure where I'm going with this, but stay with me, ok? Let's hold hands. No? OK, fine, that's fine too.
+I'm not completely sure where I'm going with this, but stay with me, ok? 
+Let's hold hands. No? OK, fine, that's fine too. <span id="^571932" class="link-marker"></span>
 
 <center style='font-size: 2rem'>❧</center>
 

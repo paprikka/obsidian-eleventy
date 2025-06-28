@@ -32,5 +32,6 @@ First, **keep the website running and the web version private and free** ([Ensō
 	- [ ] cursor
 - [ ] Backups (store the past three notes in memory)
 - [ ] Windows support (still not sure about that one, given the cost vs. time and effort)
+- [ ] Display an optional writing prompt (via  plugin?)
 
 Related: [Enso Technical Roadmap](<../Enso Technical Roadmap>),  [Enso product feedback](<../Enso product feedback>)
