@@ -103,15 +103,14 @@ Why?
 - AppStore with all its flaws makes delivering apps... slow and annoying, but also relatively easy without much code.
 - I can add OTA updates and re-publish Enso via Gumroad later, which makes sense as an iterative improvement. 
 
-The Gumroad version of Enso will stay as a backup, but will not be maintained.
-(NOTE: consider using bold here as it's important for existing users.)
+**The Gumroad version of Enso will stay as a backup, but will not be maintained.**
 
 ## What's not included
 ### Analytics
 
-I've been using Enso daily for 6 years. I've also received a ton of high-quality feedback, not via analytics but from users who were kind enough to reach out to me. I like to think that I have a fairly good idea of how and why people use Enso.
+I've been using Ensō daily for 6 years. I've also received a ton of high-quality feedback, not via analytics but from users who were kind enough to reach out to me. I like to think that I have a fairly good idea of how and why people use Ensō.
 
-The previous version of Enso would pass an anonymous impression event on load. Now, by design, no network traffic is made at all. Here's our new Privacy Page.
+The previous version of Ensō would pass an anonymous impression event on load. Now, by design, no network traffic is made at all. Here's our new Privacy Page.
 
 ![](Pasted%20image%2020250627182721.png)
 Current version of our Privacy page ([source](https://enso.sonnet.io/app-privacy))
@@ -126,7 +125,7 @@ I'm working on a UX that balances discoverability with staying focussed. Each op
 
 ### RTL (or non-LTR) language support
 
-**This one will be included in the next test build.** Many Enso users speak languages written in non-Latin alphabets (to my knowledge, mainly Persian, Arabic and Hebrew).
+**This one will be included in the next test build.** Many Ensō users speak languages written in non-Latin alphabets (to my knowledge, mainly Persian, Arabic and Hebrew).
 
 ![](enso-sigma-persian-rtl.png)
 
@@ -137,9 +136,9 @@ It makes me both grateful and somewhat sad that one (non-techie) user went as fa
 
 ![](enso-sigma-old-enso-ui.png)
 
-The previous version of Enso displayed the UI in the same space as the text. That's not the case any more.
+The previous version of Ensō displayed the UI in the same space as the text. That's not the case any more.
 
-I'm still considering adding a hamburger menu in the main app canvas, however only two (less frequent) users of Enso have brought it up so far. 
+I'm still considering adding a hamburger menu in the main app canvas, however only two (less frequent) users of Ensō have brought it up so far. 
 
 What I care about more:
 
@@ -160,7 +159,7 @@ Where to go from here?
 
 1. Collect the test feedback and respond to it
 2. Prepare basic marketing materials
-	- I might put an ad on social media, trying to get people off it ([Sit.](https://sonnet.io/posts/sit/)) but what I call marketing is mostly talking about Enso and related subjects here, plus engaging with communities I already know, such as forums
+	- I might put an ad on social media, trying to get people off it ([Sit.](https://sonnet.io/posts/sit/)) but what I call marketing is mostly talking about Ensō and related subjects here, plus engaging with communities I already know, such as forums
 3. Add RTL writing support
 4. Launch
 
@@ -180,29 +179,29 @@ Every day in small chunks and some days in longer stretches.
 
 I'm approaching this just like [My Recent Art Exhibition](<../Exhibition in Porto - Janusz enters the Fashion Industry - draft 1>) - working on different things simultaneously, focussing on their interplay rather than looking at each feature in isolation.
 
-While I believe you should [Share your unfinished, scrappy work](<../Share your unfinished, scrappy work>), I know Enso well enough that I can allow myself more flexibility. This style of work gives me a lot of joy and the end results have so far been better than expected. 
+While I believe you should [Share your unfinished, scrappy work](<../Share your unfinished, scrappy work>), I know Ensō well enough that I can allow myself more flexibility. This style of work gives me a lot of joy and the end results have so far been better than expected. 
 
 ## What I've learned
 
-**The new Enso is not the type of project I can share in small unfinished bits, feature by feature.** I will repeat this ad nauseam: I want to give you something that will get out of your way but also feel beautiful, polished, yours. 
+**The new Ensō is not the type of project I can share in small unfinished bits, feature by feature.** I will repeat this ad nauseam: I want to give you something that will get out of your way but also feel beautiful, polished, yours. 
 
 This is akin to good typography or UX - when it's there, you don't notice it, but at a subconscious level, you feel more comfortable with the tool and want to spend more time using it. That has been my experience so far.
 
-**Tauri is much more mature than when I released the first macOS version of Enso.** I spent weeks getting the previous version to build properly on Mac with notarisation, provisioning profiles and undocumented AppStore Connect APIs. Now, most of the things just work (sometimes with a bit of scripting, which is where Claude Code turned out to be indispensable).
+**Tauri is much more mature than when I released the first macOS version of Ensō.** I spent weeks getting the previous version to build properly on Mac with notarisation, provisioning profiles and undocumented AppStore Connect APIs. Now, most of the things just work (sometimes with a bit of scripting, which is where Claude Code turned out to be indispensable).
 
 
-I'm not an "IndieHacker", I'm not in a rush, I'm a wannabe-carpenter ([Brief History of Galician Carpentry](<../Projects and apps I built for my own well-being>)) and Enso happens to be made of stuff that can be worked in a carpentry-like manner. The small feature set means I can afford to take time to work on this with enough care, which I hope shows in the final product. 
+I'm not an "IndieHacker", I'm not in a rush, I'm a wannabe-carpenter ([Brief History of Galician Carpentry](<../Projects and apps I built for my own well-being>)) and Ensō happens to be made of stuff that can be worked in a carpentry-like manner. The small feature set means I can afford to take time to work on this with enough care, which I hope shows in the final product. 
 
 **Building a theme switcher can be a weirdly complex problem** (if you complicate it well enough). The difficult part was letting users set themes for dark/light/sync with OS mode, with previews, making it obvious when changes are saved, all in a single piece of UI, with max 2-3 clicks. 
 
 Most of my attempts at this resulted in something that looks more than the Dwarf Fortress GUI than a simple theme picker. I understand now why almost no one is doing this and why the few who do split the UI in several steps.
 
-**I'm still happy with using a browser as the text rendering engine.** Especially with Safari, the amount of control over typography is just excellent (think: fluid typography, `text-box: cap alphabetic`).
+**I'm still happy with using a browser as the text rendering engine.** Especially with Safari, the amount of control over typography is just excellent (e.g.  `text-box: cap alphabetic`).
 
 I wish there was an easy way of getting the native accent colour from the OS, but that's not possible at the moment. `accent` can be customised, but not read.
 
 
-**I'm not planning to remove the free web version of Enso.** I want to get paid for my work, but people reach out to me and buy it with virtually no marketing. I'm hopeful, even optimistic that the trust I've earned so far, as well as the quality of the final product, will be enough for it to grow slowly but steadily.
+**I'm not planning to remove the free web version of Ensō.** I want to get paid for my work, but people reach out to me and buy it with virtually no marketing. I'm hopeful, even optimistic that the trust I've earned so far, as well as the quality of the final product, will be enough for it to grow slowly but steadily.
 
 
 That's all for today. Thanks for reading!
