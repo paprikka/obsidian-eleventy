@@ -14,7 +14,7 @@ Look!
 
 ![](Screenshot%202025-06-13%20at%2018.42.20.png)
 
-The new version of Ensō (codename: Occult Vampire Keanu) is available for public testing!
+The new version of [Ensō](https://enso.sonnet.io) (codename: Occult Vampire Keanu) is available for public testing! 
 
 [Download it here](https://testflight.apple.com/join/6Jxjv3Up){.download-cta}
 
@@ -63,13 +63,13 @@ We have ~~6~~ 5½ predefined themes focussed on accessibility and specific use p
 	- designed for OLED screens
 	- the main use case here is writing at night, to put myself to sleep.  
 
-5½ and not 6 because one theme still needs some work. Is there a specific use case or theme you'd like to see in Enso? Let me know!
+5½ and not 6 because one theme still needs some work. Is there a specific use case or theme you'd like to see in Ensō? Let me know!
 
 ### Coffeeshop Mode™
 
 <video src="https://res.cloudinary.com/dlve3inen/video/upload/v1751044938/enso-coffeeshop-sigma_j1xi1d.mp4" loop controls muted playsinline autoplay></video>
 
-This is one of the few truly new features in Enso. Coffeeshop mode allows you to stop worrying that someone standing behind you might see what you're typing. The text itself is concealed but you still know what you're writing.  Use `⌘-C` to toggle on and off at any time.
+This is one of the few truly new features in Ensō. Coffeeshop mode allows you to stop worrying that someone standing behind you might see what you're typing. The text itself is concealed but you still know what you're writing.  Use `⌘-C` to toggle on and off at any time.
 
 I've been using it for a couple of months and found it super helpful, especially for journaling in public places, but not only (read more here: [Sketch - Ensō Coffeeshop Mode](<../Sketch - Ensō Coffeeshop Mode>)).
 
@@ -89,11 +89,11 @@ The new text rendering engine allows for better control over typography settings
 
 I don't know how to describe it objectively (and I obviously lack the distance to) but writing in the new UI feels different, more fluid. The text is easy to read, but also somewhat softer (though not blurry). 
 
-Less is more, so why do I care about it? *Because* less is more. I want Enso to feel familiar and high-quality, like a good Moleskine notebook. I want people to feel comfortable paying $10 for a typing app without text selection. I want them to enjoy it as much as I do. Fewer features allow me to focus more on what *is* there.
+Less is more, so why do I care about it? *Because* less is more. I want Ensō to feel familiar and high-quality, like a good Moleskine notebook. I want people to feel comfortable paying $10 for a typing app without text selection. I want them to enjoy it as much as I do. Fewer features allow me to focus more on what *is* there.
 
 ### AppStore by default (but standalone versions are still coming)
 
-Enso will be published via the AppStore by default. We will keep the old version on Gumroad, but there's no reason to maintain it, since the new version is better in every possible way and functionally the same by default.
+Ensō will be published via the AppStore by default. We will keep the old version on Gumroad, but there's no reason to maintain it, since the new version is better in every possible way and functionally the same by default.
 
 The reasons I decided to [skip the AppStore and use Gumroad](<../skip the AppStore and use Gumroad>), plus what I learned from that are beyond the scope of this note (you can click the link to request that particular write-up).
 
@@ -101,9 +101,9 @@ Why?
 
 - several users complained that Gumroad payment looked, for the lack of a better word, shady, especially at the step with a PayPal payment screen. The ones who messaged me still bought the app, but I imagine there were many who turned back. 
 - AppStore with all its flaws makes delivering apps... slow and annoying, but also relatively easy without much code.
-- I can add OTA updates and re-publish Enso via Gumroad later, which makes sense as an iterative improvement. 
+- I can add OTA updates and re-publish Ensō via Gumroad later, which makes sense as an iterative improvement. 
 
-**The Gumroad version of Enso will stay as a backup, but will not be maintained.**
+**The Gumroad version of Ensō will stay as a backup, but will not be maintained.**
 
 ## What's not included
 ### Analytics
@@ -165,6 +165,7 @@ Where to go from here?
 
 ## Ideas I'm considering
 
+- [ ] Windows and Linux support — I'll revisit it in the next few months. I'm moving towards supporting myself from my own projects and I need to be selective how I use my time. If you're interested in testing a Windows or Linux build, [let me know](mailto:hello@sonnet.io).
 - [ ] Quick Save - hitting `⌘+S` would automatically save a snapshot of your notes to a predefined directory with a time-stamped file name, e.g. `note-27-06-2025.txt` 
 - [ ] Toybox - an optional menu feature with experimental tools released episodically, such as:
 	- [ ] writing prompts

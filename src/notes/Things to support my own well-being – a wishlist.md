@@ -1,11 +1,11 @@
 ---
-cover: https://publish-01.obsidian.md/access/eeaad4d8787612061c379ba2cca364bf/fishlist-cover.webp
+cover: fishlist-cover.webp
 publish: true
 date: 2023-10-02
 tags:
   - untested-article
 ---
-<span style="color: red">Missing embed: fishlist-cover.webp </span>
+![ a fishlist](fishlist-cover.webp)
 
 In [Projects and apps I built for my own well-being](<../Projects and apps I built for my own well-being>) I mentioned projects that already exist and are *relatively* stable. This post will focus on the stuff I'm actively developing and hope to eventually share, and on the things that I hope one day someone smarter than me will build!
 

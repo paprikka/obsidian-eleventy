@@ -39,6 +39,8 @@ So here's a list of the things I've built for myself which eventually proved use
 
 ### [Ensō](https://enso.sonnet.io)
 
+<span id="^397e28" class="link-marker"></span>
+
 #### Why:
 - to find a space for myself to think
 - to improve fluency when writing
