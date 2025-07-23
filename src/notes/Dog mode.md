@@ -67,7 +67,7 @@ Know your own flaws, and you can set up systems to help you account for them.
 
 Read the description of Mango again, but this time with human actors as the canine characters.
 
-First, **don't yell at a barking dog.** Don't punish yourself.
+First, **don't yell at a barking dog.** Don't punish yourself. <span id="^ea90c4" class="link-marker"></span>
 
 **Don't try to work even harder.** Mango does get tired, but he doesn't know it. More fun stuff means upgrading the dog mode to _goblin_ mode. But, coming back home and giving him a blanket and water puts him straight to sleep.
 
