@@ -6,10 +6,12 @@
 
 .copy {
   font-size: var(--s--1);
+
   ol,
   ul {
     margin: 1em 0;
     padding-inline-start: 1em;
+
     li {
       margin: 0.5em 0;
     }
@@ -18,6 +20,7 @@
   p {
     margin: 1em 0;
   }
+
   h2,
   h3,
   h4,
@@ -43,6 +46,7 @@
           opacity: 1;
         }
       }
+
       &:active {
         scale: 0.9;
       }
@@ -56,16 +60,19 @@
   h2 {
     margin-block-end: var(--spacing-m);
   }
+
   blockquote {
     line-height: var(--leading-base);
     padding-inline-start: 2em;
     margin: 1em 0;
     border-left: var(--color-text) 2px solid;
   }
+
   /* TODO: make this selector more flexible so we don't have to explicitly list all classes to exclude from styling */
   & a[href^="http"]:not(.embed, .download-cta) {
     position: relative;
     padding-inline-end: 0.6em;
+
     &::after {
       content: "⤴";
       position: absolute;
@@ -78,9 +85,9 @@
   & a.link.link--broken {
     color: var(--color-link);
     position: relative;
+
     &::after {
-      content: " †";
-      position: absolute;
+      content: "🐣";
     }
   }
 
@@ -100,7 +107,7 @@
     animation: flash 2s 0s ease-in-out 1 both;
   }
 
-  :where(p, li) > code {
+  :where(p, li)>code {
     --_color-bg: color-mix(in srgb, var(--color-text) 6%, transparent);
     background-color: var(--_color-bg);
     font-size: 0.8em;
@@ -108,6 +115,7 @@
     box-shadow: 0 0 0 0.1em var(--_color-bg);
     border-radius: 0.1em;
   }
+
   pre:has(code) {
     font-size: var(--s--2);
     line-height: var(--leading-tight);
@@ -118,7 +126,7 @@
     margin: 1em -2em;
   }
 
-  p > img {
+  p>img {
     margin-inline: calc(-1 * var(--page-margin));
     width: calc(100% + var(--page-margin) * 2);
     max-width: 200%;
@@ -129,7 +137,7 @@
     height: auto;
     position: relative;
 
-    &:not(.embed--twitter, .embed--error) > :only-child {
+    &:not(.embed--twitter, .embed--error)> :only-child {
       vertical-align: bottom;
       border: 2px solid var(--color-text);
       box-shadow: 4px 4px 0 0 var(--color-text);
@@ -143,11 +151,9 @@
       font-size: 0.75em;
       color: color-mix(in srgb, var(--color-text) 80%, transparent);
       font-style: normal;
-      background: color-mix(
-        in srgb,
-        var(--color-text) 5%,
-        color-mix(in srgb, var(--color-page-bg) 70%, transparent)
-      );
+      background: color-mix(in srgb,
+          var(--color-text) 5%,
+          color-mix(in srgb, var(--color-page-bg) 70%, transparent));
       line-height: 1;
       border-radius: 0.25em;
       z-index: var(--layer-tooltip);
@@ -178,9 +184,11 @@
   from {
     --alpha: 0%;
   }
+
   15% {
     --alpha: 80%;
   }
+
   to {
     --alpha: 0%;
   }
