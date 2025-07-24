@@ -5,7 +5,7 @@ tags:
   - untested-article
 cover: minimum.png
 ---
-[433](https://github.com/paprikka/433/tree/main) is a font that masks visible text and replaces it with dots. I'm using it in [Ensō](<../New Enso - first public beta>) along with [Coffeeshop Mode](<../Sketch - Ensō Coffeeshop Mode>).
+[433](https://github.com/paprikka/433/tree/main) is a font that masks visible text and replaces it with dots. I'm using it in [Ensō](<../New Enso - first public beta>) along with [Coffeeshop Mode](<../Coffeeshop Mode>).
 
 You can see it in action here:
 
