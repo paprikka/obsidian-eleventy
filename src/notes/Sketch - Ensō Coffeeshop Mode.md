@@ -15,6 +15,8 @@ I'm playing with a "coffeeshop" mode for [Ensō](https://enso.sonnet.io). It's p
 
 ## Why am I doing this:
 
+<span id="^2a7bc1" class="link-marker"></span>
+
 **Immediate reason:** I usually write my [Stream of Consciousness Morning Notes](<../Stream of Consciousness Morning Notes>) at home, but this time I was in a crowded coffeeshop with people breathing down my neck. 
 
 ![](enso-coffeeshop-mode-cover.png)
