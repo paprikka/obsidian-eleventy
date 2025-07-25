@@ -16,7 +16,7 @@ pageClass: note
 
   <article class="page-note__article copy">{{ content | safe }}</article>
 
-  {% include "components/widget-subscribe.njk" %}
+  {% include "components/widget-subscribe-inline.njk" %}
 
   {% set backlinks = collections.all | getBacklinks(page.url) %}
   {% set backlinks_count = backlinks | length %}
