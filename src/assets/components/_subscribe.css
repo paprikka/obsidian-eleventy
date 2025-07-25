@@ -3,3 +3,13 @@
   border-radius: calc(var(--border-radius-panel) / 3);
   box-shadow: var(--color-accent) 0 0 0 var(--spacing-xxs);
 }
+
+
+.widget-subscribe--inline {
+  img {
+    max-width: 100%;
+    width: var(--s-3);
+    float: left;
+    margin-inline-end: .5em;
+  }
+}
