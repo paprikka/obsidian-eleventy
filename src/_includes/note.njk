@@ -72,3 +72,69 @@ pageClass: note
     }
   });
 </script>
+
+<script>
+  (() => {
+    const prefetchedUrls = new Set();
+    const timeoutMap = new WeakMap();
+
+    function isInternalArticleLink(url) {
+      if (!url) return false;
+      
+      if (url.startsWith('http') || url.startsWith('#') || url.includes('mailto:')) {
+        return false;
+      }
+      
+      const path = url.split('?')[0];
+      if (path.includes('.') && !path.endsWith('/')) {
+        return false;
+      }
+      
+      return true;
+    }
+
+    function prefetchUrl(url) {
+      if (prefetchedUrls.has(url)) return;
+      
+      prefetchedUrls.add(url);
+      
+      fetch(url, { 
+        method: 'GET',
+        mode: 'same-origin'
+      }).catch(() => {
+        prefetchedUrls.delete(url);
+      });
+    }
+
+    document.addEventListener('mouseenter', (event) => {
+      const link = event.target.closest('a');
+      if (!link || link.classList.contains('link--broken')) return;
+
+      const href = link.getAttribute('href');
+      if (!isInternalArticleLink(href) || link.classList.contains('link--broken')) return;
+
+      const existingTimeout = timeoutMap.get(link);
+      if (existingTimeout) {
+        clearTimeout(existingTimeout);
+      }
+      
+      const timeout = setTimeout(() => {
+        timeoutMap.delete(link);
+        prefetchUrl(href);
+      }, 100);
+      
+      timeoutMap.set(link, timeout);
+    }, true);
+
+    document.addEventListener('mouseleave', (event) => {
+      const link = event.target.closest('a');
+      if (!link) return;
+      
+      const timeout = timeoutMap.get(link);
+      if (timeout) {
+        clearTimeout(timeout);
+        timeoutMap.delete(link);
+      }
+    }, true);
+  })();
+</script>
