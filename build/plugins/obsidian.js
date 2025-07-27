@@ -55,19 +55,19 @@ export function ObsidianImportPlugin(eleventyConfig, options) {
       return content;
     }
     const $ = load(content);
-    
+
     // Find paragraphs that contain only a fleeting tag
     $("p").each((_, el) => {
       const $p = $(el);
       const html = $p.html().trim();
-      
+
       // Check if paragraph contains only the fleeting tag span
       if (html === '<span class="tag">fleeting</span>') {
         // Replace the content with the special format
-        $p.html('<span class="tag">fleeting</span> and very much <a href="/notes/fleeting-notes/">wip</a>');
+        $p.html('<span class="tag tag--fleeting-banner">fleeting</span> <span>and very much <a href="/notes/fleeting-notes/">WIP</a>!</span>');
       }
     });
-    
+
     return $.root().html();
   });
 

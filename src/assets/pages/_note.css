@@ -1,10 +1,13 @@
 .page-note {
   padding: var(--page-margin);
+
   header {
     margin-block-end: var(--spacing-xl);
+
     h1 {
       line-height: 1.25rlh;
     }
+
     time {
       font-weight: var(--font-weight-normal);
       font-size: 0.6em;
@@ -32,6 +35,7 @@
         --backlink-col-count: 2;
       }
     }
+
     /* @media (min-width: 768px) {
       &:has(:nth-child(3)) {
         --backlink-col-count: 3;
@@ -40,6 +44,7 @@
 
     h2 {
       position: relative;
+
       &::before {
         content: "⤴";
         position: absolute;
@@ -50,14 +55,13 @@
         opacity: 0.2;
       }
     }
+
     ul {
       list-style: none;
       padding-inline-start: 0;
       display: grid;
-      grid-template-columns: repeat(
-        var(--backlink-col-count),
-        minmax(100px, 1fr)
-      );
+      grid-template-columns: repeat(var(--backlink-col-count),
+          minmax(100px, 1fr));
       gap: 0 var(--s-1);
     }
 
@@ -65,9 +69,11 @@
       display: flex;
       flex-direction: column;
       align-items: start;
+
       /* margin: 0; */
       a {
         position: relative;
+
         &::before {
           content: "⤴";
           position: absolute;
@@ -87,6 +93,7 @@
       line-height: 1;
     }
   }
+
   .tag {
     opacity: 0.8;
     box-shadow: 0 0 0 1.5px var(--color-text);
@@ -103,10 +110,43 @@
       margin-inline-end: 0.1em;
     }
 
-    & + & {
+    &+& {
       margin-inline-start: 0.2em;
     }
+
   }
+
+  p:has(.tag--fleeting-banner) {
+    display: inline-flex;
+    gap: .5em;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+
+    border-radius: .3em;
+    padding: 0;
+
+
+    animation: fleeting-banner-enter .4s ease-in-out both;
+
+    & span:nth-child(2) {
+      font-size: .8em;
+    }
+
+
+    .tag {
+      line-height: var(--leading-tight);
+      background-color: var(--color-text);
+      color: white;
+      animation: shake .35s .4s ease-in-out both;
+      box-shadow: none;
+      padding: .3em .4em;
+      border-radius: .4em;
+      text-box: trim-both text;
+    }
+  }
+
 
   hr {
     margin-block: calc(var(--spacing-xl) * 2);
@@ -151,6 +191,7 @@
         animation-timeline: view();
       }
     }
+
     &.was-clicked {
       &::after {
         animation: animation-hr-exit 0.8s ease-in both;
@@ -163,10 +204,12 @@
   from {
     rotate: 0deg;
   }
+
   to {
     rotate: -720deg;
   }
 }
+
 @keyframes animation-hr-exit {
   0% {
     translate: 0 0;
@@ -182,5 +225,13 @@
     translate: 0 60vh;
     rotate: 540deg;
     opacity: 0;
+  }
+}
+
+
+@keyframes fleeting-banner-enter {
+  from {
+    opacity: 0;
+    visibility: hidden;
   }
 }
