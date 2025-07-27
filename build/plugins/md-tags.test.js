@@ -63,6 +63,16 @@ describe("markdown-it tag plugin", () => {
       input: "```\n#not-a-tag\n```",
       expected: "<pre><code>#not-a-tag\n</code></pre>",
     },
+    {
+      name: "fleeting tag alone in paragraph",
+      input: "#fleeting",
+      expected: '<p><span class="tag">fleeting</span></p>',
+    },
+    {
+      name: "fleeting tag with other content",
+      input: "This is a #fleeting note",
+      expected: '<p>This is a <span class="tag">fleeting</span> note</p>',
+    },
   ];
 
   testCases.forEach(({ name, input, expected }) => {

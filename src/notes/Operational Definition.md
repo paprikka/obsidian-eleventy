@@ -4,7 +4,7 @@ aliases:
 publish: true
 date: 2025-07-23
 ---
-#fleeting and very much wip!
+#fleeting
 
 A working definition established for the purposes of a conversation.
 

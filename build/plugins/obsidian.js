@@ -49,6 +49,28 @@ export function ObsidianImportPlugin(eleventyConfig, options) {
     return $.root().html();
   });
 
+  eleventyConfig.addTransform("processFleetingTag", (content, outputPath) => {
+    // Only process HTML files
+    if (!outputPath || !outputPath.endsWith(".html")) {
+      return content;
+    }
+    const $ = load(content);
+    
+    // Find paragraphs that contain only a fleeting tag
+    $("p").each((_, el) => {
+      const $p = $(el);
+      const html = $p.html().trim();
+      
+      // Check if paragraph contains only the fleeting tag span
+      if (html === '<span class="tag">fleeting</span>') {
+        // Replace the content with the special format
+        $p.html('<span class="tag">fleeting</span> and very much <a href="/notes/fleeting-notes/">wip</a>');
+      }
+    });
+    
+    return $.root().html();
+  });
+
   // TODO: move to the obsidian import script and use markdown-it
   // markdown-it would:
   // find the correct link-marker token (or what it replaced)
