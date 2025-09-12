@@ -5,7 +5,7 @@ tags:
   - article-idea
   - untested-article
 cover: cover-enso-themes.png
-title: Ensō Themes, Accessibility, and Vampires
+title: Ensō Themes – Accessible, Vampiric, Cozy
 ---
 
 ![](houses-trees-sketch.png)
