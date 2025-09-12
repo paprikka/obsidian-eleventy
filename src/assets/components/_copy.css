@@ -107,7 +107,7 @@
     animation: flash 2s 0s ease-in-out 1 both;
   }
 
-  :where(p, li)>code {
+  :where(p, li) > code {
     --_color-bg: color-mix(in srgb, var(--color-text) 6%, transparent);
     background-color: var(--_color-bg);
     font-size: 0.8em;
@@ -126,7 +126,7 @@
     margin: 1em -2em;
   }
 
-  p>img {
+  p > img {
     margin-inline: calc(-1 * var(--page-margin));
     width: calc(100% + var(--page-margin) * 2);
     max-width: 200%;
@@ -137,7 +137,7 @@
     height: auto;
     position: relative;
 
-    &:not(.embed--twitter, .embed--error)> :only-child {
+    &:not(.embed--twitter, .embed--error, .embed--video) > :only-child {
       vertical-align: bottom;
       border: 2px solid var(--color-text);
       box-shadow: 4px 4px 0 0 var(--color-text);
@@ -151,9 +151,11 @@
       font-size: 0.75em;
       color: color-mix(in srgb, var(--color-text) 80%, transparent);
       font-style: normal;
-      background: color-mix(in srgb,
-          var(--color-text) 5%,
-          color-mix(in srgb, var(--color-page-bg) 70%, transparent));
+      background: color-mix(
+        in srgb,
+        var(--color-text) 5%,
+        color-mix(in srgb, var(--color-page-bg) 70%, transparent)
+      );
       line-height: 1;
       border-radius: 0.25em;
       z-index: var(--layer-tooltip);
@@ -171,6 +173,12 @@
       /* TODO: fix the borders */
       border-radius: var(--border-radius-panel);
       overflow: hidden;
+    }
+
+    &.embed--video {
+      margin-inline: calc(-1 * var(--page-margin));
+      width: calc(100% + var(--page-margin) * 2);
+      max-width: 200%;
     }
 
     &.embed--error {
