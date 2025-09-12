@@ -10,9 +10,9 @@ title: Ensō Themes, Accessibility, and Vampires
 
 ![](houses-trees-sketch.png)
 
-Hey there. We're getting very close to the release of a new [Ensō](https://enso.sonnet.io), and I'm at the stage where I need to stop coding and start talking about it. **Why invest so much time in working on something for other people if we don't give them a chance to decide, for themselves, if it's valuable?** 
+Hey there. We're getting very close to the release of a new [Ensō](https://enso.sonnet.io), and I'm at the stage where I need to stop coding and start talking about it. **Why invest so much time in working on something for other people if we don't give them a chance to decide for themselves if it's valuable?** 
 
-As any crypto zoologist will tell you: *the procrastination ogre feeds on time — the longer we wait, the bigger it gets*. Thinking aloud about themes sounds like a decent warmup before tackling more complex copywriting tasks, so let's go through this [together](<../Work With the Garage Door Up>).
+As any cryptozoologist will tell you: *the procrastination ogre feeds on time — the longer we wait, the bigger it gets*. Thinking aloud about themes sounds like a decent warmup before tackling more complex copywriting tasks, so let's go through this [together](<../Work With the Garage Door Up>).
 
 Related: [Share your unfinished, scrappy work](<../Share your unfinished, scrappy work>), [Writing is Thinking](<../Writing is Thinking>), [New Enso - first public beta](<../New Enso - first public beta>), [How People Use Ensō](<../How People Use Ensō>)
 
@@ -27,7 +27,7 @@ Related: [Share your unfinished, scrappy work](<../Share your unfinished, scrapp
 5. OLED
 6. Midnight
 
-Each theme has been designed with a specific use case/*why* in mind. Some of the *whys* are more obvious than others; some just fall under the category of *familiar = good*. Let's get those out of the way before we move on to my [favourite](<#6. Midnight>).
+Each theme has been designed with a specific use case/*why* in mind. Some of the *whys* are more obvious than others; some just fall under the category of *familiar = good*. Let's get those out of the way before we move on to my [favourite example](<#h-6-midnight>).
 
 ### 1.,2. Light and "Sepia"
 
@@ -38,7 +38,7 @@ Each theme has been designed with a specific use case/*why* in mind. Some of the
 
 - [x] User preference, familiarity. Some users preferred Sepia over the default Black and White theme. Some users preferred the default Light theme over Sepia. 
 - [x] Works well in well-lit environments
-- [x] (personal opinion) Looks slightly better than the Black and White/e-Paper
+- [x] (personal opinion) Sepia looks slightly better than the Black and White/e-Paper
 - [x] Sepia should look better with semi-transparent GUIs (e.g. the upcoming, moist macOS 26)
 
 ### 3. Black and White / e-Paper
@@ -63,7 +63,7 @@ I'm working on a hardware side project involving an Ensō-ish UX. More on [that]
 ![](enso-article-themes-screenshots/dark.png)
 #### Why?
 
-- [x] (again) User preference, familiarity! Some users prefer a dark theme that doesn't stand out from the rest of the OS GUI, greys feel more gentle than perfect black.
+- [x] (again) User preference, familiarity! Some users prefer a dark theme that doesn't stand out from the rest of the OS GUI; greys feel more gentle than perfect black.
 
 This is the main reason we have both Dark and OLED as separate options. 
 
@@ -75,7 +75,7 @@ This is the main reason we have both Dark and OLED as separate options.
 
 ![](enso-article-themes-screenshots/oled.png)
 
-- [x] Looks great on OLED screens. I've tested with with MBP, iPad Pro M4 and phones with OLED displays. More on that below. 
+- [x] Looks great on OLED screens. I've tested this with MBP, iPad Pro M4 and phones with OLED displays. More on that below. 
 - [x] Works well in dark environments and reduces the amount of emitted light significantly compared to Dark, even on *slightly* lower-end LCD screens, e.g. MBA M1.
 
 ### 6. Midnight
@@ -84,7 +84,7 @@ This is the main reason we have both Dark and OLED as separate options.
 
 #### Why?
 
-- [x] Comfortable writing in **very** dark conditions. It's hard to describe, but at 20% brightness the screen doesn't seem to be emitting light and the text feels almost like e-Paper.
+- [x] Comfortable writing in **very** dark conditions. At 20% brightness the screen doesn't seem to be emitting light and the text feels almost like e-Paper.
 - [x] Designed to generate the lowest possible amount of light while maintaining legibility, hence the red tint
 
 #### Use cases/target audience
@@ -95,9 +95,9 @@ This is the main reason we have both Dark and OLED as separate options.
 
 #### How it's gone so far and why I find this theme particularly interesting
 
-**Since launching the beta, several users mentioned using the Midnight mode and seem happy with it!**
+**Since I launched the beta, several users have said they use Midnight mode and are happy with it!**
 
-I use Midnight when having trouble with falling asleep after waking up in the middle of the night. I had spent 2 decades dealing with insomnia (I'm good now), and one of the things I've learned is to leave the bed the moment I start ruminating. Instead: get a cup of tea, look out of the window, doodle, or just stare at my dog (weirdly contorted and mumbling in Aramaic, yet still cute). We are creatures of habit. The last thing I need in that moment is to nurture the association between insomnia and my bed.
+I use Midnight when I happen to wake up in the middle of the night and can't go back to sleep. I spent 2 decades dealing with [insomnia](<../Insomnia, Control>) (I'm good now), and one of the things I've learned is to leave the bed the moment I start ruminating. Instead: get a cup of tea, look out the window, doodle, or just stare at my dog (weirdly contorted and mumbling in Aramaic, yet still cute). We are creatures of habit. The last thing I need in that moment is to nurture the association between insomnia and my bed.
 
 I usually spend that time writing my [Stream of Consciousness Morning Notes](<../Stream of Consciousness Morning Notes>), which is an added bonus: it feels like I can make up for some of the lost time. It makes me feel less rushed/stressed about the next morning.
 
@@ -140,11 +140,11 @@ This is a weird one, as it might be a bit hard to explain if you've never approa
 
 Here's what I want:
 
-1. theme changes should require maximum 3 interactions (from opening the picker to getting back to writing)
+1. theme changes that require *maximum* 3 interactions (from opening the picker to getting back to writing)
 2. an easy way to associate themes with OS appearance (light, dark, automatic)
-3. more than theme per appearance
+3. more than one theme per appearance
 
-Now, things are easy if we choose only **two** items from the list above. Things get a bit wonky if we want to do all three. How to keep clear affordances for users at a single glance, without making them feel like they're about to fill a visa application just to change the background to dark? 
+Now, things are easy if we choose only **two** items from the list above. But they get a bit wonky if we want to do all three. How to keep clear affordances for users at a single glance, without making them feel like they're about to fill a visa application just to change the background to dark? 
 
 There's a tonne of UX patterns to learn from, again, *if* we stick to two items from the list. So, following [MISS](<../MISS – Make It Stupid, Simple>) I came up with a dumber solution and I'm pretty happy with it: the selected theme is tied to the current OS appearance. 
 
@@ -171,15 +171,14 @@ Yes, I can see the OS versions on TestFlight, but I noticed the issue thanks to 
 
 And it made me very, very happy. It's such a seemingly small change, but it seems so useful.
 
-### What I learned while *writing* this note
+### What I learned while writing this note
 
 
 - I'm happy with the theme choice, but might cut the default light theme.
 - I've kept the more interesting subjects (Midnight, UX, what I've learned) at the end, making the reader wait.
 - More of the theme designs are based on familiarity than I would like to admit. There's nothing inherently wrong with that. On the contrary, I think that's valuable. But how should I talk about this when I add themes to [Ensō website](https://sonnet.io) before the release? 
 - I was hoping to come up with some concise, punchy quotes I could put on the Ensō website under the *themes* section. That didn't happen, but the way I think about them is more structured. Mainly, I can see what 
-- Shit, since the first beta I've put so much work into this thing! ([Writing is remembering](<../Writing is remembering>))
-- I write more nowadays, but I share almost nothing, and this shows (fluency, brevity, my own voice)
+- Shit, I've put so much work into this thing just since the [recent beta](<../New Enso - first public beta>)! ([Writing is remembering](<../Writing is remembering>))
 
 ![](sketch-with-incorrect-light-carregal-do-sal.png)
 
@@ -192,7 +191,7 @@ The next steps are not technical. The next step is to say what I said here, but 
 Then and only then I will:
 
 - Consider removing Light and Sepia themes (yes, an unusual choice, since the site will already be up, but it's also easier than getting distracted *now*).
-- Park adding custom user themes for the foreseeable future. There isn't enough interest and this is one of the features that are waaaay easier to add then to remove once people get used to them.
+- Park adding custom user themes for the foreseeable future. There isn't enough interest and this is one of the features that are waaaay easier to add than to remove once people get used to them.
 
 Thanks for reading!
 
