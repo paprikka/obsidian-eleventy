@@ -10,7 +10,7 @@ title: Ensō Themes – Accessible, Vampiric, Cozy
 
 ![](houses-trees-sketch.png)
 
-Hey there. We're getting very close to the release of a new [Ensō](https://enso.sonnet.io), and I'm at the stage where I need to stop coding and start talking about it. **Why invest so much time in working on something for other people if we don't give them a chance to decide for themselves if it's valuable?** 
+Hey there. We're getting very close to the release of a new [Ensō](https://enso.sonnet.io), and I'm at the stage where I need to stop coding and start talking about it. **Why invest so much time in working on something if we don't give people a chance to decide for themselves if it's valuable?** 
 
 As any cryptozoologist will tell you: *the procrastination ogre feeds on time — the longer we wait, the bigger it gets*. Thinking aloud about themes sounds like a decent warmup before tackling more complex copywriting tasks, so let's go through this [together](<../Work With the Garage Door Up>).
 
