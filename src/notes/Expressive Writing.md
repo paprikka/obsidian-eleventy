@@ -20,3 +20,7 @@ A therapeutic technique involving the exploration and expression of deep persona
 
 
 ![](expressive-writing-red-flower-separator.png)
+
+--- 
+
+More: [Original Notes and Protocol](<../Writing and Trauma - protocol (expressive writing)>)
