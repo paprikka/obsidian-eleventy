@@ -28,6 +28,7 @@ Examples of those problems include:
 
 - short attention spans,
 - anxiety,
+- nicotine dependency (it comes and goes, like [seasons](<../DISOBEY>)),
 - helping me become more present, focused,
 - helping me remember that the world is not ending yet, or
 - that I've been speaking at 150 words per minute and my interlocutor is scratching their neck because they've been nodding so fast they're worried it might fall off so I should slow.the.fuck.down, or
@@ -117,3 +118,9 @@ Polish speakers call Guinea Pigs, "experimental bunnies" (królik doświadczalny
 
 Whatever lab-related adjective + animal name you are, I'd love to hear about your work, [come and say hi](https://sonnet.io/posts/hi) or leave a message [here](mailto:hello@sonnet.io).
 
+### [DISOBEY](<../DISOBEY>)
+
+
+#### Why
+
+%% TODO %%
